@@ -1,0 +1,16 @@
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe.config
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaEntidad.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaLogica.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaEntidad.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaLogica.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPrincipal.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProveedor.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.Properties.Resources.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
