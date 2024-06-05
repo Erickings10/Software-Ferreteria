@@ -7,3 +7,12 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Proy
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\bin\Debug\CapaEntidad.dll
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\bin\Debug\CapaEntidad.pdb
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.pdb

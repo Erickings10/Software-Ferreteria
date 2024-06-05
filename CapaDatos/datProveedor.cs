@@ -26,37 +26,92 @@ namespace CapaDatos
         #region metodos
         public List<entProveedor> ListaProveedor() 
         {
-            SqlCommand cmd = null;
+
+
             List<entProveedor> listaPro = new List<entProveedor>();
-            try 
+
+            try
             {
-                SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListaProveedor, cn");
-                cmd.CommandType = CommandType.StoredProcedure;
-                cn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read()) 
+                using (SqlConnection cn = Conexion.Instancia.Conectar())
                 {
-                    entProveedor pro = new entProveedor();
-                    pro.IdProveedor = Convert.ToInt32(reader["IdProveedor"]);
-                    pro.Documento = reader["Documento"].ToString();
-                    pro.RazonSocial = reader["RazonSocial"].ToString();
-                    pro.Correo = reader["Correo"].ToString();
-                    pro.Telefono = reader["Telefono"].ToString();
-                    listaPro.Add(pro);
+                    using (SqlCommand cmd = new SqlCommand("spListaProveedor", cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cn.Open();
+
+                        using (SqlDataReader reader = cmd.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                entProveedor pro = new entProveedor
+                                {
+                                    IdProveedor = Convert.ToInt32(reader["IdProveedor"]),
+                                    Documento = reader["Documento"].ToString(),
+                                    RazonSocial = reader["RazonSocial"].ToString(),
+                                    Correo = reader["Correo"].ToString(),
+                                    Telefono = reader["Telefono"].ToString()
+                                };
+                                listaPro.Add(pro);
+                            }
+                        }
+                    }
                 }
             }
             catch (Exception e)
             {
-                throw e;
+                // Aquí puedes manejar la excepción o registrarla
+                throw new Exception("Error al listar los proveedores", e);
             }
-            finally
-            {
-                cmd.Connection.Close();
-            }
+
             return listaPro;
+
+
         }
         #endregion metodos
+
+        /////////////////////////InsertaCliente
+        public Boolean InsertarProveedor(entProveedor Cli)
+        {
+            Boolean inserta = false;
+
+            try
+            {
+                using (SqlConnection cn = Conexion.Instancia.Conectar())
+                {
+                    using (SqlCommand cmd = new SqlCommand("spInsertaProveedor", cn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.AddWithValue("@Documento", Cli.Documento);
+                        cmd.Parameters.AddWithValue("@RazonSocial", Cli.RazonSocial);
+                        cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
+                        cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
+                        cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
+
+                        cn.Open();
+                        int i = cmd.ExecuteNonQuery();
+                        if (i > 0)
+                        {
+                            inserta = true;
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                
+                throw new Exception("Error al insertar el cliente", e);
+            }
+
+            return inserta;
+        }
+
+
+
+
+
+
+
+
     }
 
 }

@@ -18,9 +18,10 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=LAPTOP-AO7TTABM\\SQLEXPRESS; Initial Catalog = DBFerreteria;" +//"User ID=sa;Password = 123";
-            "Integrated Security=true";
+            cn.ConnectionString = "Data Source=DESKTOP-I4JALD5\\SQLEXPRESS; Initial Catalog =DBFerreteria ;" + "Integrated Security=true";
             return cn;
+
+
         }
     }
 }

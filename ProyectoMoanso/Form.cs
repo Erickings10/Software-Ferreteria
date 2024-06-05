@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaLogica;
+using FontAwesome.Sharp;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +14,79 @@ namespace ProyectoMoanso
 {
     public partial class FormPrincipal : System.Windows.Forms.Form
     {
+
+
+        private static IconMenuItem MenuActivo = null;
+
+        private static Form FormularioActivo = null;
+
+
         public FormPrincipal()
         {
             InitializeComponent();
         }
 
-        private void proveedorToolStripMenuItem_Click(object sender, EventArgs e)
+
+
+        private void AbrirFormulario(IconMenuItem menu, Form formulario)
         {
-            FormProveedor formProveedor = new FormProveedor();
-            formProveedor.Show();
-            
+
+            if (MenuActivo != null)
+            {
+                MenuActivo.BackColor = Color.White;
+
+            }
+
+            menu.BackColor = Color.Silver;
+
+
+            MenuActivo = menu;
+
+            if (FormularioActivo != null)
+            {
+
+
+                FormularioActivo.Close();
+
+
+            }
+
+            FormularioActivo = formulario;
+
+            formulario.TopLevel = false;
+
+            formulario.FormBorderStyle = FormBorderStyle.None;
+
+            formulario.Dock = DockStyle.Fill;
+
+            formulario.BackColor = Color.Tan;
+
+            contenedor.Controls.Add(formulario);
+
+            formulario.Show();
+
+
+        }
+
+
+
+        private void menuProveedores_Click(object sender, EventArgs e)
+        {
+
+
+            AbrirFormulario((IconMenuItem)sender, new FormProveedor());
+
+
+        }
+
+       
+
+
+
+
+        private void menuTitulo_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
         }
     }
 }
