@@ -59,7 +59,6 @@ namespace CapaDatos
             }
             catch (Exception e)
             {
-                // Aquí puedes manejar la excepción o registrarla
                 throw new Exception("Error al listar los proveedores", e);
             }
 
@@ -69,8 +68,7 @@ namespace CapaDatos
         }
         #endregion metodos
 
-        /////////////////////////InsertaCliente
-        public Boolean InsertarProveedor(entProveedor Cli)
+        public Boolean InsertarProveedor(entProveedor pro)
         {
             Boolean inserta = false;
 
@@ -81,11 +79,11 @@ namespace CapaDatos
                     using (SqlCommand cmd = new SqlCommand("spInsertaProveedor", cn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@Documento", Cli.Documento);
-                        cmd.Parameters.AddWithValue("@RazonSocial", Cli.RazonSocial);
-                        cmd.Parameters.AddWithValue("@Correo", Cli.Correo);
-                        cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
-                        cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
+                        cmd.Parameters.AddWithValue("@Documento", pro.Documento);
+                        cmd.Parameters.AddWithValue("@RazonSocial", pro.RazonSocial);
+                        cmd.Parameters.AddWithValue("@Correo", pro.Correo);
+                        cmd.Parameters.AddWithValue("@Telefono", pro.Telefono);
+                        cmd.Parameters.AddWithValue("@Estado", pro.Estado);
 
                         cn.Open();
                         int i = cmd.ExecuteNonQuery();
@@ -104,14 +102,39 @@ namespace CapaDatos
 
             return inserta;
         }
+        public Boolean ActualizaProveedor(entProveedor pro) 
+        {
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditaProveedor", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@IdProveedor", pro.IdProveedor);
+                cmd.Parameters.AddWithValue("@Documento", pro.Documento);
+                cmd.Parameters.AddWithValue("@RazonSocial", pro.RazonSocial);
+                cmd.Parameters.AddWithValue("@Correo", pro.Correo);
+                cmd.Parameters.AddWithValue("@Telefono", pro.Telefono);
+                cmd.Parameters.AddWithValue("@Estado", pro.Estado);
+                cn.Open();
 
-
-
-
-
-
-
-
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    ListaProveedor();
+                    return true; 
+                }
+                else
+                {
+                    return false; 
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally { cmd.Connection.Close(); }
+        }
     }
 
 }

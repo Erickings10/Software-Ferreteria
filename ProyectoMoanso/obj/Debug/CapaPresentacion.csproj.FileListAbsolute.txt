@@ -33,3 +33,6 @@ C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteri
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.dll
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaDatos.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaDatos.pdb

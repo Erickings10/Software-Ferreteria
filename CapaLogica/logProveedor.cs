@@ -40,13 +40,13 @@ namespace CapaLogica
         }
 
         //edita
-        public void EditaCliente(entProveedor Cli)
+        public void ActualizaProveedor(entProveedor Pro)
         {
-            //datCliente.Instancia.EditarCliente(Cli);
+            datProveedor.Instancia.ActualizaProveedor(Pro);
         }
-        public void DeshabilitarCliente(entProveedor Cli)
+        public void DeshabilitaProveedor(entProveedor Pro)
         {
-            ///datCliente.Instancia.DeshabilitarCliente(Cli);
+            ///datCliente.Instancia.DeshabilitaProveedor(Cli);
         }
 
 

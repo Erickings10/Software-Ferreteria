@@ -17,27 +17,9 @@ namespace ProyectoMoanso
         public FormProveedor()
         {
             InitializeComponent();
-
+            txtIdProveedor.ReadOnly = true;
             listarProveedors();
             
-        }
-
-        private void txtRazonSocial_TextChanged(object sender, EventArgs e)
-        {
-
-
-
-
-
-        }
-
-        private void FormProveedor_Load(object sender, EventArgs e)
-        {
-
-
-         
-
-
         }
 
 
@@ -48,9 +30,6 @@ namespace ProyectoMoanso
 
         private void btn_Registrar_Click(object sender, EventArgs e)
         {
-
-
-            //insertar
             try
             {
                 entProveedor c = new entProveedor();
@@ -79,16 +58,37 @@ namespace ProyectoMoanso
 
         }
 
+        private void btn_Actualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProveedor p = new entProveedor();
+                p.IdProveedor = int.Parse(txtIdProveedor.Text.Trim());
+                p.Documento = txtNroDocumento.Text.Trim();
+                p.RazonSocial = txtRazonSocial.Text.Trim();
+                p.Correo = txtCorreo.Text.Trim();
+                p.Telefono = txtTelefono.Text.Trim();
+                p.Estado = chbxEstado.Checked;
+                logProveedor.Instancia.ActualizaProveedor(p);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex+" ... ");
+            }
+            LimpiarVariables();
+            listarProveedors();
+        }
 
-
-
-
-
-
-
-
-
-
+        private void dgv_RegistroProveedor_CellClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow fila = dgv_RegistroProveedor.Rows[e.RowIndex];
+            txtIdProveedor.Text = fila.Cells[0].Value.ToString();
+            txtNroDocumento.Text = fila.Cells[1].Value.ToString();
+            txtRazonSocial.Text = fila.Cells[2].Value.ToString();
+            txtCorreo.Text = fila.Cells[3].Value.ToString();
+            txtTelefono.Text = fila.Cells[4].Value.ToString();
+            chbxEstado.Checked = Convert.ToBoolean(fila.Cells[5].Value);
+        }
     }
 }
 
