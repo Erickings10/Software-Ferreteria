@@ -25,6 +25,10 @@ namespace ProyectoMoanso
         private void txtRazonSocial_TextChanged(object sender, EventArgs e)
         {
 
+
+
+
+
         }
 
         private void FormProveedor_Load(object sender, EventArgs e)
