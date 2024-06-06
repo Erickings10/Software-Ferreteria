@@ -43,6 +43,7 @@
             this.btnNecesidad = new System.Windows.Forms.Button();
             this.btnOrdenCompra = new System.Windows.Forms.Button();
             this.contenedor = new System.Windows.Forms.Panel();
+            this.btnProovedores = new System.Windows.Forms.Button();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
@@ -124,6 +125,7 @@
             // panelOpciones
             // 
             this.panelOpciones.BackColor = System.Drawing.Color.Gray;
+            this.panelOpciones.Controls.Add(this.btnProovedores);
             this.panelOpciones.Controls.Add(this.btnDevolucion);
             this.panelOpciones.Controls.Add(this.btnPagoFacturas);
             this.panelOpciones.Controls.Add(this.btnProductos);
@@ -143,7 +145,7 @@
             this.btnDevolucion.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDevolucion.Image = ((System.Drawing.Image)(resources.GetObject("btnDevolucion.Image")));
             this.btnDevolucion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevolucion.Location = new System.Drawing.Point(3, 310);
+            this.btnDevolucion.Location = new System.Drawing.Point(4, 310);
             this.btnDevolucion.Name = "btnDevolucion";
             this.btnDevolucion.Size = new System.Drawing.Size(156, 53);
             this.btnDevolucion.TabIndex = 6;
@@ -173,7 +175,7 @@
             this.btnProductos.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(3, 251);
+            this.btnProductos.Location = new System.Drawing.Point(4, 251);
             this.btnProductos.Name = "btnProductos";
             this.btnProductos.Size = new System.Drawing.Size(156, 53);
             this.btnProductos.TabIndex = 4;
@@ -236,6 +238,21 @@
             this.contenedor.Size = new System.Drawing.Size(942, 517);
             this.contenedor.TabIndex = 6;
             // 
+            // btnProovedores
+            // 
+            this.btnProovedores.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnProovedores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnProovedores.Font = new System.Drawing.Font("Roboto Medium", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProovedores.Image = ((System.Drawing.Image)(resources.GetObject("btnProovedores.Image")));
+            this.btnProovedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnProovedores.Location = new System.Drawing.Point(4, 369);
+            this.btnProovedores.Name = "btnProovedores";
+            this.btnProovedores.Size = new System.Drawing.Size(156, 53);
+            this.btnProovedores.TabIndex = 7;
+            this.btnProovedores.Text = "Proovedores";
+            this.btnProovedores.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnProovedores.UseVisualStyleBackColor = false;
+            // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +291,7 @@
         private System.Windows.Forms.Button btnDevolucion;
         private System.Windows.Forms.Button btnPagoFacturas;
         private System.Windows.Forms.Button btnProductos;
+        private System.Windows.Forms.Button btnProovedores;
     }
 }
 
