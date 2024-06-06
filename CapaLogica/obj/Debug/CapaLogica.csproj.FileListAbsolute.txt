@@ -20,3 +20,14 @@ C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteri
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date

@@ -16,3 +16,12 @@ C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteri
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.dll
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\bin\Debug\CapaDatos.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaDatos\obj\Debug\CapaDatos.csproj.Up2Date

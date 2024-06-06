@@ -10,3 +10,9 @@ C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteri
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\USER\OneDrive\Documentos\Ejercicio Moanso Ferreteria\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
