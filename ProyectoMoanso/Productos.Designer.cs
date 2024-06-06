@@ -45,6 +45,8 @@
             this.btn_Actualizar_Produc = new System.Windows.Forms.Button();
             this.btn_Guardar_Produc = new System.Windows.Forms.Button();
             this.errorStock = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label7 = new System.Windows.Forms.Label();
+            this.cbx_Proveedor_Produc = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registro_productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.SuspendLayout();
@@ -83,7 +85,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(53, 249);
+            this.label4.Location = new System.Drawing.Point(402, 110);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 20);
             this.label4.TabIndex = 3;
@@ -93,7 +95,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(53, 289);
+            this.label5.Location = new System.Drawing.Point(402, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(87, 20);
             this.label5.TabIndex = 4;
@@ -123,14 +125,14 @@
             // 
             // txt_marca_produc
             // 
-            this.txt_marca_produc.Location = new System.Drawing.Point(166, 247);
+            this.txt_marca_produc.Location = new System.Drawing.Point(515, 108);
             this.txt_marca_produc.Name = "txt_marca_produc";
             this.txt_marca_produc.Size = new System.Drawing.Size(187, 22);
             this.txt_marca_produc.TabIndex = 8;
             // 
             // txt_categoria_produc
             // 
-            this.txt_categoria_produc.Location = new System.Drawing.Point(166, 289);
+            this.txt_categoria_produc.Location = new System.Drawing.Point(515, 159);
             this.txt_categoria_produc.Name = "txt_categoria_produc";
             this.txt_categoria_produc.Size = new System.Drawing.Size(187, 22);
             this.txt_categoria_produc.TabIndex = 9;
@@ -138,18 +140,18 @@
             // dgv_registro_productos
             // 
             this.dgv_registro_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_registro_productos.Location = new System.Drawing.Point(57, 334);
+            this.dgv_registro_productos.Location = new System.Drawing.Point(57, 281);
             this.dgv_registro_productos.Name = "dgv_registro_productos";
             this.dgv_registro_productos.RowHeadersWidth = 51;
             this.dgv_registro_productos.RowTemplate.Height = 24;
-            this.dgv_registro_productos.Size = new System.Drawing.Size(625, 295);
+            this.dgv_registro_productos.Size = new System.Drawing.Size(906, 312);
             this.dgv_registro_productos.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(139, 30);
+            this.label6.Location = new System.Drawing.Point(289, 28);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(379, 34);
             this.label6.TabIndex = 11;
@@ -160,7 +162,7 @@
             this.btn_Eliminar_Produc.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Eliminar_Produc.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
             this.btn_Eliminar_Produc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Eliminar_Produc.Location = new System.Drawing.Point(530, 237);
+            this.btn_Eliminar_Produc.Location = new System.Drawing.Point(784, 207);
             this.btn_Eliminar_Produc.Name = "btn_Eliminar_Produc";
             this.btn_Eliminar_Produc.Size = new System.Drawing.Size(179, 47);
             this.btn_Eliminar_Produc.TabIndex = 14;
@@ -172,7 +174,7 @@
             this.btn_Actualizar_Produc.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Actualizar_Produc.Image = global::ProyectoMoanso.Properties.Resources.reset;
             this.btn_Actualizar_Produc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Actualizar_Produc.Location = new System.Drawing.Point(530, 163);
+            this.btn_Actualizar_Produc.Location = new System.Drawing.Point(784, 147);
             this.btn_Actualizar_Produc.Name = "btn_Actualizar_Produc";
             this.btn_Actualizar_Produc.Size = new System.Drawing.Size(179, 47);
             this.btn_Actualizar_Produc.TabIndex = 13;
@@ -184,7 +186,7 @@
             this.btn_Guardar_Produc.Font = new System.Drawing.Font("Roboto", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guardar_Produc.Image = global::ProyectoMoanso.Properties.Resources.Disco;
             this.btn_Guardar_Produc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Guardar_Produc.Location = new System.Drawing.Point(530, 85);
+            this.btn_Guardar_Produc.Location = new System.Drawing.Point(784, 83);
             this.btn_Guardar_Produc.Name = "btn_Guardar_Produc";
             this.btn_Guardar_Produc.Size = new System.Drawing.Size(179, 47);
             this.btn_Guardar_Produc.TabIndex = 15;
@@ -195,12 +197,32 @@
             // 
             this.errorStock.ContainerControl = this;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(402, 205);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(93, 20);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "Proveedor:";
+            // 
+            // cbx_Proveedor_Produc
+            // 
+            this.cbx_Proveedor_Produc.FormattingEnabled = true;
+            this.cbx_Proveedor_Produc.Location = new System.Drawing.Point(515, 203);
+            this.cbx_Proveedor_Produc.Name = "cbx_Proveedor_Produc";
+            this.cbx_Proveedor_Produc.Size = new System.Drawing.Size(187, 24);
+            this.cbx_Proveedor_Produc.TabIndex = 17;
+            // 
             // Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(752, 641);
+            this.ClientSize = new System.Drawing.Size(1033, 636);
+            this.Controls.Add(this.cbx_Proveedor_Produc);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_Guardar_Produc);
             this.Controls.Add(this.btn_Eliminar_Produc);
             this.Controls.Add(this.btn_Actualizar_Produc);
@@ -244,5 +266,7 @@
         private System.Windows.Forms.Button btn_Eliminar_Produc;
         private System.Windows.Forms.Button btn_Guardar_Produc;
         private System.Windows.Forms.ErrorProvider errorStock;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cbx_Proveedor_Produc;
     }
 }
