@@ -59,3 +59,5 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Proy
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaDatos.dll
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\bin\Debug\CapaDatos.pdb
 >>>>>>> ccc380c8dc88705153202795d4fbe04e585cd182
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormOrdenCompra.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\ProyectoMoanso\ProyectoMoanso\obj\Debug\ProyectoMoanso.Productos.resources

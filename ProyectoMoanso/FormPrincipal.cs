@@ -88,5 +88,10 @@ namespace ProyectoMoanso
         {
             AbrirFormOrden(new FormOrdenCompra());
         }
+
+        private void btnProductos_Click(object sender, EventArgs e)
+        {
+            AbrirFormOrden(new Productos());
+        }
     }
 }
