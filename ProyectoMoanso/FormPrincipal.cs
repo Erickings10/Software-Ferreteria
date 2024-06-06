@@ -1,5 +1,4 @@
-﻿using CapaLogica;
-using FontAwesome.Sharp;
+﻿using FontAwesome.Sharp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +31,6 @@ namespace ProyectoMoanso
 
         private void menuProveedores_Click(object sender, EventArgs e)
         {
-            AbrirFormulario((IconMenuItem)sender, new FormProveedor());
         }
 
         private void btnCerrar_Click(object sender, EventArgs e)

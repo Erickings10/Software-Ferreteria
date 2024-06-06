@@ -42,7 +42,6 @@
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.btnNecesidad = new System.Windows.Forms.Button();
             this.btnOrdenCompra = new System.Windows.Forms.Button();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
             this.contenedor = new System.Windows.Forms.Panel();
             this.panelTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
@@ -131,11 +130,10 @@
             this.panelOpciones.Controls.Add(this.btnAlmacen);
             this.panelOpciones.Controls.Add(this.btnNecesidad);
             this.panelOpciones.Controls.Add(this.btnOrdenCompra);
-            this.panelOpciones.Controls.Add(this.vScrollBar1);
             this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelOpciones.Location = new System.Drawing.Point(0, 65);
             this.panelOpciones.Name = "panelOpciones";
-            this.panelOpciones.Size = new System.Drawing.Size(176, 517);
+            this.panelOpciones.Size = new System.Drawing.Size(160, 517);
             this.panelOpciones.TabIndex = 5;
             // 
             // btnDevolucion
@@ -229,21 +227,13 @@
             this.btnOrdenCompra.UseVisualStyleBackColor = false;
             this.btnOrdenCompra.Click += new System.EventHandler(this.btnOrdenCompra_Click);
             // 
-            // vScrollBar1
-            // 
-            this.vScrollBar1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.vScrollBar1.Location = new System.Drawing.Point(159, 0);
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(17, 517);
-            this.vScrollBar1.TabIndex = 0;
-            // 
             // contenedor
             // 
             this.contenedor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(176, 65);
+            this.contenedor.Location = new System.Drawing.Point(160, 65);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(926, 517);
+            this.contenedor.Size = new System.Drawing.Size(942, 517);
             this.contenedor.TabIndex = 6;
             // 
             // FormPrincipal
@@ -274,7 +264,6 @@
         private System.Windows.Forms.Panel panelOpciones;
         private System.Windows.Forms.Panel contenedor;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
         private System.Windows.Forms.PictureBox btnCerrar;
         private System.Windows.Forms.PictureBox btnMaximizar;
         private System.Windows.Forms.PictureBox btnRestaurar;

@@ -1,0 +1,171 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\capaentidad\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\proyectomoanso\\formordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\capalogica\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormPrincipal.Designer.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.Designer.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.Designer.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.Designer.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:15:54.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\Program.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\Program.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\Program.cs",
+              "RelativeToolTip": "ProyectoMoanso\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:15:35.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaLogica\\Class1.cs",
+              "RelativeDocumentMoniker": "CapaLogica\\Class1.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaLogica\\Class1.cs",
+              "RelativeToolTip": "CapaLogica\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:15:26.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaEntidad\\Class1.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\Class1.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaEntidad\\Class1.cs",
+              "RelativeToolTip": "CapaEntidad\\Class1.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:15:09.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormOrdenCompra.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormOrdenCompra.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormOrdenCompra.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormOrdenCompra.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormOrdenCompra.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:14:45.952Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\Conexion.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Conexion.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\Conexion.cs",
+              "RelativeToolTip": "CapaDatos\\Conexion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAACKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T16:09:11.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwCEAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:25:16.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:25:11.341Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormOrdenCompra.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormOrdenCompra.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormOrdenCompra.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormOrdenCompra.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormOrdenCompra.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T15:25:06.381Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
