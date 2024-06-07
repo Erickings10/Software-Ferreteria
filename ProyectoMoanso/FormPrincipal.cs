@@ -93,5 +93,10 @@ namespace ProyectoMoanso
         {
             AbrirFormOrden(new Productos());
         }
+
+        private void btnProovedores_Click(object sender, EventArgs e)
+        {
+            AbrirFormOrden(new FormProveedor());
+        }
     }
 }

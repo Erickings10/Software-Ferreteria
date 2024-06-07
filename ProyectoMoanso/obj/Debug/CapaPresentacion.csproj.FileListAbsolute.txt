@@ -79,3 +79,22 @@ C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\ProyectoM
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe.config
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.dgv_productosRequeridos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPrincipal.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.Productos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.Properties.Resources.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProveedor.resources

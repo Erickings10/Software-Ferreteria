@@ -42,3 +42,14 @@ C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogic
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
