@@ -53,3 +53,14 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Soft
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Proyecto Ferreteria\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO San Juan Linkol Programa\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb

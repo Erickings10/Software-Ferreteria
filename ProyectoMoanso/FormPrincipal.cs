@@ -98,5 +98,14 @@ namespace ProyectoMoanso
         {
             AbrirFormOrden(new FormProveedor());
         }
+
+        private void btnAlmacen_Click(object sender, EventArgs e)
+        {
+
+
+            AbrirFormOrden(new FormAlmacen());
+
+
+        }
     }
 }
