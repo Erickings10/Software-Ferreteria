@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormAlmacen));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtCodEntrada = new System.Windows.Forms.TextBox();
@@ -47,14 +48,17 @@
             this.btnAgregarEntradaProductos = new System.Windows.Forms.Button();
             this.btnActualizarEntradaProductos = new System.Windows.Forms.Button();
             this.btnEliminarEntradaProductos = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.RosyBrown;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(247, 19);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(275, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(322, 31);
@@ -153,7 +157,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(378, 141);
+            this.label7.Location = new System.Drawing.Point(371, 151);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 17);
@@ -162,7 +166,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(462, 109);
+            this.txtDescripcion.Location = new System.Drawing.Point(462, 116);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(254, 86);
@@ -188,7 +192,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(378, 219);
+            this.label8.Location = new System.Drawing.Point(378, 234);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 17);
@@ -197,56 +201,71 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(462, 219);
+            this.txtCantidad.Location = new System.Drawing.Point(462, 231);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(76, 20);
             this.txtCantidad.TabIndex = 19;
             // 
             // btnAgregarEntradaProductos
             // 
+            this.btnAgregarEntradaProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btnAgregarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarEntradaProductos.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btnAgregarEntradaProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnAgregarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEntradaProductos.Image")));
             this.btnAgregarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregarEntradaProductos.Location = new System.Drawing.Point(750, 86);
             this.btnAgregarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarEntradaProductos.Name = "btnAgregarEntradaProductos";
             this.btnAgregarEntradaProductos.Size = new System.Drawing.Size(129, 53);
             this.btnAgregarEntradaProductos.TabIndex = 20;
-            this.btnAgregarEntradaProductos.Text = "Agregar";
-            this.btnAgregarEntradaProductos.UseVisualStyleBackColor = true;
+            this.btnAgregarEntradaProductos.Text = "Registrar";
+            this.btnAgregarEntradaProductos.UseVisualStyleBackColor = false;
             // 
             // btnActualizarEntradaProductos
             // 
+            this.btnActualizarEntradaProductos.BackColor = System.Drawing.Color.Aqua;
             this.btnActualizarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizarEntradaProductos.Image = global::ProyectoMoanso.Properties.Resources.reset;
+            this.btnActualizarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizarEntradaProductos.Image")));
             this.btnActualizarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActualizarEntradaProductos.Location = new System.Drawing.Point(750, 151);
             this.btnActualizarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizarEntradaProductos.Name = "btnActualizarEntradaProductos";
             this.btnActualizarEntradaProductos.Size = new System.Drawing.Size(129, 51);
             this.btnActualizarEntradaProductos.TabIndex = 21;
-            this.btnActualizarEntradaProductos.Text = "Actualizar";
-            this.btnActualizarEntradaProductos.UseVisualStyleBackColor = true;
+            this.btnActualizarEntradaProductos.Text = "Modificar";
+            this.btnActualizarEntradaProductos.UseVisualStyleBackColor = false;
             // 
             // btnEliminarEntradaProductos
             // 
+            this.btnEliminarEntradaProductos.BackColor = System.Drawing.Color.Tomato;
             this.btnEliminarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminarEntradaProductos.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
+            this.btnEliminarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarEntradaProductos.Image")));
             this.btnEliminarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminarEntradaProductos.Location = new System.Drawing.Point(750, 215);
             this.btnEliminarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarEntradaProductos.Name = "btnEliminarEntradaProductos";
             this.btnEliminarEntradaProductos.Size = new System.Drawing.Size(129, 50);
             this.btnEliminarEntradaProductos.TabIndex = 22;
-            this.btnEliminarEntradaProductos.Text = "Eliminar";
-            this.btnEliminarEntradaProductos.UseVisualStyleBackColor = true;
+            this.btnEliminarEntradaProductos.Text = "Inhabilitar";
+            this.btnEliminarEntradaProductos.UseVisualStyleBackColor = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.RosyBrown;
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip1.Size = new System.Drawing.Size(897, 58);
+            this.menuStrip1.TabIndex = 23;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // FormAlmacen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(890, 485);
+            this.BackColor = System.Drawing.Color.Tan;
+            this.ClientSize = new System.Drawing.Size(897, 485);
             this.Controls.Add(this.btnEliminarEntradaProductos);
             this.Controls.Add(this.btnActualizarEntradaProductos);
             this.Controls.Add(this.btnAgregarEntradaProductos);
@@ -266,7 +285,10 @@
             this.Controls.Add(this.txtCodEntrada);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.menuStrip1);
+            this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FormAlmacen";
             this.Text = "FormAlmacen";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).EndInit();
@@ -296,5 +318,6 @@
         private System.Windows.Forms.Button btnAgregarEntradaProductos;
         private System.Windows.Forms.Button btnActualizarEntradaProductos;
         private System.Windows.Forms.Button btnEliminarEntradaProductos;
+        private System.Windows.Forms.MenuStrip menuStrip1;
     }
 }

@@ -245,7 +245,7 @@
             // 
             // contenedor
             // 
-            this.contenedor.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.contenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(195, 65);
             this.contenedor.Name = "contenedor";

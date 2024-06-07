@@ -43,5 +43,10 @@ namespace ProyectoMoanso
                 errorTelefono.SetError(txt_telefono_pro, "");
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
