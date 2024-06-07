@@ -107,5 +107,10 @@ namespace ProyectoMoanso
 
 
         }
+
+        private void btnPagoFacturas_Click(object sender, EventArgs e)
+        {
+            AbrirFormOrden(new FormPagoFactura());
+        }
     }
 }
