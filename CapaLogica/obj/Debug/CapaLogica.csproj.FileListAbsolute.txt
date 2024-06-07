@@ -31,3 +31,14 @@ D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLog
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\juanc\OneDrive\Escritorio\REPOSITORIO GIT\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb

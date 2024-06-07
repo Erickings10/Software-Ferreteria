@@ -128,5 +128,14 @@
   <ItemGroup>
     <None Include="Resources\bote de basura.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\agregar-producto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\enviar-orden.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancelar-orden.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

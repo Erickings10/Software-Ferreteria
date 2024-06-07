@@ -86,7 +86,7 @@ namespace ProyectoMoanso
 
         private void btnOrdenCompra_Click(object sender, EventArgs e)
         {
-            AbrirFormOrden(new FormOrdenCompra());
+            AbrirFormOrden(new dgv_productosRequeridos());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
