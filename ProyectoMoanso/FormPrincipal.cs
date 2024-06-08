@@ -70,47 +70,53 @@ namespace ProyectoMoanso
             btnMaximizar.Visible = true;
         }
 
-        private void AbrirFormOrden(object formMenor)
+        private void AbrirFormularios(object formMenor)
         {
             if (this.contenedor.Controls.Count > 0)
             {
                 this.contenedor.Controls.RemoveAt(0);
             }  
-            Form frmOrden = formMenor as Form;
-            frmOrden.TopLevel = false;
-            frmOrden.Dock = DockStyle.Fill;
-            this.contenedor.Controls.Add(frmOrden);
-            this.contenedor.Tag = frmOrden;
-            frmOrden.Show();
+            Form formulario = formMenor as Form;
+            formulario.TopLevel = false;
+            formulario.Dock = DockStyle.Fill;
+            this.contenedor.Controls.Add(formulario);
+            this.contenedor.Tag = formulario;
+            formulario.Show();
         }
 
         private void btnOrdenCompra_Click(object sender, EventArgs e)
         {
-            AbrirFormOrden(new dgv_productosRequeridos());
+            AbrirFormularios(new dgv_productosRequeridos());
         }
 
         private void btnProductos_Click(object sender, EventArgs e)
         {
-            AbrirFormOrden(new Productos());
+            AbrirFormularios(new FormProductos());
         }
 
         private void btnProovedores_Click(object sender, EventArgs e)
         {
-            AbrirFormOrden(new FormProveedor());
+            AbrirFormularios(new FormProveedor());
         }
 
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-
-
-            AbrirFormOrden(new FormAlmacen());
-
-
+            AbrirFormularios(new FormAlmacen());
         }
 
         private void btnPagoFacturas_Click(object sender, EventArgs e)
         {
-            AbrirFormOrden(new FormPagoFactura());
+            AbrirFormularios(new FormPagoFactura());
+        }
+
+        private void btnNecesidad_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new FormNecesidadesdeCompras());
+        }
+
+        private void btnDevolucion_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new FormDevolucionCompra());
         }
     }
 }

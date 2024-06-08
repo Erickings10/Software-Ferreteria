@@ -139,3 +139,11 @@ D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\Proyect
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPagoFactura.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormAlmacen.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.dgv_productosRequeridos.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPagoFactura.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.NecesidadesdeCompras.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.Productos.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormNecesidadesdeCompras.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormDevolucionCompra.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProductos.resources

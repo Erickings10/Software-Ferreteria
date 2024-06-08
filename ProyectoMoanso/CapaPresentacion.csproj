@@ -59,6 +59,12 @@
     <Compile Include="FormAlmacen.Designer.cs">
       <DependentUpon>FormAlmacen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDevolucionCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDevolucionCompra.Designer.cs">
+      <DependentUpon>FormDevolucionCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,22 +89,25 @@
     <Compile Include="FormProveedor.Designer.cs">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="NecesidadesdeCompras.cs">
+    <Compile Include="FormNecesidadesdeCompras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="NecesidadesdeCompras.Designer.cs">
-      <DependentUpon>NecesidadesdeCompras.cs</DependentUpon>
+    <Compile Include="FormNecesidadesdeCompras.Designer.cs">
+      <DependentUpon>FormNecesidadesdeCompras.cs</DependentUpon>
     </Compile>
-    <Compile Include="Productos.cs">
+    <Compile Include="FormProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Productos.Designer.cs">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <Compile Include="FormProductos.Designer.cs">
+      <DependentUpon>FormProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormAlmacen.resx">
       <DependentUpon>FormAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDevolucionCompra.resx">
+      <DependentUpon>FormDevolucionCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrdenCompra.resx">
       <DependentUpon>FormOrdenCompra.cs</DependentUpon>
@@ -112,11 +121,11 @@
     <EmbeddedResource Include="FormProveedor.resx">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="NecesidadesdeCompras.resx">
-      <DependentUpon>NecesidadesdeCompras.cs</DependentUpon>
+    <EmbeddedResource Include="FormNecesidadesdeCompras.resx">
+      <DependentUpon>FormNecesidadesdeCompras.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Productos.resx">
-      <DependentUpon>Productos.cs</DependentUpon>
+    <EmbeddedResource Include="FormProductos.resx">
+      <DependentUpon>FormProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

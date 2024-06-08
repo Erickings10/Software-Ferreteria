@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoMoanso
 {
-    public partial class Productos : Form
+    public partial class FormProductos : Form
     {
-        public Productos()
+        public FormProductos()
         {
             InitializeComponent();
             txt_codigo_produc.ReadOnly = true;

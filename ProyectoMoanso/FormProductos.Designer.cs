@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMoanso
 {
-    partial class Productos
+    partial class FormProductos
     {
         /// <summary>
         /// Required designer variable.
