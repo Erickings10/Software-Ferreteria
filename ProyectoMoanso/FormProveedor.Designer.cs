@@ -43,13 +43,13 @@
             this.txt_telefono_pro = new System.Windows.Forms.TextBox();
             this.cbx_seccom_pro = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btn_agregar_pro = new System.Windows.Forms.Button();
-            this.btn_actualizar_pro = new System.Windows.Forms.Button();
-            this.btn_eliminar = new System.Windows.Forms.Button();
             this.errorDocumento = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorTelefono = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label8 = new System.Windows.Forms.Label();
+            this.btn_eliminar_proveedores = new System.Windows.Forms.Button();
+            this.btn_actualizar_pro = new System.Windows.Forms.Button();
+            this.btn_agregar_pro = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorDocumento)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorTelefono)).BeginInit();
@@ -126,7 +126,7 @@
             this.chbx_Estado_pro.AutoSize = true;
             this.chbx_Estado_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.chbx_Estado_pro.Location = new System.Drawing.Point(328, 203);
-            this.chbx_Estado_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbx_Estado_pro.Margin = new System.Windows.Forms.Padding(2);
             this.chbx_Estado_pro.Name = "chbx_Estado_pro";
             this.chbx_Estado_pro.Size = new System.Drawing.Size(71, 21);
             this.chbx_Estado_pro.TabIndex = 7;
@@ -136,7 +136,7 @@
             // txt_Codi_pro
             // 
             this.txt_Codi_pro.Location = new System.Drawing.Point(178, 87);
-            this.txt_Codi_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Codi_pro.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Codi_pro.Name = "txt_Codi_pro";
             this.txt_Codi_pro.Size = new System.Drawing.Size(54, 20);
             this.txt_Codi_pro.TabIndex = 8;
@@ -144,7 +144,7 @@
             // txt_nrodocu_pro
             // 
             this.txt_nrodocu_pro.Location = new System.Drawing.Point(156, 132);
-            this.txt_nrodocu_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_nrodocu_pro.Margin = new System.Windows.Forms.Padding(2);
             this.txt_nrodocu_pro.Name = "txt_nrodocu_pro";
             this.txt_nrodocu_pro.Size = new System.Drawing.Size(121, 20);
             this.txt_nrodocu_pro.TabIndex = 9;
@@ -153,7 +153,7 @@
             // txt_razsoc_pro
             // 
             this.txt_razsoc_pro.Location = new System.Drawing.Point(156, 180);
-            this.txt_razsoc_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_razsoc_pro.Margin = new System.Windows.Forms.Padding(2);
             this.txt_razsoc_pro.Name = "txt_razsoc_pro";
             this.txt_razsoc_pro.Size = new System.Drawing.Size(121, 20);
             this.txt_razsoc_pro.TabIndex = 10;
@@ -161,7 +161,7 @@
             // txt_correo_pro
             // 
             this.txt_correo_pro.Location = new System.Drawing.Point(395, 110);
-            this.txt_correo_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_correo_pro.Margin = new System.Windows.Forms.Padding(2);
             this.txt_correo_pro.Name = "txt_correo_pro";
             this.txt_correo_pro.Size = new System.Drawing.Size(114, 20);
             this.txt_correo_pro.TabIndex = 12;
@@ -169,7 +169,7 @@
             // txt_telefono_pro
             // 
             this.txt_telefono_pro.Location = new System.Drawing.Point(395, 149);
-            this.txt_telefono_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_telefono_pro.Margin = new System.Windows.Forms.Padding(2);
             this.txt_telefono_pro.Name = "txt_telefono_pro";
             this.txt_telefono_pro.Size = new System.Drawing.Size(114, 20);
             this.txt_telefono_pro.TabIndex = 13;
@@ -179,7 +179,7 @@
             // 
             this.cbx_seccom_pro.FormattingEnabled = true;
             this.cbx_seccom_pro.Location = new System.Drawing.Point(156, 224);
-            this.cbx_seccom_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbx_seccom_pro.Margin = new System.Windows.Forms.Padding(2);
             this.cbx_seccom_pro.Name = "cbx_seccom_pro";
             this.cbx_seccom_pro.Size = new System.Drawing.Size(121, 21);
             this.cbx_seccom_pro.TabIndex = 14;
@@ -188,54 +188,12 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(32, 265);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(614, 224);
             this.dataGridView1.TabIndex = 15;
-            // 
-            // btn_agregar_pro
-            // 
-            this.btn_agregar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btn_agregar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar_pro.Image = global::ProyectoMoanso.Properties.Resources.Disco;
-            this.btn_agregar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_agregar_pro.Location = new System.Drawing.Point(568, 91);
-            this.btn_agregar_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_agregar_pro.Name = "btn_agregar_pro";
-            this.btn_agregar_pro.Size = new System.Drawing.Size(125, 39);
-            this.btn_agregar_pro.TabIndex = 16;
-            this.btn_agregar_pro.Text = "Agregar";
-            this.btn_agregar_pro.UseVisualStyleBackColor = false;
-            // 
-            // btn_actualizar_pro
-            // 
-            this.btn_actualizar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btn_actualizar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_actualizar_pro.Image = global::ProyectoMoanso.Properties.Resources.reset;
-            this.btn_actualizar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_actualizar_pro.Location = new System.Drawing.Point(568, 149);
-            this.btn_actualizar_pro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_actualizar_pro.Name = "btn_actualizar_pro";
-            this.btn_actualizar_pro.Size = new System.Drawing.Size(125, 39);
-            this.btn_actualizar_pro.TabIndex = 17;
-            this.btn_actualizar_pro.Text = "Actualizar";
-            this.btn_actualizar_pro.UseVisualStyleBackColor = false;
-            // 
-            // btn_eliminar
-            // 
-            this.btn_eliminar.BackColor = System.Drawing.Color.Tomato;
-            this.btn_eliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
-            this.btn_eliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_eliminar.Location = new System.Drawing.Point(568, 203);
-            this.btn_eliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.btn_eliminar.Name = "btn_eliminar";
-            this.btn_eliminar.Size = new System.Drawing.Size(125, 40);
-            this.btn_eliminar.TabIndex = 18;
-            this.btn_eliminar.Text = "Eliminar";
-            this.btn_eliminar.UseVisualStyleBackColor = false;
             // 
             // errorDocumento
             // 
@@ -261,11 +219,53 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.RosyBrown;
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(189, 9);
+            this.label8.Location = new System.Drawing.Point(201, 9);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(320, 28);
             this.label8.TabIndex = 25;
             this.label8.Text = "REGISTRO DE PROVEEDORES";
+            // 
+            // btn_eliminar_proveedores
+            // 
+            this.btn_eliminar_proveedores.BackColor = System.Drawing.Color.Tomato;
+            this.btn_eliminar_proveedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_eliminar_proveedores.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
+            this.btn_eliminar_proveedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_eliminar_proveedores.Location = new System.Drawing.Point(568, 203);
+            this.btn_eliminar_proveedores.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_eliminar_proveedores.Name = "btn_eliminar_proveedores";
+            this.btn_eliminar_proveedores.Size = new System.Drawing.Size(125, 40);
+            this.btn_eliminar_proveedores.TabIndex = 18;
+            this.btn_eliminar_proveedores.Text = "Eliminar";
+            this.btn_eliminar_proveedores.UseVisualStyleBackColor = false;
+            // 
+            // btn_actualizar_pro
+            // 
+            this.btn_actualizar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.btn_actualizar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_actualizar_pro.Image = global::ProyectoMoanso.Properties.Resources.reset;
+            this.btn_actualizar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_actualizar_pro.Location = new System.Drawing.Point(568, 149);
+            this.btn_actualizar_pro.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_actualizar_pro.Name = "btn_actualizar_pro";
+            this.btn_actualizar_pro.Size = new System.Drawing.Size(125, 39);
+            this.btn_actualizar_pro.TabIndex = 17;
+            this.btn_actualizar_pro.Text = "Actualizar";
+            this.btn_actualizar_pro.UseVisualStyleBackColor = false;
+            // 
+            // btn_agregar_pro
+            // 
+            this.btn_agregar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btn_agregar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_agregar_pro.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btn_agregar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_agregar_pro.Location = new System.Drawing.Point(568, 91);
+            this.btn_agregar_pro.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_agregar_pro.Name = "btn_agregar_pro";
+            this.btn_agregar_pro.Size = new System.Drawing.Size(125, 39);
+            this.btn_agregar_pro.TabIndex = 16;
+            this.btn_agregar_pro.Text = "Agregar";
+            this.btn_agregar_pro.UseVisualStyleBackColor = false;
             // 
             // FormProveedor
             // 
@@ -275,7 +275,7 @@
             this.ClientSize = new System.Drawing.Size(725, 517);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.btn_eliminar);
+            this.Controls.Add(this.btn_eliminar_proveedores);
             this.Controls.Add(this.btn_actualizar_pro);
             this.Controls.Add(this.btn_agregar_pro);
             this.Controls.Add(this.dataGridView1);
@@ -293,7 +293,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormProveedor";
             this.Text = "FormProveedor";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -321,7 +321,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btn_agregar_pro;
         private System.Windows.Forms.Button btn_actualizar_pro;
-        private System.Windows.Forms.Button btn_eliminar;
+        private System.Windows.Forms.Button btn_eliminar_proveedores;
         private System.Windows.Forms.ErrorProvider errorDocumento;
         private System.Windows.Forms.ErrorProvider errorTelefono;
         private System.Windows.Forms.MenuStrip menuStrip1;

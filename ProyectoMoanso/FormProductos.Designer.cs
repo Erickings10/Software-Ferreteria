@@ -43,11 +43,11 @@
             this.errorStock = new System.Windows.Forms.ErrorProvider(this.components);
             this.label7 = new System.Windows.Forms.Label();
             this.cbx_Proveedor_Produc = new System.Windows.Forms.ComboBox();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_Guardar_Produc = new System.Windows.Forms.Button();
             this.btn_Eliminar_Produc = new System.Windows.Forms.Button();
             this.btn_Actualizar_Produc = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registro_productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.SuspendLayout();
@@ -151,12 +151,12 @@
             // dgv_registro_productos
             // 
             this.dgv_registro_productos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_registro_productos.Location = new System.Drawing.Point(43, 228);
+            this.dgv_registro_productos.Location = new System.Drawing.Point(43, 247);
             this.dgv_registro_productos.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_registro_productos.Name = "dgv_registro_productos";
             this.dgv_registro_productos.RowHeadersWidth = 51;
             this.dgv_registro_productos.RowTemplate.Height = 24;
-            this.dgv_registro_productos.Size = new System.Drawing.Size(680, 254);
+            this.dgv_registro_productos.Size = new System.Drawing.Size(680, 235);
             this.dgv_registro_productos.TabIndex = 10;
             // 
             // errorStock
@@ -182,6 +182,29 @@
             this.cbx_Proveedor_Produc.Name = "cbx_Proveedor_Produc";
             this.cbx_Proveedor_Produc.Size = new System.Drawing.Size(141, 21);
             this.cbx_Proveedor_Produc.TabIndex = 17;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.AutoSize = false;
+            this.menuStrip1.BackColor = System.Drawing.Color.RosyBrown;
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.menuStrip1.Size = new System.Drawing.Size(799, 58);
+            this.menuStrip1.TabIndex = 25;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.RosyBrown;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(220, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(340, 31);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "REGISTRO DE PRODUCTOS";
             // 
             // btn_Guardar_Produc
             // 
@@ -225,30 +248,7 @@
             this.btn_Actualizar_Produc.Text = "Actualizar";
             this.btn_Actualizar_Produc.UseVisualStyleBackColor = false;
             // 
-            // menuStrip1
-            // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.BackColor = System.Drawing.Color.RosyBrown;
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(799, 58);
-            this.menuStrip1.TabIndex = 25;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.RosyBrown;
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(220, 9);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(340, 31);
-            this.label6.TabIndex = 26;
-            this.label6.Text = "REGISTRO DE PRODUCTOS";
-            // 
-            // Productos
+            // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -274,7 +274,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
-            this.Name = "Productos";
+            this.Name = "FormProductos";
             this.Text = "Productos";
             this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registro_productos)).EndInit();

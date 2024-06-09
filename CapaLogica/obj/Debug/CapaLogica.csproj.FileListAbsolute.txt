@@ -75,3 +75,14 @@ D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\CapaLog
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 D:\-----------Archivos----------\UPN\PROYECTO MOANSO\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
