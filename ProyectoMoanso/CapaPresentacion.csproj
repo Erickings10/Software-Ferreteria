@@ -53,11 +53,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormAlmacen.cs">
+    <Compile Include="FormEntradaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormAlmacen.Designer.cs">
-      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    <Compile Include="FormEntradaProductos.Designer.cs">
+      <DependentUpon>FormEntradaProductos.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAlmacenes.cs">
       <SubType>Form</SubType>
@@ -95,11 +95,11 @@
     <Compile Include="FormProveedor.Designer.cs">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNecesidadesdeCompras.cs">
+    <Compile Include="FormRequerimientosdeCompras.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormNecesidadesdeCompras.Designer.cs">
-      <DependentUpon>FormNecesidadesdeCompras.cs</DependentUpon>
+    <Compile Include="FormRequerimientosdeCompras.Designer.cs">
+      <DependentUpon>FormRequerimientosdeCompras.cs</DependentUpon>
     </Compile>
     <Compile Include="FormProductos.cs">
       <SubType>Form</SubType>
@@ -109,8 +109,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FormAlmacen.resx">
-      <DependentUpon>FormAlmacen.cs</DependentUpon>
+    <Compile Include="FormReporteProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteProveedores.Designer.cs">
+      <DependentUpon>FormReporteProveedores.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FormEntradaProductos.resx">
+      <DependentUpon>FormEntradaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlmacenes.resx">
       <DependentUpon>FormAlmacenes.cs</DependentUpon>
@@ -130,8 +136,8 @@
     <EmbeddedResource Include="FormProveedor.resx">
       <DependentUpon>FormProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNecesidadesdeCompras.resx">
-      <DependentUpon>FormNecesidadesdeCompras.cs</DependentUpon>
+    <EmbeddedResource Include="FormRequerimientosdeCompras.resx">
+      <DependentUpon>FormRequerimientosdeCompras.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProductos.resx">
       <DependentUpon>FormProductos.cs</DependentUpon>
@@ -140,6 +146,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteProveedores.resx">
+      <DependentUpon>FormReporteProveedores.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

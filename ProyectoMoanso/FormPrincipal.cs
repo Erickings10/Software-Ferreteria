@@ -101,7 +101,7 @@ namespace ProyectoMoanso
 
         private void btnAlmacen_Click(object sender, EventArgs e)
         {
-            AbrirFormularios(new FormAlmacen());
+            AbrirFormularios(new FormEntradaProductos());
         }
 
         private void btnPagoFacturas_Click(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace ProyectoMoanso
 
         private void btnNecesidad_Click(object sender, EventArgs e)
         {
-            AbrirFormularios(new FormNecesidadesdeCompras());
+            AbrirFormularios(new FormRequerimientosdeCompras());
         }
 
         private void btnDevolucion_Click(object sender, EventArgs e)

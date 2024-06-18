@@ -171,3 +171,9 @@ C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\Pro
 C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
 C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
 C:\Users\USER\OneDrive\Documentos\MOANSO_FERRETERIA_FORM\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormAlmacenes.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormAlmacenes.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProovedores.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProveedores.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientosdeCompras.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormEntradaProductos.resources

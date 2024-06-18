@@ -156,7 +156,7 @@
             this.dgv_registro_productos.Name = "dgv_registro_productos";
             this.dgv_registro_productos.RowHeadersWidth = 51;
             this.dgv_registro_productos.RowTemplate.Height = 24;
-            this.dgv_registro_productos.Size = new System.Drawing.Size(680, 235);
+            this.dgv_registro_productos.Size = new System.Drawing.Size(679, 235);
             this.dgv_registro_productos.TabIndex = 10;
             // 
             // errorStock
@@ -190,7 +190,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(799, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(779, 58);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -253,7 +253,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(799, 517);
+            this.ClientSize = new System.Drawing.Size(779, 517);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.cbx_Proveedor_Produc);

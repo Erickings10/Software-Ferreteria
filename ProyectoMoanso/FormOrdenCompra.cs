@@ -16,5 +16,20 @@ namespace ProyectoMoanso
         {
             InitializeComponent();
         }
+        private void AbrirFormSecundario()
+        {
+            using (FormReporteProveedores frmReporteProovedor = new FormReporteProveedores())
+            {
+                if (frmReporteProovedor.ShowDialog() == DialogResult.OK)
+                {
+                    txtProovedor.Text = frmReporteProovedor.sectorProve;
+ 
+                }
+            }
+        }
+        private void btnProovedor_Click(object sender, EventArgs e)
+        {
+            AbrirFormSecundario();
+        }
     }
 }
