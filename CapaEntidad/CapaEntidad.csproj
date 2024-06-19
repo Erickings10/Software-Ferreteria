@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="entAlmacenes.cs" />
+    <Compile Include="entEntradaProductos.cs" />
     <Compile Include="entProveedor.cs" />
     <Compile Include="entRequerimiento.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

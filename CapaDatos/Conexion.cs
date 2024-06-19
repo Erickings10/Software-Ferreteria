@@ -18,9 +18,11 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source=localhost; Initial Catalog = DBMoanso;" +
+            cn.ConnectionString = "Data Source=DESKTOP-I4JALD5\\SQLEXPRESS; Initial Catalog = DBMoanso;" +
             "Integrated Security=true";
             return cn;
+
+
         }
     }
 }

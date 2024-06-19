@@ -195,7 +195,7 @@
   <data name="btnAlmacenes.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
-        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADdQAAA3UAe+RuhUAAAAHdElNRQfoBgkAKCCiuAcHAAAA
+        MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAADdMAAA3TAb3VHGoAAAAHdElNRQfoBgkAKCCiuAcHAAAA
         GXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAABNVJREFUSEu1lntMW1Ucx+mD0pZSnqVQ
         xqMPEFagPMboxhAoZDBoN5dF5hii7pFlb+OiU5iDPRy46TDAgmNMQYgJipsOyFwYanRGN3zMgf5jjAnR
         LFmimBnnBNKvv98FpGDRIfhLPu2553fO93vPub97czzmGF7EgxKZ/LpYJv+C2g5CwomFDhFhFUmk7f73
@@ -253,7 +253,7 @@
         AAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="btnDevolucion.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnSalidaProductos.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAJcEhZcwAAdhsAAHYbAfWG3pUAAAAHdElNRQfoBgYHFxiPSJN2AAAA

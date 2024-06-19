@@ -38,7 +38,7 @@
             this.panelOpciones = new System.Windows.Forms.Panel();
             this.btnAlmacenes = new System.Windows.Forms.Button();
             this.btnProovedores = new System.Windows.Forms.Button();
-            this.btnDevolucion = new System.Windows.Forms.Button();
+            this.btnSalidaProductos = new System.Windows.Forms.Button();
             this.btnPagoFacturas = new System.Windows.Forms.Button();
             this.btnProductos = new System.Windows.Forms.Button();
             this.btnAlmacen = new System.Windows.Forms.Button();
@@ -128,7 +128,7 @@
             this.panelOpciones.BackColor = System.Drawing.Color.Gray;
             this.panelOpciones.Controls.Add(this.btnAlmacenes);
             this.panelOpciones.Controls.Add(this.btnProovedores);
-            this.panelOpciones.Controls.Add(this.btnDevolucion);
+            this.panelOpciones.Controls.Add(this.btnSalidaProductos);
             this.panelOpciones.Controls.Add(this.btnPagoFacturas);
             this.panelOpciones.Controls.Add(this.btnProductos);
             this.panelOpciones.Controls.Add(this.btnAlmacen);
@@ -137,7 +137,7 @@
             this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelOpciones.Location = new System.Drawing.Point(0, 65);
             this.panelOpciones.Name = "panelOpciones";
-            this.panelOpciones.Size = new System.Drawing.Size(195, 526);
+            this.panelOpciones.Size = new System.Drawing.Size(195, 585);
             this.panelOpciones.TabIndex = 5;
             // 
             // btnAlmacenes
@@ -170,21 +170,21 @@
             this.btnProovedores.UseVisualStyleBackColor = false;
             this.btnProovedores.Click += new System.EventHandler(this.btnProovedores_Click);
             // 
-            // btnDevolucion
+            // btnSalidaProductos
             // 
-            this.btnDevolucion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnDevolucion.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDevolucion.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDevolucion.Image = ((System.Drawing.Image)(resources.GetObject("btnDevolucion.Image")));
-            this.btnDevolucion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDevolucion.Location = new System.Drawing.Point(4, 310);
-            this.btnDevolucion.Name = "btnDevolucion";
-            this.btnDevolucion.Size = new System.Drawing.Size(185, 53);
-            this.btnDevolucion.TabIndex = 6;
-            this.btnDevolucion.Text = "Devolucion de Productos";
-            this.btnDevolucion.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDevolucion.UseVisualStyleBackColor = false;
-            this.btnDevolucion.Click += new System.EventHandler(this.btnDevolucion_Click);
+            this.btnSalidaProductos.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnSalidaProductos.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSalidaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalidaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnSalidaProductos.Image")));
+            this.btnSalidaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSalidaProductos.Location = new System.Drawing.Point(4, 310);
+            this.btnSalidaProductos.Name = "btnSalidaProductos";
+            this.btnSalidaProductos.Size = new System.Drawing.Size(185, 53);
+            this.btnSalidaProductos.TabIndex = 6;
+            this.btnSalidaProductos.Text = "Salida de Productos";
+            this.btnSalidaProductos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSalidaProductos.UseVisualStyleBackColor = false;
+            this.btnSalidaProductos.Click += new System.EventHandler(this.btnDevolucion_Click);
             // 
             // btnPagoFacturas
             // 
@@ -269,14 +269,14 @@
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(195, 65);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(907, 526);
+            this.contenedor.Size = new System.Drawing.Size(907, 585);
             this.contenedor.TabIndex = 6;
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 591);
+            this.ClientSize = new System.Drawing.Size(1102, 650);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.panelOpciones);
             this.Controls.Add(this.panelTitulo);
@@ -307,7 +307,7 @@
         private System.Windows.Forms.Button btnOrdenCompra;
         private System.Windows.Forms.Button btnAlmacen;
         private System.Windows.Forms.Button btnRequerimiento;
-        private System.Windows.Forms.Button btnDevolucion;
+        private System.Windows.Forms.Button btnSalidaProductos;
         private System.Windows.Forms.Button btnPagoFacturas;
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnProovedores;

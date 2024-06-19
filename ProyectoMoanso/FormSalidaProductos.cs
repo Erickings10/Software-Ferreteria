@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoMoanso
 {
-    public partial class FormDevolucionCompra : Form
+    public partial class FormSalidaProductos : Form
     {
-        public FormDevolucionCompra()
+        public FormSalidaProductos()
         {
             InitializeComponent();
         }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMoanso
 {
-    partial class FormDevolucionCompra
+    partial class FormSalidaProductos
     {
         /// <summary>
         /// Required designer variable.
@@ -69,9 +69,9 @@
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Tai Le", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.Location = new System.Drawing.Point(289, 9);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(330, 31);
+            this.lblTitulo.Size = new System.Drawing.Size(288, 31);
             this.lblTitulo.TabIndex = 0;
-            this.lblTitulo.Text = "DEVOLUCION DE COMPRAS";
+            this.lblTitulo.Text = "SALIDA DE PRODUCTOS";
             // 
             // lblSeleccionar
             // 
@@ -253,7 +253,7 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
-            // FormDevolucionCompra
+            // FormSalidaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -264,7 +264,7 @@
             this.Controls.Add(this.gBox);
             this.Controls.Add(this.panelDevolucion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormDevolucionCompra";
+            this.Name = "FormSalidaProductos";
             this.Text = "FormDevolucionCompra";
             this.panelDevolucion.ResumeLayout(false);
             this.panelDevolucion.PerformLayout();

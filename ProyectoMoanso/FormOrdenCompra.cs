@@ -22,8 +22,11 @@ namespace ProyectoMoanso
             {
                 if (frmReporteProovedor.ShowDialog() == DialogResult.OK)
                 {
+
+
                     txtProovedor.Text = frmReporteProovedor.sectorProve;
  
+
                 }
             }
         }

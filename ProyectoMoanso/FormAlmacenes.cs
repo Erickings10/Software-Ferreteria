@@ -31,22 +31,30 @@ namespace ProyectoMoanso
         }
         private void CambiarEncabezados()
         {
+
             dgvAlmacenes.Columns["id"].HeaderText = "ID de Almacen";
             dgvAlmacenes.Columns["descripcion"].HeaderText = "Descripción";
             dgvAlmacenes.Columns["cantidad"].HeaderText = "Cantidad";
             dgvAlmacenes.Columns["tipo"].HeaderText = "Tipo";
 
+
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+
+
             gbInformacion.Enabled = true;
             gbBotones2.Enabled = true;
             btnCancelar.Enabled = true;
+
+
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+
             gbInformacion.Enabled = false;
             txtId.Enabled = false;
             gbBotones2.Enabled = false;
