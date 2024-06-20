@@ -205,3 +205,4 @@ C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\Pro
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormSalidaProductos.resources
+C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProducto.resources

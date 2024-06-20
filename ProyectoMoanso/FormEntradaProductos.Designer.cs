@@ -34,10 +34,7 @@
             this.txtCodEntrada = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.cboCategoriaProd = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.cboProducto = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.dgvEntradaProductos = new System.Windows.Forms.DataGridView();
@@ -50,6 +47,8 @@
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
             this.txtProveedor = new System.Windows.Forms.TextBox();
             this.btnProovedor = new FontAwesome.Sharp.IconButton();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,49 +108,22 @@
             this.label3.TabIndex = 8;
             this.label3.Text = "Fecha Entrada:";
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(16, 248);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 18);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Categoria Producto:";
-            // 
-            // cboCategoriaProd
-            // 
-            this.cboCategoriaProd.FormattingEnabled = true;
-            this.cboCategoriaProd.Location = new System.Drawing.Point(162, 248);
-            this.cboCategoriaProd.Name = "cboCategoriaProd";
-            this.cboCategoriaProd.Size = new System.Drawing.Size(121, 21);
-            this.cboCategoriaProd.TabIndex = 11;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label6.Location = new System.Drawing.Point(378, 86);
+            this.label6.Location = new System.Drawing.Point(23, 248);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 17);
             this.label6.TabIndex = 13;
             this.label6.Text = "Producto:";
             // 
-            // cboProducto
-            // 
-            this.cboProducto.FormattingEnabled = true;
-            this.cboProducto.Location = new System.Drawing.Point(462, 86);
-            this.cboProducto.Name = "cboProducto";
-            this.cboProducto.Size = new System.Drawing.Size(121, 21);
-            this.cboProducto.TabIndex = 14;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label7.Location = new System.Drawing.Point(371, 167);
+            this.label7.Location = new System.Drawing.Point(313, 133);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(86, 17);
@@ -160,10 +132,10 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(462, 133);
+            this.txtDescripcion.Location = new System.Drawing.Point(404, 103);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(261, 86);
+            this.txtDescripcion.Size = new System.Drawing.Size(268, 86);
             this.txtDescripcion.TabIndex = 16;
             // 
             // dgvEntradaProductos
@@ -171,14 +143,14 @@
             this.dgvEntradaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEntradaProductos.Location = new System.Drawing.Point(26, 288);
             this.dgvEntradaProductos.Name = "dgvEntradaProductos";
-            this.dgvEntradaProductos.Size = new System.Drawing.Size(807, 219);
+            this.dgvEntradaProductos.Size = new System.Drawing.Size(844, 219);
             this.dgvEntradaProductos.TabIndex = 17;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F);
-            this.label8.Location = new System.Drawing.Point(379, 245);
+            this.label8.Location = new System.Drawing.Point(313, 247);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 17);
@@ -187,9 +159,9 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(462, 245);
+            this.txtCantidad.Location = new System.Drawing.Point(386, 245);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(82, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(103, 20);
             this.txtCantidad.TabIndex = 19;
             // 
             // menuStrip1
@@ -258,11 +230,11 @@
             // txtProveedor
             // 
             this.txtProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtProveedor.Location = new System.Drawing.Point(162, 202);
+            this.txtProveedor.Location = new System.Drawing.Point(110, 200);
             this.txtProveedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtProveedor.Name = "txtProveedor";
             this.txtProveedor.ReadOnly = true;
-            this.txtProveedor.Size = new System.Drawing.Size(121, 21);
+            this.txtProveedor.Size = new System.Drawing.Size(60, 21);
             this.txtProveedor.TabIndex = 35;
             // 
             // btnProovedor
@@ -271,11 +243,33 @@
             this.btnProovedor.IconColor = System.Drawing.Color.Black;
             this.btnProovedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProovedor.IconSize = 18;
-            this.btnProovedor.Location = new System.Drawing.Point(292, 202);
+            this.btnProovedor.Location = new System.Drawing.Point(188, 200);
             this.btnProovedor.Name = "btnProovedor";
             this.btnProovedor.Size = new System.Drawing.Size(24, 24);
             this.btnProovedor.TabIndex = 37;
             this.btnProovedor.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.textBox1.Location = new System.Drawing.Point(110, 248);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(60, 21);
+            this.textBox1.TabIndex = 40;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 18;
+            this.iconButton1.Location = new System.Drawing.Point(188, 247);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(24, 24);
+            this.iconButton1.TabIndex = 41;
+            this.iconButton1.UseVisualStyleBackColor = true;
             // 
             // FormEntradaProductos
             // 
@@ -283,6 +277,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(922, 535);
+            this.Controls.Add(this.iconButton1);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnProovedor);
             this.Controls.Add(this.txtProveedor);
             this.Controls.Add(this.dtpFechaEntrada);
@@ -294,10 +290,7 @@
             this.Controls.Add(this.dgvEntradaProductos);
             this.Controls.Add(this.txtDescripcion);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.cboProducto);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cboCategoriaProd);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtCodEntrada);
@@ -322,10 +315,7 @@
         private System.Windows.Forms.TextBox txtCodEntrada;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox cboCategoriaProd;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cboProducto;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.DataGridView dgvEntradaProductos;
@@ -338,5 +328,7 @@
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
         private System.Windows.Forms.TextBox txtProveedor;
         private FontAwesome.Sharp.IconButton btnProovedor;
+        private System.Windows.Forms.TextBox textBox1;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

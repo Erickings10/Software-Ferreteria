@@ -65,6 +65,12 @@
     <Compile Include="FormAlmacenes.Designer.cs">
       <DependentUpon>FormAlmacenes.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteProducto.Designer.cs">
+      <DependentUpon>FormReporteProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormSalidaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,6 +126,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlmacenes.resx">
       <DependentUpon>FormAlmacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteProducto.resx">
+      <DependentUpon>FormReporteProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormSalidaProductos.resx">
       <DependentUpon>FormSalidaProductos.cs</DependentUpon>

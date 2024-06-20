@@ -8,18 +8,19 @@ using System.Threading.Tasks;
 
 namespace CapaLogica
 {
-    public class logAlmacenes
+    public class logProductos
     {
+
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly logAlmacenes _instancia = new logAlmacenes();
+        private static readonly logProductos _instancia = new logProductos();
         //privado para evitar la instanciación directa
-        public static logAlmacenes Instancia
+        public static logProductos Instancia
         {
             get
             {
-                return logAlmacenes._instancia;
+                return logProductos._instancia;
             }
         }
 
@@ -28,23 +29,22 @@ namespace CapaLogica
 
         #region metodos
 
-        public List<entAlmacenes> ListarAlmacenes()
+        public List<entProductos> ListarProductos()
         {
-            return datAlmacenes.Instancia.ListarAlmacenes();
+            return datProductos.Instancia.ListarProductos();
 
-        }
-
-        ///inserta
-        public void InsertaAlmacenes(entAlmacenes Alm)
-        {
-            datAlmacenes.Instancia.InsertarAlmacenes(Alm);
         }
 
 
 
-
+        public void InsertaProductos(entProductos Prod)
+        {
+            datProductos.Instancia.InsertarProductos(Prod);
+        }
 
         #endregion metodos
+
+
 
 
 

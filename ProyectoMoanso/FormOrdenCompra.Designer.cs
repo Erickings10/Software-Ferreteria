@@ -43,12 +43,12 @@ namespace ProyectoMoanso
             this.btn_AgregarProducto = new System.Windows.Forms.Button();
             this.gBoBotones = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtNecesidades = new System.Windows.Forms.TextBox();
             this.btnProovedor = new FontAwesome.Sharp.IconButton();
             this.txtProovedor = new System.Windows.Forms.TextBox();
             this.cboFormaPago = new System.Windows.Forms.ComboBox();
             this.lblFormaPago = new System.Windows.Forms.Label();
             this.lblRequerimiento = new System.Windows.Forms.Label();
-            this.txtNecesidades = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gBoBotones.SuspendLayout();
@@ -58,41 +58,41 @@ namespace ProyectoMoanso
             // lblOrden
             // 
             this.lblOrden.AutoSize = true;
-            this.lblOrden.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblOrden.Location = new System.Drawing.Point(41, 34);
             this.lblOrden.Name = "lblOrden";
-            this.lblOrden.Size = new System.Drawing.Size(64, 17);
+            this.lblOrden.Size = new System.Drawing.Size(68, 17);
             this.lblOrden.TabIndex = 1;
             this.lblOrden.Text = "N° Orden";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(362, 38);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(52, 17);
+            this.label3.Size = new System.Drawing.Size(55, 17);
             this.label3.TabIndex = 2;
             this.label3.Text = "Fecha: ";
             // 
             // lblProveedor
             // 
             this.lblProveedor.AutoSize = true;
-            this.lblProveedor.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblProveedor.Location = new System.Drawing.Point(40, 73);
             this.lblProveedor.Name = "lblProveedor";
-            this.lblProveedor.Size = new System.Drawing.Size(78, 17);
+            this.lblProveedor.Size = new System.Drawing.Size(82, 17);
             this.lblProveedor.TabIndex = 3;
             this.lblProveedor.Text = "Proveedor: ";
             // 
             // txt_numOrden
             // 
-            this.txt_numOrden.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txt_numOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txt_numOrden.Location = new System.Drawing.Point(151, 34);
             this.txt_numOrden.Margin = new System.Windows.Forms.Padding(2);
             this.txt_numOrden.Name = "txt_numOrden";
             this.txt_numOrden.ReadOnly = true;
-            this.txt_numOrden.Size = new System.Drawing.Size(56, 22);
+            this.txt_numOrden.Size = new System.Drawing.Size(56, 21);
             this.txt_numOrden.TabIndex = 5;
             // 
             // dataGridView1
@@ -109,7 +109,7 @@ namespace ProyectoMoanso
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dataGridView1);
-            this.groupBox1.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(40, 280);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(842, 246);
@@ -124,7 +124,7 @@ namespace ProyectoMoanso
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(970, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(946, 58);
             this.menuStrip1.TabIndex = 26;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -141,18 +141,18 @@ namespace ProyectoMoanso
             // 
             // dtpFecha
             // 
-            this.dtpFecha.Font = new System.Drawing.Font("Roboto", 10F);
+            this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(471, 34);
             this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(112, 24);
+            this.dtpFecha.Size = new System.Drawing.Size(112, 23);
             this.dtpFecha.TabIndex = 28;
             // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.BackColor = System.Drawing.Color.Tomato;
             this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_Cancelar.Image = global::ProyectoMoanso.Properties.Resources.cancelar_orden;
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Cancelar.Location = new System.Drawing.Point(16, 130);
@@ -168,7 +168,7 @@ namespace ProyectoMoanso
             // 
             this.btn_EnviarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_EnviarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_EnviarOrden.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_EnviarOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_EnviarOrden.Image = global::ProyectoMoanso.Properties.Resources.enviar_orden;
             this.btn_EnviarOrden.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EnviarOrden.Location = new System.Drawing.Point(16, 77);
@@ -184,7 +184,7 @@ namespace ProyectoMoanso
             // 
             this.btn_AgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_AgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_AgregarProducto.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_AgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_AgregarProducto.Image = global::ProyectoMoanso.Properties.Resources.agregar_producto;
             this.btn_AgregarProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_AgregarProducto.Location = new System.Drawing.Point(16, 25);
@@ -201,7 +201,7 @@ namespace ProyectoMoanso
             this.gBoBotones.Controls.Add(this.btn_AgregarProducto);
             this.gBoBotones.Controls.Add(this.btn_EnviarOrden);
             this.gBoBotones.Controls.Add(this.btn_Cancelar);
-            this.gBoBotones.Font = new System.Drawing.Font("Roboto", 12F);
+            this.gBoBotones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gBoBotones.Location = new System.Drawing.Point(716, 72);
             this.gBoBotones.Name = "gBoBotones";
             this.gBoBotones.Size = new System.Drawing.Size(192, 181);
@@ -221,13 +221,23 @@ namespace ProyectoMoanso
             this.groupBox2.Controls.Add(this.dtpFecha);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.lblProveedor);
-            this.groupBox2.Font = new System.Drawing.Font("Roboto", 12F);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox2.Location = new System.Drawing.Point(40, 72);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(615, 158);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Datos Generales";
+            // 
+            // txtNecesidades
+            // 
+            this.txtNecesidades.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtNecesidades.Location = new System.Drawing.Point(151, 110);
+            this.txtNecesidades.Margin = new System.Windows.Forms.Padding(2);
+            this.txtNecesidades.Name = "txtNecesidades";
+            this.txtNecesidades.ReadOnly = true;
+            this.txtNecesidades.Size = new System.Drawing.Size(121, 21);
+            this.txtNecesidades.TabIndex = 37;
             // 
             // btnProovedor
             // 
@@ -244,59 +254,49 @@ namespace ProyectoMoanso
             // 
             // txtProovedor
             // 
-            this.txtProovedor.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtProovedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.txtProovedor.Location = new System.Drawing.Point(151, 70);
             this.txtProovedor.Margin = new System.Windows.Forms.Padding(2);
             this.txtProovedor.Name = "txtProovedor";
             this.txtProovedor.ReadOnly = true;
-            this.txtProovedor.Size = new System.Drawing.Size(121, 22);
+            this.txtProovedor.Size = new System.Drawing.Size(121, 21);
             this.txtProovedor.TabIndex = 34;
             // 
             // cboFormaPago
             // 
-            this.cboFormaPago.Font = new System.Drawing.Font("Roboto", 10F);
+            this.cboFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.cboFormaPago.FormattingEnabled = true;
             this.cboFormaPago.Location = new System.Drawing.Point(471, 70);
             this.cboFormaPago.Name = "cboFormaPago";
-            this.cboFormaPago.Size = new System.Drawing.Size(121, 23);
+            this.cboFormaPago.Size = new System.Drawing.Size(121, 24);
             this.cboFormaPago.TabIndex = 33;
             // 
             // lblFormaPago
             // 
             this.lblFormaPago.AutoSize = true;
-            this.lblFormaPago.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblFormaPago.Location = new System.Drawing.Point(362, 77);
             this.lblFormaPago.Name = "lblFormaPago";
-            this.lblFormaPago.Size = new System.Drawing.Size(103, 17);
+            this.lblFormaPago.Size = new System.Drawing.Size(105, 17);
             this.lblFormaPago.TabIndex = 31;
             this.lblFormaPago.Text = "Forma de Pago";
             // 
             // lblRequerimiento
             // 
             this.lblRequerimiento.AutoSize = true;
-            this.lblRequerimiento.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblRequerimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblRequerimiento.Location = new System.Drawing.Point(40, 112);
             this.lblRequerimiento.Name = "lblRequerimiento";
-            this.lblRequerimiento.Size = new System.Drawing.Size(87, 17);
+            this.lblRequerimiento.Size = new System.Drawing.Size(90, 17);
             this.lblRequerimiento.TabIndex = 29;
             this.lblRequerimiento.Text = "Necesidades";
-            // 
-            // txtNecesidades
-            // 
-            this.txtNecesidades.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtNecesidades.Location = new System.Drawing.Point(151, 110);
-            this.txtNecesidades.Margin = new System.Windows.Forms.Padding(2);
-            this.txtNecesidades.Name = "txtNecesidades";
-            this.txtNecesidades.ReadOnly = true;
-            this.txtNecesidades.Size = new System.Drawing.Size(121, 22);
-            this.txtNecesidades.TabIndex = 37;
             // 
             // dgv_productosRequeridos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(970, 557);
+            this.ClientSize = new System.Drawing.Size(946, 557);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.gBoBotones);
             this.Controls.Add(this.label1);

@@ -42,12 +42,13 @@
             this.dgv_registro_productos = new System.Windows.Forms.DataGridView();
             this.errorStock = new System.Windows.Forms.ErrorProvider(this.components);
             this.label7 = new System.Windows.Forms.Label();
-            this.cbx_Proveedor_Produc = new System.Windows.Forms.ComboBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label6 = new System.Windows.Forms.Label();
             this.btn_Guardar_Produc = new System.Windows.Forms.Button();
             this.btn_Eliminar_Produc = new System.Windows.Forms.Button();
             this.btn_Actualizar_Produc = new System.Windows.Forms.Button();
+            this.txtProveedorRP = new System.Windows.Forms.TextBox();
+            this.btnRegistroProductos = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registro_productos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.SuspendLayout();
@@ -112,7 +113,7 @@
             this.txt_codigo_produc.Location = new System.Drawing.Point(181, 89);
             this.txt_codigo_produc.Margin = new System.Windows.Forms.Padding(2);
             this.txt_codigo_produc.Name = "txt_codigo_produc";
-            this.txt_codigo_produc.Size = new System.Drawing.Size(85, 20);
+            this.txt_codigo_produc.Size = new System.Drawing.Size(57, 20);
             this.txt_codigo_produc.TabIndex = 5;
             // 
             // txt_nombre_produc
@@ -174,15 +175,6 @@
             this.label7.TabIndex = 16;
             this.label7.Text = "Proveedor:";
             // 
-            // cbx_Proveedor_Produc
-            // 
-            this.cbx_Proveedor_Produc.FormattingEnabled = true;
-            this.cbx_Proveedor_Produc.Location = new System.Drawing.Point(386, 165);
-            this.cbx_Proveedor_Produc.Margin = new System.Windows.Forms.Padding(2);
-            this.cbx_Proveedor_Produc.Name = "cbx_Proveedor_Produc";
-            this.cbx_Proveedor_Produc.Size = new System.Drawing.Size(141, 21);
-            this.cbx_Proveedor_Produc.TabIndex = 17;
-            // 
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
@@ -190,7 +182,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(779, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(770, 58);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -219,6 +211,7 @@
             this.btn_Guardar_Produc.TabIndex = 15;
             this.btn_Guardar_Produc.Text = "Guardar";
             this.btn_Guardar_Produc.UseVisualStyleBackColor = false;
+            this.btn_Guardar_Produc.Click += new System.EventHandler(this.btn_Guardar_Produc_Click);
             // 
             // btn_Eliminar_Produc
             // 
@@ -248,15 +241,36 @@
             this.btn_Actualizar_Produc.Text = "Actualizar";
             this.btn_Actualizar_Produc.UseVisualStyleBackColor = false;
             // 
+            // txtProveedorRP
+            // 
+            this.txtProveedorRP.Location = new System.Drawing.Point(384, 168);
+            this.txtProveedorRP.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProveedorRP.Name = "txtProveedorRP";
+            this.txtProveedorRP.Size = new System.Drawing.Size(49, 20);
+            this.txtProveedorRP.TabIndex = 27;
+            // 
+            // btnRegistroProductos
+            // 
+            this.btnRegistroProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnRegistroProductos.IconColor = System.Drawing.Color.Black;
+            this.btnRegistroProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnRegistroProductos.IconSize = 18;
+            this.btnRegistroProductos.Location = new System.Drawing.Point(438, 165);
+            this.btnRegistroProductos.Name = "btnRegistroProductos";
+            this.btnRegistroProductos.Size = new System.Drawing.Size(24, 24);
+            this.btnRegistroProductos.TabIndex = 42;
+            this.btnRegistroProductos.UseVisualStyleBackColor = true;
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(779, 517);
+            this.ClientSize = new System.Drawing.Size(770, 517);
+            this.Controls.Add(this.btnRegistroProductos);
+            this.Controls.Add(this.txtProveedorRP);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.cbx_Proveedor_Produc);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btn_Guardar_Produc);
             this.Controls.Add(this.btn_Eliminar_Produc);
@@ -275,7 +289,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormProductos";
-            this.Text = "Productos";
+            this.Text = "D";
             this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_registro_productos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).EndInit();
@@ -302,8 +316,9 @@
         private System.Windows.Forms.Button btn_Guardar_Produc;
         private System.Windows.Forms.ErrorProvider errorStock;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox cbx_Proveedor_Produc;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.TextBox txtProveedorRP;
+        private FontAwesome.Sharp.IconButton btnRegistroProductos;
     }
 }

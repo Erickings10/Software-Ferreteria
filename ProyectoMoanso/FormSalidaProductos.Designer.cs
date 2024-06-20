@@ -34,7 +34,6 @@
             this.lblMotivo = new System.Windows.Forms.Label();
             this.gBox = new System.Windows.Forms.GroupBox();
             this.chBoxHabilitado = new System.Windows.Forms.CheckBox();
-            this.cbProovedor = new System.Windows.Forms.ComboBox();
             this.lblProovedor = new System.Windows.Forms.Label();
             this.cbId = new System.Windows.Forms.ComboBox();
             this.lblID = new System.Windows.Forms.Label();
@@ -47,6 +46,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
+            this.txtProveedorSP = new System.Windows.Forms.TextBox();
+            this.btnSalidaProductos = new FontAwesome.Sharp.IconButton();
             this.panelDevolucion.SuspendLayout();
             this.gBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -96,8 +97,9 @@
             // gBox
             // 
             this.gBox.BackColor = System.Drawing.Color.Transparent;
+            this.gBox.Controls.Add(this.btnSalidaProductos);
+            this.gBox.Controls.Add(this.txtProveedorSP);
             this.gBox.Controls.Add(this.chBoxHabilitado);
-            this.gBox.Controls.Add(this.cbProovedor);
             this.gBox.Controls.Add(this.lblProovedor);
             this.gBox.Controls.Add(this.cbId);
             this.gBox.Controls.Add(this.lblID);
@@ -125,14 +127,6 @@
             this.chBoxHabilitado.TabIndex = 3;
             this.chBoxHabilitado.Text = "Activo";
             this.chBoxHabilitado.UseVisualStyleBackColor = true;
-            // 
-            // cbProovedor
-            // 
-            this.cbProovedor.FormattingEnabled = true;
-            this.cbProovedor.Location = new System.Drawing.Point(562, 69);
-            this.cbProovedor.Name = "cbProovedor";
-            this.cbProovedor.Size = new System.Drawing.Size(105, 28);
-            this.cbProovedor.TabIndex = 11;
             // 
             // lblProovedor
             // 
@@ -253,6 +247,25 @@
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
+            // txtProveedorSP
+            // 
+            this.txtProveedorSP.Location = new System.Drawing.Point(479, 72);
+            this.txtProveedorSP.Name = "txtProveedorSP";
+            this.txtProveedorSP.Size = new System.Drawing.Size(100, 26);
+            this.txtProveedorSP.TabIndex = 11;
+            // 
+            // btnSalidaProductos
+            // 
+            this.btnSalidaProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnSalidaProductos.IconColor = System.Drawing.Color.Black;
+            this.btnSalidaProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnSalidaProductos.IconSize = 18;
+            this.btnSalidaProductos.Location = new System.Drawing.Point(595, 74);
+            this.btnSalidaProductos.Name = "btnSalidaProductos";
+            this.btnSalidaProductos.Size = new System.Drawing.Size(24, 24);
+            this.btnSalidaProductos.TabIndex = 42;
+            this.btnSalidaProductos.UseVisualStyleBackColor = true;
+            // 
             // FormSalidaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -291,11 +304,12 @@
         private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.ComboBox cbProovedor;
         private System.Windows.Forms.Label lblProovedor;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.CheckBox chBoxHabilitado;
+        private FontAwesome.Sharp.IconButton btnSalidaProductos;
+        private System.Windows.Forms.TextBox txtProveedorSP;
     }
 }
