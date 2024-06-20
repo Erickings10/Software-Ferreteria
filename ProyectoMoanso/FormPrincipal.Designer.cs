@@ -36,6 +36,7 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.panelOpciones = new System.Windows.Forms.Panel();
+            this.btnRubroProveedor = new System.Windows.Forms.Button();
             this.btnAlmacenes = new System.Windows.Forms.Button();
             this.btnProovedores = new System.Windows.Forms.Button();
             this.btnSalidaProductos = new System.Windows.Forms.Button();
@@ -63,8 +64,9 @@
             this.panelTitulo.Controls.Add(this.btnRestaurar);
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
+            this.panelTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(1102, 65);
+            this.panelTitulo.Size = new System.Drawing.Size(1469, 80);
             this.panelTitulo.TabIndex = 4;
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 
@@ -73,9 +75,10 @@
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
             this.btnMinimizar.InitialImage = null;
-            this.btnMinimizar.Location = new System.Drawing.Point(992, 12);
+            this.btnMinimizar.Location = new System.Drawing.Point(1323, 15);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
-            this.btnMinimizar.Size = new System.Drawing.Size(33, 35);
+            this.btnMinimizar.Size = new System.Drawing.Size(44, 43);
             this.btnMinimizar.TabIndex = 4;
             this.btnMinimizar.TabStop = false;
             this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
@@ -83,9 +86,10 @@
             // btnMaximizar
             // 
             this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
-            this.btnMaximizar.Location = new System.Drawing.Point(1031, 12);
+            this.btnMaximizar.Location = new System.Drawing.Point(1375, 15);
+            this.btnMaximizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMaximizar.Name = "btnMaximizar";
-            this.btnMaximizar.Size = new System.Drawing.Size(29, 35);
+            this.btnMaximizar.Size = new System.Drawing.Size(39, 43);
             this.btnMaximizar.TabIndex = 2;
             this.btnMaximizar.TabStop = false;
             this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
@@ -94,9 +98,10 @@
             // 
             this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
-            this.btnCerrar.Location = new System.Drawing.Point(1070, 12);
+            this.btnCerrar.Location = new System.Drawing.Point(1427, 15);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(29, 35);
+            this.btnCerrar.Size = new System.Drawing.Size(39, 43);
             this.btnCerrar.TabIndex = 1;
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
@@ -106,9 +111,10 @@
             this.lblTitulo.AutoSize = true;
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitulo.ForeColor = System.Drawing.SystemColors.Window;
-            this.lblTitulo.Location = new System.Drawing.Point(425, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(567, 36);
+            this.lblTitulo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(260, 18);
+            this.lblTitulo.Size = new System.Drawing.Size(312, 22);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "FERRETERIA SAN JUAN LINKOL";
             // 
@@ -116,9 +122,10 @@
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
-            this.btnRestaurar.Location = new System.Drawing.Point(1031, 12);
+            this.btnRestaurar.Location = new System.Drawing.Point(1375, 15);
+            this.btnRestaurar.Margin = new System.Windows.Forms.Padding(4);
             this.btnRestaurar.Name = "btnRestaurar";
-            this.btnRestaurar.Size = new System.Drawing.Size(33, 35);
+            this.btnRestaurar.Size = new System.Drawing.Size(44, 43);
             this.btnRestaurar.TabIndex = 3;
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
@@ -126,6 +133,7 @@
             // panelOpciones
             // 
             this.panelOpciones.BackColor = System.Drawing.Color.Gray;
+            this.panelOpciones.Controls.Add(this.btnRubroProveedor);
             this.panelOpciones.Controls.Add(this.btnAlmacenes);
             this.panelOpciones.Controls.Add(this.btnProovedores);
             this.panelOpciones.Controls.Add(this.btnSalidaProductos);
@@ -135,10 +143,26 @@
             this.panelOpciones.Controls.Add(this.btnRequerimiento);
             this.panelOpciones.Controls.Add(this.btnOrdenCompra);
             this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelOpciones.Location = new System.Drawing.Point(0, 65);
+            this.panelOpciones.Location = new System.Drawing.Point(0, 80);
+            this.panelOpciones.Margin = new System.Windows.Forms.Padding(4);
             this.panelOpciones.Name = "panelOpciones";
-            this.panelOpciones.Size = new System.Drawing.Size(195, 585);
+            this.panelOpciones.Size = new System.Drawing.Size(260, 720);
             this.panelOpciones.TabIndex = 5;
+            // 
+            // btnRubroProveedor
+            // 
+            this.btnRubroProveedor.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnRubroProveedor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnRubroProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRubroProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnRubroProveedor.Image")));
+            this.btnRubroProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRubroProveedor.Location = new System.Drawing.Point(5, 526);
+            this.btnRubroProveedor.Name = "btnRubroProveedor";
+            this.btnRubroProveedor.Size = new System.Drawing.Size(247, 65);
+            this.btnRubroProveedor.TabIndex = 9;
+            this.btnRubroProveedor.Text = "Rubro de Proveedor";
+            this.btnRubroProveedor.UseVisualStyleBackColor = false;
+            this.btnRubroProveedor.Click += new System.EventHandler(this.btnRubroProveedor_Click);
             // 
             // btnAlmacenes
             // 
@@ -147,9 +171,10 @@
             this.btnAlmacenes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlmacenes.Image = ((System.Drawing.Image)(resources.GetObject("btnAlmacenes.Image")));
             this.btnAlmacenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlmacenes.Location = new System.Drawing.Point(4, 428);
+            this.btnAlmacenes.Location = new System.Drawing.Point(5, 598);
+            this.btnAlmacenes.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlmacenes.Name = "btnAlmacenes";
-            this.btnAlmacenes.Size = new System.Drawing.Size(185, 53);
+            this.btnAlmacenes.Size = new System.Drawing.Size(247, 65);
             this.btnAlmacenes.TabIndex = 8;
             this.btnAlmacenes.Text = "Almacenes";
             this.btnAlmacenes.UseVisualStyleBackColor = false;
@@ -162,9 +187,10 @@
             this.btnProovedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProovedores.Image = ((System.Drawing.Image)(resources.GetObject("btnProovedores.Image")));
             this.btnProovedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProovedores.Location = new System.Drawing.Point(4, 369);
+            this.btnProovedores.Location = new System.Drawing.Point(5, 454);
+            this.btnProovedores.Margin = new System.Windows.Forms.Padding(4);
             this.btnProovedores.Name = "btnProovedores";
-            this.btnProovedores.Size = new System.Drawing.Size(185, 53);
+            this.btnProovedores.Size = new System.Drawing.Size(247, 65);
             this.btnProovedores.TabIndex = 7;
             this.btnProovedores.Text = "Proovedores";
             this.btnProovedores.UseVisualStyleBackColor = false;
@@ -177,9 +203,10 @@
             this.btnSalidaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalidaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnSalidaProductos.Image")));
             this.btnSalidaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSalidaProductos.Location = new System.Drawing.Point(4, 310);
+            this.btnSalidaProductos.Location = new System.Drawing.Point(5, 382);
+            this.btnSalidaProductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalidaProductos.Name = "btnSalidaProductos";
-            this.btnSalidaProductos.Size = new System.Drawing.Size(185, 53);
+            this.btnSalidaProductos.Size = new System.Drawing.Size(247, 65);
             this.btnSalidaProductos.TabIndex = 6;
             this.btnSalidaProductos.Text = "Salida de Productos";
             this.btnSalidaProductos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -193,9 +220,10 @@
             this.btnPagoFacturas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPagoFacturas.Image = ((System.Drawing.Image)(resources.GetObject("btnPagoFacturas.Image")));
             this.btnPagoFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagoFacturas.Location = new System.Drawing.Point(3, 133);
+            this.btnPagoFacturas.Location = new System.Drawing.Point(4, 164);
+            this.btnPagoFacturas.Margin = new System.Windows.Forms.Padding(4);
             this.btnPagoFacturas.Name = "btnPagoFacturas";
-            this.btnPagoFacturas.Size = new System.Drawing.Size(186, 53);
+            this.btnPagoFacturas.Size = new System.Drawing.Size(248, 65);
             this.btnPagoFacturas.TabIndex = 5;
             this.btnPagoFacturas.Text = "Pago de Facturas";
             this.btnPagoFacturas.UseVisualStyleBackColor = false;
@@ -208,9 +236,10 @@
             this.btnProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnProductos.Image")));
             this.btnProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnProductos.Location = new System.Drawing.Point(4, 251);
+            this.btnProductos.Location = new System.Drawing.Point(5, 309);
+            this.btnProductos.Margin = new System.Windows.Forms.Padding(4);
             this.btnProductos.Name = "btnProductos";
-            this.btnProductos.Size = new System.Drawing.Size(185, 53);
+            this.btnProductos.Size = new System.Drawing.Size(247, 65);
             this.btnProductos.TabIndex = 4;
             this.btnProductos.Text = "Productos";
             this.btnProductos.UseVisualStyleBackColor = false;
@@ -223,9 +252,10 @@
             this.btnAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlmacen.Image = ((System.Drawing.Image)(resources.GetObject("btnAlmacen.Image")));
             this.btnAlmacen.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAlmacen.Location = new System.Drawing.Point(3, 192);
+            this.btnAlmacen.Location = new System.Drawing.Point(4, 236);
+            this.btnAlmacen.Margin = new System.Windows.Forms.Padding(4);
             this.btnAlmacen.Name = "btnAlmacen";
-            this.btnAlmacen.Size = new System.Drawing.Size(186, 53);
+            this.btnAlmacen.Size = new System.Drawing.Size(248, 65);
             this.btnAlmacen.TabIndex = 3;
             this.btnAlmacen.Text = "Entrada de Productos";
             this.btnAlmacen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -239,9 +269,10 @@
             this.btnRequerimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRequerimiento.Image = ((System.Drawing.Image)(resources.GetObject("btnRequerimiento.Image")));
             this.btnRequerimiento.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRequerimiento.Location = new System.Drawing.Point(3, 74);
+            this.btnRequerimiento.Location = new System.Drawing.Point(4, 91);
+            this.btnRequerimiento.Margin = new System.Windows.Forms.Padding(4);
             this.btnRequerimiento.Name = "btnRequerimiento";
-            this.btnRequerimiento.Size = new System.Drawing.Size(186, 53);
+            this.btnRequerimiento.Size = new System.Drawing.Size(248, 65);
             this.btnRequerimiento.TabIndex = 2;
             this.btnRequerimiento.Text = "Requerimiento de Compra";
             this.btnRequerimiento.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -255,9 +286,10 @@
             this.btnOrdenCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOrdenCompra.Image = ((System.Drawing.Image)(resources.GetObject("btnOrdenCompra.Image")));
             this.btnOrdenCompra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOrdenCompra.Location = new System.Drawing.Point(3, 15);
+            this.btnOrdenCompra.Location = new System.Drawing.Point(4, 18);
+            this.btnOrdenCompra.Margin = new System.Windows.Forms.Padding(4);
             this.btnOrdenCompra.Name = "btnOrdenCompra";
-            this.btnOrdenCompra.Size = new System.Drawing.Size(186, 53);
+            this.btnOrdenCompra.Size = new System.Drawing.Size(248, 65);
             this.btnOrdenCompra.TabIndex = 1;
             this.btnOrdenCompra.Text = "Orden de Compra";
             this.btnOrdenCompra.UseVisualStyleBackColor = false;
@@ -267,21 +299,22 @@
             // 
             this.contenedor.BackColor = System.Drawing.SystemColors.Highlight;
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(195, 65);
+            this.contenedor.Location = new System.Drawing.Point(260, 80);
+            this.contenedor.Margin = new System.Windows.Forms.Padding(4);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(907, 585);
+            this.contenedor.Size = new System.Drawing.Size(1209, 720);
             this.contenedor.TabIndex = 6;
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1102, 650);
+            this.ClientSize = new System.Drawing.Size(1469, 800);
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.panelOpciones);
             this.Controls.Add(this.panelTitulo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormPrincipal";
             this.Text = "FERRETERIA SLK";
             this.panelTitulo.ResumeLayout(false);
@@ -312,6 +345,7 @@
         private System.Windows.Forms.Button btnProductos;
         private System.Windows.Forms.Button btnProovedores;
         private System.Windows.Forms.Button btnAlmacenes;
+        private System.Windows.Forms.Button btnRubroProveedor;
     }
 }
 

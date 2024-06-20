@@ -124,5 +124,10 @@ namespace ProyectoMoanso
 
             AbrirFormularios(new FormAlmacenes());
         }
+
+        private void btnRubroProveedor_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new FormRubroProveedor());
+        }
     }
 }

@@ -206,3 +206,32 @@ C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\Pro
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormSalidaProductos.resources
 C:\Users\USER\OneDrive\Documentos\FORM_MOANSO_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProducto.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe.config
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.dll
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormEntradaProductos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormAlmacenes.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProducto.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormSalidaProductos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.dgv_productosRequeridos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPagoFactura.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPrincipal.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProveedor.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientosdeCompras.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProductos.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.Properties.Resources.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProveedores.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRubroProveedor.resources
