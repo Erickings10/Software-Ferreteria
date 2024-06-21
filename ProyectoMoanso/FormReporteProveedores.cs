@@ -37,10 +37,7 @@ namespace ProyectoMoanso
             CambiarEncabezados();
         }
 
-        private void btnCerrar_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+
 
         private void dgvReporteProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -52,6 +49,11 @@ namespace ProyectoMoanso
 
             DialogResult = DialogResult.OK;  // Esto cierra el formulario y devuelve el resultado a FormPrincipal
             Close();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

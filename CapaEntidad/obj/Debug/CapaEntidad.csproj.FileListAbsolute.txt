@@ -52,3 +52,9 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\Capa
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -12,9 +12,16 @@ namespace ProyectoMoanso
 {
     public partial class FormReporteProducto : Form
     {
+        public string Producto { get; set; }
+
         public FormReporteProducto()
         {
             InitializeComponent();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

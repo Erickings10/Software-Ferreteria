@@ -1,25 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\",
+  "WorkspaceRootPath": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\usuario\\onedrive\\documentos\\aplicaciones forms\\software-ferreteria\\proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formrequerimientonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrequerimientonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formrequerimientonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrequerimientonuevo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formreporteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formreporteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formrequerimientosdecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrequerimientosdecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formreporteproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formreporteproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formreporteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formreporteproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formreporteproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formreporteproveedores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formrequerimientosdecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrequerimientosdecompras.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formreporteproveedores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formreporteproveedores.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\capadatos\\datproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\conexion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\capaentidad\\entrequerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entrequerimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\capalogica\\logrequerimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logrequerimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\capadatos\\datrequerimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datrequerimientos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\diagramas\\software-ferreteria\\proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\usuario\\onedrive\\documentos\\aplicaciones forms\\software-ferreteria\\proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\usuario\\onedrive\\documentos\\aplicaciones forms\\software-ferreteria\\proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formrubroproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\usuario\\onedrive\\documentos\\aplicaciones forms\\software-ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\usuario\\onedrive\\documentos\\aplicaciones forms\\software-ferreteria\\proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formproveedor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -30,15 +94,222 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormReporteProveedores.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormReporteProveedores.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormReporteProveedores.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAuwCQAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:46:37.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormRequerimientosdeCompras.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAuwE4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:39:58.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormRequerimientoNuevo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientoNuevo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormRequerimientoNuevo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:27:50.104Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormRequerimientoNuevo.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormRequerimientoNuevo.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAowGAAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:28:46.927Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "FormReporteProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProducto.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormReporteProducto.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormReporteProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:30:38.294Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FormReporteProducto.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProducto.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormReporteProducto.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProducto.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormReporteProducto.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAcwBcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:30:39.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FormRequerimientosdeCompras.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormRequerimientosdeCompras.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRequerimientosdeCompras.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormRequerimientosdeCompras.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:42:19.259Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FormReporteProveedores.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormReporteProveedores.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormReporteProveedores.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:46:33.499Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FormReporteProveedores.Designer.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.Designer.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormReporteProveedores.Designer.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormReporteProveedores.Designer.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormReporteProveedores.Designer.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAAwEcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:50:03.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "datProductos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\datProductos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\datProductos.cs",
+              "RelativeToolTip": "CapaDatos\\datProductos.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAuwDkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:39:33.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "logRequerimientos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaLogica\\logRequerimientos.cs",
+              "RelativeDocumentMoniker": "CapaLogica\\logRequerimientos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaLogica\\logRequerimientos.cs",
+              "RelativeToolTip": "CapaLogica\\logRequerimientos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:33:28.98Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "FormPrincipal.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAADwv3EAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:33:29.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Conexion.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\Conexion.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\Conexion.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\Conexion.cs",
+              "RelativeToolTip": "CapaDatos\\Conexion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:32:55.381Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "datRequerimientos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\datRequerimientos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datRequerimientos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaDatos\\datRequerimientos.cs",
+              "RelativeToolTip": "CapaDatos\\datRequerimientos.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwGkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:31:36.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "entRequerimiento.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaEntidad\\entRequerimiento.cs",
+              "RelativeDocumentMoniker": "CapaEntidad\\entRequerimiento.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\CapaEntidad\\entRequerimiento.cs",
+              "RelativeToolTip": "CapaEntidad\\entRequerimiento.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:31:14.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FormProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormProductos.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormProductos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-21T04:30:31.753Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "FormRubroProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormRubroProveedor.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
               "RelativeToolTip": "ProyectoMoanso\\FormRubroProveedor.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -47,24 +318,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 17,
               "Title": "FormProveedor.cs",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormProveedor.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
               "RelativeToolTip": "ProyectoMoanso\\FormProveedor.cs",
               "ViewState": "AQIAAA4AAAAAAAAAAAAxwCAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T21:22:09.836Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-20T21:22:09.836Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 16,
               "Title": "FormRubroProveedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormRubroProveedor.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormRubroProveedor.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoMoanso\\FormRubroProveedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T18:37:39.706Z",
@@ -72,23 +342,21 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 20,
               "Title": "FormProveedor.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormProveedor.cs",
               "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormProveedor.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoMoanso\\FormProveedor.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-20T18:37:45.719Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-20T18:37:45.719Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 19,
               "Title": "FormPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\USUARIO\\OneDrive\\Documentos\\Aplicaciones Forms\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Diagramas\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
               "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-20T18:21:42.147Z",

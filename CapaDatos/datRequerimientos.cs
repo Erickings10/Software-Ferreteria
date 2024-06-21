@@ -41,14 +41,14 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entRequerimiento Req = new entRequerimiento();
-                    Req.idRequer = Convert.ToInt32(dr["idRequer"]);
-                    Req.prodRequer = Convert.ToString(dr["prodRequer"]);
-                    Req.fechaRequer = Convert.ToDateTime(dr["fechaRequer"]);
-                    Req.cantRequer = Convert.ToInt64(dr["cantRequer"]);
-                    Req.marcaRequer = Convert.ToString(dr["marcaRequer"]);
-                    Req.modelRequer = Convert.ToString(dr["modelRequer"]);
-                    Req.estadRequer = Convert.ToBoolean(dr["estadRequer"]);
-                    Req.priorRequer = Convert.ToString(dr["priorRequer"]);
+                    Req.id = Convert.ToInt32(dr["id"]);
+                    Req.producto = Convert.ToString(dr["producto"]);
+                    Req.marca = Convert.ToString(dr["marca"]);
+                    Req.categoria = Convert.ToString(dr["categoria"]);
+                    Req.cantidad = Convert.ToInt64(dr["cantidad"]);
+                    Req.fecha = Convert.ToDateTime(dr["fecha"]);
+                    Req.prioridad = Convert.ToString(dr["prioridad"]);
+                    Req.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Req);
                 }
 
@@ -73,13 +73,13 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaRequerimiento", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@prodRequer", Req.prodRequer);
-                cmd.Parameters.AddWithValue("@fechaRequer", Req.fechaRequer);
-                cmd.Parameters.AddWithValue("@cantRequer", Req.cantRequer);
-                cmd.Parameters.AddWithValue("@marcaRequer", Req.marcaRequer);
-                cmd.Parameters.AddWithValue("@modelRequer", Req.modelRequer);
-                cmd.Parameters.AddWithValue("@estadRequer", Req.estadRequer);
-                cmd.Parameters.AddWithValue("@priorRequer", Req.priorRequer);
+                cmd.Parameters.AddWithValue("@producto", Req.producto);
+                cmd.Parameters.AddWithValue("@marca", Req.marca);
+                cmd.Parameters.AddWithValue("@categoria", Req.categoria);
+                cmd.Parameters.AddWithValue("@cantidad", Req.cantidad);
+                cmd.Parameters.AddWithValue("@fecha", Req.fecha);
+                cmd.Parameters.AddWithValue("@prioridad", Req.prioridad);
+                cmd.Parameters.AddWithValue("@estado", Req.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -103,7 +103,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarRequerimiento", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@idRequer", Req.idRequer);
+                cmd.Parameters.AddWithValue("@id", Req.id);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)

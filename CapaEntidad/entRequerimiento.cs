@@ -8,14 +8,14 @@ namespace CapaEntidad
 {
     public class entRequerimiento
     {
-        public int idRequer { get; set; }
-        public string prodRequer { get; set; }
-        public DateTime fechaRequer { get; set; }
-        public Int64 cantRequer { get; set; }
-        public string marcaRequer { get; set; }
-        public string modelRequer { get; set; }
-        public Boolean estadRequer { get; set; }
-        public string priorRequer { get; set; }
+        public int id { get; set; }
+        public string producto { get; set; }
+        public string marca { get; set; }
+        public string categoria { get; set; }
+        public Int64 cantidad { get; set; }
+        public DateTime fecha { get; set; }
+        public string prioridad { get; set; }
+        public Boolean estado { get; set; }
 
     }
 }

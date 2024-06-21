@@ -108,3 +108,14 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\Capa
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
