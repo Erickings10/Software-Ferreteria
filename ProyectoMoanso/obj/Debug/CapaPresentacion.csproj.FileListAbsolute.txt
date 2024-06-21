@@ -265,3 +265,5 @@ D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\bin\Debug\Cap
 D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.pdb
 D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.pdb
 D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientoNuevo.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRubro.resources

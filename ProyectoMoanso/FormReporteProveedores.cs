@@ -37,8 +37,6 @@ namespace ProyectoMoanso
             CambiarEncabezados();
         }
 
-
-
         private void dgvReporteProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filaActual = dgvReporteProveedores.Rows[e.RowIndex];

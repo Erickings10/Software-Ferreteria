@@ -22,10 +22,19 @@ namespace ProyectoMoanso
             txt_ID.Enabled = false;
             txt_ID.ReadOnly = true;
             gbox_Botons.Enabled = false;
+            listaRubro();
+        }
+        private void Encabezados() 
+        {
+            dgb_Rubro.Columns["IDRubro"].HeaderText = "ID";
+            dgb_Rubro.Columns["Rubro"].HeaderText = "Rubro";
+            dgb_Rubro.Columns["FechaRub"].HeaderText = "Fecha de Registro";
+            dgb_Rubro.Columns["EstadoRub"].HeaderText = "Estado";
         }
         public void listaRubro() 
         {
             dgb_Rubro.DataSource = logRubroProveedor.Instancia.ListarRubro();
+            Encabezados();
         }
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {

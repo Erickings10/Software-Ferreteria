@@ -18,6 +18,12 @@ namespace ProyectoMoanso
         {
             InitializeComponent();
             listarProveedores();
+            txtId.Enabled = false;
+            gbox_Datos.Enabled = false;
+            btn_agregar_pro.Enabled = false;
+            btn_actualizar_pro.Enabled = false;
+            btn_eliminar_pro.Enabled = false;
+            dgvProveedores.Enabled = false;
         }
 
         private void CambiarEncabezados()
@@ -52,7 +58,7 @@ namespace ProyectoMoanso
         {
 
         }
-
+        //------------------------------------------------------------------
         private void btn_agregar_pro_Click(object sender, EventArgs e)
         {
             try
@@ -73,7 +79,72 @@ namespace ProyectoMoanso
 
 
             listarProveedores();
+            btn_agregar_pro.Enabled = false;
 
         }
+        private void btn_actualizar_pro_Click(object sender, EventArgs e)
+        {
+            btn_actualizar_pro.Enabled = false;
+            dgvProveedores.Enabled = false;
+        }
+        private void btn_eliminar_pro_Click(object sender, EventArgs e)
+        {
+            btn_eliminar_pro.Enabled = false;
+            dgvProveedores.Enabled=false;
+        }
+        //--------------------------------------------------------------------------
+        private void AbrirReporteRubro() 
+        {
+            using (FormReporteRubro formRR = new FormReporteRubro()) 
+            {
+                txtSectorCome.Text = formRR.nameRubro;
+            }
+        }
+
+        private void btn_BuscarRubro_Click(object sender, EventArgs e)
+        {
+            AbrirReporteRubro();
+        }
+
+        private void btn_nuevo_Click(object sender, EventArgs e)
+        {
+            dgvProveedores.Enabled=false;
+            gbox_Datos.Enabled = true;
+            btn_agregar_pro.Enabled = true;
+            btn_actualizar_pro.Enabled = false;
+            btn_eliminar_pro.Enabled = false;
+        }
+
+        private void btn_modificar_Click(object sender, EventArgs e)
+        {
+            gbox_Datos.Enabled = true;
+            dgvProveedores.Enabled = true;
+            btn_actualizar_pro.Enabled = true;
+            btn_agregar_pro.Enabled = false;
+            btn_eliminar_pro.Enabled=false;
+        }
+
+        private void btn_deshabilitar_Click(object sender, EventArgs e)
+        {
+            dgvProveedores.Enabled=true;
+            gbox_Datos.Enabled = true;
+            btn_eliminar_pro.Enabled=true;
+            btn_agregar_pro.Enabled = false;
+            btn_actualizar_pro.Enabled=false;
+        }
+
+        private void dgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow fila = dgvProveedores.Rows[e.RowIndex];
+            txtId.Text = fila.Cells[0].Value.ToString();
+            txtRucPro.Text = fila.Cells[1].Value.ToString();
+            txtUbigeo.Text = fila.Cells[2].Value.ToString();
+            txtSectorCome.Text = fila.Cells[3].Value.ToString();
+            txtCorreo.Text = fila.Cells[4].Value.ToString();
+            txtTelef.Text = fila.Cells[5].Value.ToString();
+            chbEstado.Checked = Convert.ToBoolean(fila.Cells[6].Value);
+        }
+
+        
     }
 }
