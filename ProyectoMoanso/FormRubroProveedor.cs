@@ -121,5 +121,10 @@ namespace ProyectoMoanso
             datp_Fecha.Text = fila.Cells[2].Value.ToString();
             chbx_Estado.Checked = Convert.ToBoolean(fila.Cells[3].Value);
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }

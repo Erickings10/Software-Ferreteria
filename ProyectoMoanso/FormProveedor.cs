@@ -145,6 +145,9 @@ namespace ProyectoMoanso
             chbEstado.Checked = Convert.ToBoolean(fila.Cells[6].Value);
         }
 
-        
+        private void gbox_Datos_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
