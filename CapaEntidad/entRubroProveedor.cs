@@ -13,5 +13,7 @@ namespace CapaEntidad
         public string nameRubro { get; set; }
         public DateTime fecRegistro { get; set; }
         public Boolean estRubro { get; set; }
+
+
     }
 }

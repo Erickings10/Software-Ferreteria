@@ -30,12 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPrincipal));
             this.panelTitulo = new System.Windows.Forms.Panel();
-            this.btnMinimizar = new System.Windows.Forms.PictureBox();
-            this.btnMaximizar = new System.Windows.Forms.PictureBox();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.panelOpciones = new System.Windows.Forms.Panel();
+            this.contenedor = new System.Windows.Forms.Panel();
+            this.btnCategoriaProducto = new System.Windows.Forms.Button();
             this.btnRubroProveedor = new System.Windows.Forms.Button();
             this.btnAlmacenes = new System.Windows.Forms.Button();
             this.btnProovedores = new System.Windows.Forms.Button();
@@ -45,13 +43,16 @@
             this.btnAlmacen = new System.Windows.Forms.Button();
             this.btnRequerimiento = new System.Windows.Forms.Button();
             this.btnOrdenCompra = new System.Windows.Forms.Button();
-            this.contenedor = new System.Windows.Forms.Panel();
+            this.btnMinimizar = new System.Windows.Forms.PictureBox();
+            this.btnMaximizar = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.btnRestaurar = new System.Windows.Forms.PictureBox();
             this.panelTitulo.SuspendLayout();
+            this.panelOpciones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).BeginInit();
-            this.panelOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTitulo
@@ -67,8 +68,10 @@
             this.panelTitulo.Name = "panelTitulo";
             this.panelTitulo.Size = new System.Drawing.Size(1102, 65);
             this.panelTitulo.TabIndex = 4;
+            this.panelTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitulo_Paint);
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
             // 
+<<<<<<< HEAD
             // btnMinimizar
             // 
             this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -102,6 +105,8 @@
             this.btnCerrar.TabStop = false;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
+=======
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             // lblTitulo
             // 
             this.lblTitulo.AutoSize = true;
@@ -113,6 +118,7 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "FERRETERIA SAN JUAN LINKOL";
             // 
+<<<<<<< HEAD
             // btnRestaurar
             // 
             this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -124,9 +130,12 @@
             this.btnRestaurar.TabStop = false;
             this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
             // 
+=======
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             // panelOpciones
             // 
             this.panelOpciones.BackColor = System.Drawing.Color.Gray;
+            this.panelOpciones.Controls.Add(this.btnCategoriaProducto);
             this.panelOpciones.Controls.Add(this.btnRubroProveedor);
             this.panelOpciones.Controls.Add(this.btnAlmacenes);
             this.panelOpciones.Controls.Add(this.btnProovedores);
@@ -139,8 +148,36 @@
             this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelOpciones.Location = new System.Drawing.Point(0, 65);
             this.panelOpciones.Name = "panelOpciones";
+<<<<<<< HEAD
             this.panelOpciones.Size = new System.Drawing.Size(195, 585);
+=======
+            this.panelOpciones.Size = new System.Drawing.Size(195, 619);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.panelOpciones.TabIndex = 5;
+            // 
+            // contenedor
+            // 
+            this.contenedor.BackColor = System.Drawing.SystemColors.Highlight;
+            this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.contenedor.Location = new System.Drawing.Point(195, 65);
+            this.contenedor.Name = "contenedor";
+            this.contenedor.Size = new System.Drawing.Size(907, 619);
+            this.contenedor.TabIndex = 6;
+            // 
+            // btnCategoriaProducto
+            // 
+            this.btnCategoriaProducto.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnCategoriaProducto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCategoriaProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCategoriaProducto.Image = ((System.Drawing.Image)(resources.GetObject("btnCategoriaProducto.Image")));
+            this.btnCategoriaProducto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCategoriaProducto.Location = new System.Drawing.Point(4, 310);
+            this.btnCategoriaProducto.Name = "btnCategoriaProducto";
+            this.btnCategoriaProducto.Size = new System.Drawing.Size(185, 53);
+            this.btnCategoriaProducto.TabIndex = 10;
+            this.btnCategoriaProducto.Text = "Categoria Producto";
+            this.btnCategoriaProducto.UseVisualStyleBackColor = false;
+            this.btnCategoriaProducto.Click += new System.EventHandler(this.btnCategoriaProducto_Click);
             // 
             // btnRubroProveedor
             // 
@@ -149,8 +186,13 @@
             this.btnRubroProveedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRubroProveedor.Image = ((System.Drawing.Image)(resources.GetObject("btnRubroProveedor.Image")));
             this.btnRubroProveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnRubroProveedor.Location = new System.Drawing.Point(4, 427);
             this.btnRubroProveedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+=======
+            this.btnRubroProveedor.Location = new System.Drawing.Point(5, 486);
+            this.btnRubroProveedor.Margin = new System.Windows.Forms.Padding(2);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.btnRubroProveedor.Name = "btnRubroProveedor";
             this.btnRubroProveedor.Size = new System.Drawing.Size(185, 53);
             this.btnRubroProveedor.TabIndex = 9;
@@ -165,7 +207,11 @@
             this.btnAlmacenes.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAlmacenes.Image = ((System.Drawing.Image)(resources.GetObject("btnAlmacenes.Image")));
             this.btnAlmacenes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnAlmacenes.Location = new System.Drawing.Point(4, 486);
+=======
+            this.btnAlmacenes.Location = new System.Drawing.Point(4, 544);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.btnAlmacenes.Name = "btnAlmacenes";
             this.btnAlmacenes.Size = new System.Drawing.Size(185, 53);
             this.btnAlmacenes.TabIndex = 8;
@@ -180,7 +226,11 @@
             this.btnProovedores.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProovedores.Image = ((System.Drawing.Image)(resources.GetObject("btnProovedores.Image")));
             this.btnProovedores.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnProovedores.Location = new System.Drawing.Point(4, 369);
+=======
+            this.btnProovedores.Location = new System.Drawing.Point(4, 428);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.btnProovedores.Name = "btnProovedores";
             this.btnProovedores.Size = new System.Drawing.Size(185, 53);
             this.btnProovedores.TabIndex = 7;
@@ -195,7 +245,11 @@
             this.btnSalidaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalidaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnSalidaProductos.Image")));
             this.btnSalidaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+<<<<<<< HEAD
             this.btnSalidaProductos.Location = new System.Drawing.Point(4, 310);
+=======
+            this.btnSalidaProductos.Location = new System.Drawing.Point(3, 369);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.btnSalidaProductos.Name = "btnSalidaProductos";
             this.btnSalidaProductos.Size = new System.Drawing.Size(185, 53);
             this.btnSalidaProductos.TabIndex = 6;
@@ -281,20 +335,68 @@
             this.btnOrdenCompra.UseVisualStyleBackColor = false;
             this.btnOrdenCompra.Click += new System.EventHandler(this.btnOrdenCompra_Click);
             // 
-            // contenedor
+            // btnMinimizar
             // 
+<<<<<<< HEAD
             this.contenedor.BackColor = System.Drawing.SystemColors.Highlight;
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
             this.contenedor.Location = new System.Drawing.Point(195, 65);
             this.contenedor.Name = "contenedor";
             this.contenedor.Size = new System.Drawing.Size(907, 585);
             this.contenedor.TabIndex = 6;
+=======
+            this.btnMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMinimizar.Image")));
+            this.btnMinimizar.InitialImage = null;
+            this.btnMinimizar.Location = new System.Drawing.Point(992, 12);
+            this.btnMinimizar.Name = "btnMinimizar";
+            this.btnMinimizar.Size = new System.Drawing.Size(33, 35);
+            this.btnMinimizar.TabIndex = 4;
+            this.btnMinimizar.TabStop = false;
+            this.btnMinimizar.Click += new System.EventHandler(this.btnMinimizar_Click);
+            // 
+            // btnMaximizar
+            // 
+            this.btnMaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnMaximizar.Image")));
+            this.btnMaximizar.Location = new System.Drawing.Point(1031, 12);
+            this.btnMaximizar.Name = "btnMaximizar";
+            this.btnMaximizar.Size = new System.Drawing.Size(29, 35);
+            this.btnMaximizar.TabIndex = 2;
+            this.btnMaximizar.TabStop = false;
+            this.btnMaximizar.Click += new System.EventHandler(this.btnMaximizar_Click);
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCerrar.Image")));
+            this.btnCerrar.Location = new System.Drawing.Point(1070, 12);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(29, 35);
+            this.btnCerrar.TabIndex = 1;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // btnRestaurar
+            // 
+            this.btnRestaurar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnRestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnRestaurar.Image")));
+            this.btnRestaurar.Location = new System.Drawing.Point(1031, 12);
+            this.btnRestaurar.Name = "btnRestaurar";
+            this.btnRestaurar.Size = new System.Drawing.Size(33, 35);
+            this.btnRestaurar.TabIndex = 3;
+            this.btnRestaurar.TabStop = false;
+            this.btnRestaurar.Click += new System.EventHandler(this.btnRestaurar_Click);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             // 
             // FormPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(1102, 650);
+=======
+            this.ClientSize = new System.Drawing.Size(1102, 684);
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             this.Controls.Add(this.contenedor);
             this.Controls.Add(this.panelOpciones);
             this.Controls.Add(this.panelTitulo);
@@ -305,11 +407,11 @@
             this.Text = "FERRETERIA SLK";
             this.panelTitulo.ResumeLayout(false);
             this.panelTitulo.PerformLayout();
+            this.panelOpciones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMaximizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRestaurar)).EndInit();
-            this.panelOpciones.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -332,6 +434,7 @@
         private System.Windows.Forms.Button btnProovedores;
         private System.Windows.Forms.Button btnAlmacenes;
         private System.Windows.Forms.Button btnRubroProveedor;
+        private System.Windows.Forms.Button btnCategoriaProducto;
     }
 }
 

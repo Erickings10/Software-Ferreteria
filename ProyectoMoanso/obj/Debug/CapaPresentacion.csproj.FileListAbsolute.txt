@@ -276,3 +276,36 @@ D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\Pro
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteMarca.resources
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormCategoriaProducto.resources
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteCategoria.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe.config
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.exe
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\ProyectoMoanso.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.dll
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaEntidad.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaLogica.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\bin\Debug\CapaDatos.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormEntradaProductos.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormAlmacenes.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProducto.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientoNuevo.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRubroProveedor.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormSalidaProductos.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.dgv_productosRequeridos.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPagoFactura.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormPrincipal.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProveedor.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientosdeCompras.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormProductos.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.Properties.Resources.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProveedores.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRubro.resources
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.exe
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
+C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormCategoriaProducto.resources
+>>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
