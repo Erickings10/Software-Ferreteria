@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRequerimientosdeCompras));
             this.dgvRequerimientos = new System.Windows.Forms.DataGridView();
             this.label6 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.gboBotones2 = new System.Windows.Forms.GroupBox();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.btnCancelar = new System.Windows.Forms.Button();
+            this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btnDeshabilitarReque = new System.Windows.Forms.Button();
             this.btnNuevoReque = new System.Windows.Forms.Button();
-            this.gboBotones1 = new System.Windows.Forms.GroupBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequerimientos)).BeginInit();
             this.gboBotones2.SuspendLayout();
             this.gboBotones1.SuspendLayout();
@@ -45,9 +46,20 @@
             // 
             // dgvRequerimientos
             // 
+            this.dgvRequerimientos.AllowUserToAddRows = false;
+            this.dgvRequerimientos.AllowUserToDeleteRows = false;
             this.dgvRequerimientos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Transparent;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvRequerimientos.DefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRequerimientos.Location = new System.Drawing.Point(218, 91);
             this.dgvRequerimientos.Name = "dgvRequerimientos";
+            this.dgvRequerimientos.ReadOnly = true;
             this.dgvRequerimientos.RowHeadersWidth = 51;
             this.dgvRequerimientos.Size = new System.Drawing.Size(642, 402);
             this.dgvRequerimientos.TabIndex = 23;
@@ -86,37 +98,15 @@
             this.gboBotones2.TabIndex = 38;
             this.gboBotones2.TabStop = false;
             // 
-            // btnActualizar
+            // gboBotones1
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.Tan;
-            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnActualizar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnActualizar.Image = global::ProyectoMoanso.Properties.Resources.reset;
-            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(16, 29);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(132, 36);
-            this.btnActualizar.TabIndex = 42;
-            this.btnActualizar.Text = "Actualizar";
-            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnActualizar.UseVisualStyleBackColor = false;
-            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCancelar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(16, 89);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(133, 36);
-            this.btnCancelar.TabIndex = 34;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
+            this.gboBotones1.Controls.Add(this.btnDeshabilitarReque);
+            this.gboBotones1.Controls.Add(this.btnNuevoReque);
+            this.gboBotones1.Location = new System.Drawing.Point(33, 112);
+            this.gboBotones1.Name = "gboBotones1";
+            this.gboBotones1.Size = new System.Drawing.Size(168, 137);
+            this.gboBotones1.TabIndex = 39;
+            this.gboBotones1.TabStop = false;
             // 
             // btnDeshabilitarReque
             // 
@@ -149,15 +139,37 @@
             this.btnNuevoReque.UseVisualStyleBackColor = true;
             this.btnNuevoReque.Click += new System.EventHandler(this.btnNuevoRequerimiento_Click);
             // 
-            // gboBotones1
+            // btnActualizar
             // 
-            this.gboBotones1.Controls.Add(this.btnDeshabilitarReque);
-            this.gboBotones1.Controls.Add(this.btnNuevoReque);
-            this.gboBotones1.Location = new System.Drawing.Point(33, 112);
-            this.gboBotones1.Name = "gboBotones1";
-            this.gboBotones1.Size = new System.Drawing.Size(168, 137);
-            this.gboBotones1.TabIndex = 39;
-            this.gboBotones1.TabStop = false;
+            this.btnActualizar.BackColor = System.Drawing.Color.Tan;
+            this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnActualizar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnActualizar.Image = global::ProyectoMoanso.Properties.Resources.reset;
+            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnActualizar.Location = new System.Drawing.Point(16, 29);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(132, 36);
+            this.btnActualizar.TabIndex = 42;
+            this.btnActualizar.Text = "Actualizar";
+            this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnCancelar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(16, 89);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(133, 36);
+            this.btnCancelar.TabIndex = 34;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click_1);
             // 
             // FormRequerimientosdeCompras
             // 

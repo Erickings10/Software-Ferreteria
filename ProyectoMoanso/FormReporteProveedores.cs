@@ -13,7 +13,7 @@ namespace ProyectoMoanso
 {
     public partial class FormReporteProveedores : Form
     {
-        public string sectorProve {  get; private set; }
+        public string sectorProve {  get; set; }
 
         public FormReporteProveedores()
         {

@@ -53,6 +53,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCategoriaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCategoriaProducto.Designer.cs">
+      <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEntradaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,24 @@
     </Compile>
     <Compile Include="FormAlmacenes.Designer.cs">
       <DependentUpon>FormAlmacenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMarcaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMarcaProducto.Designer.cs">
+      <DependentUpon>FormMarcaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteCategoria.Designer.cs">
+      <DependentUpon>FormReporteCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteMarca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteMarca.Designer.cs">
+      <DependentUpon>FormReporteMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReporteProducto.cs">
       <SubType>Form</SubType>
@@ -139,11 +163,23 @@
     <Compile Include="FormReporteRubro.Designer.cs">
       <DependentUpon>FormReporteRubro.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormCategoriaProducto.resx">
+      <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEntradaProductos.resx">
       <DependentUpon>FormEntradaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAlmacenes.resx">
       <DependentUpon>FormAlmacenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMarcaProducto.resx">
+      <DependentUpon>FormMarcaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteCategoria.resx">
+      <DependentUpon>FormReporteCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteMarca.resx">
+      <DependentUpon>FormReporteMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporteProducto.resx">
       <DependentUpon>FormReporteProducto.cs</DependentUpon>

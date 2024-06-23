@@ -39,7 +39,7 @@ namespace ProyectoMoanso
             // dgvReporteProveedores
             // 
             this.dgvReporteProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvReporteProveedores.Location = new System.Drawing.Point(31, 99);
+            this.dgvReporteProveedores.Location = new System.Drawing.Point(22, 94);
             this.dgvReporteProveedores.Name = "dgvReporteProveedores";
             this.dgvReporteProveedores.Size = new System.Drawing.Size(603, 244);
             this.dgvReporteProveedores.TabIndex = 0;
@@ -74,13 +74,14 @@ namespace ProyectoMoanso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Moccasin;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(646, 385);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvReporteProveedores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReporteProveedores";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "ReporteProovedores";
             ((System.ComponentModel.ISupportInitialize)(this.dgvReporteProveedores)).EndInit();
             this.ResumeLayout(false);

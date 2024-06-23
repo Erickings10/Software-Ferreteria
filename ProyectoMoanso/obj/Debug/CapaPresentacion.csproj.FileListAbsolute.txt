@@ -267,3 +267,12 @@ D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\bin\Debug\Cap
 D:\SEXTO CICLO\moanso\Diagramas\Software-Ferreteria\ProyectoMoanso\obj\Debug\CapaPres.61CA7C38.Up2Date
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientoNuevo.resources
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRubro.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormMarcaProducto.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteProducto.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRequerimientoNuevo.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormRubroProveedor.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormSalidaProductos.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRubro.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteMarca.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormCategoriaProducto.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteCategoria.resources
