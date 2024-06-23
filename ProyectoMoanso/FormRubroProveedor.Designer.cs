@@ -276,8 +276,6 @@
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
-            // 
-<<<<<<< HEAD
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btn_Nuevo);
@@ -359,9 +357,6 @@
             this.dgb_Rubro.Size = new System.Drawing.Size(490, 198);
             this.dgb_Rubro.TabIndex = 10;
             this.dgb_Rubro.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgb_Rubro_CellClick);
-            // 
-=======
->>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
             // FormRubroProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

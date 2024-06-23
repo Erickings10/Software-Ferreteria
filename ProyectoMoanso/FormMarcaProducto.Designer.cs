@@ -30,8 +30,6 @@ namespace ProyectoMoanso
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMarcaProducto));
-            this.btn_Nuevo = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.gboxDatos = new System.Windows.Forms.GroupBox();
             this.chbxEstado = new System.Windows.Forms.CheckBox();
             this.txtMarca = new System.Windows.Forms.TextBox();
@@ -39,46 +37,19 @@ namespace ProyectoMoanso
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbBotones = new System.Windows.Forms.GroupBox();
+            this.dgvMarcaPro = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
-            this.dgvMarcaPro = new System.Windows.Forms.DataGridView();
+            this.btn_Nuevo = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.PanelCat = new System.Windows.Forms.Panel();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.gboxDatos.SuspendLayout();
             this.gbBotones.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcaPro)).BeginInit();
+            this.PanelCat.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // btn_Nuevo
-            // 
-            this.btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Nuevo.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Nuevo.Image")));
-            this.btn_Nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Nuevo.Location = new System.Drawing.Point(70, 55);
-            this.btn_Nuevo.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Nuevo.Name = "btn_Nuevo";
-            this.btn_Nuevo.Size = new System.Drawing.Size(112, 40);
-            this.btn_Nuevo.TabIndex = 3;
-            this.btn_Nuevo.Text = "Nuevo";
-            this.btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Nuevo.UseVisualStyleBackColor = true;
-            this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
-            // 
-            // btn_Cancelar
-            // 
-            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
-            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(70, 340);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(112, 41);
-            this.btn_Cancelar.TabIndex = 4;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
             // gboxDatos
             // 
@@ -88,7 +59,7 @@ namespace ProyectoMoanso
             this.gboxDatos.Controls.Add(this.label3);
             this.gboxDatos.Controls.Add(this.label2);
             this.gboxDatos.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gboxDatos.Location = new System.Drawing.Point(223, 24);
+            this.gboxDatos.Location = new System.Drawing.Point(229, 58);
             this.gboxDatos.Margin = new System.Windows.Forms.Padding(2);
             this.gboxDatos.Name = "gboxDatos";
             this.gboxDatos.Padding = new System.Windows.Forms.Padding(2);
@@ -149,11 +120,22 @@ namespace ProyectoMoanso
             this.gbBotones.Controls.Add(this.btnAgregar);
             this.gbBotones.Controls.Add(this.btnActualizar);
             this.gbBotones.Controls.Add(this.btnDeshabilitar);
-            this.gbBotones.Location = new System.Drawing.Point(31, 123);
+            this.gbBotones.Location = new System.Drawing.Point(37, 157);
             this.gbBotones.Name = "gbBotones";
             this.gbBotones.Size = new System.Drawing.Size(171, 197);
             this.gbBotones.TabIndex = 44;
             this.gbBotones.TabStop = false;
+            // 
+            // dgvMarcaPro
+            // 
+            this.dgvMarcaPro.AllowUserToAddRows = false;
+            this.dgvMarcaPro.AllowUserToDeleteRows = false;
+            this.dgvMarcaPro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarcaPro.Location = new System.Drawing.Point(230, 148);
+            this.dgvMarcaPro.Name = "dgvMarcaPro";
+            this.dgvMarcaPro.ReadOnly = true;
+            this.dgvMarcaPro.Size = new System.Drawing.Size(565, 267);
+            this.dgvMarcaPro.TabIndex = 45;
             // 
             // btnAgregar
             // 
@@ -203,23 +185,65 @@ namespace ProyectoMoanso
             this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
             // 
-            // dgvMarcaPro
+            // btn_Nuevo
             // 
-            this.dgvMarcaPro.AllowUserToAddRows = false;
-            this.dgvMarcaPro.AllowUserToDeleteRows = false;
-            this.dgvMarcaPro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarcaPro.Location = new System.Drawing.Point(224, 114);
-            this.dgvMarcaPro.Name = "dgvMarcaPro";
-            this.dgvMarcaPro.ReadOnly = true;
-            this.dgvMarcaPro.Size = new System.Drawing.Size(565, 267);
-            this.dgvMarcaPro.TabIndex = 45;
+            this.btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Nuevo.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Nuevo.Image")));
+            this.btn_Nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Nuevo.Location = new System.Drawing.Point(76, 89);
+            this.btn_Nuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Nuevo.Name = "btn_Nuevo";
+            this.btn_Nuevo.Size = new System.Drawing.Size(112, 40);
+            this.btn_Nuevo.TabIndex = 3;
+            this.btn_Nuevo.Text = "Nuevo";
+            this.btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Nuevo.UseVisualStyleBackColor = true;
+            this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(76, 374);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(112, 41);
+            this.btn_Cancelar.TabIndex = 4;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
+            // PanelCat
+            // 
+            this.PanelCat.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.PanelCat.Controls.Add(this.lblTitulo);
+            this.PanelCat.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelCat.Location = new System.Drawing.Point(0, 0);
+            this.PanelCat.Name = "PanelCat";
+            this.PanelCat.Size = new System.Drawing.Size(835, 44);
+            this.PanelCat.TabIndex = 52;
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.AutoSize = true;
+            this.lblTitulo.Font = new System.Drawing.Font("Roboto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitulo.Location = new System.Drawing.Point(309, 9);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(181, 23);
+            this.lblTitulo.TabIndex = 0;
+            this.lblTitulo.Text = "MARCA PRODUCTO";
             // 
             // FormMarcaProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(826, 423);
+            this.ClientSize = new System.Drawing.Size(835, 443);
+            this.Controls.Add(this.PanelCat);
             this.Controls.Add(this.dgvMarcaPro);
             this.Controls.Add(this.gbBotones);
             this.Controls.Add(this.btn_Nuevo);
@@ -233,6 +257,8 @@ namespace ProyectoMoanso
             this.gboxDatos.PerformLayout();
             this.gbBotones.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarcaPro)).EndInit();
+            this.PanelCat.ResumeLayout(false);
+            this.PanelCat.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -251,5 +277,7 @@ namespace ProyectoMoanso
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.DataGridView dgvMarcaPro;
+        private System.Windows.Forms.Panel PanelCat;
+        private System.Windows.Forms.Label lblTitulo;
     }
 }
