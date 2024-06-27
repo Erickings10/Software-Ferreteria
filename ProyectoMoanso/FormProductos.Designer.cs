@@ -38,8 +38,8 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.txt_marca_produc = new System.Windows.Forms.TextBox();
-            this.txt_categoria_produc = new System.Windows.Forms.TextBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.dgvRegistroProducto = new System.Windows.Forms.DataGridView();
             this.errorStock = new System.Windows.Forms.ErrorProvider(this.components);
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
@@ -49,12 +49,12 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.gboDatos = new System.Windows.Forms.GroupBox();
+            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             this.btnBuscarMarca = new FontAwesome.Sharp.IconButton();
             this.btnBuscarCategoria = new FontAwesome.Sharp.IconButton();
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.gbBotones2.SuspendLayout();
@@ -78,7 +78,7 @@
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.CausesValidation = false;
             this.lblDescripcion.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lblDescripcion.Location = new System.Drawing.Point(17, 71);
+            this.lblDescripcion.Location = new System.Drawing.Point(327, 31);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
             this.lblDescripcion.Size = new System.Drawing.Size(89, 17);
@@ -89,7 +89,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label3.Location = new System.Drawing.Point(31, 108);
+            this.label3.Location = new System.Drawing.Point(328, 68);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 17);
@@ -100,7 +100,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label4.Location = new System.Drawing.Point(293, 30);
+            this.label4.Location = new System.Drawing.Point(31, 70);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(51, 17);
@@ -111,7 +111,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label5.Location = new System.Drawing.Point(293, 70);
+            this.label5.Location = new System.Drawing.Point(31, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(72, 17);
@@ -128,7 +128,7 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(115, 69);
+            this.txtDescripcion.Location = new System.Drawing.Point(425, 29);
             this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(141, 23);
@@ -136,28 +136,28 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(115, 108);
+            this.txtCantidad.Location = new System.Drawing.Point(425, 68);
             this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(141, 23);
             this.txtCantidad.TabIndex = 7;
-            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_stock_produc_KeyPress);
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
-            // txt_marca_produc
+            // txtMarca
             // 
-            this.txt_marca_produc.Location = new System.Drawing.Point(377, 29);
-            this.txt_marca_produc.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_marca_produc.Name = "txt_marca_produc";
-            this.txt_marca_produc.Size = new System.Drawing.Size(141, 23);
-            this.txt_marca_produc.TabIndex = 8;
+            this.txtMarca.Location = new System.Drawing.Point(115, 69);
+            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(141, 23);
+            this.txtMarca.TabIndex = 8;
             // 
-            // txt_categoria_produc
+            // txtCategoria
             // 
-            this.txt_categoria_produc.Location = new System.Drawing.Point(377, 70);
-            this.txt_categoria_produc.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_categoria_produc.Name = "txt_categoria_produc";
-            this.txt_categoria_produc.Size = new System.Drawing.Size(141, 23);
-            this.txt_categoria_produc.TabIndex = 9;
+            this.txtCategoria.Location = new System.Drawing.Point(115, 110);
+            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(141, 23);
+            this.txtCategoria.TabIndex = 9;
             // 
             // dgvRegistroProducto
             // 
@@ -265,16 +265,16 @@
             this.gboDatos.Controls.Add(this.chbx_Estado);
             this.gboDatos.Controls.Add(this.btnBuscarMarca);
             this.gboDatos.Controls.Add(this.btnBuscarCategoria);
-            this.gboDatos.Controls.Add(this.label4);
-            this.gboDatos.Controls.Add(this.txtId);
             this.gboDatos.Controls.Add(this.lblDescripcion);
+            this.gboDatos.Controls.Add(this.txtCantidad);
+            this.gboDatos.Controls.Add(this.label4);
+            this.gboDatos.Controls.Add(this.txtDescripcion);
+            this.gboDatos.Controls.Add(this.txtId);
             this.gboDatos.Controls.Add(this.label3);
             this.gboDatos.Controls.Add(this.label5);
             this.gboDatos.Controls.Add(this.txtCodigo);
-            this.gboDatos.Controls.Add(this.txtDescripcion);
-            this.gboDatos.Controls.Add(this.txtCantidad);
-            this.gboDatos.Controls.Add(this.txt_categoria_produc);
-            this.gboDatos.Controls.Add(this.txt_marca_produc);
+            this.gboDatos.Controls.Add(this.txtCategoria);
+            this.gboDatos.Controls.Add(this.txtMarca);
             this.gboDatos.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboDatos.Location = new System.Drawing.Point(237, 76);
             this.gboDatos.Name = "gboDatos";
@@ -283,13 +283,25 @@
             this.gboDatos.TabStop = false;
             this.gboDatos.Text = "Datos";
             // 
+            // chbx_Estado
+            // 
+            this.chbx_Estado.AutoSize = true;
+            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbx_Estado.Location = new System.Drawing.Point(447, 101);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbx_Estado.Name = "chbx_Estado";
+            this.chbx_Estado.Size = new System.Drawing.Size(71, 21);
+            this.chbx_Estado.TabIndex = 46;
+            this.chbx_Estado.Text = "Estado";
+            this.chbx_Estado.UseVisualStyleBackColor = true;
+            // 
             // btnBuscarMarca
             // 
             this.btnBuscarMarca.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
             this.btnBuscarMarca.IconColor = System.Drawing.Color.Black;
             this.btnBuscarMarca.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscarMarca.IconSize = 18;
-            this.btnBuscarMarca.Location = new System.Drawing.Point(526, 28);
+            this.btnBuscarMarca.Location = new System.Drawing.Point(264, 68);
             this.btnBuscarMarca.Name = "btnBuscarMarca";
             this.btnBuscarMarca.Size = new System.Drawing.Size(24, 24);
             this.btnBuscarMarca.TabIndex = 44;
@@ -302,7 +314,7 @@
             this.btnBuscarCategoria.IconColor = System.Drawing.Color.Black;
             this.btnBuscarCategoria.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscarCategoria.IconSize = 18;
-            this.btnBuscarCategoria.Location = new System.Drawing.Point(526, 66);
+            this.btnBuscarCategoria.Location = new System.Drawing.Point(264, 106);
             this.btnBuscarCategoria.Name = "btnBuscarCategoria";
             this.btnBuscarCategoria.Size = new System.Drawing.Size(24, 24);
             this.btnBuscarCategoria.TabIndex = 43;
@@ -353,18 +365,6 @@
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // chbx_Estado
-            // 
-            this.chbx_Estado.AutoSize = true;
-            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chbx_Estado.Location = new System.Drawing.Point(468, 109);
-            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
-            this.chbx_Estado.Name = "chbx_Estado";
-            this.chbx_Estado.Size = new System.Drawing.Size(71, 21);
-            this.chbx_Estado.TabIndex = 46;
-            this.chbx_Estado.Text = "Estado";
-            this.chbx_Estado.UseVisualStyleBackColor = true;
-            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -381,7 +381,6 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormProductos";
             this.Text = "D";
-            this.Load += new System.EventHandler(this.Productos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroProducto)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).EndInit();
             this.gbBotones2.ResumeLayout(false);
@@ -403,8 +402,8 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.TextBox txt_marca_produc;
-        private System.Windows.Forms.TextBox txt_categoria_produc;
+        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.DataGridView dgvRegistroProducto;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Button btnDeshabilitar;

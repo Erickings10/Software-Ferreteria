@@ -22,38 +22,46 @@ namespace ProyectoMoanso
             gbBotones2.Enabled = false;
             gboDatos.Enabled = false;
             dgvRegistroProducto.Enabled = false;
-            txt_categoria_produc.Enabled = false;
+            txtCategoria.Enabled = false;
             //txtProveedor.Enabled = false;
-            txt_marca_produc.Enabled = false;
-            //listarProducto();
+            txtMarca.Enabled = false;
+            listarProducto();
+            CambiarEncabezados();
         }
 
-        private void txt_stock_produc_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)) 
+            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
             {
                 e.Handled = true;
                 errorStock.SetError(txtCantidad, "Solo ingrese numeros");
             }
-            else 
+            else
             {
-                errorStock.SetError(txtCantidad,"");
+                errorStock.SetError(txtCantidad, "");
             }
         }
+        private void LimpiarVariables()
+        {
+            txtDescripcion.Text = "";
+            txtMarca.Text = "";
+            txtCategoria.Text = "";
+            txtCantidad.Text = "";
+            chbx_Estado.Checked = false;
 
-
+        }
+        public void CambiarEncabezados()
+        {
+            dgvRegistroProducto.Columns["CategoriaproductoID"].HeaderText = "Categoria";
+            dgvRegistroProducto.Columns["MarcaproductoID"].HeaderText = "Marca";
+            dgvRegistroProducto.Columns["descripcion"].HeaderText = "Descripcion";
+            dgvRegistroProducto.Columns["cantidad"].HeaderText = "Cantidad";
+            dgvRegistroProducto.Columns["estado"].HeaderText = "Estado";
+        }
 
         public void listarProducto()
         {
             dgvRegistroProducto.DataSource = logProductos.Instancia.ListarProductos();
-        }
-
-
-
-
-        private void Productos_Load(object sender, EventArgs e)
-        {
-
         }
 
         private void btn_Guardar_Produc_Click(object sender, EventArgs e)
@@ -64,13 +72,11 @@ namespace ProyectoMoanso
             {
                 entProductos p = new entProductos();
 
-                p.Nombre_Producto = txtDescripcion.Text;
-
-                p.Marca_Producto = txt_marca_produc.Text;
-
-                p.Categoria_Producto = txt_categoria_produc.Text;
-
-                p.Stock = Convert.ToInt32(txtCantidad.Text);
+                p.CategoriaproductoID = Convert.ToInt32(txtCategoria.Text);
+                p.MarcaproductoID = Convert.ToInt32(txtMarca.Text);
+                p.descripcion = txtDescripcion.Text;
+                p.cantidad = Convert.ToInt64(txtCantidad.Text);
+                p.estado = Convert.ToBoolean(chbx_Estado.Checked);
 
                 logProductos.Instancia.InsertaProductos(p);
 
@@ -79,28 +85,16 @@ namespace ProyectoMoanso
             {
                 MessageBox.Show("Error.." + ex);
             }
-            
+
             LimpiarVariables();
-           
+
             listarProducto();
         }
 
 
 
 
-        private void LimpiarVariables()
-        {
-            txtDescripcion.Text = "";
 
-            txt_marca_produc.Text = "";
-
-            txt_categoria_produc.Text = "";
-
-            txtCantidad.Text = "";
-
-            //cbkEstadoCliente.Checked = false;
-
-        }
 
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
@@ -124,7 +118,7 @@ namespace ProyectoMoanso
             {
                 if (formReporteMarca.ShowDialog() == DialogResult.OK)
                 {
-                    txt_marca_produc.Text = formReporteMarca.Marca;
+                    txtMarca.Text = formReporteMarca.Marca;
                 }
 
             }
@@ -136,7 +130,7 @@ namespace ProyectoMoanso
             {
                 if (formReporteCateg.ShowDialog() == DialogResult.OK)
                 {
-                    txt_categoria_produc.Text = formReporteCateg.Categoria;
+                    txtCategoria.Text = formReporteCateg.Categoria;
                 }
 
             }
@@ -170,6 +164,9 @@ namespace ProyectoMoanso
         {
             AbrirReporteProveedor();
         }
+
+
+
     }
 }
 

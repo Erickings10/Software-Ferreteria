@@ -37,18 +37,19 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaProductos", cn);
+                cmd = new SqlCommand("spListarProductos", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     entProductos Prod = new entProductos();
-                    Prod.Id_Producto= Convert.ToInt32(dr["Id_Producto"]);
-                    Prod.Nombre_Producto = Convert.ToString(dr["Nombre_Producto"]);
-                    Prod.Marca_Producto = Convert.ToString(dr["Marca_Producto"]);
-                    Prod.Categoria_Producto = Convert.ToString(dr["Categoria_Producto"]);
-                    Prod.Stock = Convert.ToInt32(dr["Stock"]);
+                    Prod.ProductoID = Convert.ToInt32(dr["ProductoID"]);
+                    Prod.CategoriaproductoID = Convert.ToInt32(dr["CategoriaproductoID"]);
+                    Prod.MarcaproductoID = Convert.ToInt32(dr["MarcaproductoID"]);
+                    Prod.descripcion = Convert.ToString(dr["descripcion"]);
+                    Prod.cantidad = Convert.ToInt64(dr["cantidad"]);
+                    Prod.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Prod);
                 }
 
@@ -71,12 +72,13 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertaProductos",cn);
+                cmd = new SqlCommand("spInsertarProductos", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre_Producto",Prod.Nombre_Producto);
-                cmd.Parameters.AddWithValue("@Marca_Producto", Prod.Marca_Producto);
-                cmd.Parameters.AddWithValue("@Categoria_Producto",Prod.Categoria_Producto);
-                cmd.Parameters.AddWithValue("@Stock", Prod.Stock);
+                cmd.Parameters.AddWithValue("@CategoriaproductoID", Prod.CategoriaproductoID);
+                cmd.Parameters.AddWithValue("@MarcaproductoID", Prod.MarcaproductoID);
+                cmd.Parameters.AddWithValue("@descripcion", Prod.descripcion);
+                cmd.Parameters.AddWithValue("@cantidad", Prod.cantidad);
+                cmd.Parameters.AddWithValue("@estado", Prod.estado);
 
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -94,7 +96,6 @@ namespace CapaDatos
 
             return inserta;
         }
-
 
 
 
