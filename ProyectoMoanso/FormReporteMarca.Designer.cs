@@ -30,19 +30,21 @@ namespace ProyectoMoanso
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporteMarca));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvReporteMarca = new System.Windows.Forms.DataGridView();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btn_Nuevo = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteMarca)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvReporteMarca
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 33);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 318);
-            this.dataGridView1.TabIndex = 0;
+            this.dgvReporteMarca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporteMarca.Location = new System.Drawing.Point(39, 33);
+            this.dgvReporteMarca.Name = "dgvReporteMarca";
+            this.dgvReporteMarca.ReadOnly = true;
+            this.dgvReporteMarca.Size = new System.Drawing.Size(543, 318);
+            this.dgvReporteMarca.TabIndex = 0;
+            this.dgvReporteMarca.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // btnCancelar
             // 
@@ -83,19 +85,19 @@ namespace ProyectoMoanso
             this.ClientSize = new System.Drawing.Size(774, 392);
             this.Controls.Add(this.btn_Nuevo);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvReporteMarca);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReporteMarca";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormReporteMarca";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteMarca)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvReporteMarca;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btn_Nuevo;
     }

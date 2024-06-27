@@ -23,7 +23,7 @@ namespace ProyectoMoanso
             gboDatos.Enabled = false;
             dgvRegistroProducto.Enabled = false;
             txt_categoria_produc.Enabled = false;
-            txtProveedor.Enabled = false;
+            //txtProveedor.Enabled = false;
             txt_marca_produc.Enabled = false;
             //listarProducto();
         }
@@ -33,11 +33,11 @@ namespace ProyectoMoanso
             if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar)) 
             {
                 e.Handled = true;
-                errorStock.SetError(txt_stock_produc, "Solo ingrese numeros");
+                errorStock.SetError(txtCantidad, "Solo ingrese numeros");
             }
             else 
             {
-                errorStock.SetError(txt_stock_produc,"");
+                errorStock.SetError(txtCantidad,"");
             }
         }
 
@@ -70,7 +70,7 @@ namespace ProyectoMoanso
 
                 p.Categoria_Producto = txt_categoria_produc.Text;
 
-                p.Stock = Convert.ToInt32(txt_stock_produc.Text);
+                p.Stock = Convert.ToInt32(txtCantidad.Text);
 
                 logProductos.Instancia.InsertaProductos(p);
 
@@ -96,7 +96,7 @@ namespace ProyectoMoanso
 
             txt_categoria_produc.Text = "";
 
-            txt_stock_produc.Text = "";
+            txtCantidad.Text = "";
 
             //cbkEstadoCliente.Checked = false;
 
@@ -149,7 +149,7 @@ namespace ProyectoMoanso
                 {
 
 
-                    txtProveedor.Text = frmReporteProovedor.sectorProve;
+                    //txtProveedor.Text = frmReporteProovedor.sectorProve;
 
 
                 }

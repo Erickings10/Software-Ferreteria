@@ -16,7 +16,7 @@ namespace ProyectoMoanso
         {
             InitializeComponent();
             txtMontoFac.Enabled = false;
-            txtpProveedorFac.Enabled = false;
+            
         }
     }
 }

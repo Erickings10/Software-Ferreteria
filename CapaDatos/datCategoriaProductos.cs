@@ -33,7 +33,7 @@ namespace CapaDatos
             {
                 using (SqlConnection con = Conexion.Instancia.Conectar())
                 {
-                    using (SqlCommand cmd = new SqlCommand("spListaCategoriaProducto", con))
+                    using (SqlCommand cmd = new SqlCommand("spListarCategoria", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
                         con.Open();
@@ -42,10 +42,9 @@ namespace CapaDatos
                             while (cprod.Read())
                             {
                                 entCategoriaProductos cp = new entCategoriaProductos();
-                                cp.IdCategoriaProducto = Convert.ToInt32(cprod["IdCategoriaProducto"]);
-                                cp.nombreCategoriaProducto = Convert.ToString(cprod["nombreCategoriaProducto"]);
-                                cp.FechaRegistro = Convert.ToDateTime(cprod["FechaRegistro"]);
-                                cp.EstadoCategoriaProducto = Convert.ToBoolean(cprod["EstadoCategoriaProducto"]);
+                                cp.CategoriaproductoID = Convert.ToInt32(cprod["CategoriaproductoID"]);
+                                cp.categoria = Convert.ToString(cprod["categoria"]);
+                                cp.estado = Convert.ToBoolean(cprod["estado"]);
                                 lista.Add(cp);
                             }
                         }
@@ -67,12 +66,11 @@ namespace CapaDatos
             {
                 using (SqlConnection con = Conexion.Instancia.Conectar())
                 {
-                    using (SqlCommand cmd = new SqlCommand("spInsertaCategoriaProducto", con))
+                    using (SqlCommand cmd = new SqlCommand("spInsertarCategoria", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@nombreCategoriaProducto", cp.nombreCategoriaProducto);
-                        cmd.Parameters.AddWithValue("@FechaRegistro", cp.FechaRegistro);
-                        cmd.Parameters.AddWithValue("@EstadoCategoriaProducto", cp.EstadoCategoriaProducto);
+                        cmd.Parameters.AddWithValue("@categoria", cp.categoria);
+                        cmd.Parameters.AddWithValue("@estado", cp.estado);
                         con.Open();
                         int i = cmd.ExecuteNonQuery();
                         if (i > 0)
@@ -98,12 +96,11 @@ namespace CapaDatos
             try
             {
                 SqlConnection con = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaCategoriaProducto", con);
+                cmd = new SqlCommand("spEditarCategoria", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IdCategoriaProducto", cp.IdCategoriaProducto);
-                cmd.Parameters.AddWithValue("@nombreCategoriaProducto", cp.nombreCategoriaProducto);
-                cmd.Parameters.AddWithValue("@FechaRegistro", cp.FechaRegistro);
-                cmd.Parameters.AddWithValue("@EstadoCategoriaProducto", cp.EstadoCategoriaProducto);
+                cmd.Parameters.AddWithValue("@CategoriaproductoID", cp.CategoriaproductoID);
+                cmd.Parameters.AddWithValue("@categoria", cp.categoria);
+                cmd.Parameters.AddWithValue("@estado", cp.estado);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -134,10 +131,10 @@ namespace CapaDatos
             try
             {
                 SqlConnection con = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitaCategoriaProducto", con);
+                cmd = new SqlCommand("spDeshabilitarCategoria", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IdCategoriaProducto", cp.IdCategoriaProducto);
-                //cmd.Parameters.AddWithValue("@EstadoCategoriaProducto", cp.EstadoCategoriaProducto);
+                cmd.Parameters.AddWithValue("@CategoriaproductoID", cp.CategoriaproductoID);
+                //cmd.Parameters.AddWithValue("@estado", cp.estado);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -160,6 +157,36 @@ namespace CapaDatos
             return deshabilitar;
         }
 
+        public List<entCategoriaProductos> ListarReporteCategoriaProducto()
+        {
+            SqlCommand cmd = null;
+            List<entCategoriaProductos> lista = new List<entCategoriaProductos>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarReporteCategoria", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entCategoriaProductos Cat = new entCategoriaProductos();
+                    Cat.CategoriaproductoID = Convert.ToInt32(dr["CategoriaproductoID"]);
+                    Cat.categoria = Convert.ToString(dr["categoria"]);
+                    Cat.estado = Convert.ToBoolean(dr["estado"]);
+                    lista.Add(Cat);
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
 
 
 
@@ -181,7 +208,8 @@ namespace CapaDatos
 
 
 
-        #endregion metodos
+
+            #endregion metodos
 
 
 
@@ -193,5 +221,6 @@ namespace CapaDatos
 
 
 
-    }
+        }
+    } 
 }

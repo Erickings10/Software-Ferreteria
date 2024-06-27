@@ -309,3 +309,9 @@ C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\Pro
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.pdb
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormCategoriaProducto.resources
 >>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormDetalleOrdenCompra.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormDetalleRequerimiento.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormMetodoPago.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteMetodos.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteDetalleOrden.resources
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRequerimiento.resources

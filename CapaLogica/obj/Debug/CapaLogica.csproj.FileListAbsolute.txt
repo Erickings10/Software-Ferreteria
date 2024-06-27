@@ -133,3 +133,4 @@ C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\Cap
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
 >>>>>>> dd31acfd6d4433f67da2818ac7f53c9b037bda6a
+D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date

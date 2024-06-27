@@ -30,19 +30,21 @@ namespace ProyectoMoanso
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporteCategoria));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvReporteCategoria = new System.Windows.Forms.DataGridView();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteCategoria)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dgvReporteCategoria
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 32);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(543, 318);
-            this.dataGridView1.TabIndex = 37;
+            this.dgvReporteCategoria.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporteCategoria.Location = new System.Drawing.Point(39, 32);
+            this.dgvReporteCategoria.Name = "dgvReporteCategoria";
+            this.dgvReporteCategoria.ReadOnly = true;
+            this.dgvReporteCategoria.Size = new System.Drawing.Size(543, 318);
+            this.dgvReporteCategoria.TabIndex = 37;
+            this.dgvReporteCategoria.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReporteCategoria_CellDoubleClick);
             // 
             // btn_Nuevo
             // 
@@ -83,12 +85,12 @@ namespace ProyectoMoanso
             this.ClientSize = new System.Drawing.Size(774, 392);
             this.Controls.Add(this.btn_Nuevo);
             this.Controls.Add(this.btnCancelar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvReporteCategoria);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReporteCategoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormReporteCategoria";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteCategoria)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -97,6 +99,6 @@ namespace ProyectoMoanso
 
         private System.Windows.Forms.Button btn_Nuevo;
         private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvReporteCategoria;
     }
 }

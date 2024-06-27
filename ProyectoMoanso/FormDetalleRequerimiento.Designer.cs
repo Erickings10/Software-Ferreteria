@@ -1,6 +1,6 @@
 ﻿namespace ProyectoMoanso
 {
-    partial class FormRequerimientoNuevo
+    partial class FormDetalleRequerimiento
     {
         /// <summary>
         /// Required designer variable.
@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormRequerimientoNuevo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetalleRequerimiento));
             this.dgvNuevoReq = new System.Windows.Forms.DataGridView();
             this.gboRequerimientos = new System.Windows.Forms.GroupBox();
+            this.btnBuscarPro = new FontAwesome.Sharp.IconButton();
             this.txtCategoria = new System.Windows.Forms.TextBox();
             this.chboEstadoReque = new System.Windows.Forms.CheckBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
@@ -48,7 +49,7 @@
             this.txt_marca = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnBuscarPro = new FontAwesome.Sharp.IconButton();
+            this.txtDeshabilitar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuevoReq)).BeginInit();
             this.gboRequerimientos.SuspendLayout();
             this.SuspendLayout();
@@ -58,7 +59,7 @@
             this.dgvNuevoReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNuevoReq.Location = new System.Drawing.Point(298, 27);
             this.dgvNuevoReq.Name = "dgvNuevoReq";
-            this.dgvNuevoReq.Size = new System.Drawing.Size(544, 421);
+            this.dgvNuevoReq.Size = new System.Drawing.Size(544, 461);
             this.dgvNuevoReq.TabIndex = 43;
             // 
             // gboRequerimientos
@@ -86,6 +87,19 @@
             this.gboRequerimientos.TabIndex = 42;
             this.gboRequerimientos.TabStop = false;
             this.gboRequerimientos.Text = "DATOS:";
+            // 
+            // btnBuscarPro
+            // 
+            this.btnBuscarPro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarPro.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarPro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarPro.IconSize = 18;
+            this.btnBuscarPro.Location = new System.Drawing.Point(213, 70);
+            this.btnBuscarPro.Name = "btnBuscarPro";
+            this.btnBuscarPro.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarPro.TabIndex = 42;
+            this.btnBuscarPro.UseVisualStyleBackColor = true;
+            this.btnBuscarPro.Click += new System.EventHandler(this.btnBuscarPro_Click);
             // 
             // txtCategoria
             // 
@@ -235,7 +249,7 @@
             this.btnCancelar.Font = new System.Drawing.Font("Roboto", 10F);
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(155, 412);
+            this.btnCancelar.Location = new System.Drawing.Point(95, 454);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(118, 36);
             this.btnCancelar.TabIndex = 45;
@@ -248,9 +262,9 @@
             // 
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.enviar_orden;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(31, 412);
+            this.btnAgregar.Location = new System.Drawing.Point(21, 412);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(104, 36);
             this.btnAgregar.TabIndex = 44;
@@ -259,31 +273,34 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnBuscarPro
+            // txtDeshabilitar
             // 
-            this.btnBuscarPro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarPro.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarPro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarPro.IconSize = 18;
-            this.btnBuscarPro.Location = new System.Drawing.Point(213, 70);
-            this.btnBuscarPro.Name = "btnBuscarPro";
-            this.btnBuscarPro.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarPro.TabIndex = 42;
-            this.btnBuscarPro.UseVisualStyleBackColor = true;
-            this.btnBuscarPro.Click += new System.EventHandler(this.btnBuscarPro_Click);
+            this.txtDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.txtDeshabilitar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.txtDeshabilitar.Image = global::ProyectoMoanso.Properties.Resources.cancelar_orden;
+            this.txtDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.txtDeshabilitar.Location = new System.Drawing.Point(140, 412);
+            this.txtDeshabilitar.Name = "txtDeshabilitar";
+            this.txtDeshabilitar.Size = new System.Drawing.Size(133, 36);
+            this.txtDeshabilitar.TabIndex = 51;
+            this.txtDeshabilitar.Text = "Deshabilitar";
+            this.txtDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtDeshabilitar.UseVisualStyleBackColor = true;
             // 
-            // FormRequerimientoNuevo
+            // FormDetalleRequerimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(854, 489);
+            this.ClientSize = new System.Drawing.Size(854, 517);
+            this.Controls.Add(this.txtDeshabilitar);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.dgvNuevoReq);
             this.Controls.Add(this.gboRequerimientos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "FormRequerimientoNuevo";
+            this.Name = "FormDetalleRequerimiento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormRequerimientoNuevo";
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuevoReq)).EndInit();
             this.gboRequerimientos.ResumeLayout(false);
@@ -314,5 +331,6 @@
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_marca;
+        private System.Windows.Forms.Button txtDeshabilitar;
     }
 }

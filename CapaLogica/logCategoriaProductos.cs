@@ -25,6 +25,8 @@ namespace CapaLogica
         #endregion singleton
 
 
+        #region metodos
+
         public List<entCategoriaProductos> ListarCategoriaProducto()
         {
             return datCategoriaProductos.Instancia.ListarCategoriaProducto();
@@ -38,7 +40,7 @@ namespace CapaLogica
 
         public void EditaCategoriaProducto(entCategoriaProductos cp)
         {
-           datCategoriaProductos.Instancia.EditaCategoriaProducto(cp);
+            datCategoriaProductos.Instancia.EditaCategoriaProducto(cp);
 
         }
 
@@ -47,16 +49,13 @@ namespace CapaLogica
             datCategoriaProductos.Instancia.DeshabilitarCategoriaProducto(cp);
         }
 
+        public List<entCategoriaProductos> ListarReporteCategoriaProducto()
+        {
+            return datCategoriaProductos.Instancia.ListarReporteCategoriaProducto();
 
 
+        }
 
-
-
-
-
-
-
-
-
+        #endregion metodos
     }
 }

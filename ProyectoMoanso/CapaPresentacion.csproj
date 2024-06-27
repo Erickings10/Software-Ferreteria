@@ -59,6 +59,12 @@
     <Compile Include="FormCategoriaProducto.Designer.cs">
       <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormDetalleOrdenCompra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDetalleOrdenCompra.Designer.cs">
+      <DependentUpon>FormDetalleOrdenCompra.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormEntradaProductos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,11 +83,23 @@
     <Compile Include="FormMarcaProducto.Designer.cs">
       <DependentUpon>FormMarcaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMetodoPago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMetodoPago.Designer.cs">
+      <DependentUpon>FormMetodoPago.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormReporteCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormReporteCategoria.Designer.cs">
       <DependentUpon>FormReporteCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteDetalleOrden.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteDetalleOrden.Designer.cs">
+      <DependentUpon>FormReporteDetalleOrden.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReporteMarca.cs">
       <SubType>Form</SubType>
@@ -95,11 +113,17 @@
     <Compile Include="FormReporteProducto.Designer.cs">
       <DependentUpon>FormReporteProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRequerimientoNuevo.cs">
+    <Compile Include="FormDetalleRequerimiento.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormRequerimientoNuevo.Designer.cs">
-      <DependentUpon>FormRequerimientoNuevo.cs</DependentUpon>
+    <Compile Include="FormDetalleRequerimiento.Designer.cs">
+      <DependentUpon>FormDetalleRequerimiento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReporteRequerimiento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteRequerimiento.Designer.cs">
+      <DependentUpon>FormReporteRequerimiento.cs</DependentUpon>
     </Compile>
     <Compile Include="FormRubroProveedor.cs">
       <SubType>Form</SubType>
@@ -163,8 +187,18 @@
     <Compile Include="FormReporteRubro.Designer.cs">
       <DependentUpon>FormReporteRubro.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormReporteMetodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReporteMetodos.Designer.cs">
+      <DependentUpon>FormReporteMetodos.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FormCategoriaProducto.resx">
       <DependentUpon>FormCategoriaProducto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDetalleOrdenCompra.resx">
+      <DependentUpon>FormDetalleOrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormEntradaProductos.resx">
       <DependentUpon>FormEntradaProductos.cs</DependentUpon>
@@ -175,8 +209,14 @@
     <EmbeddedResource Include="FormMarcaProducto.resx">
       <DependentUpon>FormMarcaProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMetodoPago.resx">
+      <DependentUpon>FormMetodoPago.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormReporteCategoria.resx">
       <DependentUpon>FormReporteCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteDetalleOrden.resx">
+      <DependentUpon>FormReporteDetalleOrden.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporteMarca.resx">
       <DependentUpon>FormReporteMarca.cs</DependentUpon>
@@ -184,8 +224,11 @@
     <EmbeddedResource Include="FormReporteProducto.resx">
       <DependentUpon>FormReporteProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormRequerimientoNuevo.resx">
-      <DependentUpon>FormRequerimientoNuevo.cs</DependentUpon>
+    <EmbeddedResource Include="FormDetalleRequerimiento.resx">
+      <DependentUpon>FormDetalleRequerimiento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteRequerimiento.resx">
+      <DependentUpon>FormReporteRequerimiento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormRubroProveedor.resx">
       <DependentUpon>FormRubroProveedor.cs</DependentUpon>
@@ -221,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporteRubro.resx">
       <DependentUpon>FormReporteRubro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReporteMetodos.resx">
+      <DependentUpon>FormReporteMetodos.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

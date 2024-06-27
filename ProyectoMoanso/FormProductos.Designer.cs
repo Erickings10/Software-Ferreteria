@@ -37,15 +37,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
-            this.txt_stock_produc = new System.Windows.Forms.TextBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txt_marca_produc = new System.Windows.Forms.TextBox();
             this.txt_categoria_produc = new System.Windows.Forms.TextBox();
             this.dgvRegistroProducto = new System.Windows.Forms.DataGridView();
             this.errorStock = new System.Windows.Forms.ErrorProvider(this.components);
-            this.label7 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtProveedor = new System.Windows.Forms.TextBox();
             this.gbBotones2 = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -53,10 +51,10 @@
             this.gboDatos = new System.Windows.Forms.GroupBox();
             this.btnBuscarMarca = new FontAwesome.Sharp.IconButton();
             this.btnBuscarCategoria = new FontAwesome.Sharp.IconButton();
-            this.btnBuscarProveedor = new FontAwesome.Sharp.IconButton();
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.gbBotones2.SuspendLayout();
@@ -67,11 +65,11 @@
             // txtId
             // 
             this.txtId.AutoSize = true;
-            this.txtId.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtId.Font = new System.Drawing.Font("Roboto", 10F);
             this.txtId.Location = new System.Drawing.Point(31, 31);
             this.txtId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(25, 17);
+            this.txtId.Size = new System.Drawing.Size(24, 17);
             this.txtId.TabIndex = 0;
             this.txtId.Text = "ID:";
             // 
@@ -79,29 +77,29 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.CausesValidation = false;
-            this.lblDescripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Font = new System.Drawing.Font("Roboto", 10F);
             this.lblDescripcion.Location = new System.Drawing.Point(17, 71);
             this.lblDescripcion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(94, 17);
+            this.lblDescripcion.Size = new System.Drawing.Size(89, 17);
             this.lblDescripcion.TabIndex = 1;
             this.lblDescripcion.Text = "Descripción:  ";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Roboto", 10F);
             this.label3.Location = new System.Drawing.Point(31, 108);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 17);
+            this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Stock:";
+            this.label3.Text = "Cantidad: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Roboto", 10F);
             this.label4.Location = new System.Drawing.Point(293, 30);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
@@ -112,11 +110,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Roboto", 10F);
             this.label5.Location = new System.Drawing.Point(293, 70);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(73, 17);
+            this.label5.Size = new System.Drawing.Size(72, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Categoría:";
             // 
@@ -136,14 +134,14 @@
             this.txtDescripcion.Size = new System.Drawing.Size(141, 23);
             this.txtDescripcion.TabIndex = 6;
             // 
-            // txt_stock_produc
+            // txtCantidad
             // 
-            this.txt_stock_produc.Location = new System.Drawing.Point(115, 108);
-            this.txt_stock_produc.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_stock_produc.Name = "txt_stock_produc";
-            this.txt_stock_produc.Size = new System.Drawing.Size(141, 23);
-            this.txt_stock_produc.TabIndex = 7;
-            this.txt_stock_produc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_stock_produc_KeyPress);
+            this.txtCantidad.Location = new System.Drawing.Point(115, 108);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(141, 23);
+            this.txtCantidad.TabIndex = 7;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_stock_produc_KeyPress);
             // 
             // txt_marca_produc
             // 
@@ -179,17 +177,6 @@
             // 
             this.errorStock.ContainerControl = this;
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(293, 108);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 17);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Proveedor:";
-            // 
             // menuStrip1
             // 
             this.menuStrip1.AutoSize = false;
@@ -212,14 +199,6 @@
             this.label6.Size = new System.Drawing.Size(340, 31);
             this.label6.TabIndex = 26;
             this.label6.Text = "REGISTRO DE PRODUCTOS";
-            // 
-            // txtProveedor
-            // 
-            this.txtProveedor.Location = new System.Drawing.Point(375, 109);
-            this.txtProveedor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProveedor.Name = "txtProveedor";
-            this.txtProveedor.Size = new System.Drawing.Size(143, 23);
-            this.txtProveedor.TabIndex = 27;
             // 
             // gbBotones2
             // 
@@ -283,19 +262,17 @@
             // 
             // gboDatos
             // 
+            this.gboDatos.Controls.Add(this.chbx_Estado);
             this.gboDatos.Controls.Add(this.btnBuscarMarca);
             this.gboDatos.Controls.Add(this.btnBuscarCategoria);
             this.gboDatos.Controls.Add(this.label4);
             this.gboDatos.Controls.Add(this.txtId);
-            this.gboDatos.Controls.Add(this.btnBuscarProveedor);
             this.gboDatos.Controls.Add(this.lblDescripcion);
-            this.gboDatos.Controls.Add(this.txtProveedor);
             this.gboDatos.Controls.Add(this.label3);
             this.gboDatos.Controls.Add(this.label5);
             this.gboDatos.Controls.Add(this.txtCodigo);
-            this.gboDatos.Controls.Add(this.label7);
             this.gboDatos.Controls.Add(this.txtDescripcion);
-            this.gboDatos.Controls.Add(this.txt_stock_produc);
+            this.gboDatos.Controls.Add(this.txtCantidad);
             this.gboDatos.Controls.Add(this.txt_categoria_produc);
             this.gboDatos.Controls.Add(this.txt_marca_produc);
             this.gboDatos.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -331,19 +308,6 @@
             this.btnBuscarCategoria.TabIndex = 43;
             this.btnBuscarCategoria.UseVisualStyleBackColor = true;
             this.btnBuscarCategoria.Click += new System.EventHandler(this.btnBuscarCategoria_Click);
-            // 
-            // btnBuscarProveedor
-            // 
-            this.btnBuscarProveedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarProveedor.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarProveedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarProveedor.IconSize = 18;
-            this.btnBuscarProveedor.Location = new System.Drawing.Point(526, 108);
-            this.btnBuscarProveedor.Name = "btnBuscarProveedor";
-            this.btnBuscarProveedor.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarProveedor.TabIndex = 42;
-            this.btnBuscarProveedor.UseVisualStyleBackColor = true;
-            this.btnBuscarProveedor.Click += new System.EventHandler(this.btnBuscarProveedor_Click);
             // 
             // gboBotones1
             // 
@@ -389,6 +353,18 @@
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // chbx_Estado
+            // 
+            this.chbx_Estado.AutoSize = true;
+            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbx_Estado.Location = new System.Drawing.Point(468, 109);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbx_Estado.Name = "chbx_Estado";
+            this.chbx_Estado.Size = new System.Drawing.Size(71, 21);
+            this.chbx_Estado.TabIndex = 46;
+            this.chbx_Estado.Text = "Estado";
+            this.chbx_Estado.UseVisualStyleBackColor = true;
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -426,7 +402,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtDescripcion;
-        private System.Windows.Forms.TextBox txt_stock_produc;
+        private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.TextBox txt_marca_produc;
         private System.Windows.Forms.TextBox txt_categoria_produc;
         private System.Windows.Forms.DataGridView dgvRegistroProducto;
@@ -434,11 +410,8 @@
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.ErrorProvider errorStock;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.TextBox txtProveedor;
-        private FontAwesome.Sharp.IconButton btnBuscarProveedor;
         private System.Windows.Forms.GroupBox gbBotones2;
         private System.Windows.Forms.GroupBox gboDatos;
         private FontAwesome.Sharp.IconButton btnBuscarMarca;
@@ -446,5 +419,6 @@
         private System.Windows.Forms.GroupBox gboBotones1;
         private System.Windows.Forms.Button btn_Nuevo;
         private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.CheckBox chbx_Estado;
     }
 }

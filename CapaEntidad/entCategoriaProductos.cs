@@ -10,11 +10,9 @@ namespace CapaEntidad
     {
 
 
-        public int IdCategoriaProducto { get; set; }
-        public string nombreCategoriaProducto { get; set; }
-        public DateTime FechaRegistro { get; set; }
-        public Boolean EstadoCategoriaProducto { get; set; }
-
+        public int CategoriaproductoID { get; set; }
+        public string categoria { get; set; }
+        public Boolean estado { get; set; }
 
 
     }

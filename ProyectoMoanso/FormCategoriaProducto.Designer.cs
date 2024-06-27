@@ -31,15 +31,15 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategoriaProducto));
             this.dgvCategoriaPro = new System.Windows.Forms.DataGridView();
             this.gbBotones = new System.Windows.Forms.GroupBox();
-            this.gboxDatos = new System.Windows.Forms.GroupBox();
-            this.chbxEstado = new System.Windows.Forms.CheckBox();
-            this.txtMarca = new System.Windows.Forms.TextBox();
-            this.txtId = new System.Windows.Forms.TextBox();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
+            this.gboxDatos = new System.Windows.Forms.GroupBox();
+            this.chbxEstado = new System.Windows.Forms.CheckBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.PanelCat = new System.Windows.Forms.Panel();
@@ -60,6 +60,7 @@
             this.dgvCategoriaPro.ReadOnly = true;
             this.dgvCategoriaPro.Size = new System.Drawing.Size(565, 267);
             this.dgvCategoriaPro.TabIndex = 50;
+            this.dgvCategoriaPro.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategoriaPro_CellDoubleClick);
             // 
             // gbBotones
             // 
@@ -72,10 +73,61 @@
             this.gbBotones.TabIndex = 49;
             this.gbBotones.TabStop = false;
             // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(18, 18);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(134, 38);
+            this.btnAgregar.TabIndex = 15;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(18, 80);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(134, 38);
+            this.btnModificar.TabIndex = 13;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
+            // 
+            // btnDeshabilitar
+            // 
+            this.btnDeshabilitar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Roboto", 10.2F);
+            this.btnDeshabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.Image")));
+            this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeshabilitar.Location = new System.Drawing.Point(18, 140);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(134, 38);
+            this.btnDeshabilitar.TabIndex = 14;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
+            // 
             // gboxDatos
             // 
             this.gboxDatos.Controls.Add(this.chbxEstado);
-            this.gboxDatos.Controls.Add(this.txtMarca);
+            this.gboxDatos.Controls.Add(this.txtCategoria);
             this.gboxDatos.Controls.Add(this.txtId);
             this.gboxDatos.Controls.Add(this.lblCategoria);
             this.gboxDatos.Controls.Add(this.label2);
@@ -100,13 +152,13 @@
             this.chbxEstado.Text = "Estado";
             this.chbxEstado.UseVisualStyleBackColor = true;
             // 
-            // txtMarca
+            // txtCategoria
             // 
-            this.txtMarca.Location = new System.Drawing.Point(261, 30);
-            this.txtMarca.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMarca.Name = "txtMarca";
-            this.txtMarca.Size = new System.Drawing.Size(108, 24);
-            this.txtMarca.TabIndex = 5;
+            this.txtCategoria.Location = new System.Drawing.Point(261, 30);
+            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(108, 24);
+            this.txtCategoria.TabIndex = 5;
             // 
             // txtId
             // 
@@ -135,54 +187,6 @@
             this.label2.Size = new System.Drawing.Size(24, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "ID:";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10.2F);
-            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(18, 18);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(134, 38);
-            this.btnAgregar.TabIndex = 15;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10.2F);
-            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(18, 80);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(134, 38);
-            this.btnModificar.TabIndex = 13;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
-            // btnDeshabilitar
-            // 
-            this.btnDeshabilitar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnDeshabilitar.Font = new System.Drawing.Font("Roboto", 10.2F);
-            this.btnDeshabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.Image")));
-            this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeshabilitar.Location = new System.Drawing.Point(18, 140);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnDeshabilitar.Name = "btnDeshabilitar";
-            this.btnDeshabilitar.Size = new System.Drawing.Size(134, 38);
-            this.btnDeshabilitar.TabIndex = 14;
-            this.btnDeshabilitar.Text = "Deshabilitar";
-            this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnDeshabilitar.UseVisualStyleBackColor = false;
             // 
             // btn_Nuevo
             // 
@@ -273,7 +277,7 @@
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.GroupBox gboxDatos;
         private System.Windows.Forms.CheckBox chbxEstado;
-        private System.Windows.Forms.TextBox txtMarca;
+        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label label2;

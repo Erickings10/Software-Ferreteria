@@ -45,14 +45,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.label8 = new System.Windows.Forms.Label();
             this.gbox_Datos = new System.Windows.Forms.GroupBox();
+            this.btn_BuscarRubro = new FontAwesome.Sharp.IconButton();
             this.txtSectorCome = new System.Windows.Forms.TextBox();
             this.btn_deshabilitar = new System.Windows.Forms.Button();
             this.btn_modificar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
-            this.btn_BuscarRubro = new FontAwesome.Sharp.IconButton();
             this.btn_eliminar_pro = new System.Windows.Forms.Button();
             this.btn_actualizar_pro = new System.Windows.Forms.Button();
             this.btn_agregar_pro = new System.Windows.Forms.Button();
+            this.datp_Fecha = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).BeginInit();
             this.gbox_Datos.SuspendLayout();
             this.SuspendLayout();
@@ -61,7 +63,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(18, 21);
+            this.label2.Location = new System.Drawing.Point(32, 27);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(27, 17);
@@ -83,12 +85,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(18, 160);
+            this.label4.Location = new System.Drawing.Point(18, 153);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 17);
+            this.label4.Size = new System.Drawing.Size(55, 17);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Sector Comercial:";
+            this.label4.Text = "Rubro: ";
             // 
             // label5
             // 
@@ -127,8 +129,8 @@
             // 
             this.chbEstado.AutoSize = true;
             this.chbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chbEstado.Location = new System.Drawing.Point(272, 115);
-            this.chbEstado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbEstado.Location = new System.Drawing.Point(268, 149);
+            this.chbEstado.Margin = new System.Windows.Forms.Padding(2);
             this.chbEstado.Name = "chbEstado";
             this.chbEstado.Size = new System.Drawing.Size(71, 21);
             this.chbEstado.TabIndex = 7;
@@ -137,16 +139,16 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(54, 20);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Location = new System.Drawing.Point(84, 25);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(42, 22);
             this.txtId.TabIndex = 8;
             // 
             // txtRucPro
             // 
-            this.txtRucPro.Location = new System.Drawing.Point(71, 63);
-            this.txtRucPro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtRucPro.Location = new System.Drawing.Point(84, 65);
+            this.txtRucPro.Margin = new System.Windows.Forms.Padding(2);
             this.txtRucPro.Name = "txtRucPro";
             this.txtRucPro.Size = new System.Drawing.Size(121, 22);
             this.txtRucPro.TabIndex = 9;
@@ -154,8 +156,8 @@
             // 
             // txtUbigeo
             // 
-            this.txtUbigeo.Location = new System.Drawing.Point(91, 112);
-            this.txtUbigeo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUbigeo.Location = new System.Drawing.Point(84, 111);
+            this.txtUbigeo.Margin = new System.Windows.Forms.Padding(2);
             this.txtUbigeo.Name = "txtUbigeo";
             this.txtUbigeo.Size = new System.Drawing.Size(102, 22);
             this.txtUbigeo.TabIndex = 10;
@@ -163,15 +165,15 @@
             // txtCorreo
             // 
             this.txtCorreo.Location = new System.Drawing.Point(322, 25);
-            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCorreo.Margin = new System.Windows.Forms.Padding(2);
             this.txtCorreo.Name = "txtCorreo";
             this.txtCorreo.Size = new System.Drawing.Size(114, 22);
             this.txtCorreo.TabIndex = 12;
             // 
             // txtTelef
             // 
-            this.txtTelef.Location = new System.Drawing.Point(332, 65);
-            this.txtTelef.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelef.Location = new System.Drawing.Point(322, 67);
+            this.txtTelef.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelef.Name = "txtTelef";
             this.txtTelef.Size = new System.Drawing.Size(114, 22);
             this.txtTelef.TabIndex = 13;
@@ -181,7 +183,7 @@
             // 
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProveedores.Location = new System.Drawing.Point(32, 276);
-            this.dgvProveedores.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvProveedores.Margin = new System.Windows.Forms.Padding(2);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.RowHeadersWidth = 51;
             this.dgvProveedores.RowTemplate.Height = 24;
@@ -215,6 +217,8 @@
             // 
             // gbox_Datos
             // 
+            this.gbox_Datos.Controls.Add(this.label1);
+            this.gbox_Datos.Controls.Add(this.datp_Fecha);
             this.gbox_Datos.Controls.Add(this.btn_BuscarRubro);
             this.gbox_Datos.Controls.Add(this.txtSectorCome);
             this.gbox_Datos.Controls.Add(this.txtId);
@@ -238,10 +242,23 @@
             this.gbox_Datos.Text = "Datos Generales";
             this.gbox_Datos.Enter += new System.EventHandler(this.gbox_Datos_Enter);
             // 
+            // btn_BuscarRubro
+            // 
+            this.btn_BuscarRubro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btn_BuscarRubro.IconColor = System.Drawing.Color.Black;
+            this.btn_BuscarRubro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btn_BuscarRubro.IconSize = 18;
+            this.btn_BuscarRubro.Location = new System.Drawing.Point(198, 155);
+            this.btn_BuscarRubro.Name = "btn_BuscarRubro";
+            this.btn_BuscarRubro.Size = new System.Drawing.Size(24, 24);
+            this.btn_BuscarRubro.TabIndex = 43;
+            this.btn_BuscarRubro.UseVisualStyleBackColor = true;
+            this.btn_BuscarRubro.Click += new System.EventHandler(this.btn_BuscarRubro_Click);
+            // 
             // txtSectorCome
             // 
-            this.txtSectorCome.Location = new System.Drawing.Point(159, 158);
-            this.txtSectorCome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSectorCome.Location = new System.Drawing.Point(84, 153);
+            this.txtSectorCome.Margin = new System.Windows.Forms.Padding(2);
             this.txtSectorCome.Name = "txtSectorCome";
             this.txtSectorCome.Size = new System.Drawing.Size(102, 22);
             this.txtSectorCome.TabIndex = 14;
@@ -294,19 +311,6 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
-            // btn_BuscarRubro
-            // 
-            this.btn_BuscarRubro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btn_BuscarRubro.IconColor = System.Drawing.Color.Black;
-            this.btn_BuscarRubro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btn_BuscarRubro.IconSize = 18;
-            this.btn_BuscarRubro.Location = new System.Drawing.Point(272, 156);
-            this.btn_BuscarRubro.Name = "btn_BuscarRubro";
-            this.btn_BuscarRubro.Size = new System.Drawing.Size(24, 24);
-            this.btn_BuscarRubro.TabIndex = 43;
-            this.btn_BuscarRubro.UseVisualStyleBackColor = true;
-            this.btn_BuscarRubro.Click += new System.EventHandler(this.btn_BuscarRubro_Click);
-            // 
             // btn_eliminar_pro
             // 
             this.btn_eliminar_pro.BackColor = System.Drawing.Color.Tomato;
@@ -355,6 +359,25 @@
             this.btn_agregar_pro.UseVisualStyleBackColor = false;
             this.btn_agregar_pro.Click += new System.EventHandler(this.btn_agregar_pro_Click);
             // 
+            // datp_Fecha
+            // 
+            this.datp_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.datp_Fecha.Location = new System.Drawing.Point(322, 106);
+            this.datp_Fecha.Margin = new System.Windows.Forms.Padding(2);
+            this.datp_Fecha.Name = "datp_Fecha";
+            this.datp_Fecha.Size = new System.Drawing.Size(114, 22);
+            this.datp_Fecha.TabIndex = 44;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(254, 112);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(51, 16);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Fecha: ";
+            // 
             // FormProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -372,7 +395,7 @@
             this.Controls.Add(this.btn_agregar_pro);
             this.Controls.Add(this.dgvProveedores);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormProveedor";
             this.Text = "FormProveedor";
             ((System.ComponentModel.ISupportInitialize)(this.dgvProveedores)).EndInit();
@@ -408,5 +431,7 @@
         private System.Windows.Forms.Button btn_nuevo;
         private System.Windows.Forms.Button btn_modificar;
         private System.Windows.Forms.Button btn_deshabilitar;
+        private System.Windows.Forms.DateTimePicker datp_Fecha;
+        private System.Windows.Forms.Label label1;
     }
 }

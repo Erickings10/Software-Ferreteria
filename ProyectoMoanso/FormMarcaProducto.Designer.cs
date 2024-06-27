@@ -37,10 +37,10 @@ namespace ProyectoMoanso
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.gbBotones = new System.Windows.Forms.GroupBox();
-            this.dgvMarcaPro = new System.Windows.Forms.DataGridView();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
+            this.dgvMarcaPro = new System.Windows.Forms.DataGridView();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.PanelCat = new System.Windows.Forms.Panel();
@@ -126,17 +126,6 @@ namespace ProyectoMoanso
             this.gbBotones.TabIndex = 44;
             this.gbBotones.TabStop = false;
             // 
-            // dgvMarcaPro
-            // 
-            this.dgvMarcaPro.AllowUserToAddRows = false;
-            this.dgvMarcaPro.AllowUserToDeleteRows = false;
-            this.dgvMarcaPro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMarcaPro.Location = new System.Drawing.Point(230, 148);
-            this.dgvMarcaPro.Name = "dgvMarcaPro";
-            this.dgvMarcaPro.ReadOnly = true;
-            this.dgvMarcaPro.Size = new System.Drawing.Size(565, 267);
-            this.dgvMarcaPro.TabIndex = 45;
-            // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -152,6 +141,7 @@ namespace ProyectoMoanso
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnActualizar
             // 
@@ -168,6 +158,7 @@ namespace ProyectoMoanso
             this.btnActualizar.Text = "Modificar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnDeshabilitar
             // 
@@ -184,6 +175,19 @@ namespace ProyectoMoanso
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
+            // 
+            // dgvMarcaPro
+            // 
+            this.dgvMarcaPro.AllowUserToAddRows = false;
+            this.dgvMarcaPro.AllowUserToDeleteRows = false;
+            this.dgvMarcaPro.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvMarcaPro.Location = new System.Drawing.Point(230, 148);
+            this.dgvMarcaPro.Name = "dgvMarcaPro";
+            this.dgvMarcaPro.ReadOnly = true;
+            this.dgvMarcaPro.Size = new System.Drawing.Size(565, 267);
+            this.dgvMarcaPro.TabIndex = 45;
+            this.dgvMarcaPro.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvMarcaPro_CellDoubleClick);
             // 
             // btn_Nuevo
             // 

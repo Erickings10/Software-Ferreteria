@@ -27,7 +27,7 @@ namespace ProyectoMoanso
         }
         private void AbrirFormNuevoRequerimiento()
         {
-            using (FormRequerimientoNuevo frmRequerimientoNuev = new FormRequerimientoNuevo())
+            using (FormDetalleRequerimiento frmRequerimientoNuev = new FormDetalleRequerimiento())
             {
                 if (frmRequerimientoNuev.ShowDialog() == DialogResult.OK)
                 {

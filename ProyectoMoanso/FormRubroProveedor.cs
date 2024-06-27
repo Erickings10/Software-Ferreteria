@@ -61,7 +61,7 @@ namespace ProyectoMoanso
             {
                 entRubroProveedor rub = new entRubroProveedor();
                 rub.nameRubro = txt_Rubro.Text.Trim();
-                rub.fecRegistro = datp_Fecha.Value;
+                //rub.fecRegistro = datp_Fecha.Value;
                 rub.estRubro = chbx_Estado.Checked;
                 logRubroProveedor.Instancia.InsertaRubro(rub);
             }
@@ -81,7 +81,7 @@ namespace ProyectoMoanso
                 entRubroProveedor r = new entRubroProveedor();
                 r.idRubro = int.Parse(txt_ID.Text.Trim());
                 r.nameRubro = txt_Rubro.Text.Trim();
-                r.fecRegistro= datp_Fecha.Value;
+                //r.fecRegistro= datp_Fecha.Value;
                 r.estRubro = chbx_Estado.Checked;
                 logRubroProveedor.Instancia.EditaRubro(r);
             }
@@ -118,7 +118,7 @@ namespace ProyectoMoanso
             DataGridViewRow fila = dgb_Rubro.Rows[e.RowIndex];
             txt_ID.Text = fila.Cells[0].Value.ToString();
             txt_Rubro.Text = fila.Cells[1].Value.ToString();
-            datp_Fecha.Text = fila.Cells[2].Value.ToString();
+            //datp_Fecha.Text = fila.Cells[2].Value.ToString();
             chbx_Estado.Checked = Convert.ToBoolean(fila.Cells[3].Value);
         }
 

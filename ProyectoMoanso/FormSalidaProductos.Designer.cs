@@ -30,24 +30,21 @@
         {
             this.panelDevolucion = new System.Windows.Forms.Panel();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.lblSeleccionar = new System.Windows.Forms.Label();
+            this.lblProductos = new System.Windows.Forms.Label();
             this.lblMotivo = new System.Windows.Forms.Label();
             this.gBox = new System.Windows.Forms.GroupBox();
-            this.chBoxHabilitado = new System.Windows.Forms.CheckBox();
-            this.lblProovedor = new System.Windows.Forms.Label();
-            this.cbId = new System.Windows.Forms.ComboBox();
-            this.lblID = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.txtId = new System.Windows.Forms.TextBox();
+            this.txtProductos = new System.Windows.Forms.TextBox();
+            this.txtAlmacen = new System.Windows.Forms.TextBox();
             this.dTPickerFecha = new System.Windows.Forms.DateTimePicker();
             this.lblFecha = new System.Windows.Forms.Label();
-            this.cBoxSeleccionar = new System.Windows.Forms.ComboBox();
-            this.cBoxMotivo = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtProveedorSP = new System.Windows.Forms.TextBox();
-            this.btnSalidaProductos = new FontAwesome.Sharp.IconButton();
+            this.chbxEstado = new System.Windows.Forms.CheckBox();
             this.panelDevolucion.SuspendLayout();
             this.gBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -74,124 +71,98 @@
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "SALIDA DE PRODUCTOS";
             // 
-            // lblSeleccionar
+            // lblProductos
             // 
-            this.lblSeleccionar.AutoSize = true;
-            this.lblSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSeleccionar.Location = new System.Drawing.Point(14, 31);
-            this.lblSeleccionar.Name = "lblSeleccionar";
-            this.lblSeleccionar.Size = new System.Drawing.Size(167, 18);
-            this.lblSeleccionar.TabIndex = 1;
-            this.lblSeleccionar.Text = "Seleccionar Productos: ";
+            this.lblProductos.AutoSize = true;
+            this.lblProductos.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblProductos.Location = new System.Drawing.Point(18, 68);
+            this.lblProductos.Name = "lblProductos";
+            this.lblProductos.Size = new System.Drawing.Size(79, 17);
+            this.lblProductos.TabIndex = 1;
+            this.lblProductos.Text = "Productos: ";
             // 
             // lblMotivo
             // 
             this.lblMotivo.AutoSize = true;
-            this.lblMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMotivo.Location = new System.Drawing.Point(48, 69);
+            this.lblMotivo.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblMotivo.Location = new System.Drawing.Point(18, 106);
             this.lblMotivo.Name = "lblMotivo";
-            this.lblMotivo.Size = new System.Drawing.Size(61, 18);
+            this.lblMotivo.Size = new System.Drawing.Size(62, 17);
             this.lblMotivo.TabIndex = 2;
-            this.lblMotivo.Text = "Motivo: ";
+            this.lblMotivo.Text = "Almacen";
             // 
             // gBox
             // 
             this.gBox.BackColor = System.Drawing.Color.Transparent;
-            this.gBox.Controls.Add(this.btnSalidaProductos);
-            this.gBox.Controls.Add(this.txtProveedorSP);
-            this.gBox.Controls.Add(this.chBoxHabilitado);
-            this.gBox.Controls.Add(this.lblProovedor);
-            this.gBox.Controls.Add(this.cbId);
-            this.gBox.Controls.Add(this.lblID);
+            this.gBox.Controls.Add(this.chbxEstado);
+            this.gBox.Controls.Add(this.lblId);
+            this.gBox.Controls.Add(this.txtId);
+            this.gBox.Controls.Add(this.txtProductos);
+            this.gBox.Controls.Add(this.txtAlmacen);
             this.gBox.Controls.Add(this.dTPickerFecha);
             this.gBox.Controls.Add(this.lblFecha);
-            this.gBox.Controls.Add(this.cBoxSeleccionar);
-            this.gBox.Controls.Add(this.cBoxMotivo);
             this.gBox.Controls.Add(this.lblMotivo);
-            this.gBox.Controls.Add(this.lblSeleccionar);
+            this.gBox.Controls.Add(this.lblProductos);
             this.gBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gBox.Location = new System.Drawing.Point(49, 81);
+            this.gBox.Location = new System.Drawing.Point(256, 81);
             this.gBox.Name = "gBox";
-            this.gBox.Size = new System.Drawing.Size(706, 152);
+            this.gBox.Size = new System.Drawing.Size(484, 152);
             this.gBox.TabIndex = 3;
             this.gBox.TabStop = false;
             this.gBox.Text = "Datos";
             // 
-            // chBoxHabilitado
+            // lblId
             // 
-            this.chBoxHabilitado.AutoSize = true;
-            this.chBoxHabilitado.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chBoxHabilitado.Location = new System.Drawing.Point(595, 114);
-            this.chBoxHabilitado.Name = "chBoxHabilitado";
-            this.chBoxHabilitado.Size = new System.Drawing.Size(71, 24);
-            this.chBoxHabilitado.TabIndex = 3;
-            this.chBoxHabilitado.Text = "Activo";
-            this.chBoxHabilitado.UseVisualStyleBackColor = true;
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblId.Location = new System.Drawing.Point(41, 28);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(24, 17);
+            this.lblId.TabIndex = 46;
+            this.lblId.Text = "ID:";
             // 
-            // lblProovedor
+            // txtId
             // 
-            this.lblProovedor.AutoSize = true;
-            this.lblProovedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProovedor.Location = new System.Drawing.Point(394, 72);
-            this.lblProovedor.Name = "lblProovedor";
-            this.lblProovedor.Size = new System.Drawing.Size(78, 18);
-            this.lblProovedor.TabIndex = 10;
-            this.lblProovedor.Text = "Proovedor";
+            this.txtId.Font = new System.Drawing.Font("Roboto", 10F);
+            this.txtId.Location = new System.Drawing.Point(103, 23);
+            this.txtId.Name = "txtId";
+            this.txtId.Size = new System.Drawing.Size(38, 24);
+            this.txtId.TabIndex = 45;
             // 
-            // cbId
+            // txtProductos
             // 
-            this.cbId.FormattingEnabled = true;
-            this.cbId.Location = new System.Drawing.Point(595, 27);
-            this.cbId.Name = "cbId";
-            this.cbId.Size = new System.Drawing.Size(72, 28);
-            this.cbId.TabIndex = 9;
+            this.txtProductos.Font = new System.Drawing.Font("Roboto", 10F);
+            this.txtProductos.Location = new System.Drawing.Point(103, 64);
+            this.txtProductos.Name = "txtProductos";
+            this.txtProductos.Size = new System.Drawing.Size(115, 24);
+            this.txtProductos.TabIndex = 44;
             // 
-            // lblID
+            // txtAlmacen
             // 
-            this.lblID.AutoSize = true;
-            this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(394, 31);
-            this.lblID.Name = "lblID";
-            this.lblID.Size = new System.Drawing.Size(165, 18);
-            this.lblID.TabIndex = 8;
-            this.lblID.Text = "ID de Orden de Compra";
+            this.txtAlmacen.Font = new System.Drawing.Font("Roboto", 10F);
+            this.txtAlmacen.Location = new System.Drawing.Point(103, 99);
+            this.txtAlmacen.Name = "txtAlmacen";
+            this.txtAlmacen.Size = new System.Drawing.Size(115, 24);
+            this.txtAlmacen.TabIndex = 43;
             // 
             // dTPickerFecha
             // 
-            this.dTPickerFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.26F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dTPickerFecha.Font = new System.Drawing.Font("Roboto", 10F);
             this.dTPickerFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dTPickerFecha.Location = new System.Drawing.Point(209, 108);
+            this.dTPickerFecha.Location = new System.Drawing.Point(334, 28);
             this.dTPickerFecha.Name = "dTPickerFecha";
-            this.dTPickerFecha.Size = new System.Drawing.Size(121, 24);
+            this.dTPickerFecha.Size = new System.Drawing.Size(115, 24);
             this.dTPickerFecha.TabIndex = 7;
             // 
             // lblFecha
             // 
             this.lblFecha.AutoSize = true;
-            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFecha.Location = new System.Drawing.Point(48, 114);
+            this.lblFecha.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblFecha.Location = new System.Drawing.Point(271, 30);
             this.lblFecha.Name = "lblFecha";
-            this.lblFecha.Size = new System.Drawing.Size(49, 18);
+            this.lblFecha.Size = new System.Drawing.Size(46, 17);
             this.lblFecha.TabIndex = 6;
             this.lblFecha.Text = "Fecha";
-            // 
-            // cBoxSeleccionar
-            // 
-            this.cBoxSeleccionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cBoxSeleccionar.FormattingEnabled = true;
-            this.cBoxSeleccionar.Location = new System.Drawing.Point(209, 26);
-            this.cBoxSeleccionar.Name = "cBoxSeleccionar";
-            this.cBoxSeleccionar.Size = new System.Drawing.Size(121, 28);
-            this.cBoxSeleccionar.TabIndex = 5;
-            // 
-            // cBoxMotivo
-            // 
-            this.cBoxMotivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.cBoxMotivo.FormattingEnabled = true;
-            this.cBoxMotivo.Location = new System.Drawing.Point(209, 64);
-            this.cBoxMotivo.Name = "cBoxMotivo";
-            this.cBoxMotivo.Size = new System.Drawing.Size(121, 28);
-            this.cBoxMotivo.TabIndex = 4;
             // 
             // dataGridView1
             // 
@@ -240,31 +211,24 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Transparent;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Location = new System.Drawing.Point(32, 17);
+            this.btnAgregar.Location = new System.Drawing.Point(32, 19);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(94, 32);
             this.btnAgregar.TabIndex = 0;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
             // 
-            // txtProveedorSP
+            // chbxEstado
             // 
-            this.txtProveedorSP.Location = new System.Drawing.Point(479, 72);
-            this.txtProveedorSP.Name = "txtProveedorSP";
-            this.txtProveedorSP.Size = new System.Drawing.Size(100, 26);
-            this.txtProveedorSP.TabIndex = 11;
-            // 
-            // btnSalidaProductos
-            // 
-            this.btnSalidaProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnSalidaProductos.IconColor = System.Drawing.Color.Black;
-            this.btnSalidaProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnSalidaProductos.IconSize = 18;
-            this.btnSalidaProductos.Location = new System.Drawing.Point(595, 74);
-            this.btnSalidaProductos.Name = "btnSalidaProductos";
-            this.btnSalidaProductos.Size = new System.Drawing.Size(24, 24);
-            this.btnSalidaProductos.TabIndex = 42;
-            this.btnSalidaProductos.UseVisualStyleBackColor = true;
+            this.chbxEstado.AutoSize = true;
+            this.chbxEstado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbxEstado.Location = new System.Drawing.Point(378, 102);
+            this.chbxEstado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbxEstado.Name = "chbxEstado";
+            this.chbxEstado.Size = new System.Drawing.Size(71, 21);
+            this.chbxEstado.TabIndex = 8;
+            this.chbxEstado.Text = "Estado";
+            this.chbxEstado.UseVisualStyleBackColor = true;
             // 
             // FormSalidaProductos
             // 
@@ -293,23 +257,20 @@
 
         private System.Windows.Forms.Panel panelDevolucion;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.Label lblSeleccionar;
+        private System.Windows.Forms.Label lblProductos;
         private System.Windows.Forms.Label lblMotivo;
         private System.Windows.Forms.GroupBox gBox;
-        private System.Windows.Forms.ComboBox cBoxSeleccionar;
-        private System.Windows.Forms.ComboBox cBoxMotivo;
         private System.Windows.Forms.DateTimePicker dTPickerFecha;
         private System.Windows.Forms.Label lblFecha;
-        private System.Windows.Forms.ComboBox cbId;
-        private System.Windows.Forms.Label lblID;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label lblProovedor;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.CheckBox chBoxHabilitado;
-        private FontAwesome.Sharp.IconButton btnSalidaProductos;
-        private System.Windows.Forms.TextBox txtProveedorSP;
+        private System.Windows.Forms.TextBox txtAlmacen;
+        private System.Windows.Forms.Label lblId;
+        private System.Windows.Forms.TextBox txtId;
+        private System.Windows.Forms.TextBox txtProductos;
+        private System.Windows.Forms.CheckBox chbxEstado;
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,8 @@ namespace ProyectoMoanso
         public FormReporteCategoria()
         {
             InitializeComponent();
+            ListarReporteCategoria();
+            CambiarEncabezados();
         }
 
         private void AbrirMarcaProducto()
@@ -40,6 +43,29 @@ namespace ProyectoMoanso
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
             AbrirMarcaProducto();
+        }
+        public void CambiarEncabezados()
+        {
+            dgvReporteCategoria.Columns["CategoriaproductoID"].HeaderText = "ID Categoria";
+            dgvReporteCategoria.Columns["categoria"].HeaderText = "Categoria Producto";
+            dgvReporteCategoria.Columns["estado"].HeaderText = "Estado";
+        }
+
+        public void ListarReporteCategoria()
+        {
+            dgvReporteCategoria.DataSource = logCategoriaProductos.Instancia.ListarReporteCategoriaProducto();
+        }
+
+        private void dgvReporteCategoria_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvReporteCategoria.Rows[e.RowIndex];
+
+            // Si el estado es true, asignar los valores
+            Categoria = filaActual.Cells[0].Value.ToString();
+
+
+            DialogResult = DialogResult.OK;  // Esto cierra el formulario y devuelve el resultado a FormPrincipal
+            Close();
         }
     }
 }

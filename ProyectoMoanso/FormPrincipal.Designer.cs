@@ -65,7 +65,7 @@
             this.panelTitulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitulo.Location = new System.Drawing.Point(0, 0);
             this.panelTitulo.Name = "panelTitulo";
-            this.panelTitulo.Size = new System.Drawing.Size(1102, 65);
+            this.panelTitulo.Size = new System.Drawing.Size(1102, 74);
             this.panelTitulo.TabIndex = 4;
             this.panelTitulo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitulo_Paint);
             this.panelTitulo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitulo_MouseDown);
@@ -138,9 +138,9 @@
             this.panelOpciones.Controls.Add(this.btnRequerimiento);
             this.panelOpciones.Controls.Add(this.btnOrdenCompra);
             this.panelOpciones.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelOpciones.Location = new System.Drawing.Point(0, 65);
+            this.panelOpciones.Location = new System.Drawing.Point(0, 74);
             this.panelOpciones.Name = "panelOpciones";
-            this.panelOpciones.Size = new System.Drawing.Size(195, 619);
+            this.panelOpciones.Size = new System.Drawing.Size(202, 610);
             this.panelOpciones.TabIndex = 5;
             // 
             // btnRubroProveedor
@@ -286,9 +286,9 @@
             // 
             this.contenedor.BackColor = System.Drawing.SystemColors.Highlight;
             this.contenedor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contenedor.Location = new System.Drawing.Point(195, 65);
+            this.contenedor.Location = new System.Drawing.Point(202, 74);
             this.contenedor.Name = "contenedor";
-            this.contenedor.Size = new System.Drawing.Size(907, 619);
+            this.contenedor.Size = new System.Drawing.Size(900, 610);
             this.contenedor.TabIndex = 6;
             // 
             // FormPrincipal

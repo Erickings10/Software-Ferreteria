@@ -33,21 +33,22 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dgvAlmacenes = new System.Windows.Forms.DataGridView();
             this.gbInformacion = new System.Windows.Forms.GroupBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
             this.lblCapacidad = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.gbBotones2 = new System.Windows.Forms.GroupBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.txtTipo = new System.Windows.Forms.TextBox();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.RichTextBox();
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacenes)).BeginInit();
             this.gbInformacion.SuspendLayout();
             this.gbBotones2.SuspendLayout();
@@ -88,6 +89,7 @@
             // 
             // gbInformacion
             // 
+            this.gbInformacion.Controls.Add(this.chbx_Estado);
             this.gbInformacion.Controls.Add(this.txtCantidad);
             this.gbInformacion.Controls.Add(this.txtDescripcion);
             this.gbInformacion.Controls.Add(this.lblTipo);
@@ -103,6 +105,42 @@
             this.gbInformacion.TabIndex = 27;
             this.gbInformacion.TabStop = false;
             this.gbInformacion.Text = "Informacion";
+            // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtCantidad.Location = new System.Drawing.Point(107, 158);
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(115, 22);
+            this.txtCantidad.TabIndex = 32;
+            // 
+            // txtDescripcion
+            // 
+            this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtDescripcion.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtDescripcion.Location = new System.Drawing.Point(107, 83);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(145, 57);
+            this.txtDescripcion.TabIndex = 29;
+            this.txtDescripcion.Text = "";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Font = new System.Drawing.Font("Roboto", 9F);
+            this.lblTipo.Location = new System.Drawing.Point(27, 201);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(37, 14);
+            this.lblTipo.TabIndex = 31;
+            this.lblTipo.Text = "Tipo: ";
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtTipo.Location = new System.Drawing.Point(107, 198);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.Size = new System.Drawing.Size(115, 22);
+            this.txtTipo.TabIndex = 30;
             // 
             // txtId
             // 
@@ -126,7 +164,7 @@
             // 
             this.lblCapacidad.AutoSize = true;
             this.lblCapacidad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblCapacidad.Location = new System.Drawing.Point(27, 165);
+            this.lblCapacidad.Location = new System.Drawing.Point(27, 161);
             this.lblCapacidad.Name = "lblCapacidad";
             this.lblCapacidad.Size = new System.Drawing.Size(63, 14);
             this.lblCapacidad.TabIndex = 4;
@@ -145,7 +183,7 @@
             // gbBotones2
             // 
             this.gbBotones2.Controls.Add(this.btnAgregar);
-            this.gbBotones2.Controls.Add(this.btnEliminar);
+            this.gbBotones2.Controls.Add(this.btnDeshabilitar);
             this.gbBotones2.Controls.Add(this.btnActualizar);
             this.gbBotones2.Location = new System.Drawing.Point(38, 444);
             this.gbBotones2.Name = "gbBotones2";
@@ -153,21 +191,36 @@
             this.gbBotones2.TabIndex = 28;
             this.gbBotones2.TabStop = false;
             // 
-            // btnEliminar
+            // btnAgregar
             // 
-            this.btnEliminar.BackColor = System.Drawing.Color.Tan;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnEliminar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnEliminar.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
-            this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminar.Location = new System.Drawing.Point(226, 18);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(104, 36);
-            this.btnEliminar.TabIndex = 21;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(9, 18);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(104, 36);
+            this.btnAgregar.TabIndex = 25;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnDeshabilitar
+            // 
+            this.btnDeshabilitar.BackColor = System.Drawing.Color.Tan;
+            this.btnDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnDeshabilitar.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
+            this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeshabilitar.Location = new System.Drawing.Point(226, 18);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(115, 36);
+            this.btnDeshabilitar.TabIndex = 21;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeshabilitar.UseVisualStyleBackColor = false;
             // 
             // btnActualizar
             // 
@@ -184,34 +237,6 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = false;
-            // 
-            // txtTipo
-            // 
-            this.txtTipo.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtTipo.Location = new System.Drawing.Point(107, 216);
-            this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(115, 22);
-            this.txtTipo.TabIndex = 30;
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblTipo.Location = new System.Drawing.Point(27, 219);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(37, 14);
-            this.lblTipo.TabIndex = 31;
-            this.lblTipo.Text = "Tipo: ";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtDescripcion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDescripcion.Location = new System.Drawing.Point(107, 78);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(145, 65);
-            this.txtDescripcion.TabIndex = 29;
-            this.txtDescripcion.Text = "";
             // 
             // gboBotones1
             // 
@@ -254,28 +279,17 @@
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
-            // btnAgregar
+            // chbx_Estado
             // 
-            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
-            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(9, 18);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(104, 36);
-            this.btnAgregar.TabIndex = 25;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtCantidad.Location = new System.Drawing.Point(107, 162);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(115, 22);
-            this.txtCantidad.TabIndex = 32;
+            this.chbx_Estado.AutoSize = true;
+            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 9F);
+            this.chbx_Estado.Location = new System.Drawing.Point(256, 242);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbx_Estado.Name = "chbx_Estado";
+            this.chbx_Estado.Size = new System.Drawing.Size(64, 18);
+            this.chbx_Estado.TabIndex = 33;
+            this.chbx_Estado.Text = "Estado";
+            this.chbx_Estado.UseVisualStyleBackColor = true;
             // 
             // FormAlmacenes
             // 
@@ -309,7 +323,7 @@
         private System.Windows.Forms.DataGridView dgvAlmacenes;
         private System.Windows.Forms.GroupBox gbInformacion;
         private System.Windows.Forms.GroupBox gbBotones2;
-        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblCapacidad;
@@ -323,5 +337,6 @@
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.TextBox txtCantidad;
+        private System.Windows.Forms.CheckBox chbx_Estado;
     }
 }

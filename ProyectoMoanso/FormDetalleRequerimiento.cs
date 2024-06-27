@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace ProyectoMoanso
 {
-    public partial class FormRequerimientoNuevo : Form
+    public partial class FormDetalleRequerimiento : Form
     {
-        public FormRequerimientoNuevo()
+        public FormDetalleRequerimiento()
         {
             InitializeComponent();
             txtCodigo.Enabled = false;
