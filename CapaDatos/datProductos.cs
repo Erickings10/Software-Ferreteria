@@ -29,11 +29,49 @@ namespace CapaDatos
 
 
         #region metodos
-        ////////////////////listado de Productos
-        public List<entProductos> ListarProductos()
+
+        public (int MarcaProductoID, int CategoriaProductoID) ObtenerProductoPorID(int productoID)
         {
             SqlCommand cmd = null;
-            List<entProductos> lista = new List<entProductos>();
+            SqlDataReader dr = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); // singleton
+                cmd = new SqlCommand("spObtenerProductoPorID", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.Add(new SqlParameter("@ProductoID", productoID));
+                cn.Open();
+                dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    int marcaProductoID = Convert.ToInt32(dr["MarcaProductoID"]);
+                    int categoriaProductoID = Convert.ToInt32(dr["CategoriaProductoID"]);
+                    return (marcaProductoID, categoriaProductoID);
+                }
+                throw new Exception("Producto no encontrado.");
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                if (dr != null && !dr.IsClosed)
+                {
+                    dr.Close();
+                }
+                if (cmd != null)
+                {
+                    cmd.Connection.Close();
+                }
+            }
+        }
+
+            ////////////////////listado de Productos
+        public List<entDescProducto> ListarProductos()
+        {
+            SqlCommand cmd = null;
+            List<entDescProducto> lista = new List<entDescProducto>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
@@ -43,10 +81,10 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entProductos Prod = new entProductos();
+                    entDescProducto Prod = new entDescProducto();
                     Prod.ProductoID = Convert.ToInt32(dr["ProductoID"]);
-                    Prod.CategoriaproductoID = Convert.ToInt32(dr["CategoriaproductoID"]);
-                    Prod.MarcaproductoID = Convert.ToInt32(dr["MarcaproductoID"]);
+                    Prod.categoria = Convert.ToString(dr["categoria"]);
+                    Prod.marca = Convert.ToString(dr["marca"]);
                     Prod.descripcion = Convert.ToString(dr["descripcion"]);
                     Prod.cantidad = Convert.ToInt64(dr["cantidad"]);
                     Prod.estado = Convert.ToBoolean(dr["estado"]);
@@ -65,6 +103,43 @@ namespace CapaDatos
             return lista;
 
         }
+        public List<entDescProducto> ListarReporteProducto()
+        {
+            SqlCommand cmd = null;
+            List<entDescProducto> lista = new List<entDescProducto>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarReporteProductos", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entDescProducto pro = new entDescProducto();
+                    pro.ProductoID = Convert.ToInt32(dr["ProductoID"]);
+                    pro.categoria = Convert.ToString(dr["categoria"]);
+                    pro.marca = Convert.ToString(dr["marca"]);
+                    pro.descripcion = Convert.ToString(dr["descripcion"]);
+                    pro.cantidad = Convert.ToInt64(dr["cantidad"]);
+                    pro.estado = Convert.ToBoolean(dr["estado"]);
+                    lista.Add(pro);
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+
+        }
+
+
         public Boolean InsertarProductos(entProductos Prod)
         {
             SqlCommand cmd = null;
@@ -97,6 +172,35 @@ namespace CapaDatos
             return inserta;
         }
 
+
+        public Boolean EditarProducto(entProductos Pro)
+        {
+            SqlCommand cmd = null;
+            Boolean edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditarProducto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductoID", Pro.ProductoID);
+                cmd.Parameters.AddWithValue("@CategoriaproductoID", Pro.CategoriaproductoID);
+                cmd.Parameters.AddWithValue("@descripcion", Pro.descripcion);
+                cmd.Parameters.AddWithValue("@cantidad", Pro.cantidad);
+                cmd.Parameters.AddWithValue("@estado", Pro.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    edita = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return edita;
+        }
 
 
         #endregion metodos

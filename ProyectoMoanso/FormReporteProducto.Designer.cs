@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormReporteProducto));
             this.btnCerrar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvReporteProductos = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteProductos)).BeginInit();
             this.SuspendLayout();
             // 
             // btnCerrar
@@ -50,13 +50,15 @@
             this.btnCerrar.UseVisualStyleBackColor = true;
             this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
-            // dataGridView1
+            // dgvReporteProductos
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 104);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(649, 251);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvReporteProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvReporteProductos.Location = new System.Drawing.Point(12, 104);
+            this.dgvReporteProductos.Name = "dgvReporteProductos";
+            this.dgvReporteProductos.ReadOnly = true;
+            this.dgvReporteProductos.Size = new System.Drawing.Size(649, 251);
+            this.dgvReporteProductos.TabIndex = 3;
+            this.dgvReporteProductos.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvReporteProductos_CellDoubleClick);
             // 
             // label1
             // 
@@ -75,13 +77,13 @@
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(681, 367);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvReporteProductos);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormReporteProducto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormReporteProducto";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvReporteProductos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -90,7 +92,7 @@
         #endregion
 
         private System.Windows.Forms.Button btnCerrar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvReporteProductos;
         private System.Windows.Forms.Label label1;
     }
 }

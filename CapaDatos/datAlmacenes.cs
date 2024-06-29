@@ -26,7 +26,7 @@ namespace CapaDatos
         #endregion singleton
 
         #region metodos
-        ////////////////////listado de Proveedores
+        ////////////////////listado de Almacenes
         public List<entAlmacenes> ListarAlmacenes()
         {
             SqlCommand cmd = null;
@@ -34,17 +34,18 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaAlmacenes", cn);
+                cmd = new SqlCommand("spListarAlmacenes", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     entAlmacenes Alm = new entAlmacenes();
-                    Alm.id = Convert.ToInt32(dr["id"]);
+                    Alm.AlmacenID = Convert.ToInt32(dr["AlmacenID"]);
                     Alm.descripcion = Convert.ToString(dr["descripcion"]);
                     Alm.cantidad = Convert.ToInt64(dr["cantidad"]);
                     Alm.tipo = Convert.ToString(dr["tipo"]);
+                    Alm.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Alm);
                 }
 
@@ -67,11 +68,12 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertaAlmacenes", cn);
+                cmd = new SqlCommand("spInsertarAlmacenes", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@descripcion", Alm.descripcion);
                 cmd.Parameters.AddWithValue("@cantidad", Alm.cantidad);
                 cmd.Parameters.AddWithValue("@tipo", Alm.tipo);
+                cmd.Parameters.AddWithValue("@estado", Alm.estado);
 
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -86,6 +88,61 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return inserta;
+        }
+
+        public Boolean EditarAlmacenes(entAlmacenes Alm)
+        {
+            SqlCommand cmd = null;
+            Boolean edita = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spEditarAlmacenes", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@AlmacenID", Alm.AlmacenID);
+                cmd.Parameters.AddWithValue("@descripcion", Alm.descripcion);
+                cmd.Parameters.AddWithValue("@cantidad", Alm.cantidad);
+                cmd.Parameters.AddWithValue("@tipo", Alm.tipo);
+                cmd.Parameters.AddWithValue("@estado", Alm.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    edita = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return edita;
+        }
+
+        public Boolean DeshabilitarAlmacen(entAlmacenes Alm)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitarAlmacenes", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@AlmacenID", Alm.AlmacenID);
+                //cmd.Parameters.AddWithValue("@estado", Alm.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
         }
 
         #endregion metodos

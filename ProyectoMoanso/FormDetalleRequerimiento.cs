@@ -35,9 +35,7 @@ namespace ProyectoMoanso
         private void Limpiar()
         {
             txtProducto.Text = "";
-            txt_marca.Text = " ";
             txtCantidad.Text = " ";
-            txtCategoria.Text = " ";
         }
 
         public void listarRequerimiento()
@@ -58,8 +56,6 @@ namespace ProyectoMoanso
             {
                 entRequerimiento c = new entRequerimiento();
                 c.producto = txtProducto.Text;
-                c.marca = txt_marca.Text;
-                c.categoria = txtCategoria.Text;
                 c.cantidad = Convert.ToInt64(txtCantidad.Text);
                 c.fecha = Convert.ToDateTime(dtmReque.Text);
                 c.prioridad = cbPrioridad.Text;

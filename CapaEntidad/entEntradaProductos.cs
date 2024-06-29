@@ -9,14 +9,21 @@ namespace CapaEntidad
     public class entEntradaProductos
     {
 
-        public int IdEntradaProd { get; set; }
+        public int DetalleentradaproductoID { get; set; }
 
-        public DateTime FechaEntradaProd { get; set; } 
+        public int AlmacenID { get; set; }
 
-        public string DescripcionEntradaProd { get; set; }
+        public int ProductoID { get; set; }
 
-        public int CantidadEntradaProd { get; set; }   
+        public Int64 cantidad {  get; set; }
+
+        public string descripcion { get; set; }
+
+        public DateTime fecha { get; set; }
+
+        public Boolean estado {  get; set; }
 
 
-    }
+    }   
 }
+

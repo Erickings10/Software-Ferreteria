@@ -33,6 +33,7 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.dgvAlmacenes = new System.Windows.Forms.DataGridView();
             this.gbInformacion = new System.Windows.Forms.GroupBox();
+            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.txtDescripcion = new System.Windows.Forms.RichTextBox();
             this.lblTipo = new System.Windows.Forms.Label();
@@ -48,7 +49,6 @@
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
-            this.chbx_Estado = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacenes)).BeginInit();
             this.gbInformacion.SuspendLayout();
             this.gbBotones2.SuspendLayout();
@@ -84,8 +84,10 @@
             this.dgvAlmacenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlmacenes.Location = new System.Drawing.Point(407, 95);
             this.dgvAlmacenes.Name = "dgvAlmacenes";
+            this.dgvAlmacenes.ReadOnly = true;
             this.dgvAlmacenes.Size = new System.Drawing.Size(455, 404);
             this.dgvAlmacenes.TabIndex = 26;
+            this.dgvAlmacenes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlmacenes_CellDoubleClick);
             // 
             // gbInformacion
             // 
@@ -106,6 +108,18 @@
             this.gbInformacion.TabStop = false;
             this.gbInformacion.Text = "Informacion";
             // 
+            // chbx_Estado
+            // 
+            this.chbx_Estado.AutoSize = true;
+            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 9F);
+            this.chbx_Estado.Location = new System.Drawing.Point(256, 242);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbx_Estado.Name = "chbx_Estado";
+            this.chbx_Estado.Size = new System.Drawing.Size(64, 18);
+            this.chbx_Estado.TabIndex = 33;
+            this.chbx_Estado.Text = "Estado";
+            this.chbx_Estado.UseVisualStyleBackColor = true;
+            // 
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
@@ -113,6 +127,7 @@
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(115, 22);
             this.txtCantidad.TabIndex = 32;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // txtDescripcion
             // 
@@ -221,6 +236,7 @@
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // btnActualizar
             // 
@@ -237,6 +253,7 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // gboBotones1
             // 
@@ -278,18 +295,6 @@
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCancelar.UseVisualStyleBackColor = true;
             this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
-            // 
-            // chbx_Estado
-            // 
-            this.chbx_Estado.AutoSize = true;
-            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 9F);
-            this.chbx_Estado.Location = new System.Drawing.Point(256, 242);
-            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
-            this.chbx_Estado.Name = "chbx_Estado";
-            this.chbx_Estado.Size = new System.Drawing.Size(64, 18);
-            this.chbx_Estado.TabIndex = 33;
-            this.chbx_Estado.Text = "Estado";
-            this.chbx_Estado.UseVisualStyleBackColor = true;
             // 
             // FormAlmacenes
             // 

@@ -40,7 +40,16 @@ namespace CapaLogica
             datAlmacenes.Instancia.InsertarAlmacenes(Alm);
         }
 
+        public void EditarAlmacenes(entAlmacenes Alm)
+        {
+            datAlmacenes.Instancia.EditarAlmacenes(Alm);
 
+        }
+
+        public void DeshabilitarAlmacenes(entAlmacenes Alm)
+        {
+            datAlmacenes.Instancia.DeshabilitarAlmacen(Alm);
+        }
 
 
 

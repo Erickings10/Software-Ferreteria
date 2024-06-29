@@ -14,6 +14,7 @@ namespace ProyectoMoanso
     public partial class FormReporteMarca : Form
     {
         public string Marca { get; set; }
+        public string IdMarca { get; set; }
 
         public FormReporteMarca()
         {
@@ -58,7 +59,8 @@ namespace ProyectoMoanso
             DataGridViewRow filaActual = dgvReporteMarca.Rows[e.RowIndex];
 
             // Si el estado es true, asignar los valores
-            Marca = filaActual.Cells[0].Value.ToString();
+            IdMarca = filaActual.Cells[0].Value.ToString();
+            Marca = filaActual.Cells[1].Value.ToString();
 
 
             DialogResult = DialogResult.OK;  // Esto cierra el formulario y devuelve el resultado a FormPrincipal

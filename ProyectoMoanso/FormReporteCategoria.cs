@@ -14,6 +14,7 @@ namespace ProyectoMoanso
     public partial class FormReporteCategoria : Form
     {
         public string Categoria { get; set; }
+        public string IdCategoria { get; set; }
 
         public FormReporteCategoria()
         {
@@ -44,6 +45,7 @@ namespace ProyectoMoanso
         {
             AbrirMarcaProducto();
         }
+
         public void CambiarEncabezados()
         {
             dgvReporteCategoria.Columns["CategoriaproductoID"].HeaderText = "ID Categoria";
@@ -61,7 +63,9 @@ namespace ProyectoMoanso
             DataGridViewRow filaActual = dgvReporteCategoria.Rows[e.RowIndex];
 
             // Si el estado es true, asignar los valores
-            Categoria = filaActual.Cells[0].Value.ToString();
+            IdCategoria = filaActual.Cells[0].Value.ToString();
+            Categoria = filaActual.Cells[1].Value.ToString();
+            
 
 
             DialogResult = DialogResult.OK;  // Esto cierra el formulario y devuelve el resultado a FormPrincipal

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEntradaProductos));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtCodEntrada = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -40,16 +40,23 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnEliminarEntradaProductos = new System.Windows.Forms.Button();
-            this.btnActualizarEntradaProductos = new System.Windows.Forms.Button();
-            this.btnAgregarEntradaProductos = new System.Windows.Forms.Button();
+            this.btnInhabilitar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
-            this.txtProducto = new System.Windows.Forms.TextBox();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.btnBuscarProductos = new FontAwesome.Sharp.IconButton();
             this.lblAlmacen = new System.Windows.Forms.Label();
-            this.txtAlmacen = new System.Windows.Forms.TextBox();
             this.chbx_Estado = new System.Windows.Forms.CheckBox();
+            this.gboDatos = new System.Windows.Forms.GroupBox();
+            this.txtProducto = new System.Windows.Forms.TextBox();
+            this.txtidAlmacen = new System.Windows.Forms.TextBox();
+            this.txtidProducto = new System.Windows.Forms.TextBox();
+            this.chbEstado = new System.Windows.Forms.CheckBox();
+            this.cboAlmacen = new System.Windows.Forms.ComboBox();
+            this.btn_nuevo = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).BeginInit();
+            this.gboDatos.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -64,32 +71,30 @@
             this.label1.Size = new System.Drawing.Size(317, 31);
             this.label1.TabIndex = 1;
             this.label1.Text = "ENTRADA DE PRODUCTOS";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label2.Location = new System.Drawing.Point(23, 103);
+            this.label2.Location = new System.Drawing.Point(33, 43);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(52, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Codigo";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // txtCodEntrada
+            // txtCodigo
             // 
-            this.txtCodEntrada.Location = new System.Drawing.Point(116, 101);
-            this.txtCodEntrada.Name = "txtCodEntrada";
-            this.txtCodEntrada.Size = new System.Drawing.Size(99, 20);
-            this.txtCodEntrada.TabIndex = 3;
+            this.txtCodigo.Location = new System.Drawing.Point(122, 41);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(46, 23);
+            this.txtCodigo.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label3.Location = new System.Drawing.Point(23, 151);
+            this.label3.Location = new System.Drawing.Point(285, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(49, 17);
@@ -100,7 +105,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label6.Location = new System.Drawing.Point(23, 203);
+            this.label6.Location = new System.Drawing.Point(33, 129);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(69, 17);
@@ -111,7 +116,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label7.Location = new System.Drawing.Point(313, 103);
+            this.label7.Location = new System.Drawing.Point(266, 61);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(83, 17);
@@ -120,10 +125,10 @@
             // 
             // txtDescripcion
             // 
-            this.txtDescripcion.Location = new System.Drawing.Point(404, 82);
+            this.txtDescripcion.Location = new System.Drawing.Point(354, 22);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(268, 86);
+            this.txtDescripcion.Size = new System.Drawing.Size(163, 86);
             this.txtDescripcion.TabIndex = 16;
             // 
             // dgvEntradaProductos
@@ -131,6 +136,7 @@
             this.dgvEntradaProductos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvEntradaProductos.Location = new System.Drawing.Point(26, 288);
             this.dgvEntradaProductos.Name = "dgvEntradaProductos";
+            this.dgvEntradaProductos.ReadOnly = true;
             this.dgvEntradaProductos.Size = new System.Drawing.Size(844, 219);
             this.dgvEntradaProductos.TabIndex = 17;
             // 
@@ -138,7 +144,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label8.Location = new System.Drawing.Point(25, 248);
+            this.label8.Location = new System.Drawing.Point(34, 172);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(68, 17);
@@ -147,9 +153,9 @@
             // 
             // txtCantidad
             // 
-            this.txtCantidad.Location = new System.Drawing.Point(116, 247);
+            this.txtCantidad.Location = new System.Drawing.Point(122, 169);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(103, 20);
+            this.txtCantidad.Size = new System.Drawing.Size(103, 23);
             this.txtCantidad.TabIndex = 19;
             // 
             // menuStrip1
@@ -163,102 +169,90 @@
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnEliminarEntradaProductos
+            // btnInhabilitar
             // 
-            this.btnEliminarEntradaProductos.BackColor = System.Drawing.Color.Tomato;
-            this.btnEliminarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnEliminarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminarEntradaProductos.Image")));
-            this.btnEliminarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEliminarEntradaProductos.Location = new System.Drawing.Point(750, 215);
-            this.btnEliminarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminarEntradaProductos.Name = "btnEliminarEntradaProductos";
-            this.btnEliminarEntradaProductos.Size = new System.Drawing.Size(129, 50);
-            this.btnEliminarEntradaProductos.TabIndex = 22;
-            this.btnEliminarEntradaProductos.Text = "Inhabilitar";
-            this.btnEliminarEntradaProductos.UseVisualStyleBackColor = false;
+            this.btnInhabilitar.BackColor = System.Drawing.Color.Tomato;
+            this.btnInhabilitar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnInhabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnInhabilitar.Image")));
+            this.btnInhabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInhabilitar.Location = new System.Drawing.Point(750, 215);
+            this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInhabilitar.Name = "btnInhabilitar";
+            this.btnInhabilitar.Size = new System.Drawing.Size(129, 50);
+            this.btnInhabilitar.TabIndex = 22;
+            this.btnInhabilitar.Text = "Inhabilitar";
+            this.btnInhabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInhabilitar.UseVisualStyleBackColor = false;
             // 
-            // btnActualizarEntradaProductos
+            // btnModificar
             // 
-            this.btnActualizarEntradaProductos.BackColor = System.Drawing.Color.Aqua;
-            this.btnActualizarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnActualizarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizarEntradaProductos.Image")));
-            this.btnActualizarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizarEntradaProductos.Location = new System.Drawing.Point(750, 151);
-            this.btnActualizarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnActualizarEntradaProductos.Name = "btnActualizarEntradaProductos";
-            this.btnActualizarEntradaProductos.Size = new System.Drawing.Size(129, 51);
-            this.btnActualizarEntradaProductos.TabIndex = 21;
-            this.btnActualizarEntradaProductos.Text = "Modificar";
-            this.btnActualizarEntradaProductos.UseVisualStyleBackColor = false;
+            this.btnModificar.BackColor = System.Drawing.Color.Aqua;
+            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(750, 151);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(129, 51);
+            this.btnModificar.TabIndex = 21;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.UseVisualStyleBackColor = false;
             // 
-            // btnAgregarEntradaProductos
+            // btnRegistrar
             // 
-            this.btnAgregarEntradaProductos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAgregarEntradaProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold);
-            this.btnAgregarEntradaProductos.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnAgregarEntradaProductos.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregarEntradaProductos.Image")));
-            this.btnAgregarEntradaProductos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregarEntradaProductos.Location = new System.Drawing.Point(750, 86);
-            this.btnAgregarEntradaProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAgregarEntradaProductos.Name = "btnAgregarEntradaProductos";
-            this.btnAgregarEntradaProductos.Size = new System.Drawing.Size(129, 53);
-            this.btnAgregarEntradaProductos.TabIndex = 20;
-            this.btnAgregarEntradaProductos.Text = "Registrar";
-            this.btnAgregarEntradaProductos.UseVisualStyleBackColor = false;
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRegistrar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
+            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistrar.Location = new System.Drawing.Point(750, 86);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(129, 53);
+            this.btnRegistrar.TabIndex = 20;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // dtpFechaEntrada
             // 
             this.dtpFechaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFechaEntrada.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpFechaEntrada.Location = new System.Drawing.Point(116, 151);
+            this.dtpFechaEntrada.Location = new System.Drawing.Point(354, 129);
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
-            this.dtpFechaEntrada.Size = new System.Drawing.Size(121, 23);
+            this.dtpFechaEntrada.Size = new System.Drawing.Size(163, 23);
             this.dtpFechaEntrada.TabIndex = 29;
             // 
-            // txtProducto
+            // btnBuscarProductos
             // 
-            this.txtProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtProducto.Location = new System.Drawing.Point(116, 203);
-            this.txtProducto.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProducto.Name = "txtProducto";
-            this.txtProducto.ReadOnly = true;
-            this.txtProducto.Size = new System.Drawing.Size(103, 21);
-            this.txtProducto.TabIndex = 40;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 18;
-            this.iconButton1.Location = new System.Drawing.Point(237, 202);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(24, 24);
-            this.iconButton1.TabIndex = 41;
-            this.iconButton1.UseVisualStyleBackColor = true;
+            this.btnBuscarProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarProductos.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarProductos.IconSize = 18;
+            this.btnBuscarProductos.Location = new System.Drawing.Point(231, 131);
+            this.btnBuscarProductos.Name = "btnBuscarProductos";
+            this.btnBuscarProductos.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarProductos.TabIndex = 41;
+            this.btnBuscarProductos.UseVisualStyleBackColor = true;
+            this.btnBuscarProductos.Click += new System.EventHandler(this.btnBuscarProductos_Click);
             // 
             // lblAlmacen
             // 
             this.lblAlmacen.AutoSize = true;
             this.lblAlmacen.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lblAlmacen.Location = new System.Drawing.Point(313, 200);
+            this.lblAlmacen.Location = new System.Drawing.Point(33, 88);
             this.lblAlmacen.Name = "lblAlmacen";
             this.lblAlmacen.Size = new System.Drawing.Size(68, 17);
             this.lblAlmacen.TabIndex = 42;
             this.lblAlmacen.Text = "Almacen: ";
             // 
-            // txtAlmacen
-            // 
-            this.txtAlmacen.Location = new System.Drawing.Point(404, 200);
-            this.txtAlmacen.Name = "txtAlmacen";
-            this.txtAlmacen.Size = new System.Drawing.Size(93, 20);
-            this.txtAlmacen.TabIndex = 43;
-            // 
             // chbx_Estado
             // 
             this.chbx_Estado.AutoSize = true;
             this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chbx_Estado.Location = new System.Drawing.Point(325, 244);
+            this.chbx_Estado.Location = new System.Drawing.Point(565, 182);
             this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
             this.chbx_Estado.Name = "chbx_Estado";
             this.chbx_Estado.Size = new System.Drawing.Size(71, 21);
@@ -266,30 +260,126 @@
             this.chbx_Estado.Text = "Estado";
             this.chbx_Estado.UseVisualStyleBackColor = true;
             // 
+            // gboDatos
+            // 
+            this.gboDatos.Controls.Add(this.txtProducto);
+            this.gboDatos.Controls.Add(this.txtidAlmacen);
+            this.gboDatos.Controls.Add(this.txtidProducto);
+            this.gboDatos.Controls.Add(this.chbEstado);
+            this.gboDatos.Controls.Add(this.cboAlmacen);
+            this.gboDatos.Controls.Add(this.chbx_Estado);
+            this.gboDatos.Controls.Add(this.dtpFechaEntrada);
+            this.gboDatos.Controls.Add(this.label2);
+            this.gboDatos.Controls.Add(this.txtCodigo);
+            this.gboDatos.Controls.Add(this.label6);
+            this.gboDatos.Controls.Add(this.lblAlmacen);
+            this.gboDatos.Controls.Add(this.label8);
+            this.gboDatos.Controls.Add(this.txtDescripcion);
+            this.gboDatos.Controls.Add(this.label7);
+            this.gboDatos.Controls.Add(this.btnBuscarProductos);
+            this.gboDatos.Controls.Add(this.label3);
+            this.gboDatos.Controls.Add(this.txtCantidad);
+            this.gboDatos.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboDatos.Location = new System.Drawing.Point(198, 61);
+            this.gboDatos.Name = "gboDatos";
+            this.gboDatos.Size = new System.Drawing.Size(537, 204);
+            this.gboDatos.TabIndex = 46;
+            this.gboDatos.TabStop = false;
+            this.gboDatos.Text = "Datos";
+            // 
+            // txtProducto
+            // 
+            this.txtProducto.Location = new System.Drawing.Point(122, 129);
+            this.txtProducto.Name = "txtProducto";
+            this.txtProducto.Size = new System.Drawing.Size(103, 23);
+            this.txtProducto.TabIndex = 49;
+            // 
+            // txtidAlmacen
+            // 
+            this.txtidAlmacen.Cursor = System.Windows.Forms.Cursors.Default;
+            this.txtidAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtidAlmacen.Location = new System.Drawing.Point(122, 90);
+            this.txtidAlmacen.Margin = new System.Windows.Forms.Padding(2);
+            this.txtidAlmacen.Name = "txtidAlmacen";
+            this.txtidAlmacen.ReadOnly = true;
+            this.txtidAlmacen.Size = new System.Drawing.Size(30, 21);
+            this.txtidAlmacen.TabIndex = 48;
+            // 
+            // txtidProducto
+            // 
+            this.txtidProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtidProducto.Location = new System.Drawing.Point(122, 131);
+            this.txtidProducto.Margin = new System.Windows.Forms.Padding(2);
+            this.txtidProducto.Name = "txtidProducto";
+            this.txtidProducto.ReadOnly = true;
+            this.txtidProducto.Size = new System.Drawing.Size(30, 21);
+            this.txtidProducto.TabIndex = 47;
+            // 
+            // chbEstado
+            // 
+            this.chbEstado.AutoSize = true;
+            this.chbEstado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbEstado.Location = new System.Drawing.Point(446, 171);
+            this.chbEstado.Name = "chbEstado";
+            this.chbEstado.Size = new System.Drawing.Size(71, 21);
+            this.chbEstado.TabIndex = 46;
+            this.chbEstado.Text = "Estado";
+            this.chbEstado.UseVisualStyleBackColor = true;
+            // 
+            // cboAlmacen
+            // 
+            this.cboAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.cboAlmacen.FormattingEnabled = true;
+            this.cboAlmacen.Location = new System.Drawing.Point(122, 88);
+            this.cboAlmacen.Name = "cboAlmacen";
+            this.cboAlmacen.Size = new System.Drawing.Size(103, 23);
+            this.cboAlmacen.TabIndex = 45;
+            // 
+            // btn_nuevo
+            // 
+            this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_nuevo.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_nuevo.Image")));
+            this.btn_nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_nuevo.Location = new System.Drawing.Point(26, 121);
+            this.btn_nuevo.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_nuevo.Name = "btn_nuevo";
+            this.btn_nuevo.Size = new System.Drawing.Size(149, 39);
+            this.btn_nuevo.TabIndex = 47;
+            this.btn_nuevo.Text = "Nuevo ";
+            this.btn_nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_nuevo.UseVisualStyleBackColor = true;
+            this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
+            // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(26, 190);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(149, 41);
+            this.btn_Cancelar.TabIndex = 48;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
             // FormEntradaProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
             this.ClientSize = new System.Drawing.Size(922, 535);
-            this.Controls.Add(this.chbx_Estado);
-            this.Controls.Add(this.txtAlmacen);
-            this.Controls.Add(this.lblAlmacen);
-            this.Controls.Add(this.iconButton1);
-            this.Controls.Add(this.txtProducto);
-            this.Controls.Add(this.dtpFechaEntrada);
-            this.Controls.Add(this.btnEliminarEntradaProductos);
-            this.Controls.Add(this.btnActualizarEntradaProductos);
-            this.Controls.Add(this.btnAgregarEntradaProductos);
-            this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.btn_Cancelar);
+            this.Controls.Add(this.btn_nuevo);
+            this.Controls.Add(this.gboDatos);
+            this.Controls.Add(this.btnInhabilitar);
+            this.Controls.Add(this.btnModificar);
+            this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dgvEntradaProductos);
-            this.Controls.Add(this.txtDescripcion);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtCodEntrada);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -298,6 +388,8 @@
             this.Name = "FormEntradaProductos";
             this.Text = "FormAlmacen";
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).EndInit();
+            this.gboDatos.ResumeLayout(false);
+            this.gboDatos.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -307,7 +399,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCodEntrada;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
@@ -315,15 +407,21 @@
         private System.Windows.Forms.DataGridView dgvEntradaProductos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Button btnAgregarEntradaProductos;
-        private System.Windows.Forms.Button btnActualizarEntradaProductos;
-        private System.Windows.Forms.Button btnEliminarEntradaProductos;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.Button btnModificar;
+        private System.Windows.Forms.Button btnInhabilitar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
-        private System.Windows.Forms.TextBox txtProducto;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btnBuscarProductos;
         private System.Windows.Forms.Label lblAlmacen;
-        private System.Windows.Forms.TextBox txtAlmacen;
         private System.Windows.Forms.CheckBox chbx_Estado;
+        private System.Windows.Forms.GroupBox gboDatos;
+        private System.Windows.Forms.Button btn_nuevo;
+        private System.Windows.Forms.Button btn_Cancelar;
+        private System.Windows.Forms.ComboBox cboAlmacen;
+        private System.Windows.Forms.CheckBox chbEstado;
+        private System.Windows.Forms.TextBox txtidAlmacen;
+        private System.Windows.Forms.TextBox txtidProducto;
+        private System.Windows.Forms.TextBox txtProducto;
     }
 }

@@ -28,18 +28,33 @@ namespace CapaLogica
 
 
         #region metodos
+        
 
-        public List<entProductos> ListarProductos()
+        public List<entDescProducto> ListarProductos()
         {
             return datProductos.Instancia.ListarProductos();
 
         }
 
-
-
         public void InsertaProductos(entProductos Prod)
         {
             datProductos.Instancia.InsertarProductos(Prod);
+        }
+
+        public void EditarProducto(entProductos pro) 
+        { 
+            datProductos.Instancia.EditarProducto(pro);
+            
+        }
+        public List<entDescProducto> ListarReporteProducto()
+        {
+            return datProductos.Instancia.ListarReporteProducto();
+        }
+
+
+        public (int MarcaProductoID, int CategoriaProductoID) ObtenerProductoPorID(int productoID)
+        {
+            return datProductos.Instancia.ObtenerProductoPorID(productoID);
         }
 
         #endregion metodos

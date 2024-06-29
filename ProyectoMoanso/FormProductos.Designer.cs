@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormProductos));
-            this.txtId = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -55,6 +55,8 @@
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.txtIdMarca = new System.Windows.Forms.TextBox();
+            this.txtIdCategoria = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.gbBotones2.SuspendLayout();
@@ -62,16 +64,16 @@
             this.gboBotones1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtId
+            // lblId
             // 
-            this.txtId.AutoSize = true;
-            this.txtId.Font = new System.Drawing.Font("Roboto", 10F);
-            this.txtId.Location = new System.Drawing.Point(31, 31);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(24, 17);
-            this.txtId.TabIndex = 0;
-            this.txtId.Text = "ID:";
+            this.lblId.AutoSize = true;
+            this.lblId.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblId.Location = new System.Drawing.Point(31, 31);
+            this.lblId.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(24, 17);
+            this.lblId.TabIndex = 0;
+            this.lblId.Text = "ID:";
             // 
             // lblDescripcion
             // 
@@ -125,6 +127,7 @@
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(40, 23);
             this.txtCodigo.TabIndex = 5;
+            this.txtCodigo.TextChanged += new System.EventHandler(this.txtCodigo_TextChanged);
             // 
             // txtDescripcion
             // 
@@ -133,6 +136,7 @@
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(141, 23);
             this.txtDescripcion.TabIndex = 6;
+            this.txtDescripcion.TextChanged += new System.EventHandler(this.txtDescripcion_TextChanged);
             // 
             // txtCantidad
             // 
@@ -172,6 +176,7 @@
             this.dgvRegistroProducto.RowTemplate.Height = 24;
             this.dgvRegistroProducto.Size = new System.Drawing.Size(602, 236);
             this.dgvRegistroProducto.TabIndex = 10;
+            this.dgvRegistroProducto.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroProducto_CellDoubleClick);
             // 
             // errorStock
             // 
@@ -243,6 +248,7 @@
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnActualizar.UseVisualStyleBackColor = false;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnDeshabilitar
             // 
@@ -262,6 +268,8 @@
             // 
             // gboDatos
             // 
+            this.gboDatos.Controls.Add(this.txtIdCategoria);
+            this.gboDatos.Controls.Add(this.txtIdMarca);
             this.gboDatos.Controls.Add(this.chbx_Estado);
             this.gboDatos.Controls.Add(this.btnBuscarMarca);
             this.gboDatos.Controls.Add(this.btnBuscarCategoria);
@@ -269,7 +277,7 @@
             this.gboDatos.Controls.Add(this.txtCantidad);
             this.gboDatos.Controls.Add(this.label4);
             this.gboDatos.Controls.Add(this.txtDescripcion);
-            this.gboDatos.Controls.Add(this.txtId);
+            this.gboDatos.Controls.Add(this.lblId);
             this.gboDatos.Controls.Add(this.label3);
             this.gboDatos.Controls.Add(this.label5);
             this.gboDatos.Controls.Add(this.txtCodigo);
@@ -365,6 +373,22 @@
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
+            // txtIdMarca
+            // 
+            this.txtIdMarca.Location = new System.Drawing.Point(115, 69);
+            this.txtIdMarca.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdMarca.Name = "txtIdMarca";
+            this.txtIdMarca.Size = new System.Drawing.Size(38, 23);
+            this.txtIdMarca.TabIndex = 47;
+            // 
+            // txtIdCategoria
+            // 
+            this.txtIdCategoria.Location = new System.Drawing.Point(115, 110);
+            this.txtIdCategoria.Margin = new System.Windows.Forms.Padding(2);
+            this.txtIdCategoria.Name = "txtIdCategoria";
+            this.txtIdCategoria.Size = new System.Drawing.Size(38, 23);
+            this.txtIdCategoria.TabIndex = 48;
+            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,7 +418,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label txtId;
+        private System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -419,5 +443,7 @@
         private System.Windows.Forms.Button btn_Nuevo;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.CheckBox chbx_Estado;
+        private System.Windows.Forms.TextBox txtIdCategoria;
+        private System.Windows.Forms.TextBox txtIdMarca;
     }
 }

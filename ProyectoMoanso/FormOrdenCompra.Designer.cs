@@ -39,24 +39,22 @@ namespace ProyectoMoanso
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.gBoBotones = new System.Windows.Forms.GroupBox();
+            this.btn_AgregarProducto = new System.Windows.Forms.Button();
+            this.btn_EnviarOrden = new System.Windows.Forms.Button();
+            this.btn_Cancelar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtMetodo = new System.Windows.Forms.TextBox();
-            this.txtCotizacion = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.btnBuscarMetodo = new FontAwesome.Sharp.IconButton();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnBuscarOrden = new FontAwesome.Sharp.IconButton();
             this.txtOrdenCompra = new System.Windows.Forms.TextBox();
             this.lblOrdden = new System.Windows.Forms.Label();
+            this.btnProovedor = new FontAwesome.Sharp.IconButton();
             this.txtProovedor = new System.Windows.Forms.TextBox();
             this.lblFormaPago = new System.Windows.Forms.Label();
-            this.btnBuscarMetodo = new FontAwesome.Sharp.IconButton();
-            this.btnBuscarOrden = new FontAwesome.Sharp.IconButton();
-            this.btnProovedor = new FontAwesome.Sharp.IconButton();
-            this.btn_AgregarProducto = new System.Windows.Forms.Button();
-            this.btn_EnviarOrden = new System.Windows.Forms.Button();
-            this.btn_Cancelar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.gBoBotones.SuspendLayout();
@@ -168,184 +166,6 @@ namespace ProyectoMoanso
             this.gBoBotones.TabIndex = 29;
             this.gBoBotones.TabStop = false;
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.txtMetodo);
-            this.groupBox2.Controls.Add(this.btnBuscarMetodo);
-            this.groupBox2.Controls.Add(this.txtCotizacion);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.txtTelefono);
-            this.groupBox2.Controls.Add(this.txtDireccion);
-            this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.btnBuscarOrden);
-            this.groupBox2.Controls.Add(this.txtOrdenCompra);
-            this.groupBox2.Controls.Add(this.lblOrdden);
-            this.groupBox2.Controls.Add(this.btnProovedor);
-            this.groupBox2.Controls.Add(this.txtProovedor);
-            this.groupBox2.Controls.Add(this.lblFormaPago);
-            this.groupBox2.Controls.Add(this.txtID);
-            this.groupBox2.Controls.Add(this.lblOrden);
-            this.groupBox2.Controls.Add(this.dtpFecha);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.lblProveedor);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.groupBox2.Location = new System.Drawing.Point(167, 72);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(514, 202);
-            this.groupBox2.TabIndex = 30;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Datos Generales";
-            // 
-            // txtMetodo
-            // 
-            this.txtMetodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtMetodo.Location = new System.Drawing.Point(349, 33);
-            this.txtMetodo.Margin = new System.Windows.Forms.Padding(2);
-            this.txtMetodo.Name = "txtMetodo";
-            this.txtMetodo.ReadOnly = true;
-            this.txtMetodo.Size = new System.Drawing.Size(123, 21);
-            this.txtMetodo.TabIndex = 47;
-            // 
-            // txtCotizacion
-            // 
-            this.txtCotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtCotizacion.Location = new System.Drawing.Point(349, 153);
-            this.txtCotizacion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCotizacion.Name = "txtCotizacion";
-            this.txtCotizacion.ReadOnly = true;
-            this.txtCotizacion.Size = new System.Drawing.Size(123, 21);
-            this.txtCotizacion.TabIndex = 45;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label5.Location = new System.Drawing.Point(235, 157);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 17);
-            this.label5.TabIndex = 44;
-            this.label5.Text = "Cotización: ";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtTelefono.Location = new System.Drawing.Point(349, 112);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.ReadOnly = true;
-            this.txtTelefono.Size = new System.Drawing.Size(123, 21);
-            this.txtTelefono.TabIndex = 43;
-            // 
-            // txtDireccion
-            // 
-            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtDireccion.Location = new System.Drawing.Point(349, 74);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.ReadOnly = true;
-            this.txtDireccion.Size = new System.Drawing.Size(123, 21);
-            this.txtDireccion.TabIndex = 42;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label4.Location = new System.Drawing.Point(235, 116);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 17);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Telefono: ";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.label2.Location = new System.Drawing.Point(232, 78);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(75, 17);
-            this.label2.TabIndex = 40;
-            this.label2.Text = "Dirección: ";
-            // 
-            // txtOrdenCompra
-            // 
-            this.txtOrdenCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtOrdenCompra.Location = new System.Drawing.Point(100, 76);
-            this.txtOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
-            this.txtOrdenCompra.Name = "txtOrdenCompra";
-            this.txtOrdenCompra.ReadOnly = true;
-            this.txtOrdenCompra.Size = new System.Drawing.Size(76, 21);
-            this.txtOrdenCompra.TabIndex = 38;
-            // 
-            // lblOrdden
-            // 
-            this.lblOrdden.AutoSize = true;
-            this.lblOrdden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblOrdden.Location = new System.Drawing.Point(23, 76);
-            this.lblOrdden.Name = "lblOrdden";
-            this.lblOrdden.Size = new System.Drawing.Size(72, 17);
-            this.lblOrdden.TabIndex = 37;
-            this.lblOrdden.Text = "N° Orden:";
-            // 
-            // txtProovedor
-            // 
-            this.txtProovedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtProovedor.Location = new System.Drawing.Point(100, 113);
-            this.txtProovedor.Margin = new System.Windows.Forms.Padding(2);
-            this.txtProovedor.Name = "txtProovedor";
-            this.txtProovedor.ReadOnly = true;
-            this.txtProovedor.Size = new System.Drawing.Size(76, 21);
-            this.txtProovedor.TabIndex = 34;
-            // 
-            // lblFormaPago
-            // 
-            this.lblFormaPago.AutoSize = true;
-            this.lblFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.lblFormaPago.Location = new System.Drawing.Point(232, 38);
-            this.lblFormaPago.Name = "lblFormaPago";
-            this.lblFormaPago.Size = new System.Drawing.Size(112, 17);
-            this.lblFormaPago.TabIndex = 31;
-            this.lblFormaPago.Text = "Metodo de Pago";
-            // 
-            // btnBuscarMetodo
-            // 
-            this.btnBuscarMetodo.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarMetodo.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarMetodo.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarMetodo.IconSize = 18;
-            this.btnBuscarMetodo.Location = new System.Drawing.Point(484, 31);
-            this.btnBuscarMetodo.Name = "btnBuscarMetodo";
-            this.btnBuscarMetodo.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarMetodo.TabIndex = 46;
-            this.btnBuscarMetodo.UseVisualStyleBackColor = true;
-            this.btnBuscarMetodo.Click += new System.EventHandler(this.btnBuscarMetodo_Click);
-            // 
-            // btnBuscarOrden
-            // 
-            this.btnBuscarOrden.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarOrden.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarOrden.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarOrden.IconSize = 18;
-            this.btnBuscarOrden.Location = new System.Drawing.Point(181, 74);
-            this.btnBuscarOrden.Name = "btnBuscarOrden";
-            this.btnBuscarOrden.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarOrden.TabIndex = 39;
-            this.btnBuscarOrden.UseVisualStyleBackColor = true;
-            this.btnBuscarOrden.Click += new System.EventHandler(this.btnBuscarOrden_Click);
-            // 
-            // btnProovedor
-            // 
-            this.btnProovedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnProovedor.IconColor = System.Drawing.Color.Black;
-            this.btnProovedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnProovedor.IconSize = 18;
-            this.btnProovedor.Location = new System.Drawing.Point(181, 112);
-            this.btnProovedor.Name = "btnProovedor";
-            this.btnProovedor.Size = new System.Drawing.Size(24, 24);
-            this.btnProovedor.TabIndex = 36;
-            this.btnProovedor.UseVisualStyleBackColor = true;
-            this.btnProovedor.Click += new System.EventHandler(this.btnProovedor_Click);
-            // 
             // btn_AgregarProducto
             // 
             this.btn_AgregarProducto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
@@ -395,6 +215,162 @@ namespace ProyectoMoanso
             this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_Cancelar.UseVisualStyleBackColor = false;
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtMetodo);
+            this.groupBox2.Controls.Add(this.btnBuscarMetodo);
+            this.groupBox2.Controls.Add(this.txtTelefono);
+            this.groupBox2.Controls.Add(this.txtDireccion);
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label2);
+            this.groupBox2.Controls.Add(this.btnBuscarOrden);
+            this.groupBox2.Controls.Add(this.txtOrdenCompra);
+            this.groupBox2.Controls.Add(this.lblOrdden);
+            this.groupBox2.Controls.Add(this.btnProovedor);
+            this.groupBox2.Controls.Add(this.txtProovedor);
+            this.groupBox2.Controls.Add(this.lblFormaPago);
+            this.groupBox2.Controls.Add(this.txtID);
+            this.groupBox2.Controls.Add(this.lblOrden);
+            this.groupBox2.Controls.Add(this.dtpFecha);
+            this.groupBox2.Controls.Add(this.label3);
+            this.groupBox2.Controls.Add(this.lblProveedor);
+            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.groupBox2.Location = new System.Drawing.Point(167, 72);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(514, 202);
+            this.groupBox2.TabIndex = 30;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Datos Generales";
+            // 
+            // txtMetodo
+            // 
+            this.txtMetodo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtMetodo.Location = new System.Drawing.Point(349, 33);
+            this.txtMetodo.Margin = new System.Windows.Forms.Padding(2);
+            this.txtMetodo.Name = "txtMetodo";
+            this.txtMetodo.ReadOnly = true;
+            this.txtMetodo.Size = new System.Drawing.Size(123, 21);
+            this.txtMetodo.TabIndex = 47;
+            // 
+            // btnBuscarMetodo
+            // 
+            this.btnBuscarMetodo.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarMetodo.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarMetodo.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarMetodo.IconSize = 18;
+            this.btnBuscarMetodo.Location = new System.Drawing.Point(484, 31);
+            this.btnBuscarMetodo.Name = "btnBuscarMetodo";
+            this.btnBuscarMetodo.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarMetodo.TabIndex = 46;
+            this.btnBuscarMetodo.UseVisualStyleBackColor = true;
+            this.btnBuscarMetodo.Click += new System.EventHandler(this.btnBuscarMetodo_Click);
+            // 
+            // txtTelefono
+            // 
+            this.txtTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtTelefono.Location = new System.Drawing.Point(349, 112);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.ReadOnly = true;
+            this.txtTelefono.Size = new System.Drawing.Size(123, 21);
+            this.txtTelefono.TabIndex = 43;
+            // 
+            // txtDireccion
+            // 
+            this.txtDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtDireccion.Location = new System.Drawing.Point(349, 74);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.ReadOnly = true;
+            this.txtDireccion.Size = new System.Drawing.Size(123, 21);
+            this.txtDireccion.TabIndex = 42;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label4.Location = new System.Drawing.Point(235, 116);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(72, 17);
+            this.label4.TabIndex = 41;
+            this.label4.Text = "Telefono: ";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.label2.Location = new System.Drawing.Point(232, 78);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(75, 17);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Dirección: ";
+            // 
+            // btnBuscarOrden
+            // 
+            this.btnBuscarOrden.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarOrden.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarOrden.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarOrden.IconSize = 18;
+            this.btnBuscarOrden.Location = new System.Drawing.Point(181, 74);
+            this.btnBuscarOrden.Name = "btnBuscarOrden";
+            this.btnBuscarOrden.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarOrden.TabIndex = 39;
+            this.btnBuscarOrden.UseVisualStyleBackColor = true;
+            this.btnBuscarOrden.Click += new System.EventHandler(this.btnBuscarOrden_Click);
+            // 
+            // txtOrdenCompra
+            // 
+            this.txtOrdenCompra.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtOrdenCompra.Location = new System.Drawing.Point(100, 76);
+            this.txtOrdenCompra.Margin = new System.Windows.Forms.Padding(2);
+            this.txtOrdenCompra.Name = "txtOrdenCompra";
+            this.txtOrdenCompra.ReadOnly = true;
+            this.txtOrdenCompra.Size = new System.Drawing.Size(76, 21);
+            this.txtOrdenCompra.TabIndex = 38;
+            // 
+            // lblOrdden
+            // 
+            this.lblOrdden.AutoSize = true;
+            this.lblOrdden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblOrdden.Location = new System.Drawing.Point(23, 76);
+            this.lblOrdden.Name = "lblOrdden";
+            this.lblOrdden.Size = new System.Drawing.Size(72, 17);
+            this.lblOrdden.TabIndex = 37;
+            this.lblOrdden.Text = "N° Orden:";
+            // 
+            // btnProovedor
+            // 
+            this.btnProovedor.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnProovedor.IconColor = System.Drawing.Color.Black;
+            this.btnProovedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnProovedor.IconSize = 18;
+            this.btnProovedor.Location = new System.Drawing.Point(181, 112);
+            this.btnProovedor.Name = "btnProovedor";
+            this.btnProovedor.Size = new System.Drawing.Size(24, 24);
+            this.btnProovedor.TabIndex = 36;
+            this.btnProovedor.UseVisualStyleBackColor = true;
+            this.btnProovedor.Click += new System.EventHandler(this.btnProovedor_Click);
+            // 
+            // txtProovedor
+            // 
+            this.txtProovedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.txtProovedor.Location = new System.Drawing.Point(100, 113);
+            this.txtProovedor.Margin = new System.Windows.Forms.Padding(2);
+            this.txtProovedor.Name = "txtProovedor";
+            this.txtProovedor.ReadOnly = true;
+            this.txtProovedor.Size = new System.Drawing.Size(76, 21);
+            this.txtProovedor.TabIndex = 34;
+            // 
+            // lblFormaPago
+            // 
+            this.lblFormaPago.AutoSize = true;
+            this.lblFormaPago.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.lblFormaPago.Location = new System.Drawing.Point(232, 38);
+            this.lblFormaPago.Name = "lblFormaPago";
+            this.lblFormaPago.Size = new System.Drawing.Size(112, 17);
+            this.lblFormaPago.TabIndex = 31;
+            this.lblFormaPago.Text = "Metodo de Pago";
+            // 
             // dgv_productosRequeridos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -443,8 +419,6 @@ namespace ProyectoMoanso
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtCotizacion;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtMetodo;
         private FontAwesome.Sharp.IconButton btnBuscarMetodo;

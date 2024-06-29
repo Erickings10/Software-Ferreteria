@@ -24,4 +24,21 @@ namespace CapaEntidad
 
 
     }
+
+    public class entDescProducto
+    {
+        public int ProductoID { get; set; }
+
+        public string categoria { get; set; }
+
+        public string marca { get; set; }
+
+        public string descripcion { get; set; }
+
+        public Int64 cantidad { get; set; }
+
+        public Boolean estado { get; set; }
+    }
+
+
 }

@@ -32,10 +32,8 @@
             this.dgvNuevoReq = new System.Windows.Forms.DataGridView();
             this.gboRequerimientos = new System.Windows.Forms.GroupBox();
             this.btnBuscarPro = new FontAwesome.Sharp.IconButton();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.chboEstadoReque = new System.Windows.Forms.CheckBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.lblModelo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dtmReque = new System.Windows.Forms.DateTimePicker();
             this.lblCodigo = new System.Windows.Forms.Label();
@@ -44,9 +42,7 @@
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProducto = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_marca = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtDeshabilitar = new System.Windows.Forms.Button();
@@ -65,10 +61,8 @@
             // gboRequerimientos
             // 
             this.gboRequerimientos.Controls.Add(this.btnBuscarPro);
-            this.gboRequerimientos.Controls.Add(this.txtCategoria);
             this.gboRequerimientos.Controls.Add(this.chboEstadoReque);
             this.gboRequerimientos.Controls.Add(this.txtCantidad);
-            this.gboRequerimientos.Controls.Add(this.lblModelo);
             this.gboRequerimientos.Controls.Add(this.label2);
             this.gboRequerimientos.Controls.Add(this.dtmReque);
             this.gboRequerimientos.Controls.Add(this.lblCodigo);
@@ -77,13 +71,11 @@
             this.gboRequerimientos.Controls.Add(this.txtCodigo);
             this.gboRequerimientos.Controls.Add(this.label5);
             this.gboRequerimientos.Controls.Add(this.txtProducto);
-            this.gboRequerimientos.Controls.Add(this.lblMarca);
             this.gboRequerimientos.Controls.Add(this.label3);
-            this.gboRequerimientos.Controls.Add(this.txt_marca);
             this.gboRequerimientos.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboRequerimientos.Location = new System.Drawing.Point(21, 27);
             this.gboRequerimientos.Name = "gboRequerimientos";
-            this.gboRequerimientos.Size = new System.Drawing.Size(252, 370);
+            this.gboRequerimientos.Size = new System.Drawing.Size(252, 323);
             this.gboRequerimientos.TabIndex = 42;
             this.gboRequerimientos.TabStop = false;
             this.gboRequerimientos.Text = "DATOS:";
@@ -101,19 +93,11 @@
             this.btnBuscarPro.UseVisualStyleBackColor = true;
             this.btnBuscarPro.Click += new System.EventHandler(this.btnBuscarPro_Click);
             // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtCategoria.Location = new System.Drawing.Point(96, 163);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(112, 22);
-            this.txtCategoria.TabIndex = 37;
-            // 
             // chboEstadoReque
             // 
             this.chboEstadoReque.AutoSize = true;
             this.chboEstadoReque.Font = new System.Drawing.Font("Roboto", 10F);
-            this.chboEstadoReque.Location = new System.Drawing.Point(37, 339);
+            this.chboEstadoReque.Location = new System.Drawing.Point(48, 284);
             this.chboEstadoReque.Name = "chboEstadoReque";
             this.chboEstadoReque.Size = new System.Drawing.Size(164, 21);
             this.chboEstadoReque.TabIndex = 35;
@@ -123,26 +107,16 @@
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtCantidad.Location = new System.Drawing.Point(95, 208);
+            this.txtCantidad.Location = new System.Drawing.Point(100, 122);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(112, 22);
             this.txtCantidad.TabIndex = 31;
-            // 
-            // lblModelo
-            // 
-            this.lblModelo.AutoSize = true;
-            this.lblModelo.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lblModelo.Location = new System.Drawing.Point(16, 168);
-            this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(69, 17);
-            this.lblModelo.TabIndex = 36;
-            this.lblModelo.Text = "Categoría";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label2.Location = new System.Drawing.Point(17, 213);
+            this.label2.Location = new System.Drawing.Point(22, 127);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 17);
             this.label2.TabIndex = 27;
@@ -152,7 +126,7 @@
             // 
             this.dtmReque.Font = new System.Drawing.Font("Roboto", 9F);
             this.dtmReque.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtmReque.Location = new System.Drawing.Point(95, 254);
+            this.dtmReque.Location = new System.Drawing.Point(100, 174);
             this.dtmReque.Name = "dtmReque";
             this.dtmReque.Size = new System.Drawing.Size(111, 22);
             this.dtmReque.TabIndex = 33;
@@ -174,7 +148,7 @@
             this.cbPrioridad.Items.AddRange(new object[] {
             "Alta",
             "Baja"});
-            this.cbPrioridad.Location = new System.Drawing.Point(95, 298);
+            this.cbPrioridad.Location = new System.Drawing.Point(101, 228);
             this.cbPrioridad.Name = "cbPrioridad";
             this.cbPrioridad.Size = new System.Drawing.Size(111, 22);
             this.cbPrioridad.TabIndex = 39;
@@ -183,7 +157,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label1.Location = new System.Drawing.Point(33, 259);
+            this.label1.Location = new System.Drawing.Point(38, 174);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 17);
             this.label1.TabIndex = 34;
@@ -201,7 +175,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label5.Location = new System.Drawing.Point(20, 75);
+            this.label5.Location = new System.Drawing.Point(25, 76);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 32;
@@ -210,38 +184,20 @@
             // txtProducto
             // 
             this.txtProducto.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtProducto.Location = new System.Drawing.Point(95, 70);
+            this.txtProducto.Location = new System.Drawing.Point(100, 71);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(112, 22);
             this.txtProducto.TabIndex = 28;
-            // 
-            // lblMarca
-            // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lblMarca.Location = new System.Drawing.Point(34, 122);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(51, 17);
-            this.lblMarca.TabIndex = 29;
-            this.lblMarca.Text = "Marca:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label3.Location = new System.Drawing.Point(18, 300);
+            this.label3.Location = new System.Drawing.Point(23, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 38;
             this.label3.Text = "Prioridad: ";
-            // 
-            // txt_marca
-            // 
-            this.txt_marca.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txt_marca.Location = new System.Drawing.Point(95, 117);
-            this.txt_marca.Name = "txt_marca";
-            this.txt_marca.Size = new System.Drawing.Size(112, 22);
-            this.txt_marca.TabIndex = 30;
             // 
             // btnCancelar
             // 
@@ -249,9 +205,9 @@
             this.btnCancelar.Font = new System.Drawing.Font("Roboto", 10F);
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(95, 454);
+            this.btnCancelar.Location = new System.Drawing.Point(21, 454);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(118, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(148, 36);
             this.btnCancelar.TabIndex = 45;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -264,9 +220,9 @@
             this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
             this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.enviar_orden;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(21, 412);
+            this.btnAgregar.Location = new System.Drawing.Point(21, 370);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(104, 36);
+            this.btnAgregar.Size = new System.Drawing.Size(148, 36);
             this.btnAgregar.TabIndex = 44;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -279,9 +235,9 @@
             this.txtDeshabilitar.Font = new System.Drawing.Font("Roboto", 10F);
             this.txtDeshabilitar.Image = global::ProyectoMoanso.Properties.Resources.cancelar_orden;
             this.txtDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.txtDeshabilitar.Location = new System.Drawing.Point(140, 412);
+            this.txtDeshabilitar.Location = new System.Drawing.Point(125, 412);
             this.txtDeshabilitar.Name = "txtDeshabilitar";
-            this.txtDeshabilitar.Size = new System.Drawing.Size(133, 36);
+            this.txtDeshabilitar.Size = new System.Drawing.Size(148, 36);
             this.txtDeshabilitar.TabIndex = 51;
             this.txtDeshabilitar.Text = "Deshabilitar";
             this.txtDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -316,10 +272,8 @@
         private System.Windows.Forms.DataGridView dgvNuevoReq;
         private System.Windows.Forms.GroupBox gboRequerimientos;
         private FontAwesome.Sharp.IconButton btnBuscarPro;
-        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.CheckBox chboEstadoReque;
         private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.Label lblModelo;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dtmReque;
         private System.Windows.Forms.Label lblCodigo;
@@ -328,9 +282,7 @@
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtProducto;
-        private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_marca;
         private System.Windows.Forms.Button txtDeshabilitar;
     }
 }

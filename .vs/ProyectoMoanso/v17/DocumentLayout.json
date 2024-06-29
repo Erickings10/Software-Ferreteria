@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\capadatos\\datproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\capadatos\\datentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\semana 10\\software-ferreteria\\proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,21 +44,60 @@
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormProductos.cs",
               "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormProductos.cs",
               "RelativeToolTip": "ProyectoMoanso\\FormProductos.cs",
-              "ViewState": "AQIAAIUAAAAAAAAAAAAAwFoAAAAdAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T07:04:04.757Z",
+              "WhenOpened": "2024-06-28T23:38:52.948Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FormProductos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormProductos.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormProductos.cs",
-              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoMoanso\\FormProductos.cs [Dise\u00F1o]",
+              "Title": "datProductos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\datProductos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\datProductos.cs",
+              "RelativeToolTip": "CapaDatos\\datProductos.cs",
+              "ViewState": "AQIAAIwAAAAAAAAAAAAIwHcAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-27T07:03:21.715Z",
+              "WhenOpened": "2024-06-28T23:35:00.193Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "datEntradaProductos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\datEntradaProductos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datEntradaProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\CapaDatos\\datEntradaProductos.cs",
+              "RelativeToolTip": "CapaDatos\\datEntradaProductos.cs",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAowEwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T23:31:50.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FormEntradaProductos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormEntradaProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormEntradaProductos.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAgwBoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T23:30:54.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FormEntradaProductos.cs [Dise\u00F1o]",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormEntradaProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\Semana 10\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T23:28:19.036Z",
               "EditorCaption": " [Dise\u00F1o]"
             }
           ]
