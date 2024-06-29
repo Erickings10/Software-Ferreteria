@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_ReporteRubro = new System.Windows.Forms.DataGridView();
             this.btn_Cerrar = new System.Windows.Forms.Button();
+            this.btn_Nuevo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_ReporteRubro)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,12 +73,28 @@
             this.btn_Cerrar.UseVisualStyleBackColor = true;
             this.btn_Cerrar.Click += new System.EventHandler(this.btn_Cerrar_Click);
             // 
+            // btn_Nuevo
+            // 
+            this.btn_Nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Nuevo.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_Nuevo.Image")));
+            this.btn_Nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Nuevo.Location = new System.Drawing.Point(296, 42);
+            this.btn_Nuevo.Name = "btn_Nuevo";
+            this.btn_Nuevo.Size = new System.Drawing.Size(177, 44);
+            this.btn_Nuevo.TabIndex = 37;
+            this.btn_Nuevo.Text = "Nuevo";
+            this.btn_Nuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Nuevo.UseVisualStyleBackColor = true;
+            this.btn_Nuevo.Click += new System.EventHandler(this.btn_Nuevo_Click);
+            // 
             // FormReporteRubro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Nuevo);
             this.Controls.Add(this.btn_Cerrar);
             this.Controls.Add(this.dgv_ReporteRubro);
             this.Controls.Add(this.label1);
@@ -95,5 +112,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgv_ReporteRubro;
         private System.Windows.Forms.Button btn_Cerrar;
+        private System.Windows.Forms.Button btn_Nuevo;
     }
 }

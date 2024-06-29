@@ -40,10 +40,25 @@ namespace ProyectoMoanso
             DialogResult = DialogResult.OK;
             Close();
         }
+        private void AbrirRubroProveedor()
+        {
+            using (FormRubroProveedor formRP = new FormRubroProveedor())
+            {
+                if (formRP.ShowDialog() == DialogResult.OK)
+                {
+                    formRP.Show();
+                }
 
+            }
+        }
         private void btn_Cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btn_Nuevo_Click(object sender, EventArgs e)
+        {
+            AbrirRubroProveedor();
         }
     }
 }

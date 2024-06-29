@@ -18,7 +18,7 @@ namespace CapaDatos
         public SqlConnection Conectar()
         {
             SqlConnection cn = new SqlConnection();
-            cn.ConnectionString = "Data Source= localhost ; Initial Catalog = BDFerreteria;" +
+            cn.ConnectionString = "Data Source= LAPTOP-AO7TTABM\\SQLEXPRESS ; Initial Catalog = DBMantenedores;" +
             "Integrated Security=true";
             return cn;
 
