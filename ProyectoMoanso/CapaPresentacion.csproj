@@ -83,29 +83,23 @@
     <Compile Include="FormMarcaProducto.Designer.cs">
       <DependentUpon>FormMarcaProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormMedidaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMedidaProducto.Designer.cs">
+      <DependentUpon>FormMedidaProducto.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMetodoPago.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormMetodoPago.Designer.cs">
       <DependentUpon>FormMetodoPago.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormReporteCategoria.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormReporteCategoria.Designer.cs">
-      <DependentUpon>FormReporteCategoria.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormReporteDetalleOrden.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormReporteDetalleOrden.Designer.cs">
       <DependentUpon>FormReporteDetalleOrden.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormReporteMarca.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormReporteMarca.Designer.cs">
-      <DependentUpon>FormReporteMarca.cs</DependentUpon>
     </Compile>
     <Compile Include="FormReporteProducto.cs">
       <SubType>Form</SubType>
@@ -209,17 +203,14 @@
     <EmbeddedResource Include="FormMarcaProducto.resx">
       <DependentUpon>FormMarcaProducto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormMedidaProducto.resx">
+      <DependentUpon>FormMedidaProducto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormMetodoPago.resx">
       <DependentUpon>FormMetodoPago.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormReporteCategoria.resx">
-      <DependentUpon>FormReporteCategoria.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormReporteDetalleOrden.resx">
       <DependentUpon>FormReporteDetalleOrden.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormReporteMarca.resx">
-      <DependentUpon>FormReporteMarca.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormReporteProducto.resx">
       <DependentUpon>FormReporteProducto.cs</DependentUpon>

@@ -40,11 +40,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.btnInhabilitar = new System.Windows.Forms.Button();
-            this.btnModificar = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
             this.dtpFechaEntrada = new System.Windows.Forms.DateTimePicker();
-            this.btnBuscarProductos = new FontAwesome.Sharp.IconButton();
             this.lblAlmacen = new System.Windows.Forms.Label();
             this.chbx_Estado = new System.Windows.Forms.CheckBox();
             this.gboDatos = new System.Windows.Forms.GroupBox();
@@ -53,8 +49,12 @@
             this.txtidProducto = new System.Windows.Forms.TextBox();
             this.chbEstado = new System.Windows.Forms.CheckBox();
             this.cboAlmacen = new System.Windows.Forms.ComboBox();
-            this.btn_nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
+            this.btn_nuevo = new System.Windows.Forms.Button();
+            this.btnBuscarProductos = new FontAwesome.Sharp.IconButton();
+            this.btnInhabilitar = new System.Windows.Forms.Button();
+            this.btnModificar = new System.Windows.Forms.Button();
+            this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).BeginInit();
             this.gboDatos.SuspendLayout();
             this.SuspendLayout();
@@ -169,53 +169,6 @@
             this.menuStrip1.TabIndex = 23;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // btnInhabilitar
-            // 
-            this.btnInhabilitar.BackColor = System.Drawing.Color.Tomato;
-            this.btnInhabilitar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnInhabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnInhabilitar.Image")));
-            this.btnInhabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInhabilitar.Location = new System.Drawing.Point(750, 215);
-            this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInhabilitar.Name = "btnInhabilitar";
-            this.btnInhabilitar.Size = new System.Drawing.Size(129, 50);
-            this.btnInhabilitar.TabIndex = 22;
-            this.btnInhabilitar.Text = "Inhabilitar";
-            this.btnInhabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInhabilitar.UseVisualStyleBackColor = false;
-            // 
-            // btnModificar
-            // 
-            this.btnModificar.BackColor = System.Drawing.Color.Aqua;
-            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
-            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnModificar.Location = new System.Drawing.Point(750, 151);
-            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(129, 51);
-            this.btnModificar.TabIndex = 21;
-            this.btnModificar.Text = "Modificar";
-            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnModificar.UseVisualStyleBackColor = false;
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnRegistrar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
-            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegistrar.Location = new System.Drawing.Point(750, 86);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(129, 53);
-            this.btnRegistrar.TabIndex = 20;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
             // dtpFechaEntrada
             // 
             this.dtpFechaEntrada.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -224,19 +177,6 @@
             this.dtpFechaEntrada.Name = "dtpFechaEntrada";
             this.dtpFechaEntrada.Size = new System.Drawing.Size(163, 23);
             this.dtpFechaEntrada.TabIndex = 29;
-            // 
-            // btnBuscarProductos
-            // 
-            this.btnBuscarProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarProductos.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarProductos.IconSize = 18;
-            this.btnBuscarProductos.Location = new System.Drawing.Point(231, 131);
-            this.btnBuscarProductos.Name = "btnBuscarProductos";
-            this.btnBuscarProductos.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarProductos.TabIndex = 41;
-            this.btnBuscarProductos.UseVisualStyleBackColor = true;
-            this.btnBuscarProductos.Click += new System.EventHandler(this.btnBuscarProductos_Click);
             // 
             // lblAlmacen
             // 
@@ -335,6 +275,22 @@
             this.cboAlmacen.Size = new System.Drawing.Size(103, 23);
             this.cboAlmacen.TabIndex = 45;
             // 
+            // btn_Cancelar
+            // 
+            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
+            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Cancelar.Location = new System.Drawing.Point(26, 190);
+            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Cancelar.Name = "btn_Cancelar";
+            this.btn_Cancelar.Size = new System.Drawing.Size(149, 41);
+            this.btn_Cancelar.TabIndex = 48;
+            this.btn_Cancelar.Text = "Cancelar";
+            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btn_Cancelar.UseVisualStyleBackColor = true;
+            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            // 
             // btn_nuevo
             // 
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
@@ -351,21 +307,65 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
-            // btn_Cancelar
+            // btnBuscarProductos
             // 
-            this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
-            this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cancelar.Location = new System.Drawing.Point(26, 190);
-            this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Cancelar.Name = "btn_Cancelar";
-            this.btn_Cancelar.Size = new System.Drawing.Size(149, 41);
-            this.btn_Cancelar.TabIndex = 48;
-            this.btn_Cancelar.Text = "Cancelar";
-            this.btn_Cancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btn_Cancelar.UseVisualStyleBackColor = true;
-            this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
+            this.btnBuscarProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarProductos.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarProductos.IconSize = 18;
+            this.btnBuscarProductos.Location = new System.Drawing.Point(231, 131);
+            this.btnBuscarProductos.Name = "btnBuscarProductos";
+            this.btnBuscarProductos.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarProductos.TabIndex = 41;
+            this.btnBuscarProductos.UseVisualStyleBackColor = true;
+            this.btnBuscarProductos.Click += new System.EventHandler(this.btnBuscarProductos_Click);
+            // 
+            // btnInhabilitar
+            // 
+            this.btnInhabilitar.BackColor = System.Drawing.Color.Tomato;
+            this.btnInhabilitar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnInhabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnInhabilitar.Image")));
+            this.btnInhabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInhabilitar.Location = new System.Drawing.Point(750, 215);
+            this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInhabilitar.Name = "btnInhabilitar";
+            this.btnInhabilitar.Size = new System.Drawing.Size(129, 50);
+            this.btnInhabilitar.TabIndex = 22;
+            this.btnInhabilitar.Text = "Inhabilitar";
+            this.btnInhabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnInhabilitar.UseVisualStyleBackColor = false;
+            // 
+            // btnModificar
+            // 
+            this.btnModificar.BackColor = System.Drawing.Color.Aqua;
+            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
+            this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnModificar.Location = new System.Drawing.Point(750, 151);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificar.Name = "btnModificar";
+            this.btnModificar.Size = new System.Drawing.Size(129, 51);
+            this.btnModificar.TabIndex = 21;
+            this.btnModificar.Text = "Modificar";
+            this.btnModificar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnModificar.UseVisualStyleBackColor = false;
+            // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnRegistrar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
+            this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegistrar.Location = new System.Drawing.Point(750, 86);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(129, 53);
+            this.btnRegistrar.TabIndex = 20;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // FormEntradaProductos
             // 

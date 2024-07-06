@@ -19,11 +19,17 @@ namespace ProyectoMoanso
             InitializeComponent();
             listarRequerimiento();
             dgvRequerimientos.Enabled = false;
+            CambiarEncabezados();
         }
 
         public void listarRequerimiento()
         {
-            dgvRequerimientos.DataSource = logRequerimientos.Instancia.ListarRequerimientos();
+            List<entRequerimiento> listaReq = logRequerimientos.Instancia.ListarRequerimientos();
+            if (listaReq.Count >= 0)
+            {
+                dgvRequerimientos.Columns.Clear();
+                dgvRequerimientos.DataSource = listaReq;
+            }
         }
         private void AbrirFormNuevoRequerimiento()
         {
@@ -38,13 +44,8 @@ namespace ProyectoMoanso
         }
         public void CambiarEncabezados()
         {
-            dgvRequerimientos.Columns["id"].HeaderText = "ID de Requerimiento";
-            dgvRequerimientos.Columns["producto"].HeaderText = "Producto";
-            dgvRequerimientos.Columns["marca"].HeaderText = "Marca";
-            dgvRequerimientos.Columns["categoria"].HeaderText = "Categoria";
-            dgvRequerimientos.Columns["cantidad"].HeaderText = "Cantidad";
+            dgvRequerimientos.Columns["RequerimientoID"].HeaderText = "ID de Requerimiento";
             dgvRequerimientos.Columns["fecha"].HeaderText = "Fecha";
-            dgvRequerimientos.Columns["prioridad"].HeaderText = "Prioridad";
             dgvRequerimientos.Columns["estado"].HeaderText = "Estado";
         }
 
@@ -91,7 +92,7 @@ namespace ProyectoMoanso
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            listarRequerimiento();
+            
         }
     }
 

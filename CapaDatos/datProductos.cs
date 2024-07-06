@@ -30,42 +30,6 @@ namespace CapaDatos
 
         #region metodos
 
-        public (int MarcaProductoID, int CategoriaProductoID) ObtenerProductoPorID(int productoID)
-        {
-            SqlCommand cmd = null;
-            SqlDataReader dr = null;
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar(); // singleton
-                cmd = new SqlCommand("spObtenerProductoPorID", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.Add(new SqlParameter("@ProductoID", productoID));
-                cn.Open();
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    int marcaProductoID = Convert.ToInt32(dr["MarcaProductoID"]);
-                    int categoriaProductoID = Convert.ToInt32(dr["CategoriaProductoID"]);
-                    return (marcaProductoID, categoriaProductoID);
-                }
-                throw new Exception("Producto no encontrado.");
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                if (dr != null && !dr.IsClosed)
-                {
-                    dr.Close();
-                }
-                if (cmd != null)
-                {
-                    cmd.Connection.Close();
-                }
-            }
-        }
 
             ////////////////////listado de Productos
         public List<entDescProducto> ListarProductos()
@@ -85,8 +49,11 @@ namespace CapaDatos
                     Prod.ProductoID = Convert.ToInt32(dr["ProductoID"]);
                     Prod.categoria = Convert.ToString(dr["categoria"]);
                     Prod.marca = Convert.ToString(dr["marca"]);
+                    Prod.medida = Convert.ToString(dr["medida"]);
                     Prod.descripcion = Convert.ToString(dr["descripcion"]);
-                    Prod.cantidad = Convert.ToInt64(dr["cantidad"]);
+                    Prod.precioCompra = Convert.ToDecimal(dr["precioCompra"]);
+                    Prod.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
+                    Prod.fecha = Convert.ToDateTime(dr["fecha"]);
                     Prod.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Prod);
                 }
@@ -120,8 +87,11 @@ namespace CapaDatos
                     pro.ProductoID = Convert.ToInt32(dr["ProductoID"]);
                     pro.categoria = Convert.ToString(dr["categoria"]);
                     pro.marca = Convert.ToString(dr["marca"]);
+                    pro.medida = Convert.ToString(dr["medida"]);
                     pro.descripcion = Convert.ToString(dr["descripcion"]);
-                    pro.cantidad = Convert.ToInt64(dr["cantidad"]);
+                    pro.precioCompra = Convert.ToDecimal(dr["precioCompra"]);
+                    pro.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
+                    pro.fecha = Convert.ToDateTime(dr["fecha"]);
                     pro.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(pro);
                 }
@@ -151,8 +121,11 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CategoriaproductoID", Prod.CategoriaproductoID);
                 cmd.Parameters.AddWithValue("@MarcaproductoID", Prod.MarcaproductoID);
+                cmd.Parameters.AddWithValue("@MedidaproductoID", Prod.MedidaproductoID);
                 cmd.Parameters.AddWithValue("@descripcion", Prod.descripcion);
-                cmd.Parameters.AddWithValue("@cantidad", Prod.cantidad);
+                cmd.Parameters.AddWithValue("@precioCompra", Prod.precioCompra);
+                cmd.Parameters.AddWithValue("@precioVenta", Prod.precioVenta);
+                cmd.Parameters.AddWithValue("@fecha", Prod.fecha);
                 cmd.Parameters.AddWithValue("@estado", Prod.estado);
 
                 cn.Open();
@@ -171,9 +144,41 @@ namespace CapaDatos
 
             return inserta;
         }
+        public entProductos BuscarProductoId(int idProducto)
+        {
+            SqlCommand cmd = null;
+            entProductos Prod = new entProductos();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarProductoPorID", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductoID", idProducto);
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    Prod.ProductoID = Convert.ToInt16(dr["ProductoID"]);
+                    Prod.descripcion = Convert.ToString(dr["descripcion"]);
+                    //Prod.CategoriaproductoID = Convert.ToInt16(dr["CategoriaproductoID"]);
+                    //Prod.MarcaproductoID = Convert.ToInt16(dr["MarcaproductoID"]);
+                    //Prod.MedidaproductoID = Convert.ToInt16(dr["MedidaproductoID"]);
+                    Prod.precioCompra = Convert.ToDecimal(dr["precioCompra"]);
+                    Prod.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
+                    Prod.fecha = Convert.ToDateTime(dr["fecha"]);
+                    Prod.estado = Convert.ToBoolean(dr["estado"]);
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return Prod;
 
+        }
 
-        public Boolean EditarProducto(entProductos Pro)
+        /*public Boolean EditarProducto(entProductos Pro)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
@@ -200,7 +205,7 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return edita;
-        }
+        }*/
 
 
         #endregion metodos

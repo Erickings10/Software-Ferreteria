@@ -43,7 +43,7 @@ namespace CapaDatos
                             {
                                 entCategoriaProductos cp = new entCategoriaProductos();
                                 cp.CategoriaproductoID = Convert.ToInt32(cprod["CategoriaproductoID"]);
-                                cp.categoria = Convert.ToString(cprod["categoria"]);
+                                cp.descripcion = Convert.ToString(cprod["descripcion"]);
                                 cp.estado = Convert.ToBoolean(cprod["estado"]);
                                 lista.Add(cp);
                             }
@@ -69,7 +69,7 @@ namespace CapaDatos
                     using (SqlCommand cmd = new SqlCommand("spInsertarCategoria", con))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.AddWithValue("@categoria", cp.categoria);
+                        cmd.Parameters.AddWithValue("@descripcion", cp.descripcion);
                         cmd.Parameters.AddWithValue("@estado", cp.estado);
                         con.Open();
                         int i = cmd.ExecuteNonQuery();
@@ -99,7 +99,7 @@ namespace CapaDatos
                 cmd = new SqlCommand("spEditarCategoria", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@CategoriaproductoID", cp.CategoriaproductoID);
-                cmd.Parameters.AddWithValue("@categoria", cp.categoria);
+                cmd.Parameters.AddWithValue("@descripcion", cp.descripcion);
                 cmd.Parameters.AddWithValue("@estado", cp.estado);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -172,7 +172,7 @@ namespace CapaDatos
                 {
                     entCategoriaProductos Cat = new entCategoriaProductos();
                     Cat.CategoriaproductoID = Convert.ToInt32(dr["CategoriaproductoID"]);
-                    Cat.categoria = Convert.ToString(dr["categoria"]);
+                    Cat.descripcion = Convert.ToString(dr["descripcion"]);
                     Cat.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Cat);
                 }
@@ -191,32 +191,7 @@ namespace CapaDatos
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
             #endregion metodos
-
-
-
-
-
-
-
 
 
 

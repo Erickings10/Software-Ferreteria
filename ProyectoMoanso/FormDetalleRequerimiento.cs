@@ -14,35 +14,27 @@ namespace ProyectoMoanso
 {
     public partial class FormDetalleRequerimiento : Form
     {
+        entRequerimiento requerimiento = new entRequerimiento();
+        entDetRequerimiento detReq = new entDetRequerimiento();
+
+        private List<entDetRequerimiento> listadetReq = new List<entDetRequerimiento>();
+
         public FormDetalleRequerimiento()
         {
             InitializeComponent();
             txtCodigo.Enabled = false;
-            listarRequerimiento();
         }
         public void CambiarEncabezados()
         {
-            dgvNuevoReq.Columns["id"].HeaderText = "ID de Requerimiento";
-            dgvNuevoReq.Columns["producto"].HeaderText = "Producto";
-            dgvNuevoReq.Columns["marca"].HeaderText = "Marca";
-            dgvNuevoReq.Columns["categoria"].HeaderText = "Categoria";
-            dgvNuevoReq.Columns["cantidad"].HeaderText = "Cantidad";
-            dgvNuevoReq.Columns["fecha"].HeaderText = "Fecha";
-            dgvNuevoReq.Columns["prioridad"].HeaderText = "Prioridad";
-            dgvNuevoReq.Columns["estado"].HeaderText = "Estado";
+            dgvNuevoReq.Columns["ProductoID"].HeaderText = "ID producto";
+            dgvNuevoReq.Columns["descripcion"].HeaderText = "descripcion";
+
         }
 
         private void Limpiar()
         {
-            txtProducto.Text = "";
+            txtProductoID.Text = "";
             txtCantidad.Text = " ";
-        }
-
-        public void listarRequerimiento()
-        {
-            dgvNuevoReq.DataSource = logRequerimientos.Instancia.ListarRequerimientos();
-            CambiarEncabezados();
-
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -50,47 +42,42 @@ namespace ProyectoMoanso
             this.Close();
         }
 
+        private void btnBuscarPro_Click(object sender, EventArgs e)
+        {
+            txtProductoID.Focus();
+            int idPro = Convert.ToInt32(txtProductoID.Text);
+            entProductos prod = logProductos.Instancia.BuscarProductoId(idPro);
+            if (prod != null && (prod.estado = true))
+            {
+                txtDescripcion.Text = Convert.ToString(prod.descripcion);
+            }
+            else
+                MessageBox.Show("El producto no existe o esta inhabilitado, verifique", "Producto: Advertencia", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+        }
+        public static int confilas = 0;
+        public static decimal Total = 0;
+
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            try
+            /*try
             {
                 entRequerimiento c = new entRequerimiento();
-                c.producto = txtProducto.Text;
+                c.producto = txtProductoID.Text;
                 c.cantidad = Convert.ToInt64(txtCantidad.Text);
                 c.fecha = Convert.ToDateTime(dtmReque.Text);
                 c.prioridad = cbPrioridad.Text;
-                c.estado = chboEstadoReque.Checked;
                 logRequerimientos.Instancia.InsertaRequerimiento(c);
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error.." + ex);
             }
-
+            */
 
 
             Limpiar();
-            listarRequerimiento();
-        }
-        private void AbrirReporteProducto()
-        {
-            using (FormReporteProducto frmReporteProducto = new FormReporteProducto())
-            {
-                if (frmReporteProducto.ShowDialog() == DialogResult.OK)
-                {
-
-
-                    txtProducto.Text = frmReporteProducto.Producto;
-
-
-                }
-
-            }
         }
 
-        private void btnBuscarPro_Click(object sender, EventArgs e)
-        {
-            AbrirReporteProducto();
-        }
+
     }
 }

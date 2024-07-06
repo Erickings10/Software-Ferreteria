@@ -15,9 +15,15 @@ namespace CapaEntidad
 
         public int MarcaproductoID { get; set; }
 
+        public int MedidaproductoID { get; set; }
+
         public string descripcion { get; set; }
 
-        public Int64 cantidad { get; set; }
+        public decimal precioCompra {  get; set; }
+
+        public decimal precioVenta {  get; set; }
+
+        public DateTime fecha { get; set; }
 
         public Boolean estado { get; set; }
 
@@ -33,9 +39,15 @@ namespace CapaEntidad
 
         public string marca { get; set; }
 
+        public string medida {  get; set; }
+
         public string descripcion { get; set; }
 
-        public Int64 cantidad { get; set; }
+        public decimal precioCompra { get; set; }
+
+        public decimal precioVenta { get; set; }
+
+        public DateTime fecha { get; set; }
 
         public Boolean estado { get; set; }
     }

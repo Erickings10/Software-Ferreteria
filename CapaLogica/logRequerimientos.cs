@@ -30,18 +30,25 @@ namespace CapaLogica
 
         public List<entRequerimiento> ListarRequerimientos()
         {
-            return datRequerimientos.Instancia.ListarRequerimiento();
+            try
+            {
+                return datRequerimientos.Instancia.ListarRequerimiento();
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
 
         }
 
-        public void InsertaRequerimiento(entRequerimiento Req)
+        /*public void InsertaRequerimiento(entRequerimiento Req)
         {
             datRequerimientos.Instancia.InsertarRequerimiento(Req);
         }
         public void DeshabilitarRequerimiento(entRequerimiento Req)
         {
             datRequerimientos.Instancia.DeshabilitarRequerimiento(Req);
-        }
+        }*/
 
         #endregion metodos
     }

@@ -22,42 +22,41 @@ namespace ProyectoMoanso
             gbBotones2.Enabled = false;
             gboDatos.Enabled = false;
             dgvRegistroProducto.Enabled = false;
-            txtCategoria.Enabled = false;
-            //txtProveedor.Enabled = false;
-            txtMarca.Enabled = false;
-            listarProducto();
-            CambiarEncabezados();
+            cboMarca.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboMedida.DropDownStyle = ComboBoxStyle.DropDownList;
             txtIdMarca.Visible = false;
             txtIdCategoria.Visible = false;
+            txtIdMedida.Visible = false;
+            listarProducto();
+            CambiarEncabezados();
+            listarMedida();
+            listarCategoria(); 
+            listarMarca ();
         }
 
-        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true;
-                errorStock.SetError(txtCantidad, "Solo ingrese numeros");
-            }
-            else
-            {
-                errorStock.SetError(txtCantidad, "");
-            }
-        }
         private void LimpiarVariables()
         {
             txtDescripcion.Text = "";
-            txtMarca.Text = "";
-            txtCategoria.Text = "";
-            txtCantidad.Text = "";
-            chbx_Estado.Checked = false;
+            cboMedida.Text = "";
+            cboCategoria.Text = "";
+            cboMedida.Text = "";
+            txtDescripcion.Text = "";
+            txtPrecioCompra.Text = "";
+            txtPrecioVenta.Text = "";
+            chbxEstado.Checked = false;
 
         }
         public void CambiarEncabezados()
         {
+            dgvRegistroProducto.Columns["ProductoID"].HeaderText = "ID";
             dgvRegistroProducto.Columns["categoria"].HeaderText = "Categoria";
             dgvRegistroProducto.Columns["marca"].HeaderText = "Marca";
+            dgvRegistroProducto.Columns["medida"].HeaderText = "Medida";
             dgvRegistroProducto.Columns["descripcion"].HeaderText = "Descripcion";
-            dgvRegistroProducto.Columns["cantidad"].HeaderText = "Cantidad";
+            dgvRegistroProducto.Columns["precioCompra"].HeaderText = "Precio de Compra";
+            dgvRegistroProducto.Columns["precioVenta"].HeaderText = "Precio de Venta";
+            dgvRegistroProducto.Columns["fecha"].HeaderText = "Fecha";
             dgvRegistroProducto.Columns["estado"].HeaderText = "Estado";
         }
 
@@ -76,9 +75,12 @@ namespace ProyectoMoanso
 
                 p.CategoriaproductoID = Convert.ToInt32(txtIdCategoria.Text);
                 p.MarcaproductoID = Convert.ToInt32(txtIdMarca.Text);
+                p.MedidaproductoID = Convert.ToInt32(txtIdMedida.Text);
                 p.descripcion = txtDescripcion.Text;
-                p.cantidad = Convert.ToInt64(txtCantidad.Text);
-                p.estado = Convert.ToBoolean(chbx_Estado.Checked);
+                p.precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
+                p.precioVenta = Convert.ToDecimal(txtPrecioVenta.Text);
+                p.fecha = Convert.ToDateTime(dtPFecha.Text);
+                p.estado = Convert.ToBoolean(chbxEstado.Checked);
 
                 logProductos.Instancia.InsertaProductos(p);
 
@@ -89,19 +91,9 @@ namespace ProyectoMoanso
             }
 
             LimpiarVariables();
-
             listarProducto();
         }
 
-        private void Limpiar()
-        {
-            txtCodigo.Text = "";
-            txtMarca.Text = "";
-            txtCategoria.Text = "";
-            txtDescripcion.Text = "";
-            txtCantidad.Text = "";
-            chbx_Estado.Checked = false;
-        }
 
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
@@ -119,43 +111,74 @@ namespace ProyectoMoanso
             gboDatos.Enabled = false;
             dgvRegistroProducto.Enabled = false;
         }
-        private void AbrirReporteMarca()
+
+        public void listarMedida()
         {
-            using (FormReporteMarca formReporteMarca = new FormReporteMarca())
+            cboMedida.DataSource = logMedidaProducto.Instancia.ListarReporteMedidaProducto();
+            cboMedida.DisplayMember = "prefijo";
+            cboMedida.ValueMember = "MedidaproductoID";
+        }
+        public void listarMarca()
+        {
+            cboMarca.DataSource = logMarcaProducto.Instancia.ListarReporteMarcaProducto();
+            cboMarca.DisplayMember = "descripcion";
+            cboMarca.ValueMember = "MarcaproductoID";
+        }
+        public void listarCategoria()
+        {
+            cboCategoria.DataSource = logCategoriaProductos.Instancia.ListarReporteCategoriaProducto();
+            cboCategoria.DisplayMember = "descripcion";
+            cboCategoria.ValueMember = "CategoriaproductoID";
+        }
+        private void AbrirMarca()
+        {
+            using (FormMarcaProducto frmMarca = new FormMarcaProducto())
             {
-                if (formReporteMarca.ShowDialog() == DialogResult.OK)
+                if (frmMarca.ShowDialog() == DialogResult.OK)
                 {
-                    txtMarca.Text = formReporteMarca.Marca;
-                    txtIdMarca.Text = formReporteMarca.IdMarca;
+                    frmMarca.Show();
                 }
 
             }
         }
 
-        private void AbrirReporteCategoria()
+        private void AbrirCategoria()
         {
-            using (FormReporteCategoria formReporteCateg = new FormReporteCategoria())
+            using (FormCategoriaProducto frmCategoria = new FormCategoriaProducto())
             {
-                if (formReporteCateg.ShowDialog() == DialogResult.OK)
+                if (frmCategoria.ShowDialog() == DialogResult.OK)
                 {
-                    txtCategoria.Text = formReporteCateg.Categoria;
-                    txtIdCategoria.Text = formReporteCateg.IdCategoria;
+                    frmCategoria.Show();
                 }
 
             }
         }
+        private void AbrirMedidaProducto()
+        {
+            using (FormMedidaProducto frmMedida = new FormMedidaProducto())
+            {
+                if (frmMedida.ShowDialog() == DialogResult.OK)
+                {
+                    frmMedida.Show();
+                }
 
+            }
+        }
         private void btnBuscarMarca_Click(object sender, EventArgs e)
         {
-            AbrirReporteMarca();
+            AbrirMarca();
         }
 
 
         private void btnBuscarCategoria_Click(object sender, EventArgs e)
         {
-            AbrirReporteCategoria();
+            AbrirCategoria();
         }
 
+        private void btnBuscarMedida_Click(object sender, EventArgs e)
+        {
+            AbrirMedidaProducto();
+        }
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try
@@ -164,17 +187,16 @@ namespace ProyectoMoanso
                 c.ProductoID = int.Parse(txtCodigo.Text.Trim());
                 c.MarcaproductoID = int.Parse(txtIdMarca.Text.Trim());
                 c.CategoriaproductoID = int.Parse(txtIdCategoria.Text.Trim());
-                c.descripcion = txtMarca.Text.Trim();
-                c.cantidad = Convert.ToInt32(txtCantidad.Text);
-                c.estado = chbx_Estado.Checked;
-                logProductos.Instancia.EditarProducto(c);
+                //c.descripcion = txtMarca.Text.Trim();
+                c.estado = chbxEstado.Checked;
+                //logProductos.Instancia.EditarProducto(c);
 
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error.." + ex);
             }
-            Limpiar();
+            LimpiarVariables();
             gboDatos.Enabled = false;
             listarProducto();
             btnActualizar.Enabled = false;
@@ -184,39 +206,16 @@ namespace ProyectoMoanso
         {
             DataGridViewRow filaActual = dgvRegistroProducto.Rows[e.RowIndex]; //
             txtCodigo.Text = filaActual.Cells[0].Value.ToString();
-            txtMarca.Text = filaActual.Cells[1].Value.ToString();
-            txtCategoria.Text = filaActual.Cells[2].Value.ToString();
+            cboMarca.Text = filaActual.Cells[1].Value.ToString();
+            cboCategoria.Text = filaActual.Cells[2].Value.ToString();
             txtDescripcion.Text = filaActual.Cells[3].Value.ToString();
-            txtCantidad.Text = filaActual.Cells[4].Value.ToString();
-            chbx_Estado.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
+            chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
 
             btnActualizar.Enabled = true;
             btnDeshabilitar.Enabled = true;
         }
 
-        private void txtDescripcion_TextChanged(object sender, EventArgs e)
-        {
-        }
 
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
-        {
-            if (int.TryParse(txtCodigo.Text, out int productoID))
-            {
-                try
-                {
-                    // Llama al método para obtener los IDs de Marca y Categoría
-                    var (marcaProductoID, categoriaProductoID) = logProductos.Instancia.ObtenerProductoPorID(productoID);
-
-                    // Asigna los valores a los TextBox correspondientes
-                    txtIdMarca.Text = marcaProductoID.ToString();
-                    txtIdCategoria.Text = categoriaProductoID.ToString();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-            }
-        }
     }
 }
 

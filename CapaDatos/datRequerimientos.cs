@@ -34,20 +34,16 @@ namespace CapaDatos
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaRequerimientos", cn);
+                cmd = new SqlCommand("spListarRequerimiento", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
                     entRequerimiento Req = new entRequerimiento();
-                    Req.id = Convert.ToInt32(dr["id"]);
-                    Req.producto = Convert.ToString(dr["producto"]);
-                    Req.marca = Convert.ToString(dr["marca"]);
-                    Req.categoria = Convert.ToString(dr["categoria"]);
-                    Req.cantidad = Convert.ToInt64(dr["cantidad"]);
+
+                    Req.RequerimientoID = Convert.ToInt32(dr["RequerimientoID"]);;
                     Req.fecha = Convert.ToDateTime(dr["fecha"]);
-                    Req.prioridad = Convert.ToString(dr["prioridad"]);
                     Req.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Req);
                 }
@@ -64,7 +60,7 @@ namespace CapaDatos
             return lista;
         }
 
-        public Boolean InsertarRequerimiento(entRequerimiento Req)
+        /*public Boolean InsertarRequerimiento(entRequerimiento Req)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
@@ -119,7 +115,7 @@ namespace CapaDatos
             return delete;
         }
 
-
+        */
 
         #endregion metodos
 

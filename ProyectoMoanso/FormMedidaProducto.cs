@@ -12,39 +12,33 @@ using System.Windows.Forms;
 
 namespace ProyectoMoanso
 {
-    public partial class FormMarcaProducto : Form
+    public partial class FormMedidaProducto : Form
     {
-        
-
-        public FormMarcaProducto()
+        public FormMedidaProducto()
         {
             InitializeComponent();
             gbBotones.Enabled = false;
-            dgvMarcaPro.Enabled = false;
+            dgvMedidaPro.Enabled = false;
             gboxDatos.Enabled = false;
             txtId.Enabled = false;
-            ListarMarca();
+            ListarMedida();
             CambiarEncabezados();
-        }
-
-        private void btn_Cancelar_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
             gbBotones.Enabled = true;
-            dgvMarcaPro.Enabled = true;
+            dgvMedidaPro.Enabled = true;
             gboxDatos.Enabled = true;
             btnActualizar.Enabled = false;
             btnDeshabilitar.Enabled = false;
         }
         public void CambiarEncabezados()
         {
-            dgvMarcaPro.Columns["MarcaproductoID"].HeaderText = "ID Marca";
-            dgvMarcaPro.Columns["descripcion"].HeaderText = "Marca Producto";
-            dgvMarcaPro.Columns["estado"].HeaderText = "Estado";
+            dgvMedidaPro.Columns["MedidaproductoID"].HeaderText = "ID Medida";
+            dgvMedidaPro.Columns["descripcion"].HeaderText = "Medida del Producto";
+            dgvMedidaPro.Columns["prefijo"].HeaderText = "Predijo del Producto";
+            dgvMedidaPro.Columns["estado"].HeaderText = "Estado";
         }
         private void Limpiar()
         {
@@ -52,32 +46,21 @@ namespace ProyectoMoanso
             txtDescripcion.Text = "";
             chbxEstado.Checked = false;
         }
-
-        private void dgvMarcaPro_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        public void ListarMedida()
         {
-            DataGridViewRow filaActual = dgvMarcaPro.Rows[e.RowIndex]; //
-            txtId.Text = filaActual.Cells[0].Value.ToString();
-            txtDescripcion.Text = filaActual.Cells[1].Value.ToString();
-            chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
-
-            btnActualizar.Enabled = true;
-            btnDeshabilitar.Enabled = true;
-
-        }
-        public void ListarMarca()
-        {
-            dgvMarcaPro.DataSource = logMarcaProducto.Instancia.ListarMarcaProducto();
+            dgvMedidaPro.DataSource = logMedidaProducto.Instancia.ListarMedidaProducto();
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             try
             {
-                entMarcaProducto c = new entMarcaProducto();
+                entMedidaProducto c = new entMedidaProducto();
                 c.descripcion = txtDescripcion.Text;
+                c.prefijo = txtPrefijo.Text;
                 c.estado = chbxEstado.Checked;
 
-                logMarcaProducto.Instancia.InsertarMarcaProducto(c);
+                logMedidaProducto.Instancia.InsertarMedidaProducto(c);
             }
             catch (Exception ex)
             {
@@ -85,18 +68,20 @@ namespace ProyectoMoanso
             }
 
             Limpiar();
-            ListarMarca();
+            ListarMedida();
         }
+
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
             try
             {
-                entMarcaProducto c = new entMarcaProducto();
-                c.MarcaproductoID = int.Parse(txtId.Text.Trim());
+                entMedidaProducto c = new entMedidaProducto();
+                c.MedidaproductoID = int.Parse(txtId.Text.Trim());
                 c.descripcion = txtDescripcion.Text.Trim();
+                c.prefijo = txtPrefijo.Text.Trim();
                 c.estado = chbxEstado.Checked;
-                logMarcaProducto.Instancia.EditaMarcaProducto(c);
+                logMedidaProducto.Instancia.EditarMedidaProducto(c);
 
             }
             catch (Exception ex)
@@ -105,7 +90,7 @@ namespace ProyectoMoanso
             }
             Limpiar();
             gboxDatos.Enabled = false;
-            ListarMarca();
+            ListarMedida();
             btnActualizar.Enabled = false;
         }
 
@@ -113,12 +98,12 @@ namespace ProyectoMoanso
         {
             try
             {
-                entMarcaProducto c = new entMarcaProducto();
+                entMedidaProducto c = new entMedidaProducto();
 
-                c.MarcaproductoID = int.Parse(txtId.Text.Trim());
+                c.MedidaproductoID = int.Parse(txtId.Text.Trim());
                 chbxEstado.Checked = false;
                 c.estado = chbxEstado.Checked;
-                logMarcaProducto.Instancia.DeshabilitarMarcaProducto(c);
+                logMedidaProducto.Instancia.DeshabilitarMedidaProducto(c);
             }
             catch (Exception ex)
             {
@@ -126,7 +111,25 @@ namespace ProyectoMoanso
             }
             Limpiar();
             gboxDatos.Enabled = false;
-            ListarMarca();
+            ListarMedida();
         }
+
+        private void btn_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void dgvMarcaPro_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            DataGridViewRow filaActual = dgvMedidaPro.Rows[e.RowIndex]; //
+            txtId.Text = filaActual.Cells[0].Value.ToString();
+            txtDescripcion.Text = filaActual.Cells[1].Value.ToString();
+            txtPrefijo.Text = filaActual.Cells[2].Value.ToString();
+            chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
+
+            btnActualizar.Enabled = true;
+            btnDeshabilitar.Enabled = true;
+        }
+
     }
 }

@@ -1,48 +1,82 @@
-﻿using System;
+﻿using CapaEntidad;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CapaEntidad;
 
 namespace CapaDatos
 {
-    public class datMarcaProducto
+    public class datMedidaProducto
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datMarcaProducto _instancia = new datMarcaProducto();
+        private static readonly datMedidaProducto _instancia = new datMedidaProducto();
         //privado para evitar la instanciación directa
-        public static datMarcaProducto Instancia
+        public static datMedidaProducto Instancia
         {
             get
             {
-                return datMarcaProducto._instancia;
+                return datMedidaProducto._instancia;
             }
         }
         #endregion singleton
 
         #region metodos
-        ////////////////////listado de Proveedores
-        public List<entMarcaProducto> ListarMarcaProducto()
+        ////////////////////listado de medida de productos
+        public List<entMedidaProducto> ListarMedidaProducto()
         {
             SqlCommand cmd = null;
-            List<entMarcaProducto> lista = new List<entMarcaProducto>();
+            List<entMedidaProducto> lista = new List<entMedidaProducto>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListarMarca", cn);
+                cmd = new SqlCommand("spListarMedida", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entMarcaProducto Mar = new entMarcaProducto();
-                    Mar.MarcaproductoID = Convert.ToInt32(dr["MarcaproductoID"]);
+                    entMedidaProducto Med = new entMedidaProducto();
+                    Med.MedidaproductoID = Convert.ToInt32(dr["MedidaproductoID"]);
+                    Med.descripcion = Convert.ToString(dr["descripcion"]);
+                    Med.prefijo = Convert.ToString(dr["prefijo"]);
+                    Med.estado = Convert.ToBoolean(dr["estado"]);
+                    lista.Add(Med);
+                }
+
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return lista;
+
+        }
+        public List<entMedidaProducto> ListarReporteMedidaProducto()
+        {
+            SqlCommand cmd = null;
+            List<entMedidaProducto> lista = new List<entMedidaProducto>();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spListarReporteMedida", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    entMedidaProducto Mar = new entMedidaProducto();
+                    Mar.MedidaproductoID = Convert.ToInt32(dr["MedidaproductoID"]);
                     Mar.descripcion = Convert.ToString(dr["descripcion"]);
+                    Mar.prefijo = Convert.ToString(dr["prefijo"]);
                     Mar.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Mar);
                 }
@@ -60,17 +94,18 @@ namespace CapaDatos
 
         }
 
-        public Boolean InsertarMarca(entMarcaProducto Mar)
+        public Boolean InsertarMedida(entMedidaProducto Med)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarMarca", cn);
+                cmd = new SqlCommand("spInsertarMedida", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@descripcion", Mar.descripcion);
-                cmd.Parameters.AddWithValue("@estado", Mar.estado);
+                cmd.Parameters.AddWithValue("@descripcion", Med.descripcion);
+                cmd.Parameters.AddWithValue("@prefijo", Med.prefijo);
+                cmd.Parameters.AddWithValue("@estado", Med.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -86,18 +121,19 @@ namespace CapaDatos
             return inserta;
         }
 
-        public Boolean EditarMarca(entMarcaProducto Mar)
+        public Boolean EditarMedida(entMedidaProducto Med)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditarMarca", cn);
+                cmd = new SqlCommand("spEditarMedida", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MarcaproductoID", Mar.MarcaproductoID);
-                cmd.Parameters.AddWithValue("@descripcion", Mar.descripcion);
-                cmd.Parameters.AddWithValue("@estado", Mar.estado);
+                cmd.Parameters.AddWithValue("@MedidaproductoID", Med.MedidaproductoID);
+                cmd.Parameters.AddWithValue("@descripcion", Med.descripcion);
+                cmd.Parameters.AddWithValue("@prefijo", Med.prefijo);
+                cmd.Parameters.AddWithValue("@estado", Med.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -113,16 +149,16 @@ namespace CapaDatos
             return edita;
         }
 
-        public Boolean DeshabilitarMarca(entMarcaProducto Mar)
+        public Boolean DeshabilitarMedida(entMedidaProducto Med)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitarMarca", cn);
+                cmd = new SqlCommand("spDeshabilitarMedida", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@MarcaproductoID", Mar.MarcaproductoID);
+                cmd.Parameters.AddWithValue("@MedidaproductoID", Med.MedidaproductoID);
                 //cmd.Parameters.AddWithValue("@estado", Mar.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -139,39 +175,7 @@ namespace CapaDatos
             return delete;
         }
 
-        public List<entMarcaProducto> ListarReporteMarcaProducto()
-        {
-            SqlCommand cmd = null;
-            List<entMarcaProducto> lista = new List<entMarcaProducto>();
-            try
-            {
-                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListarReporteMarca", cn);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cn.Open();
-                SqlDataReader dr = cmd.ExecuteReader();
-                while (dr.Read())
-                {
-                    entMarcaProducto Mar = new entMarcaProducto();
-                    Mar.MarcaproductoID = Convert.ToInt32(dr["MarcaproductoID"]);
-                    Mar.descripcion = Convert.ToString(dr["descripcion"]);
-                    Mar.estado = Convert.ToBoolean(dr["estado"]);
-                    lista.Add(Mar);
-                }
-
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-            finally
-            {
-                cmd.Connection.Close();
-            }
-            return lista;
-
-        }
-
+        
 
         #endregion metodos
     }

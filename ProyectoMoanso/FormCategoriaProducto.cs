@@ -41,14 +41,14 @@ namespace ProyectoMoanso
         public void CambiarEncabezados()
         {
             dgvCategoriaPro.Columns["CategoriaproductoID"].HeaderText = "ID Categoria";
-            dgvCategoriaPro.Columns["categoria"].HeaderText = "Categoria Producto";
+            dgvCategoriaPro.Columns["descripcion"].HeaderText = "Descripción";
             dgvCategoriaPro.Columns["estado"].HeaderText = "Estado";
         }
 
         private void Limpiar()
         {
             txtId.Text = "";
-            txtCategoria.Text = "";
+            txtDescripcion.Text = "";
             chbxEstado.Checked = false;
         }
 
@@ -56,7 +56,7 @@ namespace ProyectoMoanso
         {
             DataGridViewRow filaActual = dgvCategoriaPro.Rows[e.RowIndex]; //
             txtId.Text = filaActual.Cells[0].Value.ToString();
-            txtCategoria.Text = filaActual.Cells[1].Value.ToString();
+            txtDescripcion.Text = filaActual.Cells[1].Value.ToString();
             chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[2].Value);
 
             btnModificar.Enabled = true;
@@ -73,7 +73,7 @@ namespace ProyectoMoanso
             try
             {
                 entCategoriaProductos c = new entCategoriaProductos();
-                c.categoria = txtCategoria.Text;
+                c.descripcion = txtDescripcion.Text;
                 c.estado = chbxEstado.Checked;
 
                 logCategoriaProductos.Instancia.InsertaCategoriaProducto(c);
@@ -93,7 +93,7 @@ namespace ProyectoMoanso
             {
                 entCategoriaProductos c = new entCategoriaProductos();
                 c.CategoriaproductoID = int.Parse(txtId.Text.Trim());
-                c.categoria = txtCategoria.Text.Trim();
+                c.descripcion = txtDescripcion.Text.Trim();
                 c.estado = chbxEstado.Checked;
                 logCategoriaProductos.Instancia.EditaCategoriaProducto(c);
 

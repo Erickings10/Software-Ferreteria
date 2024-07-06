@@ -36,7 +36,7 @@
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.gboxDatos = new System.Windows.Forms.GroupBox();
             this.chbxEstado = new System.Windows.Forms.CheckBox();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -127,7 +127,7 @@
             // gboxDatos
             // 
             this.gboxDatos.Controls.Add(this.chbxEstado);
-            this.gboxDatos.Controls.Add(this.txtCategoria);
+            this.gboxDatos.Controls.Add(this.txtDescripcion);
             this.gboxDatos.Controls.Add(this.txtId);
             this.gboxDatos.Controls.Add(this.lblCategoria);
             this.gboxDatos.Controls.Add(this.label2);
@@ -152,13 +152,13 @@
             this.chbxEstado.Text = "Estado";
             this.chbxEstado.UseVisualStyleBackColor = true;
             // 
-            // txtCategoria
+            // txtDescripcion
             // 
-            this.txtCategoria.Location = new System.Drawing.Point(261, 30);
-            this.txtCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(108, 24);
-            this.txtCategoria.TabIndex = 5;
+            this.txtDescripcion.Location = new System.Drawing.Point(261, 30);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(2);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(108, 24);
+            this.txtDescripcion.TabIndex = 5;
             // 
             // txtId
             // 
@@ -171,12 +171,12 @@
             // lblCategoria
             // 
             this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(188, 32);
+            this.lblCategoria.Location = new System.Drawing.Point(171, 33);
             this.lblCategoria.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(69, 17);
+            this.lblCategoria.Size = new System.Drawing.Size(86, 17);
             this.lblCategoria.TabIndex = 1;
-            this.lblCategoria.Text = "Categoria";
+            this.lblCategoria.Text = "Descripcion: ";
             // 
             // label2
             // 
@@ -277,7 +277,7 @@
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.GroupBox gboxDatos;
         private System.Windows.Forms.CheckBox chbxEstado;
-        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.TextBox txtId;
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label label2;

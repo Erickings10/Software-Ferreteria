@@ -41,21 +41,24 @@ namespace CapaLogica
             datProductos.Instancia.InsertarProductos(Prod);
         }
 
-        public void EditarProducto(entProductos pro) 
+        /*public void EditarProducto(entProductos pro) 
         { 
             datProductos.Instancia.EditarProducto(pro);
             
-        }
+        }*/
         public List<entDescProducto> ListarReporteProducto()
         {
             return datProductos.Instancia.ListarReporteProducto();
         }
-
-
-        public (int MarcaProductoID, int CategoriaProductoID) ObtenerProductoPorID(int productoID)
+        public entProductos BuscarProductoId(int idProducto)
         {
-            return datProductos.Instancia.ObtenerProductoPorID(productoID);
+            try
+            {
+                return datProductos.Instancia.BuscarProductoId(idProducto);
+            }
+            catch (Exception e) { throw e; }
         }
+
 
         #endregion metodos
 

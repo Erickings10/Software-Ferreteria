@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace CapaEntidad
 {
-    public class entCategoriaProductos
+    public class entMedidaProducto
     {
-
-
-        public int CategoriaproductoID { get; set; }
+        public int MedidaproductoID { get; set; }
         public string descripcion { get; set; }
+        public string prefijo { get; set; }
         public Boolean estado { get; set; }
-
 
     }
 }

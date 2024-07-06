@@ -10,7 +10,7 @@ namespace CapaEntidad
     {
         public int MarcaproductoID { get; set; }
 
-        public string marca { get; set; }
+        public string descripcion { get; set; }
 
         public Boolean estado { get; set; }
     }

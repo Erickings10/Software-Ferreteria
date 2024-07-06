@@ -23,7 +23,7 @@ namespace ProyectoMoanso
         }
         public void listarRequerimiento()
         {
-            dgvReporteDetalle.DataSource = logRequerimientos.Instancia.ListarRequerimientos();
+            //dgvReporteDetalle.DataSource = logRequerimientos.Instancia.ListarRequerimientos();
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
