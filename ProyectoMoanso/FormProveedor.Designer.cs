@@ -141,16 +141,16 @@
             // 
             // txtRucPro
             // 
-            this.txtRucPro.Location = new System.Drawing.Point(112, 80);
+            this.txtRucPro.Location = new System.Drawing.Point(122, 80);
             this.txtRucPro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRucPro.Name = "txtRucPro";
-            this.txtRucPro.Size = new System.Drawing.Size(160, 26);
+            this.txtRucPro.Size = new System.Drawing.Size(150, 26);
             this.txtRucPro.TabIndex = 9;
             this.txtRucPro.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_nrodocu_pro_KeyPress);
             // 
             // txtUbigeo
             // 
-            this.txtUbigeo.Location = new System.Drawing.Point(112, 137);
+            this.txtUbigeo.Location = new System.Drawing.Point(122, 136);
             this.txtUbigeo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUbigeo.Name = "txtUbigeo";
             this.txtUbigeo.Size = new System.Drawing.Size(135, 26);
@@ -158,30 +158,30 @@
             // 
             // txtCorreo
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(429, 31);
+            this.txtCorreo.Location = new System.Drawing.Point(443, 31);
             this.txtCorreo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(151, 26);
+            this.txtCorreo.Size = new System.Drawing.Size(169, 26);
             this.txtCorreo.TabIndex = 12;
             // 
             // txtTelef
             // 
-            this.txtTelef.Location = new System.Drawing.Point(429, 82);
+            this.txtTelef.Location = new System.Drawing.Point(443, 82);
             this.txtTelef.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTelef.Name = "txtTelef";
-            this.txtTelef.Size = new System.Drawing.Size(151, 26);
+            this.txtTelef.Size = new System.Drawing.Size(169, 26);
             this.txtTelef.TabIndex = 13;
             this.txtTelef.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_telefono_pro_KeyPress);
             // 
             // dgvProveedores
             // 
             this.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProveedores.Location = new System.Drawing.Point(43, 340);
+            this.dgvProveedores.Location = new System.Drawing.Point(12, 342);
             this.dgvProveedores.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvProveedores.Name = "dgvProveedores";
             this.dgvProveedores.RowHeadersWidth = 51;
             this.dgvProveedores.RowTemplate.Height = 24;
-            this.dgvProveedores.Size = new System.Drawing.Size(1004, 276);
+            this.dgvProveedores.Size = new System.Drawing.Size(1096, 276);
             this.dgvProveedores.TabIndex = 15;
             this.dgvProveedores.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvProveedores_CellClick);
             // 
@@ -230,9 +230,9 @@
             this.gbox_Datos.Controls.Add(this.label6);
             this.gbox_Datos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbox_Datos.Location = new System.Drawing.Point(261, 85);
-            this.gbox_Datos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbox_Datos.Margin = new System.Windows.Forms.Padding(4);
             this.gbox_Datos.Name = "gbox_Datos";
-            this.gbox_Datos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbox_Datos.Padding = new System.Windows.Forms.Padding(4);
             this.gbox_Datos.Size = new System.Drawing.Size(619, 233);
             this.gbox_Datos.TabIndex = 26;
             this.gbox_Datos.TabStop = false;
@@ -251,7 +251,7 @@
             // datp_Fecha
             // 
             this.datp_Fecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.datp_Fecha.Location = new System.Drawing.Point(429, 130);
+            this.datp_Fecha.Location = new System.Drawing.Point(443, 132);
             this.datp_Fecha.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datp_Fecha.Name = "datp_Fecha";
             this.datp_Fecha.Size = new System.Drawing.Size(151, 26);
@@ -263,8 +263,8 @@
             this.btn_BuscarRubro.IconColor = System.Drawing.Color.Black;
             this.btn_BuscarRubro.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btn_BuscarRubro.IconSize = 18;
-            this.btn_BuscarRubro.Location = new System.Drawing.Point(264, 184);
-            this.btn_BuscarRubro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BuscarRubro.Location = new System.Drawing.Point(268, 186);
+            this.btn_BuscarRubro.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BuscarRubro.Name = "btn_BuscarRubro";
             this.btn_BuscarRubro.Size = new System.Drawing.Size(32, 30);
             this.btn_BuscarRubro.TabIndex = 43;
@@ -273,7 +273,7 @@
             // 
             // txtSectorCome
             // 
-            this.txtSectorCome.Location = new System.Drawing.Point(112, 188);
+            this.txtSectorCome.Location = new System.Drawing.Point(122, 188);
             this.txtSectorCome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSectorCome.Name = "txtSectorCome";
             this.txtSectorCome.Size = new System.Drawing.Size(135, 26);

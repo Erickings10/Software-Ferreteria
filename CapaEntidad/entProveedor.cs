@@ -11,9 +11,10 @@ namespace CapaEntidad
         public int idProveedor { get; set; }
         public Int64 rucProveedor { get; set; }
         public int ubiProv { get; set; }
-        public string sectorProve { get; set; }
+        public int sectorProve { get; set; }
         public string correoProv { get; set; }      
         public Int64 telfProv { get; set; }
+        public DateTime fechaProv { get; set; }
         public Boolean estProv { get; set; }
 
     }

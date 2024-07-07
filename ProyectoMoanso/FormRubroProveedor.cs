@@ -17,6 +17,7 @@ namespace ProyectoMoanso
         public FormRubroProveedor()
         {
             InitializeComponent();
+            dgb_Rubro.ReadOnly = true;
             btn_Cancelar.Enabled = false;
             gbox_Datos.Enabled = false;
             txt_ID.Enabled = false;
@@ -26,10 +27,9 @@ namespace ProyectoMoanso
         }
         private void Encabezados() 
         {
-            dgb_Rubro.Columns["IDRubro"].HeaderText = "ID";
-            dgb_Rubro.Columns["Rubro"].HeaderText = "Rubro";
-            dgb_Rubro.Columns["FechaRub"].HeaderText = "Fecha de Registro";
-            dgb_Rubro.Columns["EstadoRub"].HeaderText = "Estado";
+            dgb_Rubro.Columns["idRubro"].HeaderText = "ID";
+            dgb_Rubro.Columns["nameRubro"].HeaderText = "Rubro";
+            dgb_Rubro.Columns["estRubro"].HeaderText = "Estado";
         }
         public void listaRubro() 
         {
@@ -61,7 +61,6 @@ namespace ProyectoMoanso
             {
                 entRubroProveedor rub = new entRubroProveedor();
                 rub.nameRubro = txt_Rubro.Text.Trim();
-                //rub.fecRegistro = datp_Fecha.Value;
                 rub.estRubro = chbx_Estado.Checked;
                 logRubroProveedor.Instancia.InsertaRubro(rub);
             }
@@ -81,7 +80,6 @@ namespace ProyectoMoanso
                 entRubroProveedor r = new entRubroProveedor();
                 r.idRubro = int.Parse(txt_ID.Text.Trim());
                 r.nameRubro = txt_Rubro.Text.Trim();
-                //r.fecRegistro= datp_Fecha.Value;
                 r.estRubro = chbx_Estado.Checked;
                 logRubroProveedor.Instancia.EditaRubro(r);
             }
@@ -118,8 +116,7 @@ namespace ProyectoMoanso
             DataGridViewRow fila = dgb_Rubro.Rows[e.RowIndex];
             txt_ID.Text = fila.Cells[0].Value.ToString();
             txt_Rubro.Text = fila.Cells[1].Value.ToString();
-            //datp_Fecha.Text = fila.Cells[2].Value.ToString();
-            chbx_Estado.Checked = Convert.ToBoolean(fila.Cells[3].Value);
+            chbx_Estado.Checked = Convert.ToBoolean(fila.Cells[2].Value);
         }
 
         private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)

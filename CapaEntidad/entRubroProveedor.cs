@@ -11,7 +11,6 @@ namespace CapaEntidad
     {
         public int idRubro { get; set; }
         public string nameRubro { get; set; }
-        public DateTime fecRegistro { get; set; }
         public Boolean estRubro { get; set; }
 
 

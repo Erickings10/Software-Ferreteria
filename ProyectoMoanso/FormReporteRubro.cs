@@ -1,4 +1,5 @@
-﻿using CapaLogica;
+﻿using CapaEntidad;
+using CapaLogica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,14 +18,14 @@ namespace ProyectoMoanso
         public FormReporteRubro()
         {
             InitializeComponent();
+            dgv_ReporteRubro.ReadOnly = true;
             listarRubro();
         }
         private void Encabezados()
         {
-            dgv_ReporteRubro.Columns["IDRubro"].HeaderText = "ID";
-            dgv_ReporteRubro.Columns["Rubro"].HeaderText = "Rubro";
-            dgv_ReporteRubro.Columns["FechaRub"].HeaderText = "Fecha de Registro";
-            dgv_ReporteRubro.Columns["EstadoRub"].HeaderText = "Estado";
+            dgv_ReporteRubro.Columns["idRubro"].HeaderText = "ID";
+            dgv_ReporteRubro.Columns["nameRubro"].HeaderText = "Rubro";
+            dgv_ReporteRubro.Columns["estRubro"].HeaderText = "Estado";
         }
         public void listarRubro() 
         {
@@ -36,7 +37,7 @@ namespace ProyectoMoanso
         {
             DataGridViewRow fila = dgv_ReporteRubro.Rows[e.RowIndex];
 
-            nameRubro = fila.Cells[1].Value.ToString();
+            nameRubro = fila.Cells[0].Value.ToString();
             DialogResult = DialogResult.OK;
             Close();
         }
@@ -59,6 +60,28 @@ namespace ProyectoMoanso
         private void btn_Nuevo_Click(object sender, EventArgs e)
         {
             AbrirRubroProveedor();
+        }
+
+        private void txtBuscaRub_TextChanged(object sender, EventArgs e)
+        {
+            if (txtBuscaRub.Text != "")
+            {
+                entRubroProveedor r = new entRubroProveedor();
+                r.nameRubro = txtBuscaRub.Text;
+                DataTable dt = new DataTable();
+                dt = logRubroProveedor.Instancia.BuscarRubro(r);
+                dgv_ReporteRubro.DataSource = dt;
+            }
+            else 
+            {
+                dgv_ReporteRubro.DataSource = logRubroProveedor.Instancia.ListarRubro();
+                Encabezados();
+            }
+        }
+
+        private void FormReporteRubro_Load(object sender, EventArgs e)
+        {
+            dgv_ReporteRubro.AllowUserToAddRows = false;
         }
     }
 }

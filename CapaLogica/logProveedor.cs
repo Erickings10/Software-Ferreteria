@@ -39,6 +39,15 @@ namespace CapaLogica
             datProveedor.Instancia.InsertarProveedor(Pro);
         }
 
+        public void EditaProveedor(entProveedor pro) 
+        {
+            datProveedor.Instancia.EditaProveedor(pro);
+        }
+
+        public void DeshabilitarProveedor(entProveedor pro) 
+        {
+            datProveedor.Instancia.DeshabilitarProveedor(pro);
+        }
         #endregion metodos
 
 

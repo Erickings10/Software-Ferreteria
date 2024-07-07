@@ -326,3 +326,4 @@ C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\Proy
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteRequerimiento.resources
 C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormReporteMetodos.resources
 D:\SEXTO CICLO\moanso\Semana 10\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormMedidaProducto.resources
+C:\Users\USUARIO\OneDrive\Documentos\Aplicaciones Forms\Software-Ferreteria\ProyectoMoanso\obj\Debug\ProyectoMoanso.FormMedidaProducto.resources

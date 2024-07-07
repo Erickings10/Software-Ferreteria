@@ -2,6 +2,7 @@
 using CapaEntidad;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,11 @@ namespace CapaLogica
         public void DeshabilitaRubro(entRubroProveedor Rub) 
         {
             datRubroProveedor.Instancia.DeshabilitarRubro(Rub);
+        }
+
+        public DataTable BuscarRubro(entRubroProveedor rub) 
+        {
+            return datRubroProveedor.Instancia.BuscarRubro(rub);
         }
 
         #endregion metodos

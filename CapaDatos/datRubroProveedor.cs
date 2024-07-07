@@ -34,17 +34,16 @@ namespace CapaDatos
             try
             {
                 SqlConnection con = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spListaRubro", con);
+                cmd = new SqlCommand("spListarRubro", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 con.Open();
                 SqlDataReader rd = cmd.ExecuteReader();
                 while (rd.Read())
                 {
                     entRubroProveedor rub = new entRubroProveedor();
-                    rub.idRubro = Convert.ToInt32(rd["IDRubro"]);
-                    rub.nameRubro = Convert.ToString(rd["Rubro"]);
-                    rub.fecRegistro = Convert.ToDateTime(rd["FechaRub"]);
-                    rub.estRubro = Convert.ToBoolean(rd["EstadoRub"]);
+                    rub.idRubro = Convert.ToInt32(rd["RubroproveedorID"]);
+                    rub.nameRubro = Convert.ToString(rd["descripcion"]);
+                    rub.estRubro = Convert.ToBoolean(rd["estado"]);
                     lista.Add(rub);
                 }
             }
@@ -66,10 +65,10 @@ namespace CapaDatos
             try 
             {
                 SqlConnection con = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertarRubro",con);
-                cmd.Parameters.AddWithValue("@NombreRub", Rub.nameRubro);
-                cmd.Parameters.AddWithValue("@FechaRegistro", Rub.fecRegistro);
-                cmd.Parameters.AddWithValue("@EstadoRub", Rub.estRubro);
+                cmd = new SqlCommand("spInsertarRubro", con);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@descripcion", Rub.nameRubro);
+                cmd.Parameters.AddWithValue("@estado", Rub.estRubro);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0) 
@@ -95,12 +94,11 @@ namespace CapaDatos
             try
             {
                 SqlConnection con = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditarRubro", con);
+                cmd = new SqlCommand("spModificarRubro", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDrubro", Rub.idRubro);
-                cmd.Parameters.AddWithValue("@NombreRub", Rub.nameRubro);
-                cmd.Parameters.AddWithValue("@FechaRegistro", Rub.fecRegistro);
-                cmd.Parameters.AddWithValue("@EstadoRub", Rub.estRubro);
+                cmd.Parameters.AddWithValue("@RubroproveedorID", Rub.idRubro);
+                cmd.Parameters.AddWithValue("@descripcion", Rub.nameRubro);
+                cmd.Parameters.AddWithValue("@estado", Rub.estRubro);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -128,8 +126,8 @@ namespace CapaDatos
                 SqlConnection con = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitarRubro", con);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@IDrubro", Rub.idRubro);
-                cmd.Parameters.AddWithValue("@EstadoRub", Rub.estRubro);
+                cmd.Parameters.AddWithValue("@RubroproveedorID", Rub.idRubro);
+                cmd.Parameters.AddWithValue("@estado", Rub.estRubro);
                 con.Open();
                 int i = cmd.ExecuteNonQuery();
                 if (i > 0)
@@ -146,6 +144,30 @@ namespace CapaDatos
                 cmd.Connection.Close();
             }
             return deshabilitar;
+        }
+
+        public DataTable BuscarRubro(entRubroProveedor r) 
+        {
+            SqlCommand cmd = null;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spBuscarRubro",cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@descripcion", r.nameRubro);
+                SqlDataAdapter ad = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                ad.Fill(dt);
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally 
+            {
+                cmd.Connection.Close();
+            }
         }
 
         #endregion metodos
