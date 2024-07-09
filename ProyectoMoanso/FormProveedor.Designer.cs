@@ -290,7 +290,7 @@
             this.btn_deshabilitar.Name = "btn_deshabilitar";
             this.btn_deshabilitar.Size = new System.Drawing.Size(199, 48);
             this.btn_deshabilitar.TabIndex = 29;
-            this.btn_deshabilitar.Text = "Deshabilitar";
+            this.btn_deshabilitar.Text = "Cancelar";
             this.btn_deshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_deshabilitar.UseVisualStyleBackColor = true;
             this.btn_deshabilitar.Click += new System.EventHandler(this.btn_deshabilitar_Click);
@@ -338,7 +338,7 @@
             this.btn_eliminar_pro.Name = "btn_eliminar_pro";
             this.btn_eliminar_pro.Size = new System.Drawing.Size(195, 49);
             this.btn_eliminar_pro.TabIndex = 18;
-            this.btn_eliminar_pro.Text = "Eliminar";
+            this.btn_eliminar_pro.Text = "Deshabilitar";
             this.btn_eliminar_pro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_eliminar_pro.UseVisualStyleBackColor = false;
             this.btn_eliminar_pro.Click += new System.EventHandler(this.btn_eliminar_pro_Click);

@@ -23,7 +23,7 @@ namespace ProyectoMoanso
             btn_agregar_pro.Enabled = false;
             btn_actualizar_pro.Enabled = false;
             btn_eliminar_pro.Enabled = false;
-            dgvProveedores.ReadOnly = true;
+            dgvProveedores.Enabled = false;
         }
 
         private void CambiarEncabezados()
@@ -86,6 +86,7 @@ namespace ProyectoMoanso
 
             listarProveedores();
             btn_agregar_pro.Enabled = false;
+            gbox_Datos.Enabled = false;
 
         }
         private void btn_actualizar_pro_Click(object sender, EventArgs e)
@@ -115,6 +116,7 @@ namespace ProyectoMoanso
             gbox_Datos.Enabled = false;
             listarProveedores();
             btn_actualizar_pro.Enabled = false;
+            dgvProveedores.Enabled = false;
         }
         private void btn_eliminar_pro_Click(object sender, EventArgs e)
         {
@@ -134,6 +136,7 @@ namespace ProyectoMoanso
             gbox_Datos.Enabled = false;
             listarProveedores();
             btn_eliminar_pro.Enabled = false;
+            dgvProveedores.Enabled=false;
         }
         //--------------------------------------------------------------------------
         private void AbrirReporteRubro()
@@ -164,14 +167,18 @@ namespace ProyectoMoanso
             btn_actualizar_pro.Enabled = true;
             btn_agregar_pro.Enabled = false;
             btn_eliminar_pro.Enabled = false;
+            dgvProveedores.Enabled = true;
+            dgvProveedores.ReadOnly = true;
         }
 
         private void btn_deshabilitar_Click(object sender, EventArgs e)
         {
-            gbox_Datos.Enabled = true;
+            gbox_Datos.Enabled = false;
             btn_eliminar_pro.Enabled = true;
             btn_agregar_pro.Enabled = false;
             btn_actualizar_pro.Enabled = false;
+            dgvProveedores.Enabled = true;
+            dgvProveedores.ReadOnly = true;
         }
 
         private void dgvProveedores_CellClick(object sender, DataGridViewCellEventArgs e)
