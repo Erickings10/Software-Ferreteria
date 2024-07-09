@@ -172,7 +172,7 @@ namespace CapaDatos
                 {
                     entCategoriaProductos Cat = new entCategoriaProductos();
                     Cat.CategoriaproductoID = Convert.ToInt32(dr["CategoriaproductoID"]);
-                    Cat.descripcion = Convert.ToString(dr["descripcion"]);
+                    Cat.descripcion = Convert.ToString(dr["desCategoria"]);
                     Cat.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Cat);
                 }

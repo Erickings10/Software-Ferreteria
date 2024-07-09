@@ -38,7 +38,6 @@ namespace ProyectoMoanso
             dgvAlmacenes.Columns["AlmacenID"].HeaderText = "ID Almacen";
             dgvAlmacenes.Columns["descripcion"].HeaderText = "Descripción";
             dgvAlmacenes.Columns["cantidad"].HeaderText = "Cantidad";
-            dgvAlmacenes.Columns["tipo"].HeaderText = "Tipo";
             dgvAlmacenes.Columns["estado"].HeaderText = "Estado";
 
         }

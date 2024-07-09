@@ -114,11 +114,6 @@ namespace ProyectoMoanso
             AbrirFormularios(new FormRequerimientosdeCompras());
         }
 
-        private void btnDevolucion_Click(object sender, EventArgs e)
-        {
-            AbrirFormularios(new FormSalidaProductos());
-        }
-
         private void btnAlmacenes_Click(object sender, EventArgs e)
         {
 

@@ -154,7 +154,7 @@ namespace CapaDatos
                 {
                     entMarcaProducto Mar = new entMarcaProducto();
                     Mar.MarcaproductoID = Convert.ToInt32(dr["MarcaproductoID"]);
-                    Mar.descripcion = Convert.ToString(dr["descripcion"]);
+                    Mar.descripcion = Convert.ToString(dr["desMarca"]);
                     Mar.estado = Convert.ToBoolean(dr["estado"]);
                     lista.Add(Mar);
                 }

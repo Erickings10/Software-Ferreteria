@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="entAlmacenes.cs" />
     <Compile Include="entCategoriaProductos.cs" />
+    <Compile Include="entDetalleRequerimiento.cs" />
     <Compile Include="entDetalleVenta.cs" />
     <Compile Include="entDetRequerimiento.cs" />
     <Compile Include="entEntradaProductos.cs" />

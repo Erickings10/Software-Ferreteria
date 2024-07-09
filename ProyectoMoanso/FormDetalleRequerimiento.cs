@@ -42,6 +42,8 @@ namespace ProyectoMoanso
             this.Close();
         }
 
+
+
         private void btnBuscarPro_Click(object sender, EventArgs e)
         {
             txtProductoID.Focus();
@@ -59,6 +61,21 @@ namespace ProyectoMoanso
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            // Verifica si el campo de cantidad está vacío o no es un número válido
+            if (!int.TryParse(txtCantidad.Text, out int cantidad))
+            {
+                MessageBox.Show("Por favor, ingrese una cantidad válida.", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            // Verifica si los campos de texto están llenos
+            if (string.IsNullOrEmpty(txtProductoID.Text) ||
+                string.IsNullOrEmpty(txtDescripcion.Text) ||
+                string.IsNullOrEmpty(cbPrioridad.Text))
+            {
+                MessageBox.Show("Seleccione un producto", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             /*try
             {
                 entRequerimiento c = new entRequerimiento();

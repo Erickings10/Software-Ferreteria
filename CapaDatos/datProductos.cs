@@ -47,9 +47,9 @@ namespace CapaDatos
                 {
                     entDescProducto Prod = new entDescProducto();
                     Prod.ProductoID = Convert.ToInt32(dr["ProductoID"]);
-                    Prod.categoria = Convert.ToString(dr["categoria"]);
-                    Prod.marca = Convert.ToString(dr["marca"]);
-                    Prod.medida = Convert.ToString(dr["medida"]);
+                    Prod.categoria = Convert.ToString(dr["desCategoria"]);
+                    Prod.marca = Convert.ToString(dr["desMarca"]);
+                    Prod.medida = Convert.ToString(dr["prefijo"]);
                     Prod.descripcion = Convert.ToString(dr["descripcion"]);
                     Prod.precioCompra = Convert.ToDecimal(dr["precioCompra"]);
                     Prod.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
@@ -178,7 +178,7 @@ namespace CapaDatos
 
         }
 
-        /*public Boolean EditarProducto(entProductos Pro)
+        public Boolean EditarProducto(entProductos Pro)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
@@ -189,8 +189,12 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ProductoID", Pro.ProductoID);
                 cmd.Parameters.AddWithValue("@CategoriaproductoID", Pro.CategoriaproductoID);
+                cmd.Parameters.AddWithValue("@MarcaproductoID", Pro.MarcaproductoID);
+                cmd.Parameters.AddWithValue("@MedidaproductoID", Pro.MedidaproductoID);
                 cmd.Parameters.AddWithValue("@descripcion", Pro.descripcion);
-                cmd.Parameters.AddWithValue("@cantidad", Pro.cantidad);
+                cmd.Parameters.AddWithValue("@precioCompra", Pro.precioCompra);
+                cmd.Parameters.AddWithValue("@precioVenta", Pro.precioVenta);
+                cmd.Parameters.AddWithValue("@fecha", Pro.fecha);
                 cmd.Parameters.AddWithValue("@estado", Pro.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -205,7 +209,34 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return edita;
-        }*/
+        }
+
+
+        public Boolean DeshabilitarProductos(entProductos Pro)
+        {
+            SqlCommand cmd = null;
+            Boolean delete = false;
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar();
+                cmd = new SqlCommand("spDeshabilitarProducto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductoID", Pro.ProductoID);
+                //cmd.Parameters.AddWithValue("@estado", Alm.estado);
+                cn.Open();
+                int i = cmd.ExecuteNonQuery();
+                if (i > 0)
+                {
+                    delete = true;
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally { cmd.Connection.Close(); }
+            return delete;
+        }
 
 
         #endregion metodos

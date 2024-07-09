@@ -45,6 +45,8 @@
             this.btnActualizar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.gboDatos = new System.Windows.Forms.GroupBox();
+            this.cboCategoria = new System.Windows.Forms.ComboBox();
+            this.cboMarca = new System.Windows.Forms.ComboBox();
             this.cboMedida = new System.Windows.Forms.ComboBox();
             this.dtPFecha = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
@@ -52,19 +54,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtPrecioCompra = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtIdMedida = new System.Windows.Forms.TextBox();
             this.btnAñadirMedida = new FontAwesome.Sharp.IconButton();
             this.lblMedida = new System.Windows.Forms.Label();
-            this.txtIdCategoria = new System.Windows.Forms.TextBox();
-            this.txtIdMarca = new System.Windows.Forms.TextBox();
             this.chbxEstado = new System.Windows.Forms.CheckBox();
             this.btnBuscarMarca = new FontAwesome.Sharp.IconButton();
             this.btnBuscarCategoria = new FontAwesome.Sharp.IconButton();
             this.gboBotones1 = new System.Windows.Forms.GroupBox();
             this.btn_Nuevo = new System.Windows.Forms.Button();
             this.btn_Cancelar = new System.Windows.Forms.Button();
-            this.cboMarca = new System.Windows.Forms.ComboBox();
-            this.cboCategoria = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroProducto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorStock)).BeginInit();
             this.gbBotones2.SuspendLayout();
@@ -235,6 +232,7 @@
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDeshabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.Click += new System.EventHandler(this.btnDeshabilitar_Click);
             // 
             // gboDatos
             // 
@@ -247,11 +245,8 @@
             this.gboDatos.Controls.Add(this.label2);
             this.gboDatos.Controls.Add(this.txtPrecioCompra);
             this.gboDatos.Controls.Add(this.label1);
-            this.gboDatos.Controls.Add(this.txtIdMedida);
             this.gboDatos.Controls.Add(this.btnAñadirMedida);
             this.gboDatos.Controls.Add(this.lblMedida);
-            this.gboDatos.Controls.Add(this.txtIdCategoria);
-            this.gboDatos.Controls.Add(this.txtIdMarca);
             this.gboDatos.Controls.Add(this.chbxEstado);
             this.gboDatos.Controls.Add(this.btnBuscarMarca);
             this.gboDatos.Controls.Add(this.btnBuscarCategoria);
@@ -269,10 +264,26 @@
             this.gboDatos.TabStop = false;
             this.gboDatos.Text = "Datos";
             // 
+            // cboCategoria
+            // 
+            this.cboCategoria.FormattingEnabled = true;
+            this.cboCategoria.Location = new System.Drawing.Point(111, 69);
+            this.cboCategoria.Name = "cboCategoria";
+            this.cboCategoria.Size = new System.Drawing.Size(98, 23);
+            this.cboCategoria.TabIndex = 61;
+            // 
+            // cboMarca
+            // 
+            this.cboMarca.FormattingEnabled = true;
+            this.cboMarca.Location = new System.Drawing.Point(110, 108);
+            this.cboMarca.Name = "cboMarca";
+            this.cboMarca.Size = new System.Drawing.Size(98, 23);
+            this.cboMarca.TabIndex = 60;
+            // 
             // cboMedida
             // 
             this.cboMedida.FormattingEnabled = true;
-            this.cboMedida.Location = new System.Drawing.Point(112, 144);
+            this.cboMedida.Location = new System.Drawing.Point(110, 144);
             this.cboMedida.Name = "cboMedida";
             this.cboMedida.Size = new System.Drawing.Size(98, 23);
             this.cboMedida.TabIndex = 59;
@@ -337,14 +348,6 @@
             this.label1.TabIndex = 53;
             this.label1.Text = "Precio Compra:";
             // 
-            // txtIdMedida
-            // 
-            this.txtIdMedida.Location = new System.Drawing.Point(111, 144);
-            this.txtIdMedida.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdMedida.Name = "txtIdMedida";
-            this.txtIdMedida.Size = new System.Drawing.Size(38, 23);
-            this.txtIdMedida.TabIndex = 52;
-            // 
             // btnAñadirMedida
             // 
             this.btnAñadirMedida.IconChar = FontAwesome.Sharp.IconChar.Add;
@@ -368,22 +371,6 @@
             this.lblMedida.Size = new System.Drawing.Size(57, 17);
             this.lblMedida.TabIndex = 49;
             this.lblMedida.Text = "Medida:";
-            // 
-            // txtIdCategoria
-            // 
-            this.txtIdCategoria.Location = new System.Drawing.Point(111, 68);
-            this.txtIdCategoria.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdCategoria.Name = "txtIdCategoria";
-            this.txtIdCategoria.Size = new System.Drawing.Size(38, 23);
-            this.txtIdCategoria.TabIndex = 48;
-            // 
-            // txtIdMarca
-            // 
-            this.txtIdMarca.Location = new System.Drawing.Point(111, 108);
-            this.txtIdMarca.Margin = new System.Windows.Forms.Padding(2);
-            this.txtIdMarca.Name = "txtIdMarca";
-            this.txtIdMarca.Size = new System.Drawing.Size(38, 23);
-            this.txtIdMarca.TabIndex = 47;
             // 
             // chbxEstado
             // 
@@ -467,22 +454,6 @@
             this.btn_Cancelar.UseVisualStyleBackColor = true;
             this.btn_Cancelar.Click += new System.EventHandler(this.btn_Cancelar_Click);
             // 
-            // cboMarca
-            // 
-            this.cboMarca.FormattingEnabled = true;
-            this.cboMarca.Location = new System.Drawing.Point(112, 108);
-            this.cboMarca.Name = "cboMarca";
-            this.cboMarca.Size = new System.Drawing.Size(98, 23);
-            this.cboMarca.TabIndex = 60;
-            // 
-            // cboCategoria
-            // 
-            this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(111, 68);
-            this.cboCategoria.Name = "cboCategoria";
-            this.cboCategoria.Size = new System.Drawing.Size(98, 23);
-            this.cboCategoria.TabIndex = 61;
-            // 
             // FormProductos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -533,14 +504,11 @@
         private System.Windows.Forms.Button btn_Nuevo;
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.CheckBox chbxEstado;
-        private System.Windows.Forms.TextBox txtIdCategoria;
-        private System.Windows.Forms.TextBox txtIdMarca;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtPrecioVenta;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtPrecioCompra;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtIdMedida;
         private FontAwesome.Sharp.IconButton btnAñadirMedida;
         private System.Windows.Forms.Label lblMedida;
         private System.Windows.Forms.DateTimePicker dtPFecha;

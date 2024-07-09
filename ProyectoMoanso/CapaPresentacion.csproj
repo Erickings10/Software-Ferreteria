@@ -191,12 +191,6 @@
     <Compile Include="FormRubroProveedor.Designer.cs">
       <DependentUpon>FormRubroProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormSalidaProductos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormSalidaProductos.Designer.cs">
-      <DependentUpon>FormSalidaProductos.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormOrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -299,9 +293,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormRubroProveedor.resx">
       <DependentUpon>FormRubroProveedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormSalidaProductos.resx">
-      <DependentUpon>FormSalidaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormOrdenCompra.resx">
       <DependentUpon>FormOrdenCompra.cs</DependentUpon>

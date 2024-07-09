@@ -31,23 +31,23 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetalleRequerimiento));
             this.dgvNuevoReq = new System.Windows.Forms.DataGridView();
             this.gboRequerimientos = new System.Windows.Forms.GroupBox();
-            this.btnBuscarPro = new FontAwesome.Sharp.IconButton();
+            this.txtDescripcion = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cbPrioridad = new System.Windows.Forms.ComboBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.dtmReque = new System.Windows.Forms.DateTimePicker();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.cbPrioridad = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.txtProductoID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnBuscarPro = new FontAwesome.Sharp.IconButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dtmReque = new System.Windows.Forms.DateTimePicker();
+            this.lblCodigo = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtDeshabilitar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtDescripcion = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNuevoReq)).BeginInit();
             this.gboRequerimientos.SuspendLayout();
             this.SuspendLayout();
@@ -57,7 +57,7 @@
             this.dgvNuevoReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNuevoReq.Location = new System.Drawing.Point(44, 224);
             this.dgvNuevoReq.Name = "dgvNuevoReq";
-            this.dgvNuevoReq.Size = new System.Drawing.Size(570, 234);
+            this.dgvNuevoReq.Size = new System.Drawing.Size(570, 198);
             this.dgvNuevoReq.TabIndex = 43;
             // 
             // gboRequerimientos
@@ -79,18 +79,35 @@
             this.gboRequerimientos.TabStop = false;
             this.gboRequerimientos.Text = "DATOS:";
             // 
-            // btnBuscarPro
+            // txtDescripcion
             // 
-            this.btnBuscarPro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarPro.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarPro.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarPro.IconSize = 18;
-            this.btnBuscarPro.Location = new System.Drawing.Point(234, 21);
-            this.btnBuscarPro.Name = "btnBuscarPro";
-            this.btnBuscarPro.Size = new System.Drawing.Size(79, 24);
-            this.btnBuscarPro.TabIndex = 42;
-            this.btnBuscarPro.UseVisualStyleBackColor = true;
-            this.btnBuscarPro.Click += new System.EventHandler(this.btnBuscarPro_Click);
+            this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtDescripcion.Location = new System.Drawing.Point(116, 61);
+            this.txtDescripcion.Name = "txtDescripcion";
+            this.txtDescripcion.Size = new System.Drawing.Size(112, 22);
+            this.txtDescripcion.TabIndex = 44;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label5.Location = new System.Drawing.Point(41, 25);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.TabIndex = 32;
+            this.label5.Text = "Producto:";
+            // 
+            // cbPrioridad
+            // 
+            this.cbPrioridad.Font = new System.Drawing.Font("Roboto", 9F);
+            this.cbPrioridad.FormattingEnabled = true;
+            this.cbPrioridad.Items.AddRange(new object[] {
+            "Alta",
+            "Baja"});
+            this.cbPrioridad.Location = new System.Drawing.Point(476, 63);
+            this.cbPrioridad.Name = "cbPrioridad";
+            this.cbPrioridad.Size = new System.Drawing.Size(77, 22);
+            this.cbPrioridad.TabIndex = 39;
             // 
             // txtCantidad
             // 
@@ -110,64 +127,6 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Cantidad:";
             // 
-            // dtmReque
-            // 
-            this.dtmReque.Font = new System.Drawing.Font("Roboto", 9F);
-            this.dtmReque.Location = new System.Drawing.Point(131, 43);
-            this.dtmReque.Name = "dtmReque";
-            this.dtmReque.Size = new System.Drawing.Size(226, 22);
-            this.dtmReque.TabIndex = 33;
-            // 
-            // lblCodigo
-            // 
-            this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Roboto", 10F);
-            this.lblCodigo.Location = new System.Drawing.Point(404, 45);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(55, 17);
-            this.lblCodigo.TabIndex = 25;
-            this.lblCodigo.Text = "Codigo:";
-            // 
-            // cbPrioridad
-            // 
-            this.cbPrioridad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.cbPrioridad.FormattingEnabled = true;
-            this.cbPrioridad.Items.AddRange(new object[] {
-            "Alta",
-            "Baja"});
-            this.cbPrioridad.Location = new System.Drawing.Point(476, 63);
-            this.cbPrioridad.Name = "cbPrioridad";
-            this.cbPrioridad.Size = new System.Drawing.Size(77, 22);
-            this.cbPrioridad.TabIndex = 39;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label1.Location = new System.Drawing.Point(62, 48);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "Fecha: ";
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtCodigo.Location = new System.Drawing.Point(476, 43);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(70, 22);
-            this.txtCodigo.TabIndex = 26;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label5.Location = new System.Drawing.Point(41, 25);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "Producto:";
-            // 
             // txtProductoID
             // 
             this.txtProductoID.Font = new System.Drawing.Font("Roboto", 9F);
@@ -185,6 +144,65 @@
             this.label3.Size = new System.Drawing.Size(71, 17);
             this.label3.TabIndex = 38;
             this.label3.Text = "Prioridad: ";
+            // 
+            // btnBuscarPro
+            // 
+            this.btnBuscarPro.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarPro.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarPro.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarPro.IconSize = 18;
+            this.btnBuscarPro.Location = new System.Drawing.Point(234, 21);
+            this.btnBuscarPro.Name = "btnBuscarPro";
+            this.btnBuscarPro.Size = new System.Drawing.Size(79, 24);
+            this.btnBuscarPro.TabIndex = 42;
+            this.btnBuscarPro.UseVisualStyleBackColor = true;
+            this.btnBuscarPro.Click += new System.EventHandler(this.btnBuscarPro_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label4.Location = new System.Drawing.Point(27, 63);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(83, 17);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "Descripción:";
+            // 
+            // dtmReque
+            // 
+            this.dtmReque.Font = new System.Drawing.Font("Roboto", 9F);
+            this.dtmReque.Location = new System.Drawing.Point(131, 43);
+            this.dtmReque.Name = "dtmReque";
+            this.dtmReque.Size = new System.Drawing.Size(226, 22);
+            this.dtmReque.TabIndex = 33;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.AutoSize = true;
+            this.lblCodigo.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblCodigo.Location = new System.Drawing.Point(406, 50);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(55, 17);
+            this.lblCodigo.TabIndex = 25;
+            this.lblCodigo.Text = "Codigo:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label1.Location = new System.Drawing.Point(62, 48);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 17);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Fecha: ";
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Font = new System.Drawing.Font("Roboto", 9F);
+            this.txtCodigo.Location = new System.Drawing.Point(478, 48);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(70, 22);
+            this.txtCodigo.TabIndex = 26;
             // 
             // btnCancelar
             // 
@@ -244,30 +262,12 @@
             this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGrabar.UseVisualStyleBackColor = true;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Roboto", 10F);
-            this.label4.Location = new System.Drawing.Point(27, 63);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 17);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "Descripción:";
-            // 
-            // txtDescripcion
-            // 
-            this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtDescripcion.Location = new System.Drawing.Point(116, 61);
-            this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(112, 22);
-            this.txtDescripcion.TabIndex = 44;
-            // 
             // FormDetalleRequerimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(837, 494);
+            this.ClientSize = new System.Drawing.Size(837, 443);
             this.Controls.Add(this.lblCodigo);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.dtmReque);

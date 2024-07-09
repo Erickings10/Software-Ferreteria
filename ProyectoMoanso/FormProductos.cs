@@ -25,9 +25,6 @@ namespace ProyectoMoanso
             cboMarca.DropDownStyle = ComboBoxStyle.DropDownList;
             cboCategoria.DropDownStyle = ComboBoxStyle.DropDownList;
             cboMedida.DropDownStyle = ComboBoxStyle.DropDownList;
-            txtIdMarca.Visible = false;
-            txtIdCategoria.Visible = false;
-            txtIdMedida.Visible = false;
             listarProducto();
             CambiarEncabezados();
             listarMedida();
@@ -37,6 +34,7 @@ namespace ProyectoMoanso
 
         private void LimpiarVariables()
         {
+            txtCodigo.Text = "";
             txtDescripcion.Text = "";
             cboMedida.Text = "";
             cboCategoria.Text = "";
@@ -73,13 +71,13 @@ namespace ProyectoMoanso
             {
                 entProductos p = new entProductos();
 
-                p.CategoriaproductoID = Convert.ToInt32(txtIdCategoria.Text);
-                p.MarcaproductoID = Convert.ToInt32(txtIdMarca.Text);
-                p.MedidaproductoID = Convert.ToInt32(txtIdMedida.Text);
+                p.CategoriaproductoID = Convert.ToInt32(cboCategoria.SelectedValue);
+                p.MarcaproductoID = Convert.ToInt32(cboMarca.SelectedValue);
+                p.MedidaproductoID = Convert.ToInt32(cboMedida.SelectedValue);
                 p.descripcion = txtDescripcion.Text;
                 p.precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
                 p.precioVenta = Convert.ToDecimal(txtPrecioVenta.Text);
-                p.fecha = Convert.ToDateTime(dtPFecha.Text);
+                p.fecha = DateTime.Now;
                 p.estado = Convert.ToBoolean(chbxEstado.Checked);
 
                 logProductos.Instancia.InsertaProductos(p);
@@ -184,12 +182,16 @@ namespace ProyectoMoanso
             try
             {
                 entProductos c = new entProductos();
-                c.ProductoID = int.Parse(txtCodigo.Text.Trim());
-                c.MarcaproductoID = int.Parse(txtIdMarca.Text.Trim());
-                c.CategoriaproductoID = int.Parse(txtIdCategoria.Text.Trim());
-                //c.descripcion = txtMarca.Text.Trim();
-                c.estado = chbxEstado.Checked;
-                //logProductos.Instancia.EditarProducto(c);
+                c.ProductoID = Convert.ToInt32(txtCodigo.Text);
+                c.CategoriaproductoID = Convert.ToInt32(cboCategoria.SelectedValue);
+                c.MarcaproductoID = Convert.ToInt32(cboMarca.SelectedValue);
+                c.MedidaproductoID = Convert.ToInt32(cboMedida.SelectedValue);
+                c.descripcion = txtDescripcion.Text;
+                c.precioCompra = Convert.ToDecimal(txtPrecioCompra.Text);
+                c.precioVenta = Convert.ToDecimal(txtPrecioVenta.Text);
+                c.fecha = DateTime.Now;
+                c.estado = Convert.ToBoolean(chbxEstado.Checked);
+                logProductos.Instancia.EditarProducto(c);
 
             }
             catch (Exception ex)
@@ -198,8 +200,8 @@ namespace ProyectoMoanso
             }
             LimpiarVariables();
             gboDatos.Enabled = false;
-            listarProducto();
             btnActualizar.Enabled = false;
+            listarProducto();
         }
 
         private void dgvRegistroProducto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -208,14 +210,36 @@ namespace ProyectoMoanso
             txtCodigo.Text = filaActual.Cells[0].Value.ToString();
             cboMarca.Text = filaActual.Cells[1].Value.ToString();
             cboCategoria.Text = filaActual.Cells[2].Value.ToString();
-            txtDescripcion.Text = filaActual.Cells[3].Value.ToString();
-            chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
+            cboMedida.Text = filaActual.Cells[3].Value.ToString();
+            txtDescripcion.Text = filaActual.Cells[4].Value.ToString();
+            txtPrecioCompra.Text = filaActual.Cells[5].Value.ToString();
+            txtPrecioVenta.Text = filaActual.Cells[6].Value.ToString();
+            chbxEstado.Checked = Convert.ToBoolean(filaActual.Cells[8].Value);
 
             btnActualizar.Enabled = true;
             btnDeshabilitar.Enabled = true;
         }
 
+        private void btnDeshabilitar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                entProductos c = new entProductos();
 
+                c.ProductoID = int.Parse(txtCodigo.Text.Trim());
+                chbxEstado.Checked = false;
+                c.estado = chbxEstado.Checked;
+                logProductos.Instancia.DeshabilitarProductos(c);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error.." + ex);
+            }
+            LimpiarVariables();
+            gboDatos.Enabled = false;
+            listarProducto();
+        }
     }
 }
+
 

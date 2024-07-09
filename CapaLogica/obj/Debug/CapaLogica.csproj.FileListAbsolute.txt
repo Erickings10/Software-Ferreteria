@@ -145,3 +145,14 @@ D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\Capa
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb

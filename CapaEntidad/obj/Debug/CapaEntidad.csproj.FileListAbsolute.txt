@@ -70,3 +70,9 @@ D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\Capa
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

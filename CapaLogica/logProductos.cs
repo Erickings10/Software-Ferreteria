@@ -41,11 +41,11 @@ namespace CapaLogica
             datProductos.Instancia.InsertarProductos(Prod);
         }
 
-        /*public void EditarProducto(entProductos pro) 
+        public void EditarProducto(entProductos pro) 
         { 
             datProductos.Instancia.EditarProducto(pro);
             
-        }*/
+        }
         public List<entDescProducto> ListarReporteProducto()
         {
             return datProductos.Instancia.ListarReporteProducto();
@@ -59,6 +59,10 @@ namespace CapaLogica
             catch (Exception e) { throw e; }
         }
 
+        public void DeshabilitarProductos(entProductos Pro)
+        {
+            datProductos.Instancia.DeshabilitarProductos(Pro);
+        }
 
         #endregion metodos
 
