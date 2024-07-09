@@ -61,10 +61,9 @@
             this.label1.BackColor = System.Drawing.Color.RosyBrown;
             this.label1.Font = new System.Drawing.Font("Microsoft Tai Le", 17.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(184, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(245, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(297, 29);
+            this.label1.Size = new System.Drawing.Size(377, 37);
             this.label1.TabIndex = 24;
             this.label1.Text = "REGISTRO DE ALMACENES";
             // 
@@ -72,20 +71,23 @@
             // 
             this.menuStrip1.AutoSize = false;
             this.menuStrip1.BackColor = System.Drawing.Color.RosyBrown;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.menuStrip1.Size = new System.Drawing.Size(903, 58);
+            this.menuStrip1.Size = new System.Drawing.Size(1204, 71);
             this.menuStrip1.TabIndex = 25;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // dgvAlmacenes
             // 
             this.dgvAlmacenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAlmacenes.Location = new System.Drawing.Point(407, 95);
+            this.dgvAlmacenes.Location = new System.Drawing.Point(543, 117);
+            this.dgvAlmacenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dgvAlmacenes.Name = "dgvAlmacenes";
             this.dgvAlmacenes.ReadOnly = true;
-            this.dgvAlmacenes.Size = new System.Drawing.Size(455, 404);
+            this.dgvAlmacenes.RowHeadersWidth = 51;
+            this.dgvAlmacenes.Size = new System.Drawing.Size(607, 497);
             this.dgvAlmacenes.TabIndex = 26;
             this.dgvAlmacenes.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAlmacenes_CellDoubleClick);
             // 
@@ -101,9 +103,11 @@
             this.gbInformacion.Controls.Add(this.lblCapacidad);
             this.gbInformacion.Controls.Add(this.lblDescripcion);
             this.gbInformacion.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
-            this.gbInformacion.Location = new System.Drawing.Point(38, 159);
+            this.gbInformacion.Location = new System.Drawing.Point(51, 196);
+            this.gbInformacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbInformacion.Name = "gbInformacion";
-            this.gbInformacion.Size = new System.Drawing.Size(346, 279);
+            this.gbInformacion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbInformacion.Size = new System.Drawing.Size(461, 343);
             this.gbInformacion.TabIndex = 27;
             this.gbInformacion.TabStop = false;
             this.gbInformacion.Text = "Informacion";
@@ -112,10 +116,10 @@
             // 
             this.chbx_Estado.AutoSize = true;
             this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 9F);
-            this.chbx_Estado.Location = new System.Drawing.Point(256, 242);
-            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
+            this.chbx_Estado.Location = new System.Drawing.Point(341, 298);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.chbx_Estado.Name = "chbx_Estado";
-            this.chbx_Estado.Size = new System.Drawing.Size(64, 18);
+            this.chbx_Estado.Size = new System.Drawing.Size(77, 22);
             this.chbx_Estado.TabIndex = 33;
             this.chbx_Estado.Text = "Estado";
             this.chbx_Estado.UseVisualStyleBackColor = true;
@@ -123,9 +127,10 @@
             // txtCantidad
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtCantidad.Location = new System.Drawing.Point(107, 158);
+            this.txtCantidad.Location = new System.Drawing.Point(143, 194);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(115, 22);
+            this.txtCantidad.Size = new System.Drawing.Size(152, 26);
             this.txtCantidad.TabIndex = 32;
             this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
@@ -133,9 +138,10 @@
             // 
             this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
             this.txtDescripcion.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.txtDescripcion.Location = new System.Drawing.Point(107, 83);
+            this.txtDescripcion.Location = new System.Drawing.Point(143, 102);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtDescripcion.Name = "txtDescripcion";
-            this.txtDescripcion.Size = new System.Drawing.Size(145, 57);
+            this.txtDescripcion.Size = new System.Drawing.Size(192, 69);
             this.txtDescripcion.TabIndex = 29;
             this.txtDescripcion.Text = "";
             // 
@@ -143,35 +149,39 @@
             // 
             this.lblTipo.AutoSize = true;
             this.lblTipo.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblTipo.Location = new System.Drawing.Point(27, 201);
+            this.lblTipo.Location = new System.Drawing.Point(36, 247);
+            this.lblTipo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(37, 14);
+            this.lblTipo.Size = new System.Drawing.Size(47, 18);
             this.lblTipo.TabIndex = 31;
             this.lblTipo.Text = "Tipo: ";
             // 
             // txtTipo
             // 
             this.txtTipo.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtTipo.Location = new System.Drawing.Point(107, 198);
+            this.txtTipo.Location = new System.Drawing.Point(143, 244);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTipo.Name = "txtTipo";
-            this.txtTipo.Size = new System.Drawing.Size(115, 22);
+            this.txtTipo.Size = new System.Drawing.Size(152, 26);
             this.txtTipo.TabIndex = 30;
             // 
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Roboto", 9F);
-            this.txtId.Location = new System.Drawing.Point(107, 40);
+            this.txtId.Location = new System.Drawing.Point(143, 49);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(27, 22);
+            this.txtId.Size = new System.Drawing.Size(35, 26);
             this.txtId.TabIndex = 8;
             // 
             // lblId
             // 
             this.lblId.AutoSize = true;
             this.lblId.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblId.Location = new System.Drawing.Point(27, 43);
+            this.lblId.Location = new System.Drawing.Point(36, 53);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(74, 14);
+            this.lblId.Size = new System.Drawing.Size(92, 18);
             this.lblId.TabIndex = 7;
             this.lblId.Text = "Id Almacen: ";
             // 
@@ -179,9 +189,10 @@
             // 
             this.lblCapacidad.AutoSize = true;
             this.lblCapacidad.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblCapacidad.Location = new System.Drawing.Point(27, 161);
+            this.lblCapacidad.Location = new System.Drawing.Point(36, 198);
+            this.lblCapacidad.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCapacidad.Name = "lblCapacidad";
-            this.lblCapacidad.Size = new System.Drawing.Size(63, 14);
+            this.lblCapacidad.Size = new System.Drawing.Size(77, 18);
             this.lblCapacidad.TabIndex = 4;
             this.lblCapacidad.Text = "Cantidad: ";
             // 
@@ -189,9 +200,10 @@
             // 
             this.lblDescripcion.AutoSize = true;
             this.lblDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
-            this.lblDescripcion.Location = new System.Drawing.Point(25, 99);
+            this.lblDescripcion.Location = new System.Drawing.Point(33, 122);
+            this.lblDescripcion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(76, 14);
+            this.lblDescripcion.Size = new System.Drawing.Size(98, 18);
             this.lblDescripcion.TabIndex = 2;
             this.lblDescripcion.Text = "Descripcion: ";
             // 
@@ -200,9 +212,11 @@
             this.gbBotones2.Controls.Add(this.btnAgregar);
             this.gbBotones2.Controls.Add(this.btnDeshabilitar);
             this.gbBotones2.Controls.Add(this.btnActualizar);
-            this.gbBotones2.Location = new System.Drawing.Point(38, 444);
+            this.gbBotones2.Location = new System.Drawing.Point(51, 546);
+            this.gbBotones2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbBotones2.Name = "gbBotones2";
-            this.gbBotones2.Size = new System.Drawing.Size(346, 73);
+            this.gbBotones2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbBotones2.Size = new System.Drawing.Size(461, 90);
             this.gbBotones2.TabIndex = 28;
             this.gbBotones2.TabStop = false;
             // 
@@ -212,9 +226,10 @@
             this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
             this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAgregar.Location = new System.Drawing.Point(9, 18);
+            this.btnAgregar.Location = new System.Drawing.Point(12, 22);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(104, 36);
+            this.btnAgregar.Size = new System.Drawing.Size(139, 44);
             this.btnAgregar.TabIndex = 25;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -226,12 +241,12 @@
             this.btnDeshabilitar.BackColor = System.Drawing.Color.Tan;
             this.btnDeshabilitar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnDeshabilitar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnDeshabilitar.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
+            this.btnDeshabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.Image")));
             this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeshabilitar.Location = new System.Drawing.Point(226, 18);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeshabilitar.Location = new System.Drawing.Point(301, 22);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
-            this.btnDeshabilitar.Size = new System.Drawing.Size(115, 36);
+            this.btnDeshabilitar.Size = new System.Drawing.Size(153, 44);
             this.btnDeshabilitar.TabIndex = 21;
             this.btnDeshabilitar.Text = "Deshabilitar";
             this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -243,12 +258,12 @@
             this.btnActualizar.BackColor = System.Drawing.Color.Tan;
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnActualizar.Image = global::ProyectoMoanso.Properties.Resources.reset;
+            this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnActualizar.Location = new System.Drawing.Point(118, 18);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnActualizar.Location = new System.Drawing.Point(157, 22);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(104, 36);
+            this.btnActualizar.Size = new System.Drawing.Size(139, 44);
             this.btnActualizar.TabIndex = 20;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -259,9 +274,11 @@
             // 
             this.gboBotones1.Controls.Add(this.btnNuevo);
             this.gboBotones1.Controls.Add(this.btnCancelar);
-            this.gboBotones1.Location = new System.Drawing.Point(38, 88);
+            this.gboBotones1.Location = new System.Drawing.Point(51, 108);
+            this.gboBotones1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gboBotones1.Name = "gboBotones1";
-            this.gboBotones1.Size = new System.Drawing.Size(346, 65);
+            this.gboBotones1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gboBotones1.Size = new System.Drawing.Size(461, 80);
             this.gboBotones1.TabIndex = 40;
             this.gboBotones1.TabStop = false;
             // 
@@ -272,9 +289,10 @@
             this.btnNuevo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Location = new System.Drawing.Point(20, 19);
+            this.btnNuevo.Location = new System.Drawing.Point(27, 23);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(133, 36);
+            this.btnNuevo.Size = new System.Drawing.Size(177, 44);
             this.btnNuevo.TabIndex = 24;
             this.btnNuevo.Text = "Nuevo ";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -287,9 +305,10 @@
             this.btnCancelar.Font = new System.Drawing.Font("Roboto", 10F);
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(178, 19);
+            this.btnCancelar.Location = new System.Drawing.Point(237, 23);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(133, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(177, 44);
             this.btnCancelar.TabIndex = 34;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -298,10 +317,10 @@
             // 
             // FormAlmacenes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Tan;
-            this.ClientSize = new System.Drawing.Size(903, 545);
+            this.ClientSize = new System.Drawing.Size(1204, 671);
             this.Controls.Add(this.gboBotones1);
             this.Controls.Add(this.gbBotones2);
             this.Controls.Add(this.gbInformacion);
@@ -309,6 +328,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormAlmacenes";
             this.Text = "FormAlmacenes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacenes)).EndInit();

@@ -331,7 +331,7 @@
             // 
             this.btn_eliminar_pro.BackColor = System.Drawing.Color.Tomato;
             this.btn_eliminar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_eliminar_pro.Image = global::ProyectoMoanso.Properties.Resources.bote_de_basura;
+            this.btn_eliminar_pro.Image = ((System.Drawing.Image)(resources.GetObject("btn_eliminar_pro.Image")));
             this.btn_eliminar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_eliminar_pro.Location = new System.Drawing.Point(913, 245);
             this.btn_eliminar_pro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -347,7 +347,7 @@
             // 
             this.btn_actualizar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_actualizar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_actualizar_pro.Image = global::ProyectoMoanso.Properties.Resources.reset;
+            this.btn_actualizar_pro.Image = ((System.Drawing.Image)(resources.GetObject("btn_actualizar_pro.Image")));
             this.btn_actualizar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_actualizar_pro.Location = new System.Drawing.Point(913, 175);
             this.btn_actualizar_pro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
