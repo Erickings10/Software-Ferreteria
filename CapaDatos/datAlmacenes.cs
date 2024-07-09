@@ -43,9 +43,10 @@ namespace CapaDatos
                     entAlmacenes Alm = new entAlmacenes();
                     Alm.AlmacenID = Convert.ToInt32(dr["AlmacenID"]);
                     Alm.descripcion = Convert.ToString(dr["descripcion"]);
-                    Alm.cantidad = Convert.ToInt64(dr["cantidad"]);
-                    Alm.tipo = Convert.ToString(dr["tipo"]);
+                    Alm.cantidad = Convert.ToInt32(dr["cantidad"]);
                     Alm.estado = Convert.ToBoolean(dr["estado"]);
+                    Alm.PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"]);
+                    Alm.fechaRegistro = Convert.ToDateTime(dr["fechaRegistro"]);
                     lista.Add(Alm);
                 }
 
@@ -59,7 +60,7 @@ namespace CapaDatos
                 cmd.Connection.Close();
             }
             return lista;
- 
+
         }
         public Boolean InsertarAlmacenes(entAlmacenes Alm)
         {
@@ -72,7 +73,6 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@descripcion", Alm.descripcion);
                 cmd.Parameters.AddWithValue("@cantidad", Alm.cantidad);
-                cmd.Parameters.AddWithValue("@tipo", Alm.tipo);
                 cmd.Parameters.AddWithValue("@estado", Alm.estado);
 
                 cn.Open();
@@ -102,7 +102,6 @@ namespace CapaDatos
                 cmd.Parameters.AddWithValue("@AlmacenID", Alm.AlmacenID);
                 cmd.Parameters.AddWithValue("@descripcion", Alm.descripcion);
                 cmd.Parameters.AddWithValue("@cantidad", Alm.cantidad);
-                cmd.Parameters.AddWithValue("@tipo", Alm.tipo);
                 cmd.Parameters.AddWithValue("@estado", Alm.estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

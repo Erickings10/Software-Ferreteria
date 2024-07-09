@@ -136,5 +136,10 @@ namespace ProyectoMoanso
             AbrirFormularios(new FormCategoriaProducto());
 
         }
+
+        private void btnVenta_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios(new FormVenta());
+        }
     }
 }

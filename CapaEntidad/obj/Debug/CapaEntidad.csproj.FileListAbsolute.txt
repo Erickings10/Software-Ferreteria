@@ -64,3 +64,9 @@ C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\Cap
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\USER\OneDrive\Documentos\MOANSO_FORM_FERRETERIA\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+D:\-----------Archivos----------\UPN\Moanso\Core Ventas\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

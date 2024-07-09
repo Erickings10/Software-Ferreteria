@@ -102,9 +102,9 @@ namespace ProyectoMoanso
             {
                 entAlmacenes c = new entAlmacenes();
                 c.descripcion = txtDescripcion.Text;
-                c.cantidad = Convert.ToInt64(txtCantidad.Text);
-                c.tipo = txtTipo.Text;
+                c.cantidad = Convert.ToInt32(txtCantidad.Text);
                 c.estado = Convert.ToBoolean(chbx_Estado.Checked);
+                c.fechaRegistro = DateTime.Now;
 
                 logAlmacenes.Instancia.InsertaAlmacenes(c);
             }
@@ -124,9 +124,8 @@ namespace ProyectoMoanso
             {
                 entAlmacenes c = new entAlmacenes();
                 c.AlmacenID = int.Parse(txtId.Text.Trim());
-                c.descripcion = txtDescripcion.Text.Trim(); 
+                c.descripcion = txtDescripcion.Text.Trim();
                 c.cantidad = int.Parse(txtCantidad.Text.Trim());
-                c.tipo = txtTipo.Text.Trim();
                 c.estado = chbx_Estado.Checked;
                 logAlmacenes.Instancia.EditarAlmacenes(c);
 

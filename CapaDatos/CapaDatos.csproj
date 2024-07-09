@@ -44,6 +44,7 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="datAlmacenes.cs" />
     <Compile Include="datCategoriaProductos.cs" />
+    <Compile Include="datDetalleVenta.cs" />
     <Compile Include="datEntradaProductos.cs" />
     <Compile Include="datMarcaProducto.cs" />
     <Compile Include="datMedidaProducto.cs" />
@@ -51,6 +52,7 @@
     <Compile Include="datProveedor.cs" />
     <Compile Include="datRequerimientos.cs" />
     <Compile Include="datRubroProveedor.cs" />
+    <Compile Include="datVenta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

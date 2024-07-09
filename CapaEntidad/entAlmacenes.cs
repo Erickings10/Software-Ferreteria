@@ -10,9 +10,10 @@ namespace CapaEntidad
     {
         public int AlmacenID { get; set; }
         public string descripcion { get; set; }
-        public Int64 cantidad { get; set; }
-        public string tipo { get; set; }
+        public int cantidad { get; set; }
         public Boolean estado { get; set; }
+        public decimal PrecioVenta { get; set; }
+        public DateTime fechaRegistro { get; set; }
 
     }
 }
