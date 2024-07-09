@@ -3,7 +3,11 @@
   "WorkspaceRootPath": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|d:\\sexto ciclo\\moanso\\base de datos\\software-ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|d:\\sexto ciclo\\moanso\\base de datos\\software-ferreteria\\capalogica\\logproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -67,6 +71,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "logProductos.cs",
+              "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaLogica\\logProductos.cs",
+              "RelativeDocumentMoniker": "CapaLogica\\logProductos.cs",
+              "ToolTip": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaLogica\\logProductos.cs",
+              "RelativeToolTip": "CapaLogica\\logProductos.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T17:07:32.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "FormPrincipal.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
@@ -74,12 +91,11 @@
               "RelativeToolTip": "ProyectoMoanso\\FormPrincipal.cs",
               "ViewState": "AQIAAGgAAAAAAAAAAAAqwHIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T16:52:09.598Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T16:52:09.598Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FormPrincipal.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
@@ -90,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "FormVenta.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormVenta.cs",
@@ -102,7 +118,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "FormDetalleRequerimiento.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleRequerimiento.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormDetalleRequerimiento.cs",
@@ -114,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "FormDetalleRequerimiento.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleRequerimiento.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormDetalleRequerimiento.cs",
@@ -125,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "logDetalleRequerimiento.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaLogica\\logDetalleRequerimiento.cs",
               "RelativeDocumentMoniker": "CapaLogica\\logDetalleRequerimiento.cs",
@@ -137,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "entDetalleRequerimiento.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaEntidad\\entDetalleRequerimiento.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entDetalleRequerimiento.cs",
@@ -149,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "entDetalleVenta.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaEntidad\\entDetalleVenta.cs",
               "RelativeDocumentMoniker": "CapaEntidad\\entDetalleVenta.cs",
@@ -161,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "datDetalleRequerimiento.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaDatos\\datDetalleRequerimiento.cs",
               "RelativeDocumentMoniker": "CapaDatos\\datDetalleRequerimiento.cs",
@@ -173,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "logDettalleVenta.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaLogica\\logDettalleVenta.cs",
               "RelativeDocumentMoniker": "CapaLogica\\logDettalleVenta.cs",
@@ -185,7 +201,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "datDetalleVenta.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaDatos\\datDetalleVenta.cs",
               "RelativeDocumentMoniker": "CapaDatos\\datDetalleVenta.cs",
@@ -197,7 +213,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "FormVenta.cs [Dise\u00F1o]",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormVenta.cs",
@@ -208,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "datRequerimientos.cs",
               "DocumentMoniker": "D:\\SEXTO CICLO\\moanso\\base de datos\\Software-Ferreteria\\CapaDatos\\datRequerimientos.cs",
               "RelativeDocumentMoniker": "CapaDatos\\datRequerimientos.cs",
