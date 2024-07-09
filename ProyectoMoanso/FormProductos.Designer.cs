@@ -176,9 +176,9 @@
             this.gbBotones2.Controls.Add(this.btnActualizar);
             this.gbBotones2.Controls.Add(this.btnDeshabilitar);
             this.gbBotones2.Location = new System.Drawing.Point(924, 363);
-            this.gbBotones2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbBotones2.Margin = new System.Windows.Forms.Padding(4);
             this.gbBotones2.Name = "gbBotones2";
-            this.gbBotones2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbBotones2.Padding = new System.Windows.Forms.Padding(4);
             this.gbBotones2.Size = new System.Drawing.Size(231, 290);
             this.gbBotones2.TabIndex = 43;
             this.gbBotones2.TabStop = false;
@@ -188,7 +188,7 @@
             this.btnAgregar.BackColor = System.Drawing.Color.Tan;
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(25, 44);
             this.btnAgregar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -258,9 +258,9 @@
             this.gboDatos.Controls.Add(this.txtCodigo);
             this.gboDatos.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboDatos.Location = new System.Drawing.Point(236, 103);
-            this.gboDatos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gboDatos.Margin = new System.Windows.Forms.Padding(4);
             this.gboDatos.Name = "gboDatos";
-            this.gboDatos.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gboDatos.Padding = new System.Windows.Forms.Padding(4);
             this.gboDatos.Size = new System.Drawing.Size(899, 234);
             this.gboDatos.TabIndex = 44;
             this.gboDatos.TabStop = false;
@@ -270,7 +270,7 @@
             // 
             this.cboCategoria.FormattingEnabled = true;
             this.cboCategoria.Location = new System.Drawing.Point(148, 85);
-            this.cboCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(129, 27);
             this.cboCategoria.TabIndex = 61;
@@ -279,7 +279,7 @@
             // 
             this.cboMarca.FormattingEnabled = true;
             this.cboMarca.Location = new System.Drawing.Point(147, 133);
-            this.cboMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMarca.Margin = new System.Windows.Forms.Padding(4);
             this.cboMarca.Name = "cboMarca";
             this.cboMarca.Size = new System.Drawing.Size(129, 27);
             this.cboMarca.TabIndex = 60;
@@ -288,7 +288,7 @@
             // 
             this.cboMedida.FormattingEnabled = true;
             this.cboMedida.Location = new System.Drawing.Point(147, 177);
-            this.cboMedida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cboMedida.Margin = new System.Windows.Forms.Padding(4);
             this.cboMedida.Name = "cboMedida";
             this.cboMedida.Size = new System.Drawing.Size(129, 27);
             this.cboMedida.TabIndex = 59;
@@ -297,7 +297,7 @@
             // 
             this.dtPFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtPFecha.Location = new System.Drawing.Point(516, 177);
-            this.dtPFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtPFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtPFecha.Name = "dtPFecha";
             this.dtPFecha.Size = new System.Drawing.Size(187, 27);
             this.dtPFecha.TabIndex = 58;
@@ -358,7 +358,7 @@
             this.btnAñadirMedida.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.btnAñadirMedida.IconSize = 19;
             this.btnAñadirMedida.Location = new System.Drawing.Point(287, 177);
-            this.btnAñadirMedida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAñadirMedida.Margin = new System.Windows.Forms.Padding(4);
             this.btnAñadirMedida.Name = "btnAñadirMedida";
             this.btnAñadirMedida.Size = new System.Drawing.Size(32, 30);
             this.btnAñadirMedida.TabIndex = 51;
@@ -394,7 +394,7 @@
             this.btnBuscarMarca.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.btnBuscarMarca.IconSize = 19;
             this.btnBuscarMarca.Location = new System.Drawing.Point(287, 132);
-            this.btnBuscarMarca.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarMarca.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarMarca.Name = "btnBuscarMarca";
             this.btnBuscarMarca.Size = new System.Drawing.Size(32, 30);
             this.btnBuscarMarca.TabIndex = 44;
@@ -408,7 +408,7 @@
             this.btnBuscarCategoria.IconFont = FontAwesome.Sharp.IconFont.Brands;
             this.btnBuscarCategoria.IconSize = 19;
             this.btnBuscarCategoria.Location = new System.Drawing.Point(287, 81);
-            this.btnBuscarCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarCategoria.Name = "btnBuscarCategoria";
             this.btnBuscarCategoria.Size = new System.Drawing.Size(32, 30);
             this.btnBuscarCategoria.TabIndex = 43;

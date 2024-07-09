@@ -121,9 +121,9 @@ namespace ProyectoMoanso
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(53, 345);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1123, 303);
             this.groupBox1.TabIndex = 19;
             this.groupBox1.TabStop = false;
@@ -158,7 +158,7 @@ namespace ProyectoMoanso
             this.dtpFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpFecha.Location = new System.Drawing.Point(133, 188);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(4);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(112, 26);
             this.dtpFecha.TabIndex = 28;
@@ -170,9 +170,9 @@ namespace ProyectoMoanso
             this.gBoBotones.Controls.Add(this.btn_Cancelar);
             this.gBoBotones.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.gBoBotones.Location = new System.Drawing.Point(920, 89);
-            this.gBoBotones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gBoBotones.Margin = new System.Windows.Forms.Padding(4);
             this.gBoBotones.Name = "gBoBotones";
-            this.gBoBotones.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gBoBotones.Padding = new System.Windows.Forms.Padding(4);
             this.gBoBotones.Size = new System.Drawing.Size(256, 223);
             this.gBoBotones.TabIndex = 29;
             this.gBoBotones.TabStop = false;
@@ -199,7 +199,7 @@ namespace ProyectoMoanso
             this.btn_EnviarOrden.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.btn_EnviarOrden.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_EnviarOrden.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btn_EnviarOrden.Image = global::ProyectoMoanso.Properties.Resources.enviar_orden;
+            this.btn_EnviarOrden.Image = ((System.Drawing.Image)(resources.GetObject("btn_EnviarOrden.Image")));
             this.btn_EnviarOrden.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_EnviarOrden.Location = new System.Drawing.Point(21, 95);
             this.btn_EnviarOrden.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -215,7 +215,7 @@ namespace ProyectoMoanso
             this.btn_Cancelar.BackColor = System.Drawing.Color.Tomato;
             this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.btn_Cancelar.Image = global::ProyectoMoanso.Properties.Resources.cancelar_orden;
+            this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Cancelar.Location = new System.Drawing.Point(21, 160);
             this.btn_Cancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -247,9 +247,9 @@ namespace ProyectoMoanso
             this.groupBox2.Controls.Add(this.lblProveedor);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.groupBox2.Location = new System.Drawing.Point(223, 89);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox2.Size = new System.Drawing.Size(685, 249);
             this.groupBox2.TabIndex = 30;
             this.groupBox2.TabStop = false;
@@ -272,7 +272,7 @@ namespace ProyectoMoanso
             this.btnBuscarMetodo.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscarMetodo.IconSize = 18;
             this.btnBuscarMetodo.Location = new System.Drawing.Point(645, 38);
-            this.btnBuscarMetodo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarMetodo.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarMetodo.Name = "btnBuscarMetodo";
             this.btnBuscarMetodo.Size = new System.Drawing.Size(32, 30);
             this.btnBuscarMetodo.TabIndex = 46;
@@ -328,7 +328,7 @@ namespace ProyectoMoanso
             this.btnBuscarOrden.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnBuscarOrden.IconSize = 18;
             this.btnBuscarOrden.Location = new System.Drawing.Point(241, 91);
-            this.btnBuscarOrden.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBuscarOrden.Margin = new System.Windows.Forms.Padding(4);
             this.btnBuscarOrden.Name = "btnBuscarOrden";
             this.btnBuscarOrden.Size = new System.Drawing.Size(32, 30);
             this.btnBuscarOrden.TabIndex = 39;
@@ -363,7 +363,7 @@ namespace ProyectoMoanso
             this.btnProovedor.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnProovedor.IconSize = 18;
             this.btnProovedor.Location = new System.Drawing.Point(241, 138);
-            this.btnProovedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnProovedor.Margin = new System.Windows.Forms.Padding(4);
             this.btnProovedor.Name = "btnProovedor";
             this.btnProovedor.Size = new System.Drawing.Size(32, 30);
             this.btnProovedor.TabIndex = 36;
@@ -403,7 +403,7 @@ namespace ProyectoMoanso
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "dgv_productosRequeridos";
             this.Text = "FormOrdenCompra";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

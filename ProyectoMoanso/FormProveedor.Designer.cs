@@ -363,7 +363,7 @@
             // 
             this.btn_agregar_pro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.btn_agregar_pro.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_agregar_pro.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btn_agregar_pro.Image = ((System.Drawing.Image)(resources.GetObject("btn_agregar_pro.Image")));
             this.btn_agregar_pro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_agregar_pro.Location = new System.Drawing.Point(913, 100);
             this.btn_agregar_pro.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

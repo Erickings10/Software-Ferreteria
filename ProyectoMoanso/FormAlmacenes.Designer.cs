@@ -83,7 +83,7 @@
             // 
             this.dgvAlmacenes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvAlmacenes.Location = new System.Drawing.Point(543, 117);
-            this.dgvAlmacenes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvAlmacenes.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAlmacenes.Name = "dgvAlmacenes";
             this.dgvAlmacenes.ReadOnly = true;
             this.dgvAlmacenes.RowHeadersWidth = 51;
@@ -104,9 +104,9 @@
             this.gbInformacion.Controls.Add(this.lblDescripcion);
             this.gbInformacion.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
             this.gbInformacion.Location = new System.Drawing.Point(51, 196);
-            this.gbInformacion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbInformacion.Margin = new System.Windows.Forms.Padding(4);
             this.gbInformacion.Name = "gbInformacion";
-            this.gbInformacion.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbInformacion.Padding = new System.Windows.Forms.Padding(4);
             this.gbInformacion.Size = new System.Drawing.Size(461, 343);
             this.gbInformacion.TabIndex = 27;
             this.gbInformacion.TabStop = false;
@@ -128,7 +128,7 @@
             // 
             this.txtCantidad.Font = new System.Drawing.Font("Roboto", 9F);
             this.txtCantidad.Location = new System.Drawing.Point(143, 194);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(4);
             this.txtCantidad.Name = "txtCantidad";
             this.txtCantidad.Size = new System.Drawing.Size(152, 26);
             this.txtCantidad.TabIndex = 32;
@@ -139,7 +139,7 @@
             this.txtDescripcion.Font = new System.Drawing.Font("Roboto", 9F);
             this.txtDescripcion.ForeColor = System.Drawing.SystemColors.WindowText;
             this.txtDescripcion.Location = new System.Drawing.Point(143, 102);
-            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDescripcion.Margin = new System.Windows.Forms.Padding(4);
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(192, 69);
             this.txtDescripcion.TabIndex = 29;
@@ -160,7 +160,7 @@
             // 
             this.txtTipo.Font = new System.Drawing.Font("Roboto", 9F);
             this.txtTipo.Location = new System.Drawing.Point(143, 244);
-            this.txtTipo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTipo.Margin = new System.Windows.Forms.Padding(4);
             this.txtTipo.Name = "txtTipo";
             this.txtTipo.Size = new System.Drawing.Size(152, 26);
             this.txtTipo.TabIndex = 30;
@@ -169,7 +169,7 @@
             // 
             this.txtId.Font = new System.Drawing.Font("Roboto", 9F);
             this.txtId.Location = new System.Drawing.Point(143, 49);
-            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(35, 26);
             this.txtId.TabIndex = 8;
@@ -213,9 +213,9 @@
             this.gbBotones2.Controls.Add(this.btnDeshabilitar);
             this.gbBotones2.Controls.Add(this.btnActualizar);
             this.gbBotones2.Location = new System.Drawing.Point(51, 546);
-            this.gbBotones2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbBotones2.Margin = new System.Windows.Forms.Padding(4);
             this.gbBotones2.Name = "gbBotones2";
-            this.gbBotones2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbBotones2.Padding = new System.Windows.Forms.Padding(4);
             this.gbBotones2.Size = new System.Drawing.Size(461, 90);
             this.gbBotones2.TabIndex = 28;
             this.gbBotones2.TabStop = false;
@@ -224,10 +224,10 @@
             // 
             this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAgregar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnAgregar.Image = global::ProyectoMoanso.Properties.Resources.Disco;
+            this.btnAgregar.Image = ((System.Drawing.Image)(resources.GetObject("btnAgregar.Image")));
             this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAgregar.Location = new System.Drawing.Point(12, 22);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(4);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(139, 44);
             this.btnAgregar.TabIndex = 25;
@@ -275,9 +275,9 @@
             this.gboBotones1.Controls.Add(this.btnNuevo);
             this.gboBotones1.Controls.Add(this.btnCancelar);
             this.gboBotones1.Location = new System.Drawing.Point(51, 108);
-            this.gboBotones1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gboBotones1.Margin = new System.Windows.Forms.Padding(4);
             this.gboBotones1.Name = "gboBotones1";
-            this.gboBotones1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gboBotones1.Padding = new System.Windows.Forms.Padding(4);
             this.gboBotones1.Size = new System.Drawing.Size(461, 80);
             this.gboBotones1.TabIndex = 40;
             this.gboBotones1.TabStop = false;
@@ -290,7 +290,7 @@
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(27, 23);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(4);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(177, 44);
             this.btnNuevo.TabIndex = 24;
@@ -306,7 +306,7 @@
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(237, 23);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(177, 44);
             this.btnCancelar.TabIndex = 34;
@@ -328,7 +328,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormAlmacenes";
             this.Text = "FormAlmacenes";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAlmacenes)).EndInit();
