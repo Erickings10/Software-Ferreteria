@@ -45,7 +45,6 @@
             this.chbx_Estado = new System.Windows.Forms.CheckBox();
             this.gboDatos = new System.Windows.Forms.GroupBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
-            this.txtidAlmacen = new System.Windows.Forms.TextBox();
             this.txtidProducto = new System.Windows.Forms.TextBox();
             this.chbEstado = new System.Windows.Forms.CheckBox();
             this.cboAlmacen = new System.Windows.Forms.ComboBox();
@@ -203,7 +202,6 @@
             // gboDatos
             // 
             this.gboDatos.Controls.Add(this.txtProducto);
-            this.gboDatos.Controls.Add(this.txtidAlmacen);
             this.gboDatos.Controls.Add(this.txtidProducto);
             this.gboDatos.Controls.Add(this.chbEstado);
             this.gboDatos.Controls.Add(this.cboAlmacen);
@@ -229,26 +227,15 @@
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(122, 129);
+            this.txtProducto.Location = new System.Drawing.Point(129, 131);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(103, 22);
             this.txtProducto.TabIndex = 49;
             // 
-            // txtidAlmacen
-            // 
-            this.txtidAlmacen.Cursor = System.Windows.Forms.Cursors.Default;
-            this.txtidAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtidAlmacen.Location = new System.Drawing.Point(122, 90);
-            this.txtidAlmacen.Margin = new System.Windows.Forms.Padding(2);
-            this.txtidAlmacen.Name = "txtidAlmacen";
-            this.txtidAlmacen.ReadOnly = true;
-            this.txtidAlmacen.Size = new System.Drawing.Size(30, 21);
-            this.txtidAlmacen.TabIndex = 48;
-            // 
             // txtidProducto
             // 
             this.txtidProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.txtidProducto.Location = new System.Drawing.Point(122, 131);
+            this.txtidProducto.Location = new System.Drawing.Point(94, 132);
             this.txtidProducto.Margin = new System.Windows.Forms.Padding(2);
             this.txtidProducto.Name = "txtidProducto";
             this.txtidProducto.ReadOnly = true;
@@ -270,7 +257,7 @@
             // 
             this.cboAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.cboAlmacen.FormattingEnabled = true;
-            this.cboAlmacen.Location = new System.Drawing.Point(122, 88);
+            this.cboAlmacen.Location = new System.Drawing.Point(129, 85);
             this.cboAlmacen.Name = "cboAlmacen";
             this.cboAlmacen.Size = new System.Drawing.Size(103, 23);
             this.cboAlmacen.TabIndex = 45;
@@ -420,7 +407,6 @@
         private System.Windows.Forms.Button btn_Cancelar;
         private System.Windows.Forms.ComboBox cboAlmacen;
         private System.Windows.Forms.CheckBox chbEstado;
-        private System.Windows.Forms.TextBox txtidAlmacen;
         private System.Windows.Forms.TextBox txtidProducto;
         private System.Windows.Forms.TextBox txtProducto;
     }

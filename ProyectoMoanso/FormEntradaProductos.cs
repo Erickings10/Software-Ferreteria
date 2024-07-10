@@ -21,14 +21,14 @@ namespace ProyectoMoanso
             btnDeshabilitar.Enabled = false;
             btnModificar.Enabled = false;
             btnRegistrar.Enabled = false;
-            txtidAlmacen.Visible = false;
-            txtidProducto.Visible = false;
+            txtidProducto.Visible = true;
             txtProducto.Enabled= false;
             txtCodigo.Enabled = false;
             ListarEntrada();
             listarAlmacen();
         }
 
+        
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
             gboDatos.Enabled = true;
@@ -52,7 +52,6 @@ namespace ProyectoMoanso
             txtCantidad.Text = "";
             dtpFechaEntrada.Text = "";
             chbx_Estado.Checked = false;
-
         }
 
         public void ListarEntrada()
@@ -101,7 +100,7 @@ namespace ProyectoMoanso
             {
                 entEntradaProductos p = new entEntradaProductos();
 
-                p.AlmacenID = Convert.ToInt32(txtidAlmacen.Text);
+                p.AlmacenID = Convert.ToInt32(cboAlmacen.Text);
                 p.ProductoID = Convert.ToInt32(txtidProducto.Text);
                 p.cantidad = Convert.ToInt64(txtCantidad.Text);
                 p.descripcion = txtDescripcion.Text;
@@ -120,7 +119,6 @@ namespace ProyectoMoanso
 
             ListarEntrada();
         }
-
 
     }
 }

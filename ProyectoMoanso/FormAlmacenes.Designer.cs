@@ -107,7 +107,7 @@
             // 
             this.chbx_Estado.AutoSize = true;
             this.chbx_Estado.Location = new System.Drawing.Point(256, 242);
-            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
             this.chbx_Estado.Name = "chbx_Estado";
             this.chbx_Estado.Size = new System.Drawing.Size(67, 20);
             this.chbx_Estado.TabIndex = 33;
@@ -186,7 +186,7 @@
             this.btnDeshabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.Image")));
             this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDeshabilitar.Location = new System.Drawing.Point(226, 18);
-            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(115, 36);
             this.btnDeshabilitar.TabIndex = 21;
@@ -201,8 +201,9 @@
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
+            this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActualizar.Location = new System.Drawing.Point(118, 18);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(104, 36);
             this.btnActualizar.TabIndex = 20;

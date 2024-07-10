@@ -72,7 +72,6 @@ namespace CapaDatos
                 cmd = new SqlCommand("spInsertarAlmacenes", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@descripcion", Alm.descripcion);
-                cmd.Parameters.AddWithValue("@cantidad", Alm.cantidad);
                 cmd.Parameters.AddWithValue("@estado", Alm.estado);
 
                 cn.Open();

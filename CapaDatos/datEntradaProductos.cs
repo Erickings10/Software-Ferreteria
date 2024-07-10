@@ -42,13 +42,17 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entEntradaProductos ent = new entEntradaProductos();
-                    ent.DetalleentradaproductoID = Convert.ToInt32(dr["DetalleentradaproductoID"]);
                     ent.AlmacenID = Convert.ToInt32(dr["AlmacenID"]);
                     ent.ProductoID = Convert.ToInt32(dr["ProductoID"]);
                     ent.cantidad = Convert.ToInt64(dr["cantidad"]);
                     ent.descripcion = Convert.ToString(dr["descripcion"]);
                     ent.fecha = Convert.ToDateTime(dr["fecha"]);
                     ent.estado = Convert.ToBoolean(dr["estado"]);
+
+                    SqlParameter idEntPro = new SqlParameter("@NotaentradaID", SqlDbType.Int);
+                    idEntPro.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(idEntPro);
+
                     lista.Add(ent);
                 }
 

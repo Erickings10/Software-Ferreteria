@@ -3,75 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\capadatos\\datalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\capalogica\\logalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\capadatos\\datentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formbuscarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formbuscarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\capadatos\\datventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8799CE4B-688F-46A4-9F53-B59D4A532035}|CapaDatos\\CapaDatos.csproj|solutionrelative:capadatos\\datventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formbuscarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formbuscarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\proyectomoanso\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\capaentidad\\entalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8B52AE64-4B96-4966-8B1F-763BF3862B50}|CapaEntidad\\CapaEntidad.csproj|solutionrelative:capaentidad\\entalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formalmacenes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formdetalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formdetalleordencompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formentradaproductos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formventa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formventa.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formalmacenes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formalmacenes.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\capalogica\\logmedidaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85D1FEEE-34DA-4B49-9198-66E96A55C0D1}|CapaLogica\\CapaLogica.csproj|solutionrelative:capalogica\\logmedidaproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\proyectomoanso\\formdetallerequerimiento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formdetallerequerimiento.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|c:\\users\\lenovo\\desktop\\moanso\\intento final\\software-ferreteria\\proyectomoanso\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E7AA27BF-9F87-4CB6-9348-86562F5E632F}|ProyectoMoanso\\CapaPresentacion.csproj|solutionrelative:proyectomoanso\\formventa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -81,220 +34,83 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "datAlmacenes.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "RelativeDocumentMoniker": "..\\..\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "RelativeToolTip": "..\\..\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAD4vzcAAAAQAAAA",
+              "DocumentIndex": 2,
+              "Title": "datVenta.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datVenta.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datVenta.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datVenta.cs",
+              "RelativeToolTip": "CapaDatos\\datVenta.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAD4vykAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:17:56.574Z",
+              "WhenOpened": "2024-07-10T08:44:12.805Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "datEntradaProductos.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datEntradaProductos.cs",
+              "RelativeDocumentMoniker": "CapaDatos\\datEntradaProductos.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datEntradaProductos.cs",
+              "RelativeToolTip": "CapaDatos\\datEntradaProductos.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAtwDQAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T08:43:29.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FormEntradaProductos.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormEntradaProductos.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormEntradaProductos.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAzwGEAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-10T08:37:29.392Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "FormBuscarProducto.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormBuscarProducto.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormBuscarProducto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormBuscarProducto.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoMoanso\\FormBuscarProducto.cs [Dise\u00F1o]",
+              "Title": "FormVenta.cs",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormVenta.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs",
+              "RelativeToolTip": "ProyectoMoanso\\FormVenta.cs",
+              "ViewState": "AQIAAPsAAAAAAAAAAAAswAkBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:17:15.42Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FormAlmacenes.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.cs",
-              "RelativeToolTip": "ProyectoMoanso\\FormAlmacenes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFYAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:48:17.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FormAlmacenes.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.cs [Dise\u00F1o]",
-              "RelativeToolTip": "ProyectoMoanso\\FormAlmacenes.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:34:25.394Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormBuscarProducto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormBuscarProducto.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormBuscarProducto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormBuscarProducto.cs",
-              "RelativeToolTip": "ProyectoMoanso\\FormBuscarProducto.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAA9wBsAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:17:17.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "logAlmacenes.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaLogica\\logAlmacenes.cs",
-              "RelativeDocumentMoniker": "CapaLogica\\logAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaLogica\\logAlmacenes.cs",
-              "RelativeToolTip": "CapaLogica\\logAlmacenes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwCAAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T06:16:37.079Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "entAlmacenes.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaEntidad\\entAlmacenes.cs",
-              "RelativeDocumentMoniker": "CapaEntidad\\entAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaEntidad\\entAlmacenes.cs",
-              "RelativeToolTip": "CapaEntidad\\entAlmacenes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:50:51.323Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "datAlmacenes.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "RelativeDocumentMoniker": "CapaDatos\\datAlmacenes.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaDatos\\datAlmacenes.cs",
-              "RelativeToolTip": "CapaDatos\\datAlmacenes.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACcAAAA2AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:49:27.378Z",
+              "WhenOpened": "2024-07-10T08:37:13.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FormDetalleOrdenCompra.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleOrdenCompra.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormDetalleOrdenCompra.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleOrdenCompra.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleOrdenCompra.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:34:47.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "FormEntradaProductos.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs",
               "RelativeDocumentMoniker": "ProyectoMoanso\\FormEntradaProductos.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormEntradaProductos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:23:39.291Z"
+              "WhenOpened": "2024-07-10T08:37:27.437Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FormPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\Software-Ferreteria\\ProyectoMoanso\\FormPrincipal.cs [Dise\u00F1o]",
+              "DocumentIndex": 5,
+              "Title": "FormVenta.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs",
+              "RelativeDocumentMoniker": "ProyectoMoanso\\FormVenta.cs",
+              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.cs [Dise\u00F1o]",
+              "RelativeToolTip": "ProyectoMoanso\\FormVenta.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:23:55.74Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "FormVenta.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormVenta.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormVenta.Designer.cs",
-              "RelativeToolTip": "ProyectoMoanso\\FormVenta.Designer.cs",
-              "ViewState": "AQIAAP4BAAAAAAAAAAAgwAYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:21:14.774Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "logMedidaProducto.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaLogica\\logMedidaProducto.cs",
-              "RelativeDocumentMoniker": "CapaLogica\\logMedidaProducto.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\CapaLogica\\logMedidaProducto.cs",
-              "RelativeToolTip": "CapaLogica\\logMedidaProducto.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAQwBsAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:16:41.982Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\Program.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\Program.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\Program.cs",
-              "RelativeToolTip": "ProyectoMoanso\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAgAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:16:46.602Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "FormDetalleRequerimiento.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleRequerimiento.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormDetalleRequerimiento.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormDetalleRequerimiento.Designer.cs",
-              "RelativeToolTip": "ProyectoMoanso\\FormDetalleRequerimiento.Designer.cs",
-              "ViewState": "AQIAAJkAAAAAAAAAAAAowEcAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:16:20.919Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "FormAlmacenes.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\FormAlmacenes.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\FormAlmacenes.Designer.cs",
-              "RelativeToolTip": "ProyectoMoanso\\FormAlmacenes.Designer.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwAwAAABrAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:13:49.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Settings.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\Properties\\Settings.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\Properties\\Settings.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\Properties\\Settings.Designer.cs",
-              "RelativeToolTip": "ProyectoMoanso\\Properties\\Settings.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:13:39.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Resources.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\lenovo\\Desktop\\moanso\\intento final\\Software-Ferreteria\\ProyectoMoanso\\Properties\\Resources.Designer.cs",
-              "RelativeDocumentMoniker": "ProyectoMoanso\\Properties\\Resources.Designer.cs",
-              "ToolTip": "C:\\Users\\lenovo\\Desktop\\moanso\\Software-Ferreteria\\ProyectoMoanso\\Properties\\Resources.Designer.cs*",
-              "RelativeToolTip": "..\\..\\Software-Ferreteria\\ProyectoMoanso\\Properties\\Resources.Designer.cs*",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAAD0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-10T05:13:34.9Z"
+              "WhenOpened": "2024-07-10T08:37:11.706Z",
+              "EditorCaption": " [Dise\u00F1o]"
             }
           ]
         }

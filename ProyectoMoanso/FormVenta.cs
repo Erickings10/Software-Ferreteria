@@ -260,17 +260,6 @@ namespace ProyectoMoanso
             }
             CalcularTotal();
         }
-
-        private void txtNombreC_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtDocumento_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtProducto_TextChanged(object sender, EventArgs e)
         {
 

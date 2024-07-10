@@ -40,7 +40,6 @@ namespace ProyectoMoanso
             dgvReporteProductos.Columns["categoria"].HeaderText = "Categoria";
             dgvReporteProductos.Columns["marca"].HeaderText = "Marca";
             dgvReporteProductos.Columns["descripcion"].HeaderText = "Descripcion";
-            dgvReporteProductos.Columns["cantidad"].HeaderText = "Cantidad";
             dgvReporteProductos.Columns["estado"].HeaderText = "Estado";
         }
 
@@ -50,7 +49,7 @@ namespace ProyectoMoanso
 
             // Si el estado es true, asignar los valores
             IdProducto = filaActual.Cells[0].Value.ToString();
-            Producto = filaActual.Cells[3].Value.ToString();
+            Producto = filaActual.Cells[4].Value.ToString();
 
 
             DialogResult = DialogResult.OK;  // Esto cierra el formulario y devuelve el resultado a FormPrincipal

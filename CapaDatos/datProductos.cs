@@ -85,9 +85,9 @@ namespace CapaDatos
                 {
                     entDescProducto pro = new entDescProducto();
                     pro.ProductoID = Convert.ToInt32(dr["ProductoID"]);
-                    pro.categoria = Convert.ToString(dr["categoria"]);
-                    pro.marca = Convert.ToString(dr["marca"]);
-                    pro.medida = Convert.ToString(dr["medida"]);
+                    pro.categoria = Convert.ToString(dr["descripcion"]);
+                    pro.marca = Convert.ToString(dr["Marca"]);
+                    pro.medida = Convert.ToString(dr["Medida"]);
                     pro.descripcion = Convert.ToString(dr["descripcion"]);
                     pro.precioCompra = Convert.ToDecimal(dr["precioCompra"]);
                     pro.precioVenta = Convert.ToDecimal(dr["precioVenta"]);
