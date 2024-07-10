@@ -66,7 +66,6 @@ namespace ProyectoMoanso
         private void Limpiar()
         {
             txtDescripcion.Text = "";
-            txtTipo.Text = " ";
             txtCantidad.Text = " ";
         }
 
@@ -88,8 +87,7 @@ namespace ProyectoMoanso
             txtId.Text = filaActual.Cells[0].Value.ToString();
             txtDescripcion.Text = filaActual.Cells[1].Value.ToString();
             txtCantidad.Text = filaActual.Cells[2].Value.ToString();
-            txtTipo.Text = filaActual.Cells[3].Value.ToString();
-            chbx_Estado.Checked = Convert.ToBoolean(filaActual.Cells[4].Value);
+            chbx_Estado.Checked = Convert.ToBoolean(filaActual.Cells[3].Value);
 
             btnActualizar.Enabled = true;
             btnDeshabilitar.Enabled = true;

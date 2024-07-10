@@ -9,9 +9,9 @@ namespace CapaEntidad
     public class entDetalleRequerimiento
     {
         public int DetallerequerimientoID { get; set; }
-        public int ProductoID { get; set; }
+        public entProductos ProductoID { get; set; }
         public int RequerimientoID { get; set; }
         public string cantidad { get; set; }
-        public int prioridad { get; set; }
+        public string prioridad { get; set; }
     }
 }

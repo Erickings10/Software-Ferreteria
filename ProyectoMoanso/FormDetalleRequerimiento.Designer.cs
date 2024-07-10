@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDetalleRequerimiento));
-            this.dgvNuevoReq = new System.Windows.Forms.DataGridView();
+            this.dgvDetalleRequerimiento = new System.Windows.Forms.DataGridView();
             this.gboRequerimientos = new System.Windows.Forms.GroupBox();
             this.txtDescripcion = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,17 +48,27 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.txtDeshabilitar = new System.Windows.Forms.Button();
             this.btnGrabar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNuevoReq)).BeginInit();
+            this.productoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cantProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prioProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleRequerimiento)).BeginInit();
             this.gboRequerimientos.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvNuevoReq
+            // dgvDetalleRequerimiento
             // 
-            this.dgvNuevoReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNuevoReq.Location = new System.Drawing.Point(44, 224);
-            this.dgvNuevoReq.Name = "dgvNuevoReq";
-            this.dgvNuevoReq.Size = new System.Drawing.Size(570, 198);
-            this.dgvNuevoReq.TabIndex = 43;
+            this.dgvDetalleRequerimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDetalleRequerimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productoID,
+            this.descProducto,
+            this.cantProducto,
+            this.prioProducto});
+            this.dgvDetalleRequerimiento.Location = new System.Drawing.Point(44, 224);
+            this.dgvDetalleRequerimiento.Name = "dgvDetalleRequerimiento";
+            this.dgvDetalleRequerimiento.ReadOnly = true;
+            this.dgvDetalleRequerimiento.Size = new System.Drawing.Size(570, 198);
+            this.dgvDetalleRequerimiento.TabIndex = 43;
             // 
             // gboRequerimientos
             // 
@@ -261,6 +271,31 @@
             this.btnGrabar.Text = "Grabar";
             this.btnGrabar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // productoID
+            // 
+            this.productoID.HeaderText = "ProductoID";
+            this.productoID.Name = "productoID";
+            this.productoID.ReadOnly = true;
+            // 
+            // descProducto
+            // 
+            this.descProducto.HeaderText = "Descripcion";
+            this.descProducto.Name = "descProducto";
+            this.descProducto.ReadOnly = true;
+            // 
+            // cantProducto
+            // 
+            this.cantProducto.HeaderText = "Cantidad";
+            this.cantProducto.Name = "cantProducto";
+            this.cantProducto.ReadOnly = true;
+            // 
+            // prioProducto
+            // 
+            this.prioProducto.HeaderText = "Prioridad";
+            this.prioProducto.Name = "prioProducto";
+            this.prioProducto.ReadOnly = true;
             // 
             // FormDetalleRequerimiento
             // 
@@ -276,13 +311,13 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnAgregar);
-            this.Controls.Add(this.dgvNuevoReq);
+            this.Controls.Add(this.dgvDetalleRequerimiento);
             this.Controls.Add(this.gboRequerimientos);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormDetalleRequerimiento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormRequerimientoNuevo";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvNuevoReq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDetalleRequerimiento)).EndInit();
             this.gboRequerimientos.ResumeLayout(false);
             this.gboRequerimientos.PerformLayout();
             this.ResumeLayout(false);
@@ -294,7 +329,7 @@
 
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.DataGridView dgvNuevoReq;
+        private System.Windows.Forms.DataGridView dgvDetalleRequerimiento;
         private System.Windows.Forms.GroupBox gboRequerimientos;
         private FontAwesome.Sharp.IconButton btnBuscarPro;
         private System.Windows.Forms.TextBox txtCantidad;
@@ -311,5 +346,9 @@
         private System.Windows.Forms.Button btnGrabar;
         private System.Windows.Forms.TextBox txtDescripcion;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn descProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cantProducto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prioProducto;
     }
 }

@@ -1,5 +1,6 @@
 ﻿using CapaEntidad;
 using CapaLogica;
+using Org.BouncyCastle.Ocsp;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,11 +24,17 @@ namespace ProyectoMoanso
         {
             InitializeComponent();
             txtCodigo.Enabled = false;
+            //ListarDetalle();
         }
+
+        /*private void ListarDetalle()
+        {
+            dgvDetalleRequerimiento.DataSource = logRequerimientos.Instancia.ListarRequerimientos();
+        }*/
         public void CambiarEncabezados()
         {
-            dgvNuevoReq.Columns["ProductoID"].HeaderText = "ID producto";
-            dgvNuevoReq.Columns["descripcion"].HeaderText = "descripcion";
+            dgvDetalleRequerimiento.Columns["ProductoID"].HeaderText = "ID producto";
+            dgvDetalleRequerimiento.Columns["descripcion"].HeaderText = "descripcion";
 
         }
 
@@ -76,25 +83,72 @@ namespace ProyectoMoanso
                 MessageBox.Show("Seleccione un producto", "ALERTA", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            /*try
+            if ((txtProductoID.Text.Trim() != "") && (txtCantidad.Text.Trim() != ""))
             {
-                entRequerimiento c = new entRequerimiento();
-                c.producto = txtProductoID.Text;
-                c.cantidad = Convert.ToInt64(txtCantidad.Text);
-                c.fecha = Convert.ToDateTime(dtmReque.Text);
-                c.prioridad = cbPrioridad.Text;
-                logRequerimientos.Instancia.InsertaRequerimiento(c);
+                if (Convert.ToInt32(txtCantidad.Text) > 0)
+                {
+                    // Añadir la nueva fila al DataGridView
+                    dgvDetalleRequerimiento.Rows.Add(txtProductoID.Text, txtDescripcion.Text, txtCantidad.Text, cbPrioridad.Text);
+                    // Limpiar los campos de entrada (opcional)
+                    Limpiar();
+                }
+            }
+
+
+        }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            int idReq;
+            try
+            {
+                entRequerimiento Req = new entRequerimiento();
+
+                Req.fecha = Convert.ToDateTime(dtmReque.Value);
+                Req.estado = true;
+
+                idReq = logRequerimientos.Instancia.InsertarRequerimiento(Req);
+
+                GrabarRequerimiento(idReq);
+
+                Close();
+                ActualizarGrid();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error.." + ex);
+                MessageBox.Show("error" + ex);
+                throw ex;
             }
-            */
-
-
-            Limpiar();
         }
 
+        private void GrabarRequerimiento(int cod)
+        {
+            foreach (DataGridViewRow Fila in dgvDetalleRequerimiento.Rows)
+            {
+                
+                entDetalleRequerimiento detReq = new entDetalleRequerimiento    (); // Inicializar detReq dentro del bucle
+                detReq.RequerimientoID = cod;
 
+                entProductos prod = new entProductos();
+                prod.ProductoID = Convert.ToInt32(Fila.Cells[0].Value.ToString());
+                detReq.ProductoID = prod;
+
+                logRequerimientos.Instancia.InsertarDetRequerimiento(detReq);
+            }
+
+        }
+        private void ActualizarGrid()
+        {
+
+            //MessageBox.Show("formulario de datos se cierra....de si encuentra instancia");
+            FormRequerimientosdeCompras frmRequerimiento = Application.OpenForms.OfType<FormRequerimientosdeCompras>().FirstOrDefault();
+
+            if (frmRequerimiento != null)  //Si encuentra una instancia abierta
+            {
+                //MessageBox.Show("Instancia abierta!!! instancia");
+                frmRequerimiento.listarRequerimiento();
+                frmRequerimiento.Refresh();
+            }
+        }
     }
 }

@@ -44,7 +44,6 @@
     <Compile Include="Conexion.cs" />
     <Compile Include="datAlmacenes.cs" />
     <Compile Include="datCategoriaProductos.cs" />
-    <Compile Include="datDetalleRequerimiento.cs" />
     <Compile Include="datDetalleVenta.cs" />
     <Compile Include="datEntradaProductos.cs" />
     <Compile Include="datMarcaProducto.cs" />

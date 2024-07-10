@@ -40,12 +40,29 @@ namespace CapaLogica
             }
 
         }
-
-        /*public void InsertaRequerimiento(entRequerimiento Req)
+        public void InsertarDetRequerimiento(entDetalleRequerimiento dReq)
         {
-            datRequerimientos.Instancia.InsertarRequerimiento(Req);
+            try
+            {
+                datRequerimientos.Instancia.InsertarDetRequerimiento(dReq);
+            }
+            catch (Exception e)
+            { throw e; }
         }
-        public void DeshabilitarRequerimiento(entRequerimiento Req)
+
+        public int InsertarRequerimiento(entRequerimiento Req)
+        {          
+            try
+            {
+                datRequerimientos.Instancia.InsertarRequerimiento(Req);
+            }
+            catch (Exception e)
+            { throw e; }
+            return 0;
+        }
+
+
+        /*public void DeshabilitarRequerimiento(entRequerimiento Req)
         {
             datRequerimientos.Instancia.DeshabilitarRequerimiento(Req);
         }*/

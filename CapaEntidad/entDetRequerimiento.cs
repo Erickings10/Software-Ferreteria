@@ -11,7 +11,7 @@ namespace CapaEntidad
     {
         public int DetallerequerimientoID {  get; set; }
 
-        public entProductos ProductoID { get; set; }
+        public int ProductoID { get; set; }
 
         public int RequerimientoID { get; set; }
 
