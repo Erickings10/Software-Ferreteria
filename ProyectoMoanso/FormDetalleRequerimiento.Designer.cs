@@ -58,7 +58,6 @@
             // 
             // dgvDetalleRequerimiento
             // 
-<<<<<<< HEAD
             this.dgvDetalleRequerimiento.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalleRequerimiento.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.productoID,
@@ -70,15 +69,6 @@
             this.dgvDetalleRequerimiento.ReadOnly = true;
             this.dgvDetalleRequerimiento.Size = new System.Drawing.Size(570, 198);
             this.dgvDetalleRequerimiento.TabIndex = 43;
-=======
-            this.dgvNuevoReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvNuevoReq.Location = new System.Drawing.Point(59, 276);
-            this.dgvNuevoReq.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.dgvNuevoReq.Name = "dgvNuevoReq";
-            this.dgvNuevoReq.RowHeadersWidth = 51;
-            this.dgvNuevoReq.Size = new System.Drawing.Size(760, 244);
-            this.dgvNuevoReq.TabIndex = 43;
->>>>>>> 64b5d6503c318451b340f366d304da3fd6f83590
             // 
             // gboRequerimientos
             // 

@@ -156,3 +156,14 @@ D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\Cap
 D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 D:\SEXTO CICLO\moanso\base de datos\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb

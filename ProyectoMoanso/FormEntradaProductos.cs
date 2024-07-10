@@ -18,7 +18,7 @@ namespace ProyectoMoanso
         {
             InitializeComponent();
             gboDatos.Enabled = false;
-            btnInhabilitar.Enabled = false;
+            btnDeshabilitar.Enabled = false;
             btnModificar.Enabled = false;
             btnRegistrar.Enabled = false;
             txtidAlmacen.Visible = false;
@@ -32,7 +32,7 @@ namespace ProyectoMoanso
         private void btn_nuevo_Click(object sender, EventArgs e)
         {
             gboDatos.Enabled = true;
-            btnInhabilitar.Enabled = true;
+            btnDeshabilitar.Enabled = true;
             btnModificar.Enabled = true;
             btnRegistrar.Enabled = true;
         }
@@ -40,7 +40,7 @@ namespace ProyectoMoanso
         private void btn_Cancelar_Click(object sender, EventArgs e)
         {
             gboDatos.Enabled = false;
-            btnInhabilitar.Enabled = false;
+            btnDeshabilitar.Enabled = false;
             btnModificar.Enabled = false;
             btnRegistrar.Enabled = false;
         }

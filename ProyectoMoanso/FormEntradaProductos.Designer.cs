@@ -49,10 +49,10 @@
             this.txtidProducto = new System.Windows.Forms.TextBox();
             this.chbEstado = new System.Windows.Forms.CheckBox();
             this.cboAlmacen = new System.Windows.Forms.ComboBox();
+            this.btnBuscarProductos = new FontAwesome.Sharp.IconButton();
             this.btn_Cancelar = new System.Windows.Forms.Button();
             this.btn_nuevo = new System.Windows.Forms.Button();
-            this.btnBuscarProductos = new FontAwesome.Sharp.IconButton();
-            this.btnInhabilitar = new System.Windows.Forms.Button();
+            this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnRegistrar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEntradaProductos)).BeginInit();
@@ -75,7 +75,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label2.Location = new System.Drawing.Point(33, 43);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
@@ -87,24 +87,24 @@
             // 
             this.txtCodigo.Location = new System.Drawing.Point(122, 41);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(46, 23);
+            this.txtCodigo.Size = new System.Drawing.Size(46, 22);
             this.txtCodigo.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label3.Location = new System.Drawing.Point(285, 129);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 17);
+            this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 8;
             this.label3.Text = "Fecha:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label6.Location = new System.Drawing.Point(33, 129);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
@@ -115,11 +115,11 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label7.Location = new System.Drawing.Point(266, 61);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(83, 17);
+            this.label7.Size = new System.Drawing.Size(86, 17);
             this.label7.TabIndex = 15;
             this.label7.Text = "Descripcion:";
             // 
@@ -143,7 +143,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Roboto", 10F);
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.label8.Location = new System.Drawing.Point(34, 172);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
@@ -155,7 +155,7 @@
             // 
             this.txtCantidad.Location = new System.Drawing.Point(122, 169);
             this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(103, 23);
+            this.txtCantidad.Size = new System.Drawing.Size(103, 22);
             this.txtCantidad.TabIndex = 19;
             // 
             // menuStrip1
@@ -181,17 +181,17 @@
             // lblAlmacen
             // 
             this.lblAlmacen.AutoSize = true;
-            this.lblAlmacen.Font = new System.Drawing.Font("Roboto", 10F);
+            this.lblAlmacen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lblAlmacen.Location = new System.Drawing.Point(33, 88);
             this.lblAlmacen.Name = "lblAlmacen";
-            this.lblAlmacen.Size = new System.Drawing.Size(68, 17);
+            this.lblAlmacen.Size = new System.Drawing.Size(70, 17);
             this.lblAlmacen.TabIndex = 42;
             this.lblAlmacen.Text = "Almacen: ";
             // 
             // chbx_Estado
             // 
             this.chbx_Estado.AutoSize = true;
-            this.chbx_Estado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbx_Estado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.chbx_Estado.Location = new System.Drawing.Point(565, 182);
             this.chbx_Estado.Margin = new System.Windows.Forms.Padding(2);
             this.chbx_Estado.Name = "chbx_Estado";
@@ -219,7 +219,7 @@
             this.gboDatos.Controls.Add(this.btnBuscarProductos);
             this.gboDatos.Controls.Add(this.label3);
             this.gboDatos.Controls.Add(this.txtCantidad);
-            this.gboDatos.Font = new System.Drawing.Font("Roboto", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gboDatos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gboDatos.Location = new System.Drawing.Point(198, 61);
             this.gboDatos.Name = "gboDatos";
             this.gboDatos.Size = new System.Drawing.Size(537, 204);
@@ -231,7 +231,7 @@
             // 
             this.txtProducto.Location = new System.Drawing.Point(122, 129);
             this.txtProducto.Name = "txtProducto";
-            this.txtProducto.Size = new System.Drawing.Size(103, 23);
+            this.txtProducto.Size = new System.Drawing.Size(103, 22);
             this.txtProducto.TabIndex = 49;
             // 
             // txtidAlmacen
@@ -258,7 +258,7 @@
             // chbEstado
             // 
             this.chbEstado.AutoSize = true;
-            this.chbEstado.Font = new System.Drawing.Font("Roboto", 10F);
+            this.chbEstado.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.chbEstado.Location = new System.Drawing.Point(446, 171);
             this.chbEstado.Name = "chbEstado";
             this.chbEstado.Size = new System.Drawing.Size(71, 21);
@@ -275,10 +275,23 @@
             this.cboAlmacen.Size = new System.Drawing.Size(103, 23);
             this.cboAlmacen.TabIndex = 45;
             // 
+            // btnBuscarProductos
+            // 
+            this.btnBuscarProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarProductos.IconColor = System.Drawing.Color.Black;
+            this.btnBuscarProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarProductos.IconSize = 18;
+            this.btnBuscarProductos.Location = new System.Drawing.Point(231, 131);
+            this.btnBuscarProductos.Name = "btnBuscarProductos";
+            this.btnBuscarProductos.Size = new System.Drawing.Size(24, 24);
+            this.btnBuscarProductos.TabIndex = 41;
+            this.btnBuscarProductos.UseVisualStyleBackColor = true;
+            this.btnBuscarProductos.Click += new System.EventHandler(this.btnBuscarProductos_Click);
+            // 
             // btn_Cancelar
             // 
             this.btn_Cancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Cancelar.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Cancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancelar.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cancelar.Image")));
             this.btn_Cancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_Cancelar.Location = new System.Drawing.Point(26, 190);
@@ -294,7 +307,7 @@
             // btn_nuevo
             // 
             this.btn_nuevo.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_nuevo.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btn_nuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btn_nuevo.Image = ((System.Drawing.Image)(resources.GetObject("btn_nuevo.Image")));
             this.btn_nuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_nuevo.Location = new System.Drawing.Point(26, 121);
@@ -307,38 +320,25 @@
             this.btn_nuevo.UseVisualStyleBackColor = true;
             this.btn_nuevo.Click += new System.EventHandler(this.btn_nuevo_Click);
             // 
-            // btnBuscarProductos
+            // btnDeshabilitar
             // 
-            this.btnBuscarProductos.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarProductos.IconColor = System.Drawing.Color.Black;
-            this.btnBuscarProductos.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarProductos.IconSize = 18;
-            this.btnBuscarProductos.Location = new System.Drawing.Point(231, 131);
-            this.btnBuscarProductos.Name = "btnBuscarProductos";
-            this.btnBuscarProductos.Size = new System.Drawing.Size(24, 24);
-            this.btnBuscarProductos.TabIndex = 41;
-            this.btnBuscarProductos.UseVisualStyleBackColor = true;
-            this.btnBuscarProductos.Click += new System.EventHandler(this.btnBuscarProductos_Click);
-            // 
-            // btnInhabilitar
-            // 
-            this.btnInhabilitar.BackColor = System.Drawing.Color.Tomato;
-            this.btnInhabilitar.Font = new System.Drawing.Font("Roboto", 10F);
-            this.btnInhabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnInhabilitar.Image")));
-            this.btnInhabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInhabilitar.Location = new System.Drawing.Point(750, 215);
-            this.btnInhabilitar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInhabilitar.Name = "btnInhabilitar";
-            this.btnInhabilitar.Size = new System.Drawing.Size(129, 50);
-            this.btnInhabilitar.TabIndex = 22;
-            this.btnInhabilitar.Text = "Inhabilitar";
-            this.btnInhabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnInhabilitar.UseVisualStyleBackColor = false;
+            this.btnDeshabilitar.BackColor = System.Drawing.Color.Tomato;
+            this.btnDeshabilitar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.btnDeshabilitar.Image = ((System.Drawing.Image)(resources.GetObject("btnDeshabilitar.Image")));
+            this.btnDeshabilitar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeshabilitar.Location = new System.Drawing.Point(750, 215);
+            this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnDeshabilitar.Name = "btnDeshabilitar";
+            this.btnDeshabilitar.Size = new System.Drawing.Size(129, 50);
+            this.btnDeshabilitar.TabIndex = 22;
+            this.btnDeshabilitar.Text = "Deshabilitar";
+            this.btnDeshabilitar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnDeshabilitar.UseVisualStyleBackColor = false;
             // 
             // btnModificar
             // 
             this.btnModificar.BackColor = System.Drawing.Color.Aqua;
-            this.btnModificar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnModificar.Image = ((System.Drawing.Image)(resources.GetObject("btnModificar.Image")));
             this.btnModificar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnModificar.Location = new System.Drawing.Point(750, 151);
@@ -353,7 +353,7 @@
             // btnRegistrar
             // 
             this.btnRegistrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnRegistrar.Font = new System.Drawing.Font("Roboto", 10F);
+            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnRegistrar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegistrar.Image")));
             this.btnRegistrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -376,7 +376,7 @@
             this.Controls.Add(this.btn_Cancelar);
             this.Controls.Add(this.btn_nuevo);
             this.Controls.Add(this.gboDatos);
-            this.Controls.Add(this.btnInhabilitar);
+            this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dgvEntradaProductos);
@@ -409,7 +409,7 @@
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnModificar;
-        private System.Windows.Forms.Button btnInhabilitar;
+        private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.DateTimePicker dtpFechaEntrada;
         private FontAwesome.Sharp.IconButton btnBuscarProductos;
