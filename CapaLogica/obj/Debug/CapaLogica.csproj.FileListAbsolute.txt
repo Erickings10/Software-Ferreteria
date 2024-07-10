@@ -178,3 +178,14 @@ C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaLogica\obj\
 C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
 C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
 C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.dll
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\bin\Debug\CapaEntidad.pdb
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.AssemblyReference.cache
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.CoreCompileInputs.cache
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.csproj.Up2Date
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\user\Desktop\Software-Ferretería\Software-Ferreteria\CapaLogica\obj\Debug\CapaLogica.pdb

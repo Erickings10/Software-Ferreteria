@@ -48,6 +48,7 @@
     <Compile Include="datEntradaProductos.cs" />
     <Compile Include="datMarcaProducto.cs" />
     <Compile Include="datMedidaProducto.cs" />
+    <Compile Include="datOrdendeCompra.cs" />
     <Compile Include="datProductos.cs" />
     <Compile Include="datProveedor.cs" />
     <Compile Include="datRequerimientos.cs" />
