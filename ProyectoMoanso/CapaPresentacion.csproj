@@ -359,30 +359,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\xd.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Disco.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\reset.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\bote de basura.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\agregar-producto.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\enviar-orden.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\cancelar-orden.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Confirmar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
