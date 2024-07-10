@@ -39,7 +39,7 @@ namespace ProyectoMoanso
                 DataGridViewRow fila = dgvProducto.Rows[e.RowIndex];
 
                 Id = fila.Cells[0].Value.ToString();
-                descripcion = fila.Cells[1].Value.ToString();
+                descripcion = fila.Cells[5].Value.ToString();
                 PrecioU = fila.Cells[4].Value.ToString();
                 stock = fila.Cells[2].Value.ToString();
                 DialogResult = DialogResult.OK;

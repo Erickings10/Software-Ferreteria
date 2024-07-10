@@ -51,16 +51,7 @@ namespace CapaLogica
             datAlmacenes.Instancia.DeshabilitarAlmacen(Alm);
         }
 
-
-
         #endregion metodos
-
-
-
-
-
-
-
 
     }
 }

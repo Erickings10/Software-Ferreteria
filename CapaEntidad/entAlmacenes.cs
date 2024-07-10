@@ -13,7 +13,6 @@ namespace CapaEntidad
         public int cantidad { get; set; }
         public Boolean estado { get; set; }
         public decimal PrecioVenta { get; set; }
-        public DateTime fechaRegistro { get; set; }
-
+        public string desPro { get; set; }
     }
 }

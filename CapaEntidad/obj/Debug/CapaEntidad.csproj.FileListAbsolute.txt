@@ -82,3 +82,9 @@ C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEnt
 C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
 C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
 C:\Users\lenovo\Desktop\moanso\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.dll
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\bin\Debug\CapaEntidad.pdb
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.dll
+C:\Users\lenovo\Desktop\moanso\intento final\Software-Ferreteria\CapaEntidad\obj\Debug\CapaEntidad.pdb

@@ -85,7 +85,6 @@ namespace ProyectoMoanso
                 entAlmacenes c = new entAlmacenes();
                 c.descripcion = txtDescripcion.Text;
                 c.estado = Convert.ToBoolean(chbx_Estado.Checked);
-                c.fechaRegistro = DateTime.Now;
 
                 logAlmacenes.Instancia.InsertaAlmacenes(c);
             }

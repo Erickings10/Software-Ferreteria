@@ -46,7 +46,7 @@ namespace CapaDatos
                     Alm.cantidad = Convert.ToInt32(dr["cantidad"]);
                     Alm.estado = Convert.ToBoolean(dr["estado"]);
                     Alm.PrecioVenta = Convert.ToDecimal(dr["PrecioVenta"]);
-                    Alm.fechaRegistro = Convert.ToDateTime(dr["fechaRegistro"]);
+                    Alm.desPro = Convert.ToString(dr["desPro"]);
                     lista.Add(Alm);
                 }
 
